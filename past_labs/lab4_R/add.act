@@ -1,0 +1,44 @@
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "common.act";
+
+open std::cells;
+open std::channel;
+open std::gates;
+
+defproc add (bd?<8> L1; bd?<8> L2; bd!<8> R) {
+  bool c_out, c_out_delay, pulse_out;
+  bool c_ins[3];
+
+  // Reset mechanism:
+  //   - Reset L1.r to 0, otherwise send L1.r
+  //   - Reset L2.r to 0, otherwise send L2.r
+  //   - Reset R.a to 0, otherwise send ~R.a
+  //     - This is connected directly to the C-element so it gets 0 on reset and ~R.a otherwise
+  reset_to_0 r0(L1.r, c_ins[0]);
+  reset_to_0 r1(L2.r, c_ins[1]);
+  reset_to_0_or_inv r2(R.a, c_ins[2]);
+
+  ctree<3, false> c(c_ins, c_out);
+  L1.a = c_out;
+  L2.a = c_out;
+
+  // Add a delay between the C-element and R.r
+  delay<35> d(c_out, c_out_delay);
+  R.r = c_out_delay;
+
+  pulse_gen p(c_out, pulse_out);
+
+  FAX1 adder[8];
+  LATCHLO latch_a[8];
+  LATCHLO latch_b[8];
+  TIELOX1 tlo(adder[0].C);
+  ( i : 7 : adder[i].YC = adder[i+1].C; )
+  ( i : 8 : latch_a[i].CLK = pulse_out; latch_b[i].CLK = pulse_out;
+            latch_a[i].D = L1.d[i];     latch_b[i].D = L2.d[i];
+            latch_a[i].Q = adder[i].A;  latch_b[i].Q = adder[i].B;
+            latch_a[i].R = Reset;       latch_b[i].R = Reset;
+            adder[i].YS = R.d[i]; )
+}

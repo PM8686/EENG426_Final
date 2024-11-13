@@ -1,0 +1,25 @@
+ana A B S Y
+l GND
+h Vdd
+l A
+l B
+l S
+s
+
+h A
+s
+
+l A
+s
+
+h B
+s
+
+h S
+s
+
+l B
+s
+
+h A
+s

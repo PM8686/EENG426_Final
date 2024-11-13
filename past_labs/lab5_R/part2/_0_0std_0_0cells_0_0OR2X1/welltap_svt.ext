@@ -1,0 +1,19 @@
+timestamp 1731221341
+version 8.3
+tech sky130l
+style generic
+scale 1 1 7.5
+resistclasses 1000 1000
+node "GND" 1000 0 8 3 ppdiff 2 4 0 0
+node "GND" 1000 0 8 4 psc 9 8 0 0
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+node "GND" 1000 0 8 7 ppdiff 6 8 0 0
+node "Vdd" 4641 0 8 14 nndiff 0 0 21 24
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"

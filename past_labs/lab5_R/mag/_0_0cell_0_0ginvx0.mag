@@ -1,0 +1,78 @@
+magic
+tech sky130l
+timestamp 1731019104
+<< ndiffusion >>
+rect 8 11 13 12
+rect 8 8 9 11
+rect 12 8 13 11
+rect 8 6 13 8
+rect 15 10 20 12
+rect 15 7 16 10
+rect 19 7 20 10
+rect 15 6 20 7
+<< ndc >>
+rect 9 8 12 11
+rect 16 7 19 10
+<< ntransistor >>
+rect 13 6 15 12
+<< pdiffusion >>
+rect 8 24 13 25
+rect 8 21 9 24
+rect 12 21 13 24
+rect 8 19 13 21
+rect 15 23 20 25
+rect 15 20 16 23
+rect 19 20 20 23
+rect 15 19 20 20
+<< pdc >>
+rect 9 21 12 24
+rect 16 20 19 23
+<< ptransistor >>
+rect 13 19 15 25
+<< polysilicon >>
+rect 13 32 20 33
+rect 13 29 16 32
+rect 19 29 20 32
+rect 13 28 20 29
+rect 13 25 15 28
+rect 13 12 15 19
+rect 13 4 15 6
+<< pc >>
+rect 16 29 19 32
+<< m1 >>
+rect 15 29 16 32
+rect 19 29 28 32
+rect 24 28 28 29
+rect 8 21 9 24
+rect 12 21 13 24
+rect 16 23 19 24
+rect 8 20 12 21
+rect 16 16 19 20
+rect 16 13 28 16
+rect 8 11 12 12
+rect 8 8 9 11
+rect 12 8 13 11
+rect 16 10 19 13
+rect 24 12 28 13
+rect 16 6 19 7
+<< m2c >>
+rect 9 21 12 24
+<< m2 >>
+rect 8 24 13 25
+rect 8 21 9 24
+rect 12 21 13 24
+rect 8 20 13 21
+rect 8 7 13 12
+<< labels >>
+rlabel ndiffusion 16 7 16 7 3 out
+rlabel pdiffusion 16 20 16 20 3 out
+rlabel polysilicon 14 13 14 13 3 in(0)
+rlabel polysilicon 14 18 14 18 3 in(0)
+rlabel pdiffusion 9 20 9 20 3 Vdd
+rlabel pc 17 29 17 29 3 in(0)
+rlabel ndiffusion 9 7 9 7 3 GND
+rlabel m2 9 21 9 21 3 Vdd
+rlabel m2 9 8 9 8 3 GND
+rlabel m1 25 29 25 29 3 in(0)
+rlabel m1 25 13 25 13 3 out
+<< end >>

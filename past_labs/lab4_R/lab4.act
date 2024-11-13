@@ -1,0 +1,25 @@
+import globals;
+import std::channel;
+
+import "add.act";
+import "copy.act";
+import "itb.act";
+import "merge.act";
+import "sink.act";
+import "source.act";
+import "split.act";
+
+defproc accum (std::channel::bd?<8> L; std::channel::bd?<1> C; std::channel::bd!<8> R) {
+  std::channel::bd<8> itb_to_add, add_to_split, split_to_merge, split_to_sink, source_to_merge, merge_to_copy, copy_to_itb;
+  std::channel::bd<1> c_to_split, c_to_merge;
+
+  copy1b c_copy(C, c_to_split, c_to_merge);
+
+  add a(L, itb_to_add, add_to_split);
+  split splt(c_to_split, add_to_split, split_to_sink, split_to_merge);
+  merge m(c_to_merge, split_to_merge, source_to_merge, merge_to_copy);
+  copy c(merge_to_copy, R, copy_to_itb);
+  itb i(copy_to_itb, itb_to_add);
+  source src(source_to_merge);
+  sink snk(split_to_sink);
+}

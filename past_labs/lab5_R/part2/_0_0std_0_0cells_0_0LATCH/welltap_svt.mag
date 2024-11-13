@@ -1,0 +1,51 @@
+magic
+tech sky130l
+timestamp 1731220306
+<< checkpaint >>
+rect -25 -29 44 56
+<< ppdiff >>
+rect 8 7 10 10
+rect 8 3 10 4
+<< nndiff >>
+rect 8 14 10 20
+<< psc >>
+rect 8 4 11 7
+<< nsc >>
+rect 8 20 11 23
+<< m1 >>
+rect 7 23 12 24
+rect 7 20 8 23
+rect 11 20 12 23
+rect 7 19 12 20
+rect 7 7 12 8
+rect 7 4 8 7
+rect 11 4 12 7
+rect 7 3 12 4
+<< m2c >>
+rect 8 20 11 23
+rect 8 4 11 7
+<< m2 >>
+rect 7 23 12 24
+rect 7 20 8 23
+rect 11 20 12 23
+rect 7 19 12 20
+rect 7 7 12 8
+rect 7 4 8 7
+rect 11 4 12 7
+rect 7 3 12 4
+<< labels >>
+rlabel space 0 0 16 28 6 prboundary
+rlabel ppdiff 9 4 9 4 3 GND
+rlabel ppdiff 9 8 9 8 3 GND
+rlabel nndiff 9 15 9 15 3 Vdd
+rlabel m2 12 5 12 5 3 GND
+rlabel m2 12 21 12 21 3 Vdd
+rlabel m2c 9 5 9 5 3 GND
+rlabel m2c 9 21 9 21 3 Vdd
+rlabel m2 8 4 8 4 3 GND
+rlabel m2 8 5 8 5 3 GND
+rlabel m2 8 8 8 8 3 GND
+rlabel m2 8 20 8 20 3 Vdd
+rlabel m2 8 21 8 21 3 Vdd
+rlabel m2 8 24 8 24 3 Vdd
+<< end >>

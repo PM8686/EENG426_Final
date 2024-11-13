@@ -1,0 +1,17 @@
+
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "common.act";
+
+open std::cells;
+open std::channel;
+open std::gates;
+
+defproc sink (bd?<8> L) {
+  // Reset mechanism:
+  //   - Reset L.r to 1, otherwise send L.r
+  //     - This is connected directly to L.a so it gets 0 on reset and L.r otherwise
+  reset_to_0 r(L.r, L.a);
+}

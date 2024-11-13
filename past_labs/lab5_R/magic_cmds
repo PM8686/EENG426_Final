@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ $# -lt 2 ]
+then
+	echo "Usage: $0 <magfile> <commands>"
+	exit 1
+fi
+
+magic -dnull -noconsole -T sky130l $1 <<EOF
+$2
+exit
+EOF

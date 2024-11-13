@@ -1,0 +1,40 @@
+ana CLK D q _q
+l GND
+h Vdd
+l CLK
+l q
+l D
+s
+
+h D
+s
+
+l D
+s
+
+h q
+s
+
+l q
+s
+
+h CLK
+s
+
+h D
+s
+
+h q
+s
+
+l q
+s
+
+l D
+s
+
+h q
+s
+
+l q
+s

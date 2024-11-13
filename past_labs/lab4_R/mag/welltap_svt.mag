@@ -1,0 +1,29 @@
+magic
+tech sky130l
+timestamp 1729060000
+<< ppdiff >>
+rect 8 7 10 10
+rect 8 3 10 4
+<< nndiff >>
+rect 8 14 10 20
+<< psc >>
+rect 8 4 11 7
+<< nsc >>
+rect 8 20 11 23
+<< m1 >>
+rect 7 23 12 24
+rect 7 20 8 23
+rect 11 20 12 23
+rect 7 19 12 20
+rect 7 7 12 8
+rect 7 4 8 7
+rect 11 4 12 7
+rect 7 3 12 4
+<< labels >>
+rlabel psc 9 5 9 5 3 GND
+port 1 e
+rlabel nsc 9 21 9 21 3 Vdd
+port 2 e
+rlabel ppdiff 9 4 9 4 3 GND
+rlabel nndiff 9 15 9 15 3 Vdd
+<< end >>

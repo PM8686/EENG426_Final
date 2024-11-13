@@ -1,0 +1,42 @@
+import std::cells;
+import "../../cells.act";
+
+defproc test1()
+{
+  pint NUM = 1000;
+
+  std::cells::LATCHINV tst[NUM]; /* put your cell name here */
+
+  // connect the output of cell i to the input of
+  // cell i+1; you will have to change these to
+  // correct port names for the cell you are testing
+  (i:NUM-1: tst[i]._q=tst[i+1].CLK;)
+}
+
+defproc test2()
+{
+  pint NUM = 1000;
+
+  std::cells::LATCHINV tst[NUM]; /* put your cell name here */
+
+  // connect the output of cell i to the input of
+  // cell i+1; you will have to change these to
+  // correct port names for the cell you are testing
+  (i:NUM-1: tst[i]._q=tst[i+1].D;)
+}
+
+defproc test3()
+{
+  pint NUM = 1000;
+
+  std::cells::LATCHINV tst[NUM]; /* put your cell name here */
+
+  // connect the output of cell i to the input of
+  // cell i+1; you will have to change these to
+  // correct port names for the cell you are testing
+  (i:NUM-1: tst[i]._q=tst[i+1].q;)
+}
+
+test1 t1;
+test2 t2;
+test3 t3;

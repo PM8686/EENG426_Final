@@ -1,0 +1,93 @@
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "common.act";
+
+open std::cells;
+open std::channel;
+open std::gates;
+
+defproc merge (bd?<1> C; bd?<8> A; bd?<8> B; bd!<8> Y) {
+    bool ctrl_t, ctrl_f, _cd, _cdout, _ya;
+    bool cr_out_delay;
+    bool c1_ins[3], c2_ins[3];
+    bool c1_out, c2_out;
+    bool cr_out, cd_out;
+    bool or_out;
+    bool pulse_in, pulse_out;
+    bool zr_delay_out;
+
+    // Reset mechanism:
+
+    reset_to_0 r0(A.r, c1_ins[1]);
+    reset_to_0 r1(B.r, c2_ins[1]);
+
+    reset_to_0 r2(C.r, cr_out);
+    reset_to_0 r3(C.d[0], cd_out);
+
+
+    // Add delay for cr due to the inverter on C.d for C.f
+    delay<4> d_cr(cr_out, cr_out_delay);
+    INVX1 cd_inv(cd_out, _cdout);
+
+    // Need to account for MUX delay and pulse gen delay
+    delay<8> d_zr(or_out, zr_delay_out);
+
+    AND2X1 and_ct(cr_out_delay, cd_out, ctrl_t);
+    AND2X1 and_cf(cr_out_delay, _cdout, ctrl_f);
+
+    // Invert Y.a
+    reset_to_0_or_inv ya_inv(Y.a, _ya);
+    // INVX1 ya_inv(Y.a, _ya);
+
+    c1_ins[0] = ctrl_t;
+    c1_ins[2] = _ya;
+
+    c2_ins[0] = ctrl_f;
+    c2_ins[2] = _ya;
+
+    ctree<3, false> ca(c1_ins, c1_out);
+    ctree<3, false> cb(c2_ins, c2_out);
+
+    // bool c1_and_out, c2_and_out;
+    // AND2X1 a1(c1_out, ctrl_t, c1_and_out);
+    // AND2X1 a2(c2_out, ctrl_f, c2_and_out);
+    // OR2X1 yr_or(c1_and_out, c2_and_out, or_out);
+
+    OR2X1 yr_or(c1_out, c2_out, or_out);
+
+    // Only set pulse_in to 1 if there is a current incoming request.
+    // That way, once the request finishes, we are primed for the next pulse
+    bool pulse_in_1, pulse_in_2, xor_out;
+    XOR2X1 xor(ctrl_t, ctrl_f, xor_out);
+    AND2X1 a(or_out, C.r, pulse_in_1);
+    AND2X1 ajk(pulse_in_1, xor_out, pulse_in);
+
+    Y.r = zr_delay_out;
+
+    pulse_gen p(pulse_in, pulse_out);
+
+    // Mux for A.d or B.d
+    // If S is 0, mux returns ~B
+    // If S is 1, mux returns ~A
+    // So, add an inverter to keep the outputs correct
+    MUX2X1 mux[8];
+    (j : 8 : mux[j].A = A.d[j];
+             mux[j].B = B.d[j];
+             mux[j].S = _cdout; )
+
+    LATCH latch[8];
+    (i : 8 : latch[i].CLK = pulse_out;
+             latch[i].D = mux[i].Y; )
+
+    INVX1 invs[8];
+    (i : 8 : invs[i].A = latch[i].Q;
+             invs[i].Y = Y.d[i]; )
+
+    // Set up acks
+    A.a = c1_out;
+    B.a = c2_out;
+    // C.a
+    OR2X1 ca_or(A.a, B.a, C.a);
+}

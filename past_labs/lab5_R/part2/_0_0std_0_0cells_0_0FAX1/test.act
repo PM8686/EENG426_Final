@@ -1,0 +1,81 @@
+import std::cells;
+import "../../cells.act";
+
+defproc test1()
+{
+  pint NUM = 1000;
+
+  std::cells::FAX1 tst[NUM]; /* put your cell name here */
+
+  // connect the output of cell i to the input of
+  // cell i+1; you will have to change these to
+  // correct port names for the cell you are testing
+  (i:NUM-1: tst[i].YC=tst[i+1].A;)
+}
+
+defproc test2()
+{
+  pint NUM = 1000;
+
+  std::cells::FAX1 tst[NUM]; /* put your cell name here */
+
+  // connect the output of cell i to the input of
+  // cell i+1; you will have to change these to
+  // correct port names for the cell you are testing
+  (i:NUM-1: tst[i].YC=tst[i+1].B;)
+}
+
+defproc test3()
+{
+  pint NUM = 1000;
+
+  std::cells::FAX1 tst[NUM]; /* put your cell name here */
+
+  // connect the output of cell i to the input of
+  // cell i+1; you will have to change these to
+  // correct port names for the cell you are testing
+  (i:NUM-1: tst[i].YC=tst[i+1].C;)
+}
+
+defproc test4()
+{
+  pint NUM = 1000;
+
+  std::cells::FAX1 tst[NUM]; /* put your cell name here */
+
+  // connect the output of cell i to the input of
+  // cell i+1; you will have to change these to
+  // correct port names for the cell you are testing
+  (i:NUM-1: tst[i].YS=tst[i+1].A;)
+}
+
+defproc test5()
+{
+  pint NUM = 1000;
+
+  std::cells::FAX1 tst[NUM]; /* put your cell name here */
+
+  // connect the output of cell i to the input of
+  // cell i+1; you will have to change these to
+  // correct port names for the cell you are testing
+  (i:NUM-1: tst[i].YS=tst[i+1].B;)
+}
+
+defproc test6()
+{
+  pint NUM = 1000;
+
+  std::cells::FAX1 tst[NUM]; /* put your cell name here */
+
+  // connect the output of cell i to the input of
+  // cell i+1; you will have to change these to
+  // correct port names for the cell you are testing
+  (i:NUM-1: tst[i].YS=tst[i+1].C;)
+}
+
+test1 t1;
+test2 t2;
+test3 t3;
+test4 t4;
+test5 t5;
+test6 t6;

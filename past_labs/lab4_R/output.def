@@ -1,0 +1,2632 @@
+###########################
+# Written by PhyDB at 2024-10-14.02:13:56
+###########################
+VERSION 5.6 ;
+
+DIVIDERCHAR "/" ;
+
+BUSBITCHARS "[]" ;
+
+DESIGN accum ;
+
+UNITS DISTANCE MICRONS 1000 ;
+
+DIEAREA ( 6000 5400 ) ( 115200 118800 ) ;
+
+
+TRACKS X 6150 DO 182 STEP 600 LAYER li ;
+TRACKS Y 5550 DO 189 STEP 600 LAYER li ;
+TRACKS X 6075 DO 364 STEP 300 LAYER met1 ;
+TRACKS Y 5475 DO 378 STEP 300 LAYER met1 ;
+TRACKS X 6075 DO 364 STEP 300 LAYER met2 ;
+TRACKS Y 5475 DO 378 STEP 300 LAYER met2 ;
+TRACKS X 6150 DO 182 STEP 600 LAYER met3 ;
+TRACKS Y 5550 DO 189 STEP 600 LAYER met3 ;
+TRACKS X 6150 DO 182 STEP 600 LAYER met4 ;
+TRACKS Y 5550 DO 189 STEP 600 LAYER met4 ;
+TRACKS X 6825 DO 33 STEP 3300 LAYER met5 ;
+TRACKS Y 6225 DO 34 STEP 3300 LAYER met5 ;
+
+
+COMPONENTS 617 ;
+   - c__copy_alatch_50_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 74400 56700 ) FS ;
+   - c__copy_ac__ra_acx0 _0_0cell_0_0gcelem2x0 
+      + SOURCE NETLIST 
+      + PLACED ( 81000 44700 ) FS ;
+   - c__copy_ar1_an _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 85800 48900 ) N ;
+   - c__copy_ar2_an _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 93600 37500 ) N ;
+   - c__copy_ac_acx0 _0_0cell_0_0gcelem2x0 
+      + SOURCE NETLIST 
+      + PLACED ( 70800 48600 ) N ;
+   - c__copy_ac_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 72000 57600 ) FS ;
+   - c__copy_ap_aand _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 74400 61800 ) N ;
+   - c__copy_ap_ainvs_50_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 72000 71100 ) FS ;
+   - c__copy_ap_ainvs_51_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 74400 71100 ) FS ;
+   - c__copy_ap_ainvs_52_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 81000 81600 ) FS ;
+   - c__copy_ap_ainvs_53_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 81000 90900 ) N ;
+   - c__copy_ap_ainvs_54_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 80400 93600 ) FS ;
+   - c__copy_ap_ainvs_55_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 78600 99300 ) FS ;
+   - c__copy_ap_ainvs_56_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 78000 102000 ) N ;
+   - c__copy_ap_ainvs_57_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 73200 104700 ) FS ;
+   - c__copy_ap_ainvs_58_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 79200 104700 ) FS ;
+   - c__copy_ap_ainvs_59_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 78600 107700 ) N ;
+   - c__copy_ap_ainvs_510_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 73200 107700 ) N ;
+   - c__copy_ap_ainvs_511_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 78600 110400 ) FS ;
+   - c__copy_ap_ainvs_512_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 72600 110400 ) FS ;
+   - c__copy_ap_ainvs_513_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 69000 113100 ) N ;
+   - c__copy_ap_ainvs_514_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 73200 113100 ) N ;
+   - c__copy_ap_ainvs_515_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 76800 113100 ) N ;
+   - c__copy_ap_ainvs_516_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 80400 113100 ) N ;
+   - c__copy_ap_ainvs_517_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 83400 113100 ) N ;
+   - c__copy_ap_ainvs_518_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 86400 113100 ) N ;
+   - c__copy_ap_ainvs_519_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 89400 113100 ) N ;
+   - c__copy_ap_ainvs_520_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 92400 113100 ) N ;
+   - c__copy_ap_ainvs_521_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 95400 113100 ) N ;
+   - c__copy_ap_ainvs_522_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 98400 113100 ) N ;
+   - c__copy_ap_ainvs_523_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 101400 113100 ) N ;
+   - c__copy_ap_ainvs_524_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 95400 110400 ) FS ;
+   - c__copy_ap_ainvs_525_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 89400 110400 ) FS ;
+   - c__copy_ap_ainvs_526_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 84000 110400 ) FS ;
+   - c__copy_ap_ainvs_527_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 94800 107700 ) N ;
+   - c__copy_ap_ainvs_528_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 89400 107700 ) N ;
+   - c__copy_ap_ainvs_529_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 84000 107700 ) N ;
+   - c__copy_ap_ainvs_530_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 84600 104700 ) FS ;
+   - c__copy_ap_ainvs_531_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 89400 104700 ) FS ;
+   - c__copy_ap_ainvs_532_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 84600 102000 ) N ;
+   - c__copy_ap_ainvs_533_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 90600 99300 ) FS ;
+   - c__copy_ap_ainvs_534_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 94800 99300 ) FS ;
+   - c__copy_ap_ainvs_535_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 93600 96300 ) N ;
+   - c__copy_ap_ainvs_536_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 91200 93600 ) FS ;
+   - c__copy_ap_ainvs_537_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 87600 90900 ) N ;
+   - c__copy_ap_ainvs_538_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 93000 88200 ) FS ;
+   - c__copy_ap_ainvs_539_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 94200 84900 ) N ;
+   - c__copy_ap_ainvs_540_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 98400 81600 ) FS ;
+   - c__copy_ap_ainvs_541_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 86400 75300 ) N ;
+   - c__copy_ap_ainvs_542_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 79200 71100 ) FS ;
+   - c__copy_ap_ainvs_543_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 76800 71100 ) FS ;
+   - c__copy_ap_ainvs_544_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 77400 62100 ) N ;
+   - c__copy_ar0_an _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 64800 57000 ) FS ;
+   - c__copy_ar0_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 61800 57600 ) FS ;
+   - c__copy_ad_ainvs_50_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 88800 57600 ) FS ;
+   - c__copy_ad_ainvs_51_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 88800 48900 ) N ;
+   - c__copy_ad_ainvs_52_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102600 45000 ) FS ;
+   - c__copy_ad_ainvs_53_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102600 37500 ) N ;
+   - c__copy_ad_ainvs_54_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 100200 37500 ) N ;
+   - c__copy_ad_ainvs_55_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 84000 24900 ) N ;
+   - src_atlo_50_6 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 72600 44700 ) FS ;
+   - src_atlo_51_6 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 64200 37500 ) N ;
+   - src_atlo_52_6 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 38400 37500 ) N ;
+   - src_atlo_53_6 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 31200 44700 ) FS ;
+   - src_atlo_54_6 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 69600 32100 ) FS ;
+   - src_atlo_55_6 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 65400 24900 ) N ;
+   - src_atlo_56_6 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 58800 13800 ) N ;
+   - src_atlo_57_6 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 63000 13800 ) N ;
+   - src_ar_an _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 81600 31800 ) FS ;
+   - src_ar_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 84600 32400 ) FS ;
+   - i_alatch_50_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 41400 79800 ) FS ;
+   - i_alatch_50_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 44400 80700 ) FS ;
+   - i_alatch_51_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 36600 61800 ) N ;
+   - i_alatch_51_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 39600 61800 ) N ;
+   - i_alatch_52_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 39600 48600 ) N ;
+   - i_alatch_52_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 42600 48600 ) N ;
+   - i_alatch_53_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 39000 69300 ) FS ;
+   - i_alatch_53_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 31200 70200 ) FS ;
+   - i_alatch_54_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 18600 55800 ) FS ;
+   - i_alatch_54_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 21600 56700 ) FS ;
+   - i_alatch_55_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 22800 37200 ) N ;
+   - i_alatch_55_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 25800 37200 ) N ;
+   - i_alatch_56_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 42600 18600 ) FS ;
+   - i_alatch_56_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 45600 19500 ) FS ;
+   - i_alatch_57_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 26400 18600 ) FS ;
+   - i_alatch_57_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 29400 19500 ) FS ;
+   - i_ap_aand _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 48600 84600 ) N ;
+   - i_ap_ainvs_50_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 62400 96300 ) N ;
+   - i_ap_ainvs_51_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 63600 102000 ) N ;
+   - i_ap_ainvs_52_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 61200 104700 ) FS ;
+   - i_ap_ainvs_53_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 55200 107700 ) N ;
+   - i_ap_ainvs_54_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 49200 107700 ) N ;
+   - i_ap_ainvs_55_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 43800 107700 ) N ;
+   - i_ap_ainvs_56_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 53400 110400 ) FS ;
+   - i_ap_ainvs_57_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 47400 110400 ) FS ;
+   - i_ap_ainvs_58_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 42000 110400 ) FS ;
+   - i_ap_ainvs_59_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 37800 110400 ) FS ;
+   - i_ap_ainvs_510_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 26400 110400 ) FS ;
+   - i_ap_ainvs_511_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 24000 110400 ) FS ;
+   - i_ap_ainvs_512_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 27600 107700 ) N ;
+   - i_ap_ainvs_513_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 24600 107700 ) N ;
+   - i_ap_ainvs_514_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 22200 107700 ) N ;
+   - i_ap_ainvs_515_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 19800 107700 ) N ;
+   - i_ap_ainvs_516_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 23400 104700 ) FS ;
+   - i_ap_ainvs_517_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 20400 104700 ) FS ;
+   - i_ap_ainvs_518_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 17400 104700 ) FS ;
+   - i_ap_ainvs_519_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 16800 102000 ) N ;
+   - i_ap_ainvs_520_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 19800 102000 ) N ;
+   - i_ap_ainvs_521_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 22800 102000 ) N ;
+   - i_ap_ainvs_522_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 25800 99300 ) FS ;
+   - i_ap_ainvs_523_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 30600 99300 ) FS ;
+   - i_ap_ainvs_524_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 35400 99300 ) FS ;
+   - i_ap_ainvs_525_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 39000 96300 ) N ;
+   - i_ap_ainvs_526_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 31800 96300 ) N ;
+   - i_ap_ainvs_527_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 25200 96300 ) N ;
+   - i_ap_ainvs_528_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 28200 93600 ) FS ;
+   - i_ap_ainvs_529_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 36000 93600 ) FS ;
+   - i_ap_ainvs_530_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 44400 93600 ) FS ;
+   - i_ap_ainvs_531_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 31200 90900 ) N ;
+   - i_ap_ainvs_532_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 22800 90900 ) N ;
+   - i_ap_ainvs_533_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 27600 88200 ) FS ;
+   - i_ap_ainvs_534_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 20400 88200 ) FS ;
+   - i_ap_ainvs_535_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 20400 84900 ) N ;
+   - i_ap_ainvs_536_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 25200 84900 ) N ;
+   - i_ap_ainvs_537_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 30600 84900 ) N ;
+   - i_ap_ainvs_538_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 36600 84900 ) N ;
+   - i_ap_ainvs_539_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 42600 84900 ) N ;
+   - i_ap_ainvs_540_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 34800 88200 ) FS ;
+   - i_ap_ainvs_541_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 40200 90900 ) N ;
+   - i_ap_ainvs_542_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 49200 90900 ) N ;
+   - i_ap_ainvs_543_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 42600 88200 ) FS ;
+   - i_ap_ainvs_544_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 50400 88200 ) FS ;
+   - i_ar1_an _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 66600 84900 ) N ;
+   - i_ar1_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 64800 88200 ) FS ;
+   - i_ac_acx0 _0_0cell_0_0gcelem2x0 
+      + SOURCE NETLIST 
+      + PLACED ( 67200 81300 ) FS ;
+   - i_ac_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 61200 84900 ) N ;
+   - i_ad_ainvs_50_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 67800 93600 ) FS ;
+   - i_ad_ainvs_51_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 73800 90900 ) N ;
+   - i_ad_ainvs_52_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 82800 88200 ) FS ;
+   - i_ad_ainvs_53_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 88200 88200 ) FS ;
+   - i_ad_ainvs_54_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 87000 84900 ) N ;
+   - i_ad_ainvs_55_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 90600 84900 ) N ;
+   - i_ar0_an _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 77400 81000 ) FS ;
+   - a_atlo _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 57000 75300 ) N ;
+   - a_alatch__a_50_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 60600 75000 ) N ;
+   - a_alatch__a_50_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 60600 80700 ) FS ;
+   - a_alatch__a_51_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 35400 75000 ) N ;
+   - a_alatch__a_51_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 40800 75000 ) N ;
+   - a_alatch__a_52_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 27600 61800 ) N ;
+   - a_alatch__a_52_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 30600 61800 ) N ;
+   - a_alatch__a_53_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 69300 ) FS ;
+   - a_alatch__a_53_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 12600 70200 ) FS ;
+   - a_alatch__a_54_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 61800 ) N ;
+   - a_alatch__a_54_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 12600 61800 ) N ;
+   - a_alatch__a_55_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 43200 ) FS ;
+   - a_alatch__a_55_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 48600 ) N ;
+   - a_alatch__a_56_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 20400 30600 ) FS ;
+   - a_alatch__a_56_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 24600 31500 ) FS ;
+   - a_alatch__a_57_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 30600 ) FS ;
+   - a_alatch__a_57_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 12600 31500 ) FS ;
+   - a_aadder_50_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 48600 68100 ) FS ;
+   - a_aadder_51_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 51600 61200 ) N ;
+   - a_aadder_52_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 49800 54600 ) FS ;
+   - a_aadder_53_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 27600 54600 ) FS ;
+   - a_aadder_54_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 15600 48000 ) N ;
+   - a_aadder_55_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 12000 36600 ) N ;
+   - a_aadder_56_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 17400 24000 ) N ;
+   - a_aadder_57_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 15600 17400 ) FS ;
+   - a_alatch__b_50_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 57000 79800 ) FS ;
+   - a_alatch__b_50_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 50400 80700 ) FS ;
+   - a_alatch__b_51_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 43800 69300 ) FS ;
+   - a_alatch__b_51_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 45600 61800 ) N ;
+   - a_alatch__b_52_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 38400 55800 ) FS ;
+   - a_alatch__b_52_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 42600 56700 ) FS ;
+   - a_alatch__b_53_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 18600 69300 ) FS ;
+   - a_alatch__b_53_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 23400 70200 ) FS ;
+   - a_alatch__b_54_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 55800 ) FS ;
+   - a_alatch__b_54_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 12600 56700 ) FS ;
+   - a_alatch__b_55_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 15000 43200 ) FS ;
+   - a_alatch__b_55_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 21600 44100 ) FS ;
+   - a_alatch__b_56_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 28200 24600 ) N ;
+   - a_alatch__b_56_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 31200 24600 ) N ;
+   - a_alatch__b_57_6_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 12600 18600 ) FS ;
+   - a_alatch__b_57_6_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 11400 24600 ) N ;
+   - a_ar1_an _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 90600 81000 ) FS ;
+   - a_ar1_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 94800 81600 ) FS ;
+   - a_ar2_an _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 83400 75300 ) N ;
+   - a_ac_acx0 _0_0cell_0_0gcelem3x0 
+      + SOURCE NETLIST 
+      + PLACED ( 76800 74700 ) N ;
+   - a_ac_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 74400 81600 ) FS ;
+   - a_ap_aand _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 38400 81600 ) FS ;
+   - a_ap_ainvs_50_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 40200 99300 ) FS ;
+   - a_ap_ainvs_51_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 56400 102000 ) N ;
+   - a_ap_ainvs_52_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 55200 104700 ) FS ;
+   - a_ap_ainvs_53_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 49800 104700 ) FS ;
+   - a_ap_ainvs_54_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 45000 104700 ) FS ;
+   - a_ap_ainvs_55_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 37800 104700 ) FS ;
+   - a_ap_ainvs_56_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 37800 102000 ) N ;
+   - a_ap_ainvs_57_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 33000 102000 ) N ;
+   - a_ap_ainvs_58_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 29400 102000 ) N ;
+   - a_ap_ainvs_59_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 25800 102000 ) N ;
+   - a_ap_ainvs_510_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 21600 99300 ) FS ;
+   - a_ap_ainvs_511_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 18000 99300 ) FS ;
+   - a_ap_ainvs_512_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 15000 99300 ) FS ;
+   - a_ap_ainvs_513_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 19800 96300 ) N ;
+   - a_ap_ainvs_514_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 15600 96300 ) N ;
+   - a_ap_ainvs_515_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 12000 96300 ) N ;
+   - a_ap_ainvs_516_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 96300 ) N ;
+   - a_ap_ainvs_517_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 21600 93600 ) FS ;
+   - a_ap_ainvs_518_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 15600 93600 ) FS ;
+   - a_ap_ainvs_519_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 12000 93600 ) FS ;
+   - a_ap_ainvs_520_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 93600 ) FS ;
+   - a_ap_ainvs_521_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 15000 90900 ) N ;
+   - a_ap_ainvs_522_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 90900 ) N ;
+   - a_ap_ainvs_523_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 88200 ) FS ;
+   - a_ap_ainvs_524_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 13800 88200 ) FS ;
+   - a_ap_ainvs_525_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 16200 84900 ) N ;
+   - a_ap_ainvs_526_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 12000 84900 ) N ;
+   - a_ap_ainvs_527_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 84900 ) N ;
+   - a_ap_ainvs_528_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 81600 ) FS ;
+   - a_ap_ainvs_529_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 12000 81600 ) FS ;
+   - a_ap_ainvs_530_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 14400 81600 ) FS ;
+   - a_ap_ainvs_531_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 16800 81600 ) FS ;
+   - a_ap_ainvs_532_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 19200 81600 ) FS ;
+   - a_ap_ainvs_533_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 21600 81600 ) FS ;
+   - a_ap_ainvs_534_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 24000 81600 ) FS ;
+   - a_ap_ainvs_535_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 13800 75300 ) N ;
+   - a_ap_ainvs_536_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 17400 75300 ) N ;
+   - a_ap_ainvs_537_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 21600 75300 ) N ;
+   - a_ap_ainvs_538_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 25800 75300 ) N ;
+   - a_ap_ainvs_539_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 30600 75300 ) N ;
+   - a_ap_ainvs_540_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 26400 81600 ) FS ;
+   - a_ap_ainvs_541_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 28800 81600 ) FS ;
+   - a_ap_ainvs_542_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 31200 81600 ) FS ;
+   - a_ap_ainvs_543_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 33600 81600 ) FS ;
+   - a_ap_ainvs_544_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 36000 81600 ) FS ;
+   - a_ar0_an _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 73800 75300 ) N ;
+   - a_ar0_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 87000 81600 ) FS ;
+   - a_ad_ainvs_50_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 70800 102000 ) N ;
+   - a_ad_ainvs_51_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 56400 99300 ) FS ;
+   - a_ad_ainvs_52_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 59400 99300 ) FS ;
+   - a_ad_ainvs_53_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 64200 99300 ) FS ;
+   - a_ad_ainvs_54_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 66600 99300 ) FS ;
+   - a_ad_ainvs_55_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 69600 99300 ) FS ;
+   - a_ad_ainvs_56_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 72600 99300 ) FS ;
+   - a_ad_ainvs_57_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 75600 99300 ) FS ;
+   - a_ad_ainvs_58_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 82200 99300 ) FS ;
+   - a_ad_ainvs_59_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 86400 99300 ) FS ;
+   - a_ad_ainvs_510_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 85800 96300 ) N ;
+   - a_ad_ainvs_511_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 78000 96300 ) N ;
+   - a_ad_ainvs_512_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 70200 96300 ) N ;
+   - a_ad_ainvs_513_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 74400 93600 ) FS ;
+   - a_ad_ainvs_514_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 85800 93600 ) FS ;
+   - a_ad_ainvs_515_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 97200 93600 ) FS ;
+   - a_ad_ainvs_516_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 94800 90900 ) N ;
+   - a_ad_ainvs_517_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 103800 88200 ) FS ;
+   - a_ad_ainvs_518_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 84900 ) N ;
+   - a_ad_ainvs_519_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 101400 84900 ) N ;
+   - a_ad_ainvs_520_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102000 81600 ) FS ;
+   - a_ad_ainvs_521_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 75300 ) N ;
+   - a_ad_ainvs_522_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 75300 ) N ;
+   - a_ad_ainvs_523_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 71100 ) FS ;
+   - a_ad_ainvs_524_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 71100 ) FS ;
+   - a_ad_ainvs_525_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102600 62100 ) N ;
+   - a_ad_ainvs_526_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 62100 ) N ;
+   - a_ad_ainvs_527_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 62100 ) N ;
+   - a_ad_ainvs_528_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 57600 ) FS ;
+   - a_ad_ainvs_529_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 57600 ) FS ;
+   - a_ad_ainvs_530_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 48900 ) N ;
+   - a_ad_ainvs_531_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 48900 ) N ;
+   - a_ad_ainvs_532_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 45000 ) FS ;
+   - a_ad_ainvs_533_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 45000 ) FS ;
+   - a_ad_ainvs_534_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 37500 ) N ;
+   - a_ad_ainvs_535_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 37500 ) N ;
+   - a_ad_ainvs_536_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 32400 ) FS ;
+   - a_ad_ainvs_537_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 32400 ) FS ;
+   - a_ad_ainvs_538_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102600 32400 ) FS ;
+   - a_ad_ainvs_539_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102600 24900 ) N ;
+   - a_ad_ainvs_540_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 24900 ) N ;
+   - a_ad_ainvs_541_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 24900 ) N ;
+   - a_ad_ainvs_542_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 20400 ) FS ;
+   - a_ad_ainvs_543_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 13800 ) N ;
+   - a_ad_ainvs_544_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 13800 ) N ;
+   - a_ad_ainvs_545_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 10500 ) FS ;
+   - a_ad_ainvs_546_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 5700 ) N ;
+   - a_ad_ainvs_547_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 5700 ) N ;
+   - a_ad_ainvs_548_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102600 5700 ) N ;
+   - a_ad_ainvs_549_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 10500 ) FS ;
+   - a_ad_ainvs_550_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102000 10500 ) FS ;
+   - a_ad_ainvs_551_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102000 13800 ) N ;
+   - a_ad_ainvs_552_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 99000 10500 ) FS ;
+   - a_ad_ainvs_553_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 96000 10500 ) FS ;
+   - a_ad_ainvs_554_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 93000 10500 ) FS ;
+   - a_ad_ainvs_555_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 100200 5700 ) N ;
+   - a_ad_ainvs_556_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 97200 5700 ) N ;
+   - a_ad_ainvs_557_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 94200 5700 ) N ;
+   - a_ad_ainvs_558_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 91200 5700 ) N ;
+   - a_ad_ainvs_559_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 88200 5700 ) N ;
+   - a_ad_ainvs_560_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 84600 5700 ) N ;
+   - a_ad_ainvs_561_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 85200 10500 ) FS ;
+   - a_ad_ainvs_562_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 89400 10500 ) FS ;
+   - a_ad_ainvs_563_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 98400 13800 ) N ;
+   - a_ad_ainvs_564_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 94800 13800 ) N ;
+   - a_ad_ainvs_565_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 91800 13800 ) N ;
+   - a_ad_ainvs_566_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 88800 13800 ) N ;
+   - a_ad_ainvs_567_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 85800 13800 ) N ;
+   - a_ad_ainvs_568_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 82800 13800 ) N ;
+   - a_ad_ainvs_569_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 101400 20400 ) FS ;
+   - c_alatch_50_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 48600 75000 ) N ;
+   - c_alatch_51_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 57600 48600 ) N ;
+   - c_alatch_52_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 51000 48600 ) N ;
+   - c_alatch_53_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 18600 61800 ) N ;
+   - c_alatch_54_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 26400 48600 ) N ;
+   - c_alatch_55_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 37200 24600 ) N ;
+   - c_alatch_56_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 42600 13500 ) N ;
+   - c_alatch_57_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 51600 19500 ) FS ;
+   - c_ac__ra_acx0 _0_0cell_0_0gcelem2x0 
+      + SOURCE NETLIST 
+      + PLACED ( 67200 75000 ) N ;
+   - c_ar1_an _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 64200 75300 ) N ;
+   - c_ar2_an _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 72600 84900 ) N ;
+   - c_ac_acx0 _0_0cell_0_0gcelem2x0 
+      + SOURCE NETLIST 
+      + PLACED ( 64800 70800 ) FS ;
+   - c_ac_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 64800 62100 ) N ;
+   - c_ap_aand _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 55200 84600 ) N ;
+   - c_ap_ainvs_50_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 60600 93600 ) FS ;
+   - c_ap_ainvs_51_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 61800 99300 ) FS ;
+   - c_ap_ainvs_52_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 67200 104700 ) FS ;
+   - c_ap_ainvs_53_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 67200 107700 ) N ;
+   - c_ap_ainvs_54_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 61200 107700 ) N ;
+   - c_ap_ainvs_55_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 60000 110400 ) FS ;
+   - c_ap_ainvs_56_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 66600 110400 ) FS ;
+   - c_ap_ainvs_57_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 64800 113100 ) N ;
+   - c_ap_ainvs_58_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 60000 113100 ) N ;
+   - c_ap_ainvs_59_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 55200 113100 ) N ;
+   - c_ap_ainvs_510_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 50400 113100 ) N ;
+   - c_ap_ainvs_511_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 46200 113100 ) N ;
+   - c_ap_ainvs_512_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 48600 115800 ) FS ;
+   - c_ap_ainvs_513_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 46200 115800 ) FS ;
+   - c_ap_ainvs_514_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 43800 115800 ) FS ;
+   - c_ap_ainvs_515_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 41400 115800 ) FS ;
+   - c_ap_ainvs_516_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 39000 115800 ) FS ;
+   - c_ap_ainvs_517_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 36600 115800 ) FS ;
+   - c_ap_ainvs_518_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 42600 113100 ) N ;
+   - c_ap_ainvs_519_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 39000 113100 ) N ;
+   - c_ap_ainvs_520_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 35400 113100 ) N ;
+   - c_ap_ainvs_521_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 32400 113100 ) N ;
+   - c_ap_ainvs_522_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 29400 113100 ) N ;
+   - c_ap_ainvs_523_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 27000 113100 ) N ;
+   - c_ap_ainvs_524_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 28800 110400 ) FS ;
+   - c_ap_ainvs_525_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 31200 110400 ) FS ;
+   - c_ap_ainvs_526_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 34200 110400 ) FS ;
+   - c_ap_ainvs_527_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 39000 107700 ) N ;
+   - c_ap_ainvs_528_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 34800 107700 ) N ;
+   - c_ap_ainvs_529_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 31200 107700 ) N ;
+   - c_ap_ainvs_530_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 26400 104700 ) FS ;
+   - c_ap_ainvs_531_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 29400 104700 ) FS ;
+   - c_ap_ainvs_532_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 32400 104700 ) FS ;
+   - c_ap_ainvs_533_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 34800 104700 ) FS ;
+   - c_ap_ainvs_534_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 40800 104700 ) FS ;
+   - c_ap_ainvs_535_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 43200 102000 ) N ;
+   - c_ap_ainvs_536_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 49200 102000 ) N ;
+   - c_ap_ainvs_537_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 52800 99300 ) FS ;
+   - c_ap_ainvs_538_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 48600 99300 ) FS ;
+   - c_ap_ainvs_539_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 44400 99300 ) FS ;
+   - c_ap_ainvs_540_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 46800 96300 ) N ;
+   - c_ap_ainvs_541_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 54600 96300 ) N ;
+   - c_ap_ainvs_542_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 52800 93600 ) FS ;
+   - c_ap_ainvs_543_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 57600 90900 ) N ;
+   - c_ap_ainvs_544_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 57600 88200 ) FS ;
+   - c_ar0_an _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 60600 70500 ) FS ;
+   - c_ar0_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 62400 62100 ) N ;
+   - c_ad_ainvs_50_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 66000 90900 ) N ;
+   - c_ad_ainvs_51_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 71400 88200 ) FS ;
+   - c_ad_ainvs_52_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 77400 88200 ) FS ;
+   - c_ad_ainvs_53_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 78000 84900 ) N ;
+   - c_ad_ainvs_54_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 82800 84900 ) N ;
+   - c_ad_ainvs_55_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 84000 81600 ) FS ;
+   - m_alatch_50_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 49200 37200 ) N ;
+   - m_alatch_51_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 55200 31500 ) FS ;
+   - m_alatch_52_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 39600 31500 ) FS ;
+   - m_alatch_53_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 31800 37200 ) N ;
+   - m_alatch_54_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 47400 31500 ) FS ;
+   - m_alatch_55_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 58200 19500 ) FS ;
+   - m_alatch_56_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 49800 9600 ) FS ;
+   - m_alatch_57_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 63600 9600 ) FS ;
+   - m_amux_50_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 66000 44400 ) FS ;
+   - m_amux_51_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 58200 37200 ) N ;
+   - m_amux_52_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 40800 37200 ) N ;
+   - m_amux_53_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 36600 44400 ) FS ;
+   - m_amux_54_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 63000 31800 ) FS ;
+   - m_amux_55_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 59400 24600 ) N ;
+   - m_amux_56_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 51000 13500 ) N ;
+   - m_amux_57_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 66600 13500 ) N ;
+   - m_acd__inv _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 66600 37500 ) N ;
+   - m_aand__cf _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 69000 37200 ) N ;
+   - m_aca__or _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 93000 31800 ) FS ;
+   - m_aa _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 75600 24600 ) N ;
+   - m_ap_aand _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 73200 13500 ) N ;
+   - m_ap_ainvs_50_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 76200 20400 ) FS ;
+   - m_ap_ainvs_51_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 76800 13800 ) N ;
+   - m_ap_ainvs_52_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 76800 10500 ) FS ;
+   - m_ap_ainvs_53_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 72600 10500 ) FS ;
+   - m_ap_ainvs_54_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 67800 5700 ) N ;
+   - m_ap_ainvs_55_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 58200 5700 ) N ;
+   - m_ap_ainvs_56_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 48600 5700 ) N ;
+   - m_ap_ainvs_57_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 40200 10500 ) FS ;
+   - m_ap_ainvs_58_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 40200 20400 ) FS ;
+   - m_ap_ainvs_59_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 37800 20400 ) FS ;
+   - m_ap_ainvs_510_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 35400 20400 ) FS ;
+   - m_ap_ainvs_511_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 33000 13800 ) N ;
+   - m_ap_ainvs_512_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 28800 13800 ) N ;
+   - m_ap_ainvs_513_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 24600 13800 ) N ;
+   - m_ap_ainvs_514_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 21000 13800 ) N ;
+   - m_ap_ainvs_515_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 18000 13800 ) N ;
+   - m_ap_ainvs_516_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 15600 13800 ) N ;
+   - m_ap_ainvs_517_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 13200 13800 ) N ;
+   - m_ap_ainvs_518_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 16800 10500 ) FS ;
+   - m_ap_ainvs_519_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 14400 10500 ) FS ;
+   - m_ap_ainvs_520_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 12000 10500 ) FS ;
+   - m_ap_ainvs_521_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 10500 ) FS ;
+   - m_ap_ainvs_522_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 5700 ) N ;
+   - m_ap_ainvs_523_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 12000 5700 ) N ;
+   - m_ap_ainvs_524_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 14400 5700 ) N ;
+   - m_ap_ainvs_525_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 16800 5700 ) N ;
+   - m_ap_ainvs_526_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 19200 5700 ) N ;
+   - m_ap_ainvs_527_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 21600 5700 ) N ;
+   - m_ap_ainvs_528_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 24000 5700 ) N ;
+   - m_ap_ainvs_529_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 28200 5700 ) N ;
+   - m_ap_ainvs_530_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 33000 5700 ) N ;
+   - m_ap_ainvs_531_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 21000 10500 ) FS ;
+   - m_ap_ainvs_532_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 25800 10500 ) FS ;
+   - m_ap_ainvs_533_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 30600 10500 ) FS ;
+   - m_ap_ainvs_534_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 37800 13800 ) N ;
+   - m_ap_ainvs_535_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 35400 10500 ) FS ;
+   - m_ap_ainvs_536_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 37800 5700 ) N ;
+   - m_ap_ainvs_537_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 43200 5700 ) N ;
+   - m_ap_ainvs_538_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 53400 5700 ) N ;
+   - m_ap_ainvs_539_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 63000 5700 ) N ;
+   - m_ap_ainvs_540_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 72000 5700 ) N ;
+   - m_ap_ainvs_541_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 76200 5700 ) N ;
+   - m_ap_ainvs_542_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 80400 5700 ) N ;
+   - m_ap_ainvs_543_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 81000 10500 ) FS ;
+   - m_ap_ainvs_544_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 79800 13800 ) N ;
+   - m_aya__inv_an _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 68400 57000 ) FS ;
+   - m_ar0_an _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 75600 31800 ) FS ;
+   - m_ar0_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 79200 32400 ) FS ;
+   - m_aca_acx0 _0_0cell_0_0gcelem3x0 
+      + SOURCE NETLIST 
+      + PLACED ( 75000 36900 ) N ;
+   - m_aca_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 72600 32400 ) FS ;
+   - m_ad__cr_ainvs_50_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 88200 20400 ) FS ;
+   - m_ad__cr_ainvs_51_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 85800 20400 ) FS ;
+   - m_ad__cr_ainvs_52_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 83400 20400 ) FS ;
+   - m_ad__cr_ainvs_53_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 81000 20400 ) FS ;
+   - m_ad__cr_ainvs_54_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 78600 20400 ) FS ;
+   - m_ad__cr_ainvs_55_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 73800 20400 ) FS ;
+   - m_ad__cr_ainvs_56_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 71400 20400 ) FS ;
+   - m_ad__cr_ainvs_57_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 67800 24900 ) N ;
+   - m_aand__ct _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 72000 37200 ) N ;
+   - m_ayr__or _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 89400 31800 ) FS ;
+   - m_ar3_an _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 75000 44400 ) FS ;
+   - m_ar3_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 77400 48900 ) N ;
+   - m_acb_acx0 _0_0cell_0_0gcelem3x0 
+      + SOURCE NETLIST 
+      + PLACED ( 81600 36900 ) N ;
+   - m_acb_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 87000 32400 ) FS ;
+   - m_ar1_an _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 88200 37500 ) N ;
+   - m_ar1_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 87600 45000 ) FS ;
+   - m_ar2_an _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 70200 24900 ) N ;
+   - m_ar2_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 73200 24900 ) N ;
+   - m_ad__zr_ainvs_50_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 86400 24900 ) N ;
+   - m_ad__zr_ainvs_51_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 97800 24900 ) N ;
+   - m_ad__zr_ainvs_52_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 100200 24900 ) N ;
+   - m_ad__zr_ainvs_53_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 100200 32400 ) FS ;
+   - m_ad__zr_ainvs_54_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 100200 45000 ) FS ;
+   - m_ad__zr_ainvs_55_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 100200 48900 ) N ;
+   - m_ad__zr_ainvs_56_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102600 48900 ) N ;
+   - m_ad__zr_ainvs_57_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102600 57600 ) FS ;
+   - m_ad__zr_ainvs_58_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 100200 57600 ) FS ;
+   - m_ad__zr_ainvs_59_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 100200 62100 ) N ;
+   - m_ad__zr_ainvs_510_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 97200 62100 ) N ;
+   - m_ad__zr_ainvs_511_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 94200 62100 ) N ;
+   - m_ad__zr_ainvs_512_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 79800 62100 ) N ;
+   - m_ad__zr_ainvs_513_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 72000 62100 ) N ;
+   - m_ad__zr_ainvs_514_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 69600 62100 ) N ;
+   - m_ad__zr_ainvs_515_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 67200 62100 ) N ;
+   - m_ainvs_50_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 48600 48900 ) N ;
+   - m_ainvs_51_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 55800 37500 ) N ;
+   - m_ainvs_52_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 46800 37500 ) N ;
+   - m_ainvs_53_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 25200 62100 ) N ;
+   - m_ainvs_54_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 45000 45000 ) FS ;
+   - m_ainvs_55_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 43800 24900 ) N ;
+   - m_ainvs_56_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 45000 10500 ) FS ;
+   - m_ainvs_57_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 58800 10500 ) FS ;
+   - snk_ar_an _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 96600 31800 ) FS ;
+   - snk_ar_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 97200 37500 ) N ;
+   - splt_alatch_50_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 64200 48600 ) N ;
+   - splt_alatch_51_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 58200 44100 ) FS ;
+   - splt_alatch_52_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 49800 44100 ) FS ;
+   - splt_alatch_53_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 33000 48600 ) N ;
+   - splt_alatch_54_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 31800 31500 ) FS ;
+   - splt_alatch_55_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 52800 24600 ) N ;
+   - splt_alatch_56_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 46200 24600 ) N ;
+   - splt_alatch_57_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 64800 19500 ) FS ;
+   - splt_anor__ra _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 91800 24900 ) N ;
+   - splt_ar2__r _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 96600 45000 ) FS ;
+   - splt_ac__latch_anx _0_0std_0_0cells_0_0NOR2X2 
+      + SOURCE NETLIST 
+      + PLACED ( 78000 43200 ) FS ;
+   - splt_ac__latch_al _0_0std_0_0cells_0_0LATCHINV 
+      + SOURCE NETLIST 
+      + PLACED ( 79800 48600 ) N ;
+   - splt_ar1__r _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 90000 45000 ) FS ;
+   - splt_ar3_an _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 94800 24900 ) N ;
+   - splt_ap_aand _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 85800 57600 ) FS ;
+   - splt_ap_ainvs_50_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 88800 75300 ) N ;
+   - splt_ap_ainvs_51_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 97800 84900 ) N ;
+   - splt_ap_ainvs_52_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 98400 88200 ) FS ;
+   - splt_ap_ainvs_53_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102000 90900 ) N ;
+   - splt_ap_ainvs_54_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 103200 93600 ) FS ;
+   - splt_ap_ainvs_55_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 101400 96300 ) N ;
+   - splt_ap_ainvs_56_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 99600 99300 ) FS ;
+   - splt_ap_ainvs_57_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102600 102000 ) N ;
+   - splt_ap_ainvs_58_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 96600 102000 ) N ;
+   - splt_ap_ainvs_59_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 90600 102000 ) N ;
+   - splt_ap_ainvs_510_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 93600 104700 ) FS ;
+   - splt_ap_ainvs_511_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 97200 104700 ) FS ;
+   - splt_ap_ainvs_512_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 100800 104700 ) FS ;
+   - splt_ap_ainvs_513_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 104700 ) FS ;
+   - splt_ap_ainvs_514_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 104700 ) FS ;
+   - splt_ap_ainvs_515_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 102000 ) N ;
+   - splt_ap_ainvs_516_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 104400 99300 ) FS ;
+   - splt_ap_ainvs_517_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 99300 ) FS ;
+   - splt_ap_ainvs_518_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 96300 ) N ;
+   - splt_ap_ainvs_519_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 93600 ) FS ;
+   - splt_ap_ainvs_520_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 88200 ) FS ;
+   - splt_ap_ainvs_521_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 84900 ) N ;
+   - splt_ap_ainvs_522_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 81600 ) FS ;
+   - splt_ap_ainvs_523_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 81600 ) FS ;
+   - splt_ap_ainvs_524_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102600 75300 ) N ;
+   - splt_ap_ainvs_525_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 100200 75300 ) N ;
+   - splt_ap_ainvs_526_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 97200 75300 ) N ;
+   - splt_ap_ainvs_527_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 94200 75300 ) N ;
+   - splt_ap_ainvs_528_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 91200 75300 ) N ;
+   - splt_ap_ainvs_529_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102600 71100 ) FS ;
+   - splt_ap_ainvs_530_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 100200 71100 ) FS ;
+   - splt_ap_ainvs_531_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 97200 71100 ) FS ;
+   - splt_ap_ainvs_532_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 94200 71100 ) FS ;
+   - splt_ap_ainvs_533_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 91200 71100 ) FS ;
+   - splt_ap_ainvs_534_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 88800 71100 ) FS ;
+   - splt_ap_ainvs_535_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 86400 71100 ) FS ;
+   - splt_ap_ainvs_536_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 84000 71100 ) FS ;
+   - splt_ap_ainvs_537_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 81600 71100 ) FS ;
+   - splt_ap_ainvs_538_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 91800 62100 ) N ;
+   - splt_ap_ainvs_539_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 89400 62100 ) N ;
+   - splt_ap_ainvs_540_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 87000 62100 ) N ;
+   - splt_ap_ainvs_541_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 84600 62100 ) N ;
+   - splt_ap_ainvs_542_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 82200 62100 ) N ;
+   - splt_ap_ainvs_543_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 81000 57600 ) FS ;
+   - splt_ap_ainvs_544_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 83400 57600 ) FS ;
+   - splt_ac_acx0 _0_0cell_0_0gcelem3x0 
+      + SOURCE NETLIST 
+      + PLACED ( 90600 19500 ) FS ;
+   - splt_ac_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 91200 37500 ) N ;
+   - splt_ar1_an _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 97800 19800 ) FS ;
+   - splt_ar1_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 105000 20400 ) FS ;
+   - splt_ar2_an _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 88800 24900 ) N ;
+   - splt_ac__latch__inv _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 93600 45000 ) FS ;
+   - splt_ad_ainvs_50_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 91200 57600 ) FS ;
+   - splt_ad_ainvs_51_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 94200 57600 ) FS ;
+   - splt_ad_ainvs_52_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 97200 57600 ) FS ;
+   - splt_ad_ainvs_53_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 97200 48900 ) N ;
+   - splt_ad_ainvs_54_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 94200 48900 ) N ;
+   - splt_ad_ainvs_55_6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 91200 48900 ) N ;
+   - splt_ar0_an _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 81000 24900 ) N ;
+   - splt_ar0_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 78600 24900 ) N ;
+   - __well_tap__0 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 6000 ) N ;
+   - __well_tap__1 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 6000 ) N ;
+   - __well_tap__2 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 10800 ) FS ;
+   - __well_tap__3 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 10800 ) FS ;
+   - __well_tap__4 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 14100 ) N ;
+   - __well_tap__5 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 14100 ) N ;
+   - __well_tap__6 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 20700 ) FS ;
+   - __well_tap__7 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 20700 ) FS ;
+   - __well_tap__8 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 25200 ) N ;
+   - __well_tap__9 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 25200 ) N ;
+   - __well_tap__10 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 32700 ) FS ;
+   - __well_tap__11 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 32700 ) FS ;
+   - __well_tap__12 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 37800 ) N ;
+   - __well_tap__13 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 37800 ) N ;
+   - __well_tap__14 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 45300 ) FS ;
+   - __well_tap__15 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 45300 ) FS ;
+   - __well_tap__16 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 49200 ) N ;
+   - __well_tap__17 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 49200 ) N ;
+   - __well_tap__18 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 57900 ) FS ;
+   - __well_tap__19 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 57900 ) FS ;
+   - __well_tap__20 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 62400 ) N ;
+   - __well_tap__21 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 62400 ) N ;
+   - __well_tap__22 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 71400 ) FS ;
+   - __well_tap__23 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 71400 ) FS ;
+   - __well_tap__24 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 75600 ) N ;
+   - __well_tap__25 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 75600 ) N ;
+   - __well_tap__26 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 81900 ) FS ;
+   - __well_tap__27 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 81900 ) FS ;
+   - __well_tap__28 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 85200 ) N ;
+   - __well_tap__29 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 85200 ) N ;
+   - __well_tap__30 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 88500 ) FS ;
+   - __well_tap__31 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 88500 ) FS ;
+   - __well_tap__32 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 91200 ) N ;
+   - __well_tap__33 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 91200 ) N ;
+   - __well_tap__34 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 93900 ) FS ;
+   - __well_tap__35 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 93900 ) FS ;
+   - __well_tap__36 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 96600 ) N ;
+   - __well_tap__37 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 96600 ) N ;
+   - __well_tap__38 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 99600 ) FS ;
+   - __well_tap__39 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 99600 ) FS ;
+   - __well_tap__40 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 102300 ) N ;
+   - __well_tap__41 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 102300 ) N ;
+   - __well_tap__42 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 105000 ) FS ;
+   - __well_tap__43 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 105000 ) FS ;
+   - __well_tap__44 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 108000 ) N ;
+   - __well_tap__45 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 108000 ) N ;
+   - __well_tap__46 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 110700 ) FS ;
+   - __well_tap__47 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 110700 ) FS ;
+   - __well_tap__48 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 113400 ) N ;
+   - __well_tap__49 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 113400 ) N ;
+   - __well_tap__50 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 116100 ) FS ;
+   - __well_tap__51 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 110400 116100 ) FS ;
+   - ppnps circuitppnp 
+      + SOURCE USER 
+      + COVER ( 6000 5400 ) N ;
+   - npwells circuitwell 
+      + SOURCE USER 
+      + COVER ( 6000 5400 ) N ;
+END COMPONENTS
+
+PINS 24 ;
+   - L.d[0] + NET L.d[0]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 115200 76200 ) W
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.d[1] + NET L.d[1]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 111600 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.d[2] + NET L.d[2]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 76200 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.d[3] + NET L.d[3]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 97500 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.d[4] + NET L.d[4]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 83400 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.d[5] + NET L.d[5]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 48000 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.d[6] + NET L.d[6]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 19500 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.d[7] + NET L.d[7]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 26700 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.r + NET L.r
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 115200 90600 ) W
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.a + NET L.a
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 60600 118800 ) S
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - C.d[0] + NET C.d[0]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 115200 19500 ) W
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - C.r + NET C.r
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 115200 33900 ) W
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - C.a + NET C.a
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 115200 48000 ) W
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[0] + NET R.d[0]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 6000 104700 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[1] + NET R.d[1]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 6000 69300 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[2] + NET R.d[2]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 6000 40800 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[3] + NET R.d[3]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 6000 90600 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[4] + NET R.d[4]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 6000 54900 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[5] + NET R.d[5]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 6000 33900 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[6] + NET R.d[6]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 60600 5400 ) N
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[7] + NET R.d[7]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 6000 12600 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.r + NET R.r
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 115200 104700 ) W
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.a + NET R.a
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 115200 62100 ) W
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - Reset + NET Reset
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 62100 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+END PINS
+
+NETS 584 ;
+   - C.d[0] ( PIN C.d[0] )  ( c__copy_alatch_50_6 D )  ;
+   - C.r ( PIN C.r )  ( c__copy_ar0_ai A )  ;
+   - C.a ( PIN C.a )  ( c__copy_ac_acx1 out )  ( c__copy_ap_aand A ) 
+ ( c__copy_ap_ainvs_50_6 A )  ( c__copy_ad_ainvs_50_6 A )  ;
+   - c_to_merge.d[0] ( c__copy_alatch_50_6 Q )  ( m_ar3_ai A )  ( splt_ac__latch_al D )  ;
+   - c_to_merge.r ( c__copy_ad_ainvs_55_6 Y )  ( m_aa B )  ( m_ar2_ai A ) 
+ ( splt_ar0_ai A )  ;
+   - c_to_split.a ( c__copy_ar1_an B )  ( a_ar2_an B )  ( splt_ap_aand A ) 
+ ( splt_ap_ainvs_50_6 A )  ( splt_ac_acx1 out )  ( splt_ad_ainvs_50_6 A )  ;
+   - c_to_merge.a ( c__copy_ar2_an B )  ( m_aca__or Y )  ;
+   - Reset ( PIN Reset )  ( c__copy_ar1_an A )  ( c__copy_ar2_an A ) 
+ ( c__copy_ar0_an A )  ( src_ar_an A )  ( i_alatch_50_6_anx B )  ( i_alatch_51_6_anx B ) 
+ ( i_alatch_52_6_anx B )  ( i_alatch_53_6_anx B )  ( i_alatch_54_6_anx B )  ( i_alatch_55_6_anx B ) 
+ ( i_alatch_56_6_anx B )  ( i_alatch_57_6_anx B )  ( i_ar1_an A )  ( i_ar0_an A ) 
+ ( a_alatch__a_50_6_anx B )  ( a_alatch__a_51_6_anx B )  ( a_alatch__a_52_6_anx B )  ( a_alatch__a_53_6_anx B ) 
+ ( a_alatch__a_54_6_anx B )  ( a_alatch__a_55_6_anx B )  ( a_alatch__a_56_6_anx B )  ( a_alatch__a_57_6_anx B ) 
+ ( a_alatch__b_50_6_anx B )  ( a_alatch__b_51_6_anx B )  ( a_alatch__b_52_6_anx B )  ( a_alatch__b_53_6_anx B ) 
+ ( a_alatch__b_54_6_anx B )  ( a_alatch__b_55_6_anx B )  ( a_alatch__b_56_6_anx B )  ( a_alatch__b_57_6_anx B ) 
+ ( a_ar1_an A )  ( a_ar2_an A )  ( a_ar0_an A )  ( c_ar1_an A ) 
+ ( c_ar2_an A )  ( c_ar0_an A )  ( m_aya__inv_an A )  ( m_ar0_an A ) 
+ ( m_ar3_an A )  ( m_ar1_an A )  ( m_ar2_an A )  ( snk_ar_an A ) 
+ ( splt_ac__latch_anx B )  ( splt_ar3_an A )  ( splt_ar1_an A )  ( splt_ar2_an A ) 
+ ( splt_ar0_an A )  ;
+   - source_to_merge.d[0] ( src_atlo_50_6 Y )  ( m_amux_50_6 A )  ;
+   - source_to_merge.d[1] ( src_atlo_51_6 Y )  ( m_amux_51_6 A )  ;
+   - source_to_merge.d[2] ( src_atlo_52_6 Y )  ( m_amux_52_6 A )  ;
+   - source_to_merge.d[3] ( src_atlo_53_6 Y )  ( m_amux_53_6 A )  ;
+   - source_to_merge.d[4] ( src_atlo_54_6 Y )  ( m_amux_54_6 A )  ;
+   - source_to_merge.d[5] ( src_atlo_55_6 Y )  ( m_amux_55_6 A )  ;
+   - source_to_merge.d[6] ( src_atlo_56_6 Y )  ( m_amux_56_6 A )  ;
+   - source_to_merge.d[7] ( src_atlo_57_6 Y )  ( m_amux_57_6 A )  ;
+   - source_to_merge.r ( src_ar_an Y )  ( m_ar0_ai A )  ;
+   - source_to_merge.a ( src_ar_ai A )  ( m_aca__or A )  ( m_aca_acx1 out ) 
+ ( m_ayr__or A )  ;
+   - R.d[0] ( PIN R.d[0] )  ( i_alatch_50_6_al D )  ( c_alatch_50_6 Q )  ;
+   - R.d[1] ( PIN R.d[1] )  ( i_alatch_51_6_al D )  ( c_alatch_51_6 Q )  ;
+   - R.d[2] ( PIN R.d[2] )  ( i_alatch_52_6_al D )  ( c_alatch_52_6 Q )  ;
+   - R.d[3] ( PIN R.d[3] )  ( i_alatch_53_6_al D )  ( c_alatch_53_6 Q )  ;
+   - R.d[4] ( PIN R.d[4] )  ( i_alatch_54_6_al D )  ( c_alatch_54_6 Q )  ;
+   - R.d[5] ( PIN R.d[5] )  ( i_alatch_55_6_al D )  ( c_alatch_55_6 Q )  ;
+   - R.d[6] ( PIN R.d[6] )  ( i_alatch_56_6_al D )  ( c_alatch_56_6 Q )  ;
+   - R.d[7] ( PIN R.d[7] )  ( i_alatch_57_6_al D )  ( c_alatch_57_6 Q )  ;
+   - R.r ( PIN R.r )  ( i_ar0_an B )  ( c_ad_ainvs_55_6 Y )  ;
+   - copy_to_itb.a ( i_ap_aand A )  ( i_ap_ainvs_50_6 A )  ( i_ac_acx1 out ) 
+ ( i_ad_ainvs_50_6 A )  ( c_ar2_an B )  ;
+   - itb_to_add.d[0] ( i_alatch_50_6_anx Y )  ( i_alatch_50_6_al q )  ( a_alatch__b_50_6_al D )  ;
+   - itb_to_add.d[1] ( i_alatch_51_6_anx Y )  ( i_alatch_51_6_al q )  ( a_alatch__b_51_6_al D )  ;
+   - itb_to_add.d[2] ( i_alatch_52_6_anx Y )  ( i_alatch_52_6_al q )  ( a_alatch__b_52_6_al D )  ;
+   - itb_to_add.d[3] ( i_alatch_53_6_anx Y )  ( i_alatch_53_6_al q )  ( a_alatch__b_53_6_al D )  ;
+   - itb_to_add.d[4] ( i_alatch_54_6_anx Y )  ( i_alatch_54_6_al q )  ( a_alatch__b_54_6_al D )  ;
+   - itb_to_add.d[5] ( i_alatch_55_6_anx Y )  ( i_alatch_55_6_al q )  ( a_alatch__b_55_6_al D )  ;
+   - itb_to_add.d[6] ( i_alatch_56_6_anx Y )  ( i_alatch_56_6_al q )  ( a_alatch__b_56_6_al D )  ;
+   - itb_to_add.d[7] ( i_alatch_57_6_anx Y )  ( i_alatch_57_6_al q )  ( a_alatch__b_57_6_al D )  ;
+   - itb_to_add.r ( i_ad_ainvs_55_6 Y )  ( a_ar1_ai A )  ;
+   - L.a ( PIN L.a )  ( i_ar1_ai A )  ( a_ac_acx1 out ) 
+ ( a_ap_aand A )  ( a_ap_ainvs_50_6 A )  ( a_ad_ainvs_50_6 A )  ;
+   - L.d[0] ( PIN L.d[0] )  ( a_alatch__a_50_6_al D )  ;
+   - L.d[1] ( PIN L.d[1] )  ( a_alatch__a_51_6_al D )  ;
+   - L.d[2] ( PIN L.d[2] )  ( a_alatch__a_52_6_al D )  ;
+   - L.d[3] ( PIN L.d[3] )  ( a_alatch__a_53_6_al D )  ;
+   - L.d[4] ( PIN L.d[4] )  ( a_alatch__a_54_6_al D )  ;
+   - L.d[5] ( PIN L.d[5] )  ( a_alatch__a_55_6_al D )  ;
+   - L.d[6] ( PIN L.d[6] )  ( a_alatch__a_56_6_al D )  ;
+   - L.d[7] ( PIN L.d[7] )  ( a_alatch__a_57_6_al D )  ;
+   - L.r ( PIN L.r )  ( a_ar0_ai A )  ;
+   - add_to_split.d[0] ( a_aadder_50_6 YS )  ( splt_alatch_50_6 D )  ;
+   - add_to_split.d[1] ( a_aadder_51_6 YS )  ( splt_alatch_51_6 D )  ;
+   - add_to_split.d[2] ( a_aadder_52_6 YS )  ( splt_alatch_52_6 D )  ;
+   - add_to_split.d[3] ( a_aadder_53_6 YS )  ( splt_alatch_53_6 D )  ;
+   - add_to_split.d[4] ( a_aadder_54_6 YS )  ( splt_alatch_54_6 D )  ;
+   - add_to_split.d[5] ( a_aadder_55_6 YS )  ( splt_alatch_55_6 D )  ;
+   - add_to_split.d[6] ( a_aadder_56_6 YS )  ( splt_alatch_56_6 D )  ;
+   - add_to_split.d[7] ( a_aadder_57_6 YS )  ( splt_alatch_57_6 D )  ;
+   - add_to_split.r ( a_ad_ainvs_569_6 Y )  ( splt_ar1_ai A )  ;
+   - merge_to_copy.d[0] ( c_alatch_50_6 D )  ( m_ainvs_50_6 Y )  ;
+   - merge_to_copy.d[1] ( c_alatch_51_6 D )  ( m_ainvs_51_6 Y )  ;
+   - merge_to_copy.d[2] ( c_alatch_52_6 D )  ( m_ainvs_52_6 Y )  ;
+   - merge_to_copy.d[3] ( c_alatch_53_6 D )  ( m_ainvs_53_6 Y )  ;
+   - merge_to_copy.d[4] ( c_alatch_54_6 D )  ( m_ainvs_54_6 Y )  ;
+   - merge_to_copy.d[5] ( c_alatch_55_6 D )  ( m_ainvs_55_6 Y )  ;
+   - merge_to_copy.d[6] ( c_alatch_56_6 D )  ( m_ainvs_56_6 Y )  ;
+   - merge_to_copy.d[7] ( c_alatch_57_6 D )  ( m_ainvs_57_6 Y )  ;
+   - merge_to_copy.r ( c_ar0_ai A )  ( m_ad__zr_ainvs_515_6 Y )  ;
+   - merge_to_copy.a ( c_ac_acx1 out )  ( c_ap_aand A )  ( c_ap_ainvs_50_6 A ) 
+ ( c_ad_ainvs_50_6 A )  ( m_aya__inv_an B )  ;
+   - R.a ( PIN R.a )  ( c_ar1_an B )  ;
+   - split_to_sink.d[0] ( m_amux_50_6 B )  ( splt_alatch_50_6 Q )  ;
+   - split_to_sink.d[1] ( m_amux_51_6 B )  ( splt_alatch_51_6 Q )  ;
+   - split_to_sink.d[2] ( m_amux_52_6 B )  ( splt_alatch_52_6 Q )  ;
+   - split_to_sink.d[3] ( m_amux_53_6 B )  ( splt_alatch_53_6 Q )  ;
+   - split_to_sink.d[4] ( m_amux_54_6 B )  ( splt_alatch_54_6 Q )  ;
+   - split_to_sink.d[5] ( m_amux_55_6 B )  ( splt_alatch_55_6 Q )  ;
+   - split_to_sink.d[6] ( m_amux_56_6 B )  ( splt_alatch_56_6 Q )  ;
+   - split_to_sink.d[7] ( m_amux_57_6 B )  ( splt_alatch_57_6 Q )  ;
+   - split_to_merge.r ( m_ar1_ai A )  ( splt_ar1__r Y )  ;
+   - split_to_merge.a ( m_aca__or B )  ( m_ayr__or B )  ( m_acb_acx1 out ) 
+ ( splt_ar2_an B )  ;
+   - split_to_sink.r ( snk_ar_ai A )  ( splt_ar2__r Y )  ;
+   - split_to_sink.a ( snk_ar_an Y )  ( splt_ar3_an B )  ;
+   - c_copy.pulse_out ( c__copy_alatch_50_6 CLK )  ( c__copy_ap_aand Y )  ;
+   - c_copy.r1.out ( c__copy_ac__ra_acx0 in_50_6 )  ( c__copy_ar1_an Y )  ;
+   - c_copy.r2.out ( c__copy_ac__ra_acx0 in_51_6 )  ( c__copy_ar2_an Y )  ;
+   - c_copy.c_ra_out ( c__copy_ac__ra_acx0 out )  ( c__copy_ac_acx0 in_51_6 )  ;
+   - c_copy.r0.out ( c__copy_ac_acx0 in_50_6 )  ( c__copy_ar0_an Y )  ;
+   - c_copy.c.cx0.out ( c__copy_ac_acx0 out )  ( c__copy_ac_acx1 in_50_6 )  ;
+   - c_copy.p.and.B ( c__copy_ap_aand B )  ( c__copy_ap_ainvs_544_6 Y )  ;
+   - c_copy.p.invs[0].Y ( c__copy_ap_ainvs_50_6 Y )  ( c__copy_ap_ainvs_51_6 A )  ;
+   - c_copy.p.invs[1].Y ( c__copy_ap_ainvs_51_6 Y )  ( c__copy_ap_ainvs_52_6 A )  ;
+   - c_copy.p.invs[2].Y ( c__copy_ap_ainvs_52_6 Y )  ( c__copy_ap_ainvs_53_6 A )  ;
+   - c_copy.p.invs[3].Y ( c__copy_ap_ainvs_53_6 Y )  ( c__copy_ap_ainvs_54_6 A )  ;
+   - c_copy.p.invs[4].Y ( c__copy_ap_ainvs_54_6 Y )  ( c__copy_ap_ainvs_55_6 A )  ;
+   - c_copy.p.invs[5].Y ( c__copy_ap_ainvs_55_6 Y )  ( c__copy_ap_ainvs_56_6 A )  ;
+   - c_copy.p.invs[6].Y ( c__copy_ap_ainvs_56_6 Y )  ( c__copy_ap_ainvs_57_6 A )  ;
+   - c_copy.p.invs[7].Y ( c__copy_ap_ainvs_57_6 Y )  ( c__copy_ap_ainvs_58_6 A )  ;
+   - c_copy.p.invs[8].Y ( c__copy_ap_ainvs_58_6 Y )  ( c__copy_ap_ainvs_59_6 A )  ;
+   - c_copy.p.invs[9].Y ( c__copy_ap_ainvs_59_6 Y )  ( c__copy_ap_ainvs_510_6 A )  ;
+   - c_copy.p.invs[10].Y ( c__copy_ap_ainvs_510_6 Y )  ( c__copy_ap_ainvs_511_6 A )  ;
+   - c_copy.p.invs[11].Y ( c__copy_ap_ainvs_511_6 Y )  ( c__copy_ap_ainvs_512_6 A )  ;
+   - c_copy.p.invs[12].Y ( c__copy_ap_ainvs_512_6 Y )  ( c__copy_ap_ainvs_513_6 A )  ;
+   - c_copy.p.invs[13].Y ( c__copy_ap_ainvs_513_6 Y )  ( c__copy_ap_ainvs_514_6 A )  ;
+   - c_copy.p.invs[14].Y ( c__copy_ap_ainvs_514_6 Y )  ( c__copy_ap_ainvs_515_6 A )  ;
+   - c_copy.p.invs[15].Y ( c__copy_ap_ainvs_515_6 Y )  ( c__copy_ap_ainvs_516_6 A )  ;
+   - c_copy.p.invs[16].Y ( c__copy_ap_ainvs_516_6 Y )  ( c__copy_ap_ainvs_517_6 A )  ;
+   - c_copy.p.invs[17].Y ( c__copy_ap_ainvs_517_6 Y )  ( c__copy_ap_ainvs_518_6 A )  ;
+   - c_copy.p.invs[18].Y ( c__copy_ap_ainvs_518_6 Y )  ( c__copy_ap_ainvs_519_6 A )  ;
+   - c_copy.p.invs[19].Y ( c__copy_ap_ainvs_519_6 Y )  ( c__copy_ap_ainvs_520_6 A )  ;
+   - c_copy.p.invs[20].Y ( c__copy_ap_ainvs_520_6 Y )  ( c__copy_ap_ainvs_521_6 A )  ;
+   - c_copy.p.invs[21].Y ( c__copy_ap_ainvs_521_6 Y )  ( c__copy_ap_ainvs_522_6 A )  ;
+   - c_copy.p.invs[22].Y ( c__copy_ap_ainvs_522_6 Y )  ( c__copy_ap_ainvs_523_6 A )  ;
+   - c_copy.p.invs[23].Y ( c__copy_ap_ainvs_523_6 Y )  ( c__copy_ap_ainvs_524_6 A )  ;
+   - c_copy.p.invs[24].Y ( c__copy_ap_ainvs_524_6 Y )  ( c__copy_ap_ainvs_525_6 A )  ;
+   - c_copy.p.invs[25].Y ( c__copy_ap_ainvs_525_6 Y )  ( c__copy_ap_ainvs_526_6 A )  ;
+   - c_copy.p.invs[26].Y ( c__copy_ap_ainvs_526_6 Y )  ( c__copy_ap_ainvs_527_6 A )  ;
+   - c_copy.p.invs[27].Y ( c__copy_ap_ainvs_527_6 Y )  ( c__copy_ap_ainvs_528_6 A )  ;
+   - c_copy.p.invs[28].Y ( c__copy_ap_ainvs_528_6 Y )  ( c__copy_ap_ainvs_529_6 A )  ;
+   - c_copy.p.invs[29].Y ( c__copy_ap_ainvs_529_6 Y )  ( c__copy_ap_ainvs_530_6 A )  ;
+   - c_copy.p.invs[30].Y ( c__copy_ap_ainvs_530_6 Y )  ( c__copy_ap_ainvs_531_6 A )  ;
+   - c_copy.p.invs[31].Y ( c__copy_ap_ainvs_531_6 Y )  ( c__copy_ap_ainvs_532_6 A )  ;
+   - c_copy.p.invs[32].Y ( c__copy_ap_ainvs_532_6 Y )  ( c__copy_ap_ainvs_533_6 A )  ;
+   - c_copy.p.invs[33].Y ( c__copy_ap_ainvs_533_6 Y )  ( c__copy_ap_ainvs_534_6 A )  ;
+   - c_copy.p.invs[34].Y ( c__copy_ap_ainvs_534_6 Y )  ( c__copy_ap_ainvs_535_6 A )  ;
+   - c_copy.p.invs[35].Y ( c__copy_ap_ainvs_535_6 Y )  ( c__copy_ap_ainvs_536_6 A )  ;
+   - c_copy.p.invs[36].Y ( c__copy_ap_ainvs_536_6 Y )  ( c__copy_ap_ainvs_537_6 A )  ;
+   - c_copy.p.invs[37].Y ( c__copy_ap_ainvs_537_6 Y )  ( c__copy_ap_ainvs_538_6 A )  ;
+   - c_copy.p.invs[38].Y ( c__copy_ap_ainvs_538_6 Y )  ( c__copy_ap_ainvs_539_6 A )  ;
+   - c_copy.p.invs[39].Y ( c__copy_ap_ainvs_539_6 Y )  ( c__copy_ap_ainvs_540_6 A )  ;
+   - c_copy.p.invs[40].Y ( c__copy_ap_ainvs_540_6 Y )  ( c__copy_ap_ainvs_541_6 A )  ;
+   - c_copy.p.invs[41].Y ( c__copy_ap_ainvs_541_6 Y )  ( c__copy_ap_ainvs_542_6 A )  ;
+   - c_copy.p.invs[42].Y ( c__copy_ap_ainvs_542_6 Y )  ( c__copy_ap_ainvs_543_6 A )  ;
+   - c_copy.p.invs[43].Y ( c__copy_ap_ainvs_543_6 Y )  ( c__copy_ap_ainvs_544_6 A )  ;
+   - c_copy.r0._in ( c__copy_ar0_an B )  ( c__copy_ar0_ai Y )  ;
+   - c_copy.d.invs[0].Y ( c__copy_ad_ainvs_50_6 Y )  ( c__copy_ad_ainvs_51_6 A )  ;
+   - c_copy.d.invs[1].Y ( c__copy_ad_ainvs_51_6 Y )  ( c__copy_ad_ainvs_52_6 A )  ;
+   - c_copy.d.invs[2].Y ( c__copy_ad_ainvs_52_6 Y )  ( c__copy_ad_ainvs_53_6 A )  ;
+   - c_copy.d.invs[3].Y ( c__copy_ad_ainvs_53_6 Y )  ( c__copy_ad_ainvs_54_6 A )  ;
+   - c_copy.d.invs[4].Y ( c__copy_ad_ainvs_54_6 Y )  ( c__copy_ad_ainvs_55_6 A )  ;
+   - src.r._in ( src_ar_an B )  ( src_ar_ai Y )  ;
+   - i.pulse_out ( i_alatch_50_6_al CLK )  ( i_alatch_51_6_al CLK )  ( i_alatch_52_6_al CLK ) 
+ ( i_alatch_53_6_al CLK )  ( i_alatch_54_6_al CLK )  ( i_alatch_55_6_al CLK )  ( i_alatch_56_6_al CLK ) 
+ ( i_alatch_57_6_al CLK )  ( i_ap_aand Y )  ;
+   - i.r1.out ( i_ar1_an Y )  ( i_ac_acx0 in_51_6 )  ;
+   - i.r0.out ( i_ac_acx0 in_50_6 )  ( i_ar0_an Y )  ;
+   - i.latch[0]._q ( i_alatch_50_6_anx A )  ( i_alatch_50_6_al __q )  ;
+   - i.latch[1]._q ( i_alatch_51_6_anx A )  ( i_alatch_51_6_al __q )  ;
+   - i.latch[2]._q ( i_alatch_52_6_anx A )  ( i_alatch_52_6_al __q )  ;
+   - i.latch[3]._q ( i_alatch_53_6_anx A )  ( i_alatch_53_6_al __q )  ;
+   - i.latch[4]._q ( i_alatch_54_6_anx A )  ( i_alatch_54_6_al __q )  ;
+   - i.latch[5]._q ( i_alatch_55_6_anx A )  ( i_alatch_55_6_al __q )  ;
+   - i.latch[6]._q ( i_alatch_56_6_anx A )  ( i_alatch_56_6_al __q )  ;
+   - i.latch[7]._q ( i_alatch_57_6_anx A )  ( i_alatch_57_6_al __q )  ;
+   - i.p.and.B ( i_ap_aand B )  ( i_ap_ainvs_544_6 Y )  ;
+   - i.p.invs[0].Y ( i_ap_ainvs_50_6 Y )  ( i_ap_ainvs_51_6 A )  ;
+   - i.p.invs[1].Y ( i_ap_ainvs_51_6 Y )  ( i_ap_ainvs_52_6 A )  ;
+   - i.p.invs[2].Y ( i_ap_ainvs_52_6 Y )  ( i_ap_ainvs_53_6 A )  ;
+   - i.p.invs[3].Y ( i_ap_ainvs_53_6 Y )  ( i_ap_ainvs_54_6 A )  ;
+   - i.p.invs[4].Y ( i_ap_ainvs_54_6 Y )  ( i_ap_ainvs_55_6 A )  ;
+   - i.p.invs[5].Y ( i_ap_ainvs_55_6 Y )  ( i_ap_ainvs_56_6 A )  ;
+   - i.p.invs[6].Y ( i_ap_ainvs_56_6 Y )  ( i_ap_ainvs_57_6 A )  ;
+   - i.p.invs[7].Y ( i_ap_ainvs_57_6 Y )  ( i_ap_ainvs_58_6 A )  ;
+   - i.p.invs[8].Y ( i_ap_ainvs_58_6 Y )  ( i_ap_ainvs_59_6 A )  ;
+   - i.p.invs[9].Y ( i_ap_ainvs_59_6 Y )  ( i_ap_ainvs_510_6 A )  ;
+   - i.p.invs[10].Y ( i_ap_ainvs_510_6 Y )  ( i_ap_ainvs_511_6 A )  ;
+   - i.p.invs[11].Y ( i_ap_ainvs_511_6 Y )  ( i_ap_ainvs_512_6 A )  ;
+   - i.p.invs[12].Y ( i_ap_ainvs_512_6 Y )  ( i_ap_ainvs_513_6 A )  ;
+   - i.p.invs[13].Y ( i_ap_ainvs_513_6 Y )  ( i_ap_ainvs_514_6 A )  ;
+   - i.p.invs[14].Y ( i_ap_ainvs_514_6 Y )  ( i_ap_ainvs_515_6 A )  ;
+   - i.p.invs[15].Y ( i_ap_ainvs_515_6 Y )  ( i_ap_ainvs_516_6 A )  ;
+   - i.p.invs[16].Y ( i_ap_ainvs_516_6 Y )  ( i_ap_ainvs_517_6 A )  ;
+   - i.p.invs[17].Y ( i_ap_ainvs_517_6 Y )  ( i_ap_ainvs_518_6 A )  ;
+   - i.p.invs[18].Y ( i_ap_ainvs_518_6 Y )  ( i_ap_ainvs_519_6 A )  ;
+   - i.p.invs[19].Y ( i_ap_ainvs_519_6 Y )  ( i_ap_ainvs_520_6 A )  ;
+   - i.p.invs[20].Y ( i_ap_ainvs_520_6 Y )  ( i_ap_ainvs_521_6 A )  ;
+   - i.p.invs[21].Y ( i_ap_ainvs_521_6 Y )  ( i_ap_ainvs_522_6 A )  ;
+   - i.p.invs[22].Y ( i_ap_ainvs_522_6 Y )  ( i_ap_ainvs_523_6 A )  ;
+   - i.p.invs[23].Y ( i_ap_ainvs_523_6 Y )  ( i_ap_ainvs_524_6 A )  ;
+   - i.p.invs[24].Y ( i_ap_ainvs_524_6 Y )  ( i_ap_ainvs_525_6 A )  ;
+   - i.p.invs[25].Y ( i_ap_ainvs_525_6 Y )  ( i_ap_ainvs_526_6 A )  ;
+   - i.p.invs[26].Y ( i_ap_ainvs_526_6 Y )  ( i_ap_ainvs_527_6 A )  ;
+   - i.p.invs[27].Y ( i_ap_ainvs_527_6 Y )  ( i_ap_ainvs_528_6 A )  ;
+   - i.p.invs[28].Y ( i_ap_ainvs_528_6 Y )  ( i_ap_ainvs_529_6 A )  ;
+   - i.p.invs[29].Y ( i_ap_ainvs_529_6 Y )  ( i_ap_ainvs_530_6 A )  ;
+   - i.p.invs[30].Y ( i_ap_ainvs_530_6 Y )  ( i_ap_ainvs_531_6 A )  ;
+   - i.p.invs[31].Y ( i_ap_ainvs_531_6 Y )  ( i_ap_ainvs_532_6 A )  ;
+   - i.p.invs[32].Y ( i_ap_ainvs_532_6 Y )  ( i_ap_ainvs_533_6 A )  ;
+   - i.p.invs[33].Y ( i_ap_ainvs_533_6 Y )  ( i_ap_ainvs_534_6 A )  ;
+   - i.p.invs[34].Y ( i_ap_ainvs_534_6 Y )  ( i_ap_ainvs_535_6 A )  ;
+   - i.p.invs[35].Y ( i_ap_ainvs_535_6 Y )  ( i_ap_ainvs_536_6 A )  ;
+   - i.p.invs[36].Y ( i_ap_ainvs_536_6 Y )  ( i_ap_ainvs_537_6 A )  ;
+   - i.p.invs[37].Y ( i_ap_ainvs_537_6 Y )  ( i_ap_ainvs_538_6 A )  ;
+   - i.p.invs[38].Y ( i_ap_ainvs_538_6 Y )  ( i_ap_ainvs_539_6 A )  ;
+   - i.p.invs[39].Y ( i_ap_ainvs_539_6 Y )  ( i_ap_ainvs_540_6 A )  ;
+   - i.p.invs[40].Y ( i_ap_ainvs_540_6 Y )  ( i_ap_ainvs_541_6 A )  ;
+   - i.p.invs[41].Y ( i_ap_ainvs_541_6 Y )  ( i_ap_ainvs_542_6 A )  ;
+   - i.p.invs[42].Y ( i_ap_ainvs_542_6 Y )  ( i_ap_ainvs_543_6 A )  ;
+   - i.p.invs[43].Y ( i_ap_ainvs_543_6 Y )  ( i_ap_ainvs_544_6 A )  ;
+   - i.r1._in ( i_ar1_an B )  ( i_ar1_ai Y )  ;
+   - i.c.cx0.out ( i_ac_acx0 out )  ( i_ac_acx1 in_50_6 )  ;
+   - i.d.invs[0].Y ( i_ad_ainvs_50_6 Y )  ( i_ad_ainvs_51_6 A )  ;
+   - i.d.invs[1].Y ( i_ad_ainvs_51_6 Y )  ( i_ad_ainvs_52_6 A )  ;
+   - i.d.invs[2].Y ( i_ad_ainvs_52_6 Y )  ( i_ad_ainvs_53_6 A )  ;
+   - i.d.invs[3].Y ( i_ad_ainvs_53_6 Y )  ( i_ad_ainvs_54_6 A )  ;
+   - i.d.invs[4].Y ( i_ad_ainvs_54_6 Y )  ( i_ad_ainvs_55_6 A )  ;
+   - a.tlo.Y ( a_atlo Y )  ( a_aadder_50_6 C )  ;
+   - a.pulse_out ( a_alatch__a_50_6_al CLK )  ( a_alatch__a_51_6_al CLK )  ( a_alatch__a_52_6_al CLK ) 
+ ( a_alatch__a_53_6_al CLK )  ( a_alatch__a_54_6_al CLK )  ( a_alatch__a_55_6_al CLK )  ( a_alatch__a_56_6_al CLK ) 
+ ( a_alatch__a_57_6_al CLK )  ( a_alatch__b_50_6_al CLK )  ( a_alatch__b_51_6_al CLK )  ( a_alatch__b_52_6_al CLK ) 
+ ( a_alatch__b_53_6_al CLK )  ( a_alatch__b_54_6_al CLK )  ( a_alatch__b_55_6_al CLK )  ( a_alatch__b_56_6_al CLK ) 
+ ( a_alatch__b_57_6_al CLK )  ( a_ap_aand Y )  ;
+   - a.adder[0].A ( a_alatch__a_50_6_anx Y )  ( a_alatch__a_50_6_al q )  ( a_aadder_50_6 A )  ;
+   - a.adder[1].A ( a_alatch__a_51_6_anx Y )  ( a_alatch__a_51_6_al q )  ( a_aadder_51_6 A )  ;
+   - a.adder[2].A ( a_alatch__a_52_6_anx Y )  ( a_alatch__a_52_6_al q )  ( a_aadder_52_6 A )  ;
+   - a.adder[3].A ( a_alatch__a_53_6_anx Y )  ( a_alatch__a_53_6_al q )  ( a_aadder_53_6 A )  ;
+   - a.adder[4].A ( a_alatch__a_54_6_anx Y )  ( a_alatch__a_54_6_al q )  ( a_aadder_54_6 A )  ;
+   - a.adder[5].A ( a_alatch__a_55_6_anx Y )  ( a_alatch__a_55_6_al q )  ( a_aadder_55_6 A )  ;
+   - a.adder[6].A ( a_alatch__a_56_6_anx Y )  ( a_alatch__a_56_6_al q )  ( a_aadder_56_6 A )  ;
+   - a.adder[7].A ( a_alatch__a_57_6_anx Y )  ( a_alatch__a_57_6_al q )  ( a_aadder_57_6 A )  ;
+   - a.adder[0].B ( a_aadder_50_6 B )  ( a_alatch__b_50_6_anx Y )  ( a_alatch__b_50_6_al q )  ;
+   - a.adder[0].YC ( a_aadder_50_6 YC )  ( a_aadder_51_6 C )  ;
+   - a.adder[1].B ( a_aadder_51_6 B )  ( a_alatch__b_51_6_anx Y )  ( a_alatch__b_51_6_al q )  ;
+   - a.adder[1].YC ( a_aadder_51_6 YC )  ( a_aadder_52_6 C )  ;
+   - a.adder[2].B ( a_aadder_52_6 B )  ( a_alatch__b_52_6_anx Y )  ( a_alatch__b_52_6_al q )  ;
+   - a.adder[2].YC ( a_aadder_52_6 YC )  ( a_aadder_53_6 C )  ;
+   - a.adder[3].B ( a_aadder_53_6 B )  ( a_alatch__b_53_6_anx Y )  ( a_alatch__b_53_6_al q )  ;
+   - a.adder[3].YC ( a_aadder_53_6 YC )  ( a_aadder_54_6 C )  ;
+   - a.adder[4].B ( a_aadder_54_6 B )  ( a_alatch__b_54_6_anx Y )  ( a_alatch__b_54_6_al q )  ;
+   - a.adder[4].YC ( a_aadder_54_6 YC )  ( a_aadder_55_6 C )  ;
+   - a.adder[5].B ( a_aadder_55_6 B )  ( a_alatch__b_55_6_anx Y )  ( a_alatch__b_55_6_al q )  ;
+   - a.adder[5].YC ( a_aadder_55_6 YC )  ( a_aadder_56_6 C )  ;
+   - a.adder[6].B ( a_aadder_56_6 B )  ( a_alatch__b_56_6_anx Y )  ( a_alatch__b_56_6_al q )  ;
+   - a.adder[6].YC ( a_aadder_56_6 YC )  ( a_aadder_57_6 C )  ;
+   - a.adder[7].B ( a_aadder_57_6 B )  ( a_alatch__b_57_6_anx Y )  ( a_alatch__b_57_6_al q )  ;
+   - a.adder[7].YC ( a_aadder_57_6 YC )  ;
+   - a.r1.out ( a_ar1_an Y )  ( a_ac_acx0 in_51_6 )  ;
+   - a.r2.out ( a_ar2_an Y )  ( a_ac_acx0 in_52_6 )  ;
+   - a.r0.out ( a_ac_acx0 in_50_6 )  ( a_ar0_an Y )  ;
+   - a.latch_a[0]._q ( a_alatch__a_50_6_anx A )  ( a_alatch__a_50_6_al __q )  ;
+   - a.latch_a[1]._q ( a_alatch__a_51_6_anx A )  ( a_alatch__a_51_6_al __q )  ;
+   - a.latch_a[2]._q ( a_alatch__a_52_6_anx A )  ( a_alatch__a_52_6_al __q )  ;
+   - a.latch_a[3]._q ( a_alatch__a_53_6_anx A )  ( a_alatch__a_53_6_al __q )  ;
+   - a.latch_a[4]._q ( a_alatch__a_54_6_anx A )  ( a_alatch__a_54_6_al __q )  ;
+   - a.latch_a[5]._q ( a_alatch__a_55_6_anx A )  ( a_alatch__a_55_6_al __q )  ;
+   - a.latch_a[6]._q ( a_alatch__a_56_6_anx A )  ( a_alatch__a_56_6_al __q )  ;
+   - a.latch_a[7]._q ( a_alatch__a_57_6_anx A )  ( a_alatch__a_57_6_al __q )  ;
+   - a.latch_b[0]._q ( a_alatch__b_50_6_anx A )  ( a_alatch__b_50_6_al __q )  ;
+   - a.latch_b[1]._q ( a_alatch__b_51_6_anx A )  ( a_alatch__b_51_6_al __q )  ;
+   - a.latch_b[2]._q ( a_alatch__b_52_6_anx A )  ( a_alatch__b_52_6_al __q )  ;
+   - a.latch_b[3]._q ( a_alatch__b_53_6_anx A )  ( a_alatch__b_53_6_al __q )  ;
+   - a.latch_b[4]._q ( a_alatch__b_54_6_anx A )  ( a_alatch__b_54_6_al __q )  ;
+   - a.latch_b[5]._q ( a_alatch__b_55_6_anx A )  ( a_alatch__b_55_6_al __q )  ;
+   - a.latch_b[6]._q ( a_alatch__b_56_6_anx A )  ( a_alatch__b_56_6_al __q )  ;
+   - a.latch_b[7]._q ( a_alatch__b_57_6_anx A )  ( a_alatch__b_57_6_al __q )  ;
+   - a.r1._in ( a_ar1_an B )  ( a_ar1_ai Y )  ;
+   - a.c.cx0.out ( a_ac_acx0 out )  ( a_ac_acx1 in_50_6 )  ;
+   - a.p.and.B ( a_ap_aand B )  ( a_ap_ainvs_544_6 Y )  ;
+   - a.p.invs[0].Y ( a_ap_ainvs_50_6 Y )  ( a_ap_ainvs_51_6 A )  ;
+   - a.p.invs[1].Y ( a_ap_ainvs_51_6 Y )  ( a_ap_ainvs_52_6 A )  ;
+   - a.p.invs[2].Y ( a_ap_ainvs_52_6 Y )  ( a_ap_ainvs_53_6 A )  ;
+   - a.p.invs[3].Y ( a_ap_ainvs_53_6 Y )  ( a_ap_ainvs_54_6 A )  ;
+   - a.p.invs[4].Y ( a_ap_ainvs_54_6 Y )  ( a_ap_ainvs_55_6 A )  ;
+   - a.p.invs[5].Y ( a_ap_ainvs_55_6 Y )  ( a_ap_ainvs_56_6 A )  ;
+   - a.p.invs[6].Y ( a_ap_ainvs_56_6 Y )  ( a_ap_ainvs_57_6 A )  ;
+   - a.p.invs[7].Y ( a_ap_ainvs_57_6 Y )  ( a_ap_ainvs_58_6 A )  ;
+   - a.p.invs[8].Y ( a_ap_ainvs_58_6 Y )  ( a_ap_ainvs_59_6 A )  ;
+   - a.p.invs[9].Y ( a_ap_ainvs_59_6 Y )  ( a_ap_ainvs_510_6 A )  ;
+   - a.p.invs[10].Y ( a_ap_ainvs_510_6 Y )  ( a_ap_ainvs_511_6 A )  ;
+   - a.p.invs[11].Y ( a_ap_ainvs_511_6 Y )  ( a_ap_ainvs_512_6 A )  ;
+   - a.p.invs[12].Y ( a_ap_ainvs_512_6 Y )  ( a_ap_ainvs_513_6 A )  ;
+   - a.p.invs[13].Y ( a_ap_ainvs_513_6 Y )  ( a_ap_ainvs_514_6 A )  ;
+   - a.p.invs[14].Y ( a_ap_ainvs_514_6 Y )  ( a_ap_ainvs_515_6 A )  ;
+   - a.p.invs[15].Y ( a_ap_ainvs_515_6 Y )  ( a_ap_ainvs_516_6 A )  ;
+   - a.p.invs[16].Y ( a_ap_ainvs_516_6 Y )  ( a_ap_ainvs_517_6 A )  ;
+   - a.p.invs[17].Y ( a_ap_ainvs_517_6 Y )  ( a_ap_ainvs_518_6 A )  ;
+   - a.p.invs[18].Y ( a_ap_ainvs_518_6 Y )  ( a_ap_ainvs_519_6 A )  ;
+   - a.p.invs[19].Y ( a_ap_ainvs_519_6 Y )  ( a_ap_ainvs_520_6 A )  ;
+   - a.p.invs[20].Y ( a_ap_ainvs_520_6 Y )  ( a_ap_ainvs_521_6 A )  ;
+   - a.p.invs[21].Y ( a_ap_ainvs_521_6 Y )  ( a_ap_ainvs_522_6 A )  ;
+   - a.p.invs[22].Y ( a_ap_ainvs_522_6 Y )  ( a_ap_ainvs_523_6 A )  ;
+   - a.p.invs[23].Y ( a_ap_ainvs_523_6 Y )  ( a_ap_ainvs_524_6 A )  ;
+   - a.p.invs[24].Y ( a_ap_ainvs_524_6 Y )  ( a_ap_ainvs_525_6 A )  ;
+   - a.p.invs[25].Y ( a_ap_ainvs_525_6 Y )  ( a_ap_ainvs_526_6 A )  ;
+   - a.p.invs[26].Y ( a_ap_ainvs_526_6 Y )  ( a_ap_ainvs_527_6 A )  ;
+   - a.p.invs[27].Y ( a_ap_ainvs_527_6 Y )  ( a_ap_ainvs_528_6 A )  ;
+   - a.p.invs[28].Y ( a_ap_ainvs_528_6 Y )  ( a_ap_ainvs_529_6 A )  ;
+   - a.p.invs[29].Y ( a_ap_ainvs_529_6 Y )  ( a_ap_ainvs_530_6 A )  ;
+   - a.p.invs[30].Y ( a_ap_ainvs_530_6 Y )  ( a_ap_ainvs_531_6 A )  ;
+   - a.p.invs[31].Y ( a_ap_ainvs_531_6 Y )  ( a_ap_ainvs_532_6 A )  ;
+   - a.p.invs[32].Y ( a_ap_ainvs_532_6 Y )  ( a_ap_ainvs_533_6 A )  ;
+   - a.p.invs[33].Y ( a_ap_ainvs_533_6 Y )  ( a_ap_ainvs_534_6 A )  ;
+   - a.p.invs[34].Y ( a_ap_ainvs_534_6 Y )  ( a_ap_ainvs_535_6 A )  ;
+   - a.p.invs[35].Y ( a_ap_ainvs_535_6 Y )  ( a_ap_ainvs_536_6 A )  ;
+   - a.p.invs[36].Y ( a_ap_ainvs_536_6 Y )  ( a_ap_ainvs_537_6 A )  ;
+   - a.p.invs[37].Y ( a_ap_ainvs_537_6 Y )  ( a_ap_ainvs_538_6 A )  ;
+   - a.p.invs[38].Y ( a_ap_ainvs_538_6 Y )  ( a_ap_ainvs_539_6 A )  ;
+   - a.p.invs[39].Y ( a_ap_ainvs_539_6 Y )  ( a_ap_ainvs_540_6 A )  ;
+   - a.p.invs[40].Y ( a_ap_ainvs_540_6 Y )  ( a_ap_ainvs_541_6 A )  ;
+   - a.p.invs[41].Y ( a_ap_ainvs_541_6 Y )  ( a_ap_ainvs_542_6 A )  ;
+   - a.p.invs[42].Y ( a_ap_ainvs_542_6 Y )  ( a_ap_ainvs_543_6 A )  ;
+   - a.p.invs[43].Y ( a_ap_ainvs_543_6 Y )  ( a_ap_ainvs_544_6 A )  ;
+   - a.r0._in ( a_ar0_an B )  ( a_ar0_ai Y )  ;
+   - a.d.invs[0].Y ( a_ad_ainvs_50_6 Y )  ( a_ad_ainvs_51_6 A )  ;
+   - a.d.invs[1].Y ( a_ad_ainvs_51_6 Y )  ( a_ad_ainvs_52_6 A )  ;
+   - a.d.invs[2].Y ( a_ad_ainvs_52_6 Y )  ( a_ad_ainvs_53_6 A )  ;
+   - a.d.invs[3].Y ( a_ad_ainvs_53_6 Y )  ( a_ad_ainvs_54_6 A )  ;
+   - a.d.invs[4].Y ( a_ad_ainvs_54_6 Y )  ( a_ad_ainvs_55_6 A )  ;
+   - a.d.invs[5].Y ( a_ad_ainvs_55_6 Y )  ( a_ad_ainvs_56_6 A )  ;
+   - a.d.invs[6].Y ( a_ad_ainvs_56_6 Y )  ( a_ad_ainvs_57_6 A )  ;
+   - a.d.invs[7].Y ( a_ad_ainvs_57_6 Y )  ( a_ad_ainvs_58_6 A )  ;
+   - a.d.invs[8].Y ( a_ad_ainvs_58_6 Y )  ( a_ad_ainvs_59_6 A )  ;
+   - a.d.invs[9].Y ( a_ad_ainvs_59_6 Y )  ( a_ad_ainvs_510_6 A )  ;
+   - a.d.invs[10].Y ( a_ad_ainvs_510_6 Y )  ( a_ad_ainvs_511_6 A )  ;
+   - a.d.invs[11].Y ( a_ad_ainvs_511_6 Y )  ( a_ad_ainvs_512_6 A )  ;
+   - a.d.invs[12].Y ( a_ad_ainvs_512_6 Y )  ( a_ad_ainvs_513_6 A )  ;
+   - a.d.invs[13].Y ( a_ad_ainvs_513_6 Y )  ( a_ad_ainvs_514_6 A )  ;
+   - a.d.invs[14].Y ( a_ad_ainvs_514_6 Y )  ( a_ad_ainvs_515_6 A )  ;
+   - a.d.invs[15].Y ( a_ad_ainvs_515_6 Y )  ( a_ad_ainvs_516_6 A )  ;
+   - a.d.invs[16].Y ( a_ad_ainvs_516_6 Y )  ( a_ad_ainvs_517_6 A )  ;
+   - a.d.invs[17].Y ( a_ad_ainvs_517_6 Y )  ( a_ad_ainvs_518_6 A )  ;
+   - a.d.invs[18].Y ( a_ad_ainvs_518_6 Y )  ( a_ad_ainvs_519_6 A )  ;
+   - a.d.invs[19].Y ( a_ad_ainvs_519_6 Y )  ( a_ad_ainvs_520_6 A )  ;
+   - a.d.invs[20].Y ( a_ad_ainvs_520_6 Y )  ( a_ad_ainvs_521_6 A )  ;
+   - a.d.invs[21].Y ( a_ad_ainvs_521_6 Y )  ( a_ad_ainvs_522_6 A )  ;
+   - a.d.invs[22].Y ( a_ad_ainvs_522_6 Y )  ( a_ad_ainvs_523_6 A )  ;
+   - a.d.invs[23].Y ( a_ad_ainvs_523_6 Y )  ( a_ad_ainvs_524_6 A )  ;
+   - a.d.invs[24].Y ( a_ad_ainvs_524_6 Y )  ( a_ad_ainvs_525_6 A )  ;
+   - a.d.invs[25].Y ( a_ad_ainvs_525_6 Y )  ( a_ad_ainvs_526_6 A )  ;
+   - a.d.invs[26].Y ( a_ad_ainvs_526_6 Y )  ( a_ad_ainvs_527_6 A )  ;
+   - a.d.invs[27].Y ( a_ad_ainvs_527_6 Y )  ( a_ad_ainvs_528_6 A )  ;
+   - a.d.invs[28].Y ( a_ad_ainvs_528_6 Y )  ( a_ad_ainvs_529_6 A )  ;
+   - a.d.invs[29].Y ( a_ad_ainvs_529_6 Y )  ( a_ad_ainvs_530_6 A )  ;
+   - a.d.invs[30].Y ( a_ad_ainvs_530_6 Y )  ( a_ad_ainvs_531_6 A )  ;
+   - a.d.invs[31].Y ( a_ad_ainvs_531_6 Y )  ( a_ad_ainvs_532_6 A )  ;
+   - a.d.invs[32].Y ( a_ad_ainvs_532_6 Y )  ( a_ad_ainvs_533_6 A )  ;
+   - a.d.invs[33].Y ( a_ad_ainvs_533_6 Y )  ( a_ad_ainvs_534_6 A )  ;
+   - a.d.invs[34].Y ( a_ad_ainvs_534_6 Y )  ( a_ad_ainvs_535_6 A )  ;
+   - a.d.invs[35].Y ( a_ad_ainvs_535_6 Y )  ( a_ad_ainvs_536_6 A )  ;
+   - a.d.invs[36].Y ( a_ad_ainvs_536_6 Y )  ( a_ad_ainvs_537_6 A )  ;
+   - a.d.invs[37].Y ( a_ad_ainvs_537_6 Y )  ( a_ad_ainvs_538_6 A )  ;
+   - a.d.invs[38].Y ( a_ad_ainvs_538_6 Y )  ( a_ad_ainvs_539_6 A )  ;
+   - a.d.invs[39].Y ( a_ad_ainvs_539_6 Y )  ( a_ad_ainvs_540_6 A )  ;
+   - a.d.invs[40].Y ( a_ad_ainvs_540_6 Y )  ( a_ad_ainvs_541_6 A )  ;
+   - a.d.invs[41].Y ( a_ad_ainvs_541_6 Y )  ( a_ad_ainvs_542_6 A )  ;
+   - a.d.invs[42].Y ( a_ad_ainvs_542_6 Y )  ( a_ad_ainvs_543_6 A )  ;
+   - a.d.invs[43].Y ( a_ad_ainvs_543_6 Y )  ( a_ad_ainvs_544_6 A )  ;
+   - a.d.invs[44].Y ( a_ad_ainvs_544_6 Y )  ( a_ad_ainvs_545_6 A )  ;
+   - a.d.invs[45].Y ( a_ad_ainvs_545_6 Y )  ( a_ad_ainvs_546_6 A )  ;
+   - a.d.invs[46].Y ( a_ad_ainvs_546_6 Y )  ( a_ad_ainvs_547_6 A )  ;
+   - a.d.invs[47].Y ( a_ad_ainvs_547_6 Y )  ( a_ad_ainvs_548_6 A )  ;
+   - a.d.invs[48].Y ( a_ad_ainvs_548_6 Y )  ( a_ad_ainvs_549_6 A )  ;
+   - a.d.invs[49].Y ( a_ad_ainvs_549_6 Y )  ( a_ad_ainvs_550_6 A )  ;
+   - a.d.invs[50].Y ( a_ad_ainvs_550_6 Y )  ( a_ad_ainvs_551_6 A )  ;
+   - a.d.invs[51].Y ( a_ad_ainvs_551_6 Y )  ( a_ad_ainvs_552_6 A )  ;
+   - a.d.invs[52].Y ( a_ad_ainvs_552_6 Y )  ( a_ad_ainvs_553_6 A )  ;
+   - a.d.invs[53].Y ( a_ad_ainvs_553_6 Y )  ( a_ad_ainvs_554_6 A )  ;
+   - a.d.invs[54].Y ( a_ad_ainvs_554_6 Y )  ( a_ad_ainvs_555_6 A )  ;
+   - a.d.invs[55].Y ( a_ad_ainvs_555_6 Y )  ( a_ad_ainvs_556_6 A )  ;
+   - a.d.invs[56].Y ( a_ad_ainvs_556_6 Y )  ( a_ad_ainvs_557_6 A )  ;
+   - a.d.invs[57].Y ( a_ad_ainvs_557_6 Y )  ( a_ad_ainvs_558_6 A )  ;
+   - a.d.invs[58].Y ( a_ad_ainvs_558_6 Y )  ( a_ad_ainvs_559_6 A )  ;
+   - a.d.invs[59].Y ( a_ad_ainvs_559_6 Y )  ( a_ad_ainvs_560_6 A )  ;
+   - a.d.invs[60].Y ( a_ad_ainvs_560_6 Y )  ( a_ad_ainvs_561_6 A )  ;
+   - a.d.invs[61].Y ( a_ad_ainvs_561_6 Y )  ( a_ad_ainvs_562_6 A )  ;
+   - a.d.invs[62].Y ( a_ad_ainvs_562_6 Y )  ( a_ad_ainvs_563_6 A )  ;
+   - a.d.invs[63].Y ( a_ad_ainvs_563_6 Y )  ( a_ad_ainvs_564_6 A )  ;
+   - a.d.invs[64].Y ( a_ad_ainvs_564_6 Y )  ( a_ad_ainvs_565_6 A )  ;
+   - a.d.invs[65].Y ( a_ad_ainvs_565_6 Y )  ( a_ad_ainvs_566_6 A )  ;
+   - a.d.invs[66].Y ( a_ad_ainvs_566_6 Y )  ( a_ad_ainvs_567_6 A )  ;
+   - a.d.invs[67].Y ( a_ad_ainvs_567_6 Y )  ( a_ad_ainvs_568_6 A )  ;
+   - a.d.invs[68].Y ( a_ad_ainvs_568_6 Y )  ( a_ad_ainvs_569_6 A )  ;
+   - c.pulse_out ( c_alatch_50_6 CLK )  ( c_alatch_51_6 CLK )  ( c_alatch_52_6 CLK ) 
+ ( c_alatch_53_6 CLK )  ( c_alatch_54_6 CLK )  ( c_alatch_55_6 CLK )  ( c_alatch_56_6 CLK ) 
+ ( c_alatch_57_6 CLK )  ( c_ap_aand Y )  ;
+   - c.r1.out ( c_ac__ra_acx0 in_50_6 )  ( c_ar1_an Y )  ;
+   - c.r2.out ( c_ac__ra_acx0 in_51_6 )  ( c_ar2_an Y )  ;
+   - c.c_ra_out ( c_ac__ra_acx0 out )  ( c_ac_acx0 in_51_6 )  ;
+   - c.r0.out ( c_ac_acx0 in_50_6 )  ( c_ar0_an Y )  ;
+   - c.c.cx0.out ( c_ac_acx0 out )  ( c_ac_acx1 in_50_6 )  ;
+   - c.p.and.B ( c_ap_aand B )  ( c_ap_ainvs_544_6 Y )  ;
+   - c.p.invs[0].Y ( c_ap_ainvs_50_6 Y )  ( c_ap_ainvs_51_6 A )  ;
+   - c.p.invs[1].Y ( c_ap_ainvs_51_6 Y )  ( c_ap_ainvs_52_6 A )  ;
+   - c.p.invs[2].Y ( c_ap_ainvs_52_6 Y )  ( c_ap_ainvs_53_6 A )  ;
+   - c.p.invs[3].Y ( c_ap_ainvs_53_6 Y )  ( c_ap_ainvs_54_6 A )  ;
+   - c.p.invs[4].Y ( c_ap_ainvs_54_6 Y )  ( c_ap_ainvs_55_6 A )  ;
+   - c.p.invs[5].Y ( c_ap_ainvs_55_6 Y )  ( c_ap_ainvs_56_6 A )  ;
+   - c.p.invs[6].Y ( c_ap_ainvs_56_6 Y )  ( c_ap_ainvs_57_6 A )  ;
+   - c.p.invs[7].Y ( c_ap_ainvs_57_6 Y )  ( c_ap_ainvs_58_6 A )  ;
+   - c.p.invs[8].Y ( c_ap_ainvs_58_6 Y )  ( c_ap_ainvs_59_6 A )  ;
+   - c.p.invs[9].Y ( c_ap_ainvs_59_6 Y )  ( c_ap_ainvs_510_6 A )  ;
+   - c.p.invs[10].Y ( c_ap_ainvs_510_6 Y )  ( c_ap_ainvs_511_6 A )  ;
+   - c.p.invs[11].Y ( c_ap_ainvs_511_6 Y )  ( c_ap_ainvs_512_6 A )  ;
+   - c.p.invs[12].Y ( c_ap_ainvs_512_6 Y )  ( c_ap_ainvs_513_6 A )  ;
+   - c.p.invs[13].Y ( c_ap_ainvs_513_6 Y )  ( c_ap_ainvs_514_6 A )  ;
+   - c.p.invs[14].Y ( c_ap_ainvs_514_6 Y )  ( c_ap_ainvs_515_6 A )  ;
+   - c.p.invs[15].Y ( c_ap_ainvs_515_6 Y )  ( c_ap_ainvs_516_6 A )  ;
+   - c.p.invs[16].Y ( c_ap_ainvs_516_6 Y )  ( c_ap_ainvs_517_6 A )  ;
+   - c.p.invs[17].Y ( c_ap_ainvs_517_6 Y )  ( c_ap_ainvs_518_6 A )  ;
+   - c.p.invs[18].Y ( c_ap_ainvs_518_6 Y )  ( c_ap_ainvs_519_6 A )  ;
+   - c.p.invs[19].Y ( c_ap_ainvs_519_6 Y )  ( c_ap_ainvs_520_6 A )  ;
+   - c.p.invs[20].Y ( c_ap_ainvs_520_6 Y )  ( c_ap_ainvs_521_6 A )  ;
+   - c.p.invs[21].Y ( c_ap_ainvs_521_6 Y )  ( c_ap_ainvs_522_6 A )  ;
+   - c.p.invs[22].Y ( c_ap_ainvs_522_6 Y )  ( c_ap_ainvs_523_6 A )  ;
+   - c.p.invs[23].Y ( c_ap_ainvs_523_6 Y )  ( c_ap_ainvs_524_6 A )  ;
+   - c.p.invs[24].Y ( c_ap_ainvs_524_6 Y )  ( c_ap_ainvs_525_6 A )  ;
+   - c.p.invs[25].Y ( c_ap_ainvs_525_6 Y )  ( c_ap_ainvs_526_6 A )  ;
+   - c.p.invs[26].Y ( c_ap_ainvs_526_6 Y )  ( c_ap_ainvs_527_6 A )  ;
+   - c.p.invs[27].Y ( c_ap_ainvs_527_6 Y )  ( c_ap_ainvs_528_6 A )  ;
+   - c.p.invs[28].Y ( c_ap_ainvs_528_6 Y )  ( c_ap_ainvs_529_6 A )  ;
+   - c.p.invs[29].Y ( c_ap_ainvs_529_6 Y )  ( c_ap_ainvs_530_6 A )  ;
+   - c.p.invs[30].Y ( c_ap_ainvs_530_6 Y )  ( c_ap_ainvs_531_6 A )  ;
+   - c.p.invs[31].Y ( c_ap_ainvs_531_6 Y )  ( c_ap_ainvs_532_6 A )  ;
+   - c.p.invs[32].Y ( c_ap_ainvs_532_6 Y )  ( c_ap_ainvs_533_6 A )  ;
+   - c.p.invs[33].Y ( c_ap_ainvs_533_6 Y )  ( c_ap_ainvs_534_6 A )  ;
+   - c.p.invs[34].Y ( c_ap_ainvs_534_6 Y )  ( c_ap_ainvs_535_6 A )  ;
+   - c.p.invs[35].Y ( c_ap_ainvs_535_6 Y )  ( c_ap_ainvs_536_6 A )  ;
+   - c.p.invs[36].Y ( c_ap_ainvs_536_6 Y )  ( c_ap_ainvs_537_6 A )  ;
+   - c.p.invs[37].Y ( c_ap_ainvs_537_6 Y )  ( c_ap_ainvs_538_6 A )  ;
+   - c.p.invs[38].Y ( c_ap_ainvs_538_6 Y )  ( c_ap_ainvs_539_6 A )  ;
+   - c.p.invs[39].Y ( c_ap_ainvs_539_6 Y )  ( c_ap_ainvs_540_6 A )  ;
+   - c.p.invs[40].Y ( c_ap_ainvs_540_6 Y )  ( c_ap_ainvs_541_6 A )  ;
+   - c.p.invs[41].Y ( c_ap_ainvs_541_6 Y )  ( c_ap_ainvs_542_6 A )  ;
+   - c.p.invs[42].Y ( c_ap_ainvs_542_6 Y )  ( c_ap_ainvs_543_6 A )  ;
+   - c.p.invs[43].Y ( c_ap_ainvs_543_6 Y )  ( c_ap_ainvs_544_6 A )  ;
+   - c.r0._in ( c_ar0_an B )  ( c_ar0_ai Y )  ;
+   - c.d.invs[0].Y ( c_ad_ainvs_50_6 Y )  ( c_ad_ainvs_51_6 A )  ;
+   - c.d.invs[1].Y ( c_ad_ainvs_51_6 Y )  ( c_ad_ainvs_52_6 A )  ;
+   - c.d.invs[2].Y ( c_ad_ainvs_52_6 Y )  ( c_ad_ainvs_53_6 A )  ;
+   - c.d.invs[3].Y ( c_ad_ainvs_53_6 Y )  ( c_ad_ainvs_54_6 A )  ;
+   - c.d.invs[4].Y ( c_ad_ainvs_54_6 Y )  ( c_ad_ainvs_55_6 A )  ;
+   - m.pulse_out ( m_alatch_50_6 CLK )  ( m_alatch_51_6 CLK )  ( m_alatch_52_6 CLK ) 
+ ( m_alatch_53_6 CLK )  ( m_alatch_54_6 CLK )  ( m_alatch_55_6 CLK )  ( m_alatch_56_6 CLK ) 
+ ( m_alatch_57_6 CLK )  ( m_ap_aand Y )  ;
+   - m.mux[0].Y ( m_alatch_50_6 D )  ( m_amux_50_6 Y )  ;
+   - m.invs[0].A ( m_alatch_50_6 Q )  ( m_ainvs_50_6 A )  ;
+   - m.mux[1].Y ( m_alatch_51_6 D )  ( m_amux_51_6 Y )  ;
+   - m.invs[1].A ( m_alatch_51_6 Q )  ( m_ainvs_51_6 A )  ;
+   - m.mux[2].Y ( m_alatch_52_6 D )  ( m_amux_52_6 Y )  ;
+   - m.invs[2].A ( m_alatch_52_6 Q )  ( m_ainvs_52_6 A )  ;
+   - m.mux[3].Y ( m_alatch_53_6 D )  ( m_amux_53_6 Y )  ;
+   - m.invs[3].A ( m_alatch_53_6 Q )  ( m_ainvs_53_6 A )  ;
+   - m.mux[4].Y ( m_alatch_54_6 D )  ( m_amux_54_6 Y )  ;
+   - m.invs[4].A ( m_alatch_54_6 Q )  ( m_ainvs_54_6 A )  ;
+   - m.mux[5].Y ( m_alatch_55_6 D )  ( m_amux_55_6 Y )  ;
+   - m.invs[5].A ( m_alatch_55_6 Q )  ( m_ainvs_55_6 A )  ;
+   - m.mux[6].Y ( m_alatch_56_6 D )  ( m_amux_56_6 Y )  ;
+   - m.invs[6].A ( m_alatch_56_6 Q )  ( m_ainvs_56_6 A )  ;
+   - m.mux[7].Y ( m_alatch_57_6 D )  ( m_amux_57_6 Y )  ;
+   - m.invs[7].A ( m_alatch_57_6 Q )  ( m_ainvs_57_6 A )  ;
+   - m._cdout ( m_amux_50_6 S )  ( m_amux_51_6 S )  ( m_amux_52_6 S ) 
+ ( m_amux_53_6 S )  ( m_amux_54_6 S )  ( m_amux_55_6 S )  ( m_amux_56_6 S ) 
+ ( m_amux_57_6 S )  ( m_acd__inv Y )  ( m_aand__cf B )  ;
+   - m.cd_out ( m_acd__inv A )  ( m_aand__ct B )  ( m_ar3_an Y )  ;
+   - m.cr_out_delay ( m_aand__cf A )  ( m_ad__cr_ainvs_57_6 Y )  ( m_aand__ct A )  ;
+   - m.ctrl_f ( m_aand__cf Y )  ( m_acb_acx0 in_50_6 )  ;
+   - m.or_out ( m_aa A )  ( m_ayr__or Y )  ( m_ad__zr_ainvs_50_6 A )  ;
+   - m.pulse_in ( m_aa Y )  ( m_ap_aand A )  ( m_ap_ainvs_50_6 A )  ;
+   - m._ya ( m_aya__inv_an Y )  ( m_aca_acx0 in_52_6 )  ( m_acb_acx0 in_52_6 )  ;
+   - m.r0.out ( m_ar0_an Y )  ( m_aca_acx0 in_51_6 )  ;
+   - m.ctrl_t ( m_aca_acx0 in_50_6 )  ( m_aand__ct Y )  ;
+   - m.cr_out ( m_ad__cr_ainvs_50_6 A )  ( m_ar2_an Y )  ;
+   - m.r1.out ( m_acb_acx0 in_51_6 )  ( m_ar1_an Y )  ;
+   - m.p.and.B ( m_ap_aand B )  ( m_ap_ainvs_544_6 Y )  ;
+   - m.p.invs[0].Y ( m_ap_ainvs_50_6 Y )  ( m_ap_ainvs_51_6 A )  ;
+   - m.p.invs[1].Y ( m_ap_ainvs_51_6 Y )  ( m_ap_ainvs_52_6 A )  ;
+   - m.p.invs[2].Y ( m_ap_ainvs_52_6 Y )  ( m_ap_ainvs_53_6 A )  ;
+   - m.p.invs[3].Y ( m_ap_ainvs_53_6 Y )  ( m_ap_ainvs_54_6 A )  ;
+   - m.p.invs[4].Y ( m_ap_ainvs_54_6 Y )  ( m_ap_ainvs_55_6 A )  ;
+   - m.p.invs[5].Y ( m_ap_ainvs_55_6 Y )  ( m_ap_ainvs_56_6 A )  ;
+   - m.p.invs[6].Y ( m_ap_ainvs_56_6 Y )  ( m_ap_ainvs_57_6 A )  ;
+   - m.p.invs[7].Y ( m_ap_ainvs_57_6 Y )  ( m_ap_ainvs_58_6 A )  ;
+   - m.p.invs[8].Y ( m_ap_ainvs_58_6 Y )  ( m_ap_ainvs_59_6 A )  ;
+   - m.p.invs[9].Y ( m_ap_ainvs_59_6 Y )  ( m_ap_ainvs_510_6 A )  ;
+   - m.p.invs[10].Y ( m_ap_ainvs_510_6 Y )  ( m_ap_ainvs_511_6 A )  ;
+   - m.p.invs[11].Y ( m_ap_ainvs_511_6 Y )  ( m_ap_ainvs_512_6 A )  ;
+   - m.p.invs[12].Y ( m_ap_ainvs_512_6 Y )  ( m_ap_ainvs_513_6 A )  ;
+   - m.p.invs[13].Y ( m_ap_ainvs_513_6 Y )  ( m_ap_ainvs_514_6 A )  ;
+   - m.p.invs[14].Y ( m_ap_ainvs_514_6 Y )  ( m_ap_ainvs_515_6 A )  ;
+   - m.p.invs[15].Y ( m_ap_ainvs_515_6 Y )  ( m_ap_ainvs_516_6 A )  ;
+   - m.p.invs[16].Y ( m_ap_ainvs_516_6 Y )  ( m_ap_ainvs_517_6 A )  ;
+   - m.p.invs[17].Y ( m_ap_ainvs_517_6 Y )  ( m_ap_ainvs_518_6 A )  ;
+   - m.p.invs[18].Y ( m_ap_ainvs_518_6 Y )  ( m_ap_ainvs_519_6 A )  ;
+   - m.p.invs[19].Y ( m_ap_ainvs_519_6 Y )  ( m_ap_ainvs_520_6 A )  ;
+   - m.p.invs[20].Y ( m_ap_ainvs_520_6 Y )  ( m_ap_ainvs_521_6 A )  ;
+   - m.p.invs[21].Y ( m_ap_ainvs_521_6 Y )  ( m_ap_ainvs_522_6 A )  ;
+   - m.p.invs[22].Y ( m_ap_ainvs_522_6 Y )  ( m_ap_ainvs_523_6 A )  ;
+   - m.p.invs[23].Y ( m_ap_ainvs_523_6 Y )  ( m_ap_ainvs_524_6 A )  ;
+   - m.p.invs[24].Y ( m_ap_ainvs_524_6 Y )  ( m_ap_ainvs_525_6 A )  ;
+   - m.p.invs[25].Y ( m_ap_ainvs_525_6 Y )  ( m_ap_ainvs_526_6 A )  ;
+   - m.p.invs[26].Y ( m_ap_ainvs_526_6 Y )  ( m_ap_ainvs_527_6 A )  ;
+   - m.p.invs[27].Y ( m_ap_ainvs_527_6 Y )  ( m_ap_ainvs_528_6 A )  ;
+   - m.p.invs[28].Y ( m_ap_ainvs_528_6 Y )  ( m_ap_ainvs_529_6 A )  ;
+   - m.p.invs[29].Y ( m_ap_ainvs_529_6 Y )  ( m_ap_ainvs_530_6 A )  ;
+   - m.p.invs[30].Y ( m_ap_ainvs_530_6 Y )  ( m_ap_ainvs_531_6 A )  ;
+   - m.p.invs[31].Y ( m_ap_ainvs_531_6 Y )  ( m_ap_ainvs_532_6 A )  ;
+   - m.p.invs[32].Y ( m_ap_ainvs_532_6 Y )  ( m_ap_ainvs_533_6 A )  ;
+   - m.p.invs[33].Y ( m_ap_ainvs_533_6 Y )  ( m_ap_ainvs_534_6 A )  ;
+   - m.p.invs[34].Y ( m_ap_ainvs_534_6 Y )  ( m_ap_ainvs_535_6 A )  ;
+   - m.p.invs[35].Y ( m_ap_ainvs_535_6 Y )  ( m_ap_ainvs_536_6 A )  ;
+   - m.p.invs[36].Y ( m_ap_ainvs_536_6 Y )  ( m_ap_ainvs_537_6 A )  ;
+   - m.p.invs[37].Y ( m_ap_ainvs_537_6 Y )  ( m_ap_ainvs_538_6 A )  ;
+   - m.p.invs[38].Y ( m_ap_ainvs_538_6 Y )  ( m_ap_ainvs_539_6 A )  ;
+   - m.p.invs[39].Y ( m_ap_ainvs_539_6 Y )  ( m_ap_ainvs_540_6 A )  ;
+   - m.p.invs[40].Y ( m_ap_ainvs_540_6 Y )  ( m_ap_ainvs_541_6 A )  ;
+   - m.p.invs[41].Y ( m_ap_ainvs_541_6 Y )  ( m_ap_ainvs_542_6 A )  ;
+   - m.p.invs[42].Y ( m_ap_ainvs_542_6 Y )  ( m_ap_ainvs_543_6 A )  ;
+   - m.p.invs[43].Y ( m_ap_ainvs_543_6 Y )  ( m_ap_ainvs_544_6 A )  ;
+   - m.r0._in ( m_ar0_an B )  ( m_ar0_ai Y )  ;
+   - m.ca.cx0.out ( m_aca_acx0 out )  ( m_aca_acx1 in_50_6 )  ;
+   - m.d_cr.invs[0].Y ( m_ad__cr_ainvs_50_6 Y )  ( m_ad__cr_ainvs_51_6 A )  ;
+   - m.d_cr.invs[1].Y ( m_ad__cr_ainvs_51_6 Y )  ( m_ad__cr_ainvs_52_6 A )  ;
+   - m.d_cr.invs[2].Y ( m_ad__cr_ainvs_52_6 Y )  ( m_ad__cr_ainvs_53_6 A )  ;
+   - m.d_cr.invs[3].Y ( m_ad__cr_ainvs_53_6 Y )  ( m_ad__cr_ainvs_54_6 A )  ;
+   - m.d_cr.invs[4].Y ( m_ad__cr_ainvs_54_6 Y )  ( m_ad__cr_ainvs_55_6 A )  ;
+   - m.d_cr.invs[5].Y ( m_ad__cr_ainvs_55_6 Y )  ( m_ad__cr_ainvs_56_6 A )  ;
+   - m.d_cr.invs[6].Y ( m_ad__cr_ainvs_56_6 Y )  ( m_ad__cr_ainvs_57_6 A )  ;
+   - m.r3._in ( m_ar3_an B )  ( m_ar3_ai Y )  ;
+   - m.cb.cx0.out ( m_acb_acx0 out )  ( m_acb_acx1 in_50_6 )  ;
+   - m.r1._in ( m_ar1_an B )  ( m_ar1_ai Y )  ;
+   - m.r2._in ( m_ar2_an B )  ( m_ar2_ai Y )  ;
+   - m.d_zr.invs[0].Y ( m_ad__zr_ainvs_50_6 Y )  ( m_ad__zr_ainvs_51_6 A )  ;
+   - m.d_zr.invs[1].Y ( m_ad__zr_ainvs_51_6 Y )  ( m_ad__zr_ainvs_52_6 A )  ;
+   - m.d_zr.invs[2].Y ( m_ad__zr_ainvs_52_6 Y )  ( m_ad__zr_ainvs_53_6 A )  ;
+   - m.d_zr.invs[3].Y ( m_ad__zr_ainvs_53_6 Y )  ( m_ad__zr_ainvs_54_6 A )  ;
+   - m.d_zr.invs[4].Y ( m_ad__zr_ainvs_54_6 Y )  ( m_ad__zr_ainvs_55_6 A )  ;
+   - m.d_zr.invs[5].Y ( m_ad__zr_ainvs_55_6 Y )  ( m_ad__zr_ainvs_56_6 A )  ;
+   - m.d_zr.invs[6].Y ( m_ad__zr_ainvs_56_6 Y )  ( m_ad__zr_ainvs_57_6 A )  ;
+   - m.d_zr.invs[7].Y ( m_ad__zr_ainvs_57_6 Y )  ( m_ad__zr_ainvs_58_6 A )  ;
+   - m.d_zr.invs[8].Y ( m_ad__zr_ainvs_58_6 Y )  ( m_ad__zr_ainvs_59_6 A )  ;
+   - m.d_zr.invs[9].Y ( m_ad__zr_ainvs_59_6 Y )  ( m_ad__zr_ainvs_510_6 A )  ;
+   - m.d_zr.invs[10].Y ( m_ad__zr_ainvs_510_6 Y )  ( m_ad__zr_ainvs_511_6 A )  ;
+   - m.d_zr.invs[11].Y ( m_ad__zr_ainvs_511_6 Y )  ( m_ad__zr_ainvs_512_6 A )  ;
+   - m.d_zr.invs[12].Y ( m_ad__zr_ainvs_512_6 Y )  ( m_ad__zr_ainvs_513_6 A )  ;
+   - m.d_zr.invs[13].Y ( m_ad__zr_ainvs_513_6 Y )  ( m_ad__zr_ainvs_514_6 A )  ;
+   - m.d_zr.invs[14].Y ( m_ad__zr_ainvs_514_6 Y )  ( m_ad__zr_ainvs_515_6 A )  ;
+   - snk.r._in ( snk_ar_an B )  ( snk_ar_ai Y )  ;
+   - splt.pulse_out ( splt_alatch_50_6 CLK )  ( splt_alatch_51_6 CLK )  ( splt_alatch_52_6 CLK ) 
+ ( splt_alatch_53_6 CLK )  ( splt_alatch_54_6 CLK )  ( splt_alatch_55_6 CLK )  ( splt_alatch_56_6 CLK ) 
+ ( splt_alatch_57_6 CLK )  ( splt_ac__latch_al CLK )  ( splt_ap_aand Y )  ;
+   - splt.nor_ra_in1 ( splt_anor__ra A )  ( splt_ar2_an Y )  ;
+   - splt.nor_ra_in2 ( splt_anor__ra B )  ( splt_ar3_an Y )  ;
+   - splt.nor_ra_out ( splt_anor__ra Y )  ( splt_ac_acx0 in_52_6 )  ;
+   - splt.ctrl ( splt_ar2__r A )  ( splt_ac__latch_anx Y )  ( splt_ac__latch_al q ) 
+ ( splt_ac__latch__inv A )  ;
+   - splt.c_out_delay ( splt_ar2__r B )  ( splt_ar1__r B )  ( splt_ad_ainvs_55_6 Y )  ;
+   - splt._ctrl ( splt_ar1__r A )  ( splt_ac__latch__inv Y )  ;
+   - splt.r0.out ( splt_ac_acx0 in_50_6 )  ( splt_ar0_an Y )  ;
+   - splt.r1.out ( splt_ac_acx0 in_51_6 )  ( splt_ar1_an Y )  ;
+   - splt.c_latch._q ( splt_ac__latch_anx A )  ( splt_ac__latch_al __q )  ;
+   - splt.p.and.B ( splt_ap_aand B )  ( splt_ap_ainvs_544_6 Y )  ;
+   - splt.p.invs[0].Y ( splt_ap_ainvs_50_6 Y )  ( splt_ap_ainvs_51_6 A )  ;
+   - splt.p.invs[1].Y ( splt_ap_ainvs_51_6 Y )  ( splt_ap_ainvs_52_6 A )  ;
+   - splt.p.invs[2].Y ( splt_ap_ainvs_52_6 Y )  ( splt_ap_ainvs_53_6 A )  ;
+   - splt.p.invs[3].Y ( splt_ap_ainvs_53_6 Y )  ( splt_ap_ainvs_54_6 A )  ;
+   - splt.p.invs[4].Y ( splt_ap_ainvs_54_6 Y )  ( splt_ap_ainvs_55_6 A )  ;
+   - splt.p.invs[5].Y ( splt_ap_ainvs_55_6 Y )  ( splt_ap_ainvs_56_6 A )  ;
+   - splt.p.invs[6].Y ( splt_ap_ainvs_56_6 Y )  ( splt_ap_ainvs_57_6 A )  ;
+   - splt.p.invs[7].Y ( splt_ap_ainvs_57_6 Y )  ( splt_ap_ainvs_58_6 A )  ;
+   - splt.p.invs[8].Y ( splt_ap_ainvs_58_6 Y )  ( splt_ap_ainvs_59_6 A )  ;
+   - splt.p.invs[9].Y ( splt_ap_ainvs_59_6 Y )  ( splt_ap_ainvs_510_6 A )  ;
+   - splt.p.invs[10].Y ( splt_ap_ainvs_510_6 Y )  ( splt_ap_ainvs_511_6 A )  ;
+   - splt.p.invs[11].Y ( splt_ap_ainvs_511_6 Y )  ( splt_ap_ainvs_512_6 A )  ;
+   - splt.p.invs[12].Y ( splt_ap_ainvs_512_6 Y )  ( splt_ap_ainvs_513_6 A )  ;
+   - splt.p.invs[13].Y ( splt_ap_ainvs_513_6 Y )  ( splt_ap_ainvs_514_6 A )  ;
+   - splt.p.invs[14].Y ( splt_ap_ainvs_514_6 Y )  ( splt_ap_ainvs_515_6 A )  ;
+   - splt.p.invs[15].Y ( splt_ap_ainvs_515_6 Y )  ( splt_ap_ainvs_516_6 A )  ;
+   - splt.p.invs[16].Y ( splt_ap_ainvs_516_6 Y )  ( splt_ap_ainvs_517_6 A )  ;
+   - splt.p.invs[17].Y ( splt_ap_ainvs_517_6 Y )  ( splt_ap_ainvs_518_6 A )  ;
+   - splt.p.invs[18].Y ( splt_ap_ainvs_518_6 Y )  ( splt_ap_ainvs_519_6 A )  ;
+   - splt.p.invs[19].Y ( splt_ap_ainvs_519_6 Y )  ( splt_ap_ainvs_520_6 A )  ;
+   - splt.p.invs[20].Y ( splt_ap_ainvs_520_6 Y )  ( splt_ap_ainvs_521_6 A )  ;
+   - splt.p.invs[21].Y ( splt_ap_ainvs_521_6 Y )  ( splt_ap_ainvs_522_6 A )  ;
+   - splt.p.invs[22].Y ( splt_ap_ainvs_522_6 Y )  ( splt_ap_ainvs_523_6 A )  ;
+   - splt.p.invs[23].Y ( splt_ap_ainvs_523_6 Y )  ( splt_ap_ainvs_524_6 A )  ;
+   - splt.p.invs[24].Y ( splt_ap_ainvs_524_6 Y )  ( splt_ap_ainvs_525_6 A )  ;
+   - splt.p.invs[25].Y ( splt_ap_ainvs_525_6 Y )  ( splt_ap_ainvs_526_6 A )  ;
+   - splt.p.invs[26].Y ( splt_ap_ainvs_526_6 Y )  ( splt_ap_ainvs_527_6 A )  ;
+   - splt.p.invs[27].Y ( splt_ap_ainvs_527_6 Y )  ( splt_ap_ainvs_528_6 A )  ;
+   - splt.p.invs[28].Y ( splt_ap_ainvs_528_6 Y )  ( splt_ap_ainvs_529_6 A )  ;
+   - splt.p.invs[29].Y ( splt_ap_ainvs_529_6 Y )  ( splt_ap_ainvs_530_6 A )  ;
+   - splt.p.invs[30].Y ( splt_ap_ainvs_530_6 Y )  ( splt_ap_ainvs_531_6 A )  ;
+   - splt.p.invs[31].Y ( splt_ap_ainvs_531_6 Y )  ( splt_ap_ainvs_532_6 A )  ;
+   - splt.p.invs[32].Y ( splt_ap_ainvs_532_6 Y )  ( splt_ap_ainvs_533_6 A )  ;
+   - splt.p.invs[33].Y ( splt_ap_ainvs_533_6 Y )  ( splt_ap_ainvs_534_6 A )  ;
+   - splt.p.invs[34].Y ( splt_ap_ainvs_534_6 Y )  ( splt_ap_ainvs_535_6 A )  ;
+   - splt.p.invs[35].Y ( splt_ap_ainvs_535_6 Y )  ( splt_ap_ainvs_536_6 A )  ;
+   - splt.p.invs[36].Y ( splt_ap_ainvs_536_6 Y )  ( splt_ap_ainvs_537_6 A )  ;
+   - splt.p.invs[37].Y ( splt_ap_ainvs_537_6 Y )  ( splt_ap_ainvs_538_6 A )  ;
+   - splt.p.invs[38].Y ( splt_ap_ainvs_538_6 Y )  ( splt_ap_ainvs_539_6 A )  ;
+   - splt.p.invs[39].Y ( splt_ap_ainvs_539_6 Y )  ( splt_ap_ainvs_540_6 A )  ;
+   - splt.p.invs[40].Y ( splt_ap_ainvs_540_6 Y )  ( splt_ap_ainvs_541_6 A )  ;
+   - splt.p.invs[41].Y ( splt_ap_ainvs_541_6 Y )  ( splt_ap_ainvs_542_6 A )  ;
+   - splt.p.invs[42].Y ( splt_ap_ainvs_542_6 Y )  ( splt_ap_ainvs_543_6 A )  ;
+   - splt.p.invs[43].Y ( splt_ap_ainvs_543_6 Y )  ( splt_ap_ainvs_544_6 A )  ;
+   - splt.c.cx0.out ( splt_ac_acx0 out )  ( splt_ac_acx1 in_50_6 )  ;
+   - splt.r1._in ( splt_ar1_an B )  ( splt_ar1_ai Y )  ;
+   - splt.d.invs[0].Y ( splt_ad_ainvs_50_6 Y )  ( splt_ad_ainvs_51_6 A )  ;
+   - splt.d.invs[1].Y ( splt_ad_ainvs_51_6 Y )  ( splt_ad_ainvs_52_6 A )  ;
+   - splt.d.invs[2].Y ( splt_ad_ainvs_52_6 Y )  ( splt_ad_ainvs_53_6 A )  ;
+   - splt.d.invs[3].Y ( splt_ad_ainvs_53_6 Y )  ( splt_ad_ainvs_54_6 A )  ;
+   - splt.d.invs[4].Y ( splt_ad_ainvs_54_6 Y )  ( splt_ad_ainvs_55_6 A )  ;
+   - splt.r0._in ( splt_ar0_an B )  ( splt_ar0_ai Y )  ;
+END NETS
+
+
+END DESIGN
+

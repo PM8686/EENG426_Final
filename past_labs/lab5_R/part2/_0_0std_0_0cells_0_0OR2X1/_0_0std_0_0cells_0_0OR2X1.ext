@@ -1,0 +1,135 @@
+timestamp 1731221341
+version 8.3
+tech sky130l
+style generic
+scale 1 1 7.5
+resistclasses 1000 1000
+port "Y" 1 31 8 31 8 m1
+port "Y" 1 31 25 31 25 m1
+port "Y" 1 31 24 31 24 m1
+port "Y" 1 31 21 31 21 pdc
+port "Y" 1 31 12 31 12 m1
+port "Y" 1 31 9 31 9 ndc
+port "Y" 1 45 28 45 28 m1
+port "A" 2 21 39 21 39 m1
+port "A" 2 22 39 22 39 pc
+port "A" 2 25 41 25 41 m1
+port "A" 2 25 39 25 39 m1
+port "A" 2 29 42 29 42 m1
+port "B" 3 5 45 5 45 m1
+port "B" 3 6 42 6 42 m1
+port "B" 3 6 39 6 39 m1
+port "B" 3 12 39 12 39 pc
+port "B" 3 15 39 15 39 m1
+node "GND" 5897 0 8 6 ndiffusion 60 44 0 0
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+node "Y" 2800 0 45 28 m1 30 22 40 26
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+node "Vdd" 3604 0 22 19 pdiffusion 0 0 68 40
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+node "a_15_19#" 3000 0 15 19 pdiffusion 0 0 75 40
+node "_Y" 4200 0 8 19 pdiffusion 30 22 75 40
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+node "A" 0 0 29 42 m1 0 0 0 0
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+node "B" 0 0 15 39 m1 0 0 0 0
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+device mosfet nfet 27 6 28 7 2 6 "Gnd!" "_Y" 4 0 "GND" 6 0 "Y" 6 0
+device mosfet nfet 20 6 21 7 2 6 "Gnd!" "A" 4 0 "_Y" 6 0 "GND" 6 0
+device mosfet nfet 13 6 14 7 2 6 "Gnd!" "B" 4 0 "GND" 6 0 "_Y" 6 0
+device mosfet pfet 27 19 28 20 2 8 "Vdd!" "_Y" 4 0 "Vdd" 8 0 "Y" 8 0
+device mosfet pfet 20 19 21 20 2 15 "Vdd!" "A" 4 0 "a_15_19#" 15 0 "Vdd" 15 0
+device mosfet pfet 13 19 14 20 2 15 "Vdd!" "B" 4 0 "_Y" 15 0 "a_15_19#" 15 0

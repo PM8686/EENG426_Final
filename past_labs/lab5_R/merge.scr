@@ -1,0 +1,151 @@
+watch C.r
+watch C.a
+watch C.d[0]
+watch L1.r
+watch L1.a
+watch L2.r
+watch L2.a
+watch R.r
+watch R.a
+watch pulse_out
+watch R.d[0]
+watch R.d[1]
+watch R.d[2]
+watch R.d[3]
+watch R.d[4]
+watch R.d[5]
+watch R.d[6]
+watch R.d[7]
+watch Reset
+
+echo "Starting Initialization"
+mode reset
+set Reset 1
+set L1.r 0
+set L2.r 0
+set C.r 0
+set R.a 0
+set C.d[0] 1
+set L1.d[7] 1
+set L1.d[6] 1
+set L1.d[5] 1
+set L1.d[4] 1
+set L1.d[3] 1
+set L1.d[2] 1
+set L1.d[1] 1
+set L1.d[0] 0
+
+set L2.d[7] 0
+set L2.d[6] 0
+set L2.d[5] 0
+set L2.d[4] 0
+set L2.d[3] 0
+set L2.d[2] 0
+set L2.d[1] 0
+set L2.d[0] 1
+cycle
+
+echo "Reset Complete"
+mode run
+set Reset 0
+cycle
+
+echo "Initial State:"
+get C.r
+get C.a
+get L1.r
+get L1.a
+get L2.r
+get L2.a
+get R.r
+get R.a
+
+echo "Send the A input of 0b11111110 (C = 1) to output"
+echo "Expect: C.r+, L1.r+, L2.r+, C.a+/L1.a+, pulse_out to pulse, outputs to change"
+set C.d[0] 1
+set C.r 1
+set L1.r 1
+set L2.r 1
+cycle
+get L1.a
+get L2.a
+get C.a
+
+echo "Expect: R.r+"
+get R.r
+cycle
+
+echo "Sender receives an ack and sets L1.r- and C.r-"
+echo "Receiver receives a req and sets R.a+"
+set L1.r 0
+set C.r 0
+set R.a 1
+cycle
+
+echo "Expect: R.r-, C.a-, L1.a-"
+get R.r
+get C.a
+get L1.a
+
+echo "Receiver notices req is gone, and sets R.a-"
+set R.a 0
+cycle
+
+echo "Expect the data output to be 0b11111110:"
+get R.d[7]
+get R.d[6]
+get R.d[5]
+get R.d[4]
+get R.d[3]
+get R.d[2]
+get R.d[1]
+get R.d[0]
+
+echo "New State:"
+get C.r
+get C.a
+get L1.r
+get L1.a
+get L2.r
+get L2.a
+get R.r
+get R.a
+
+echo "Send the B input of 0b0000001 (C = 0) to output"
+echo "Expect: C.r+, C.a+/L2.a+, pulse_out to pulse, outputs to change"
+set C.d[0] 0
+set C.r 1
+cycle
+get L1.a
+get L2.a
+get C.a
+
+echo "Expect: R.r+"
+get R.r
+cycle
+
+echo "Sender receives an ack and sets L2.r- and C.r-"
+echo "Receiver receives a req and sets R.a+"
+set L2.r 0
+set C.r 0
+set R.a 1
+cycle
+
+echo "Expect: R.r-, C.a-, L2.a-"
+get R.r
+get C.a
+get L2.a
+
+echo "Receiver notices req is gone, and sets R.a-"
+set R.a 0
+cycle
+
+echo "Expect the data output to be 0b00000001:"
+get R.d[7]
+get R.d[6]
+get R.d[5]
+get R.d[4]
+get R.d[3]
+get R.d[2]
+get R.d[1]
+get R.d[0]

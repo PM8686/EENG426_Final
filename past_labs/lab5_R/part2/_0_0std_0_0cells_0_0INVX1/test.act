@@ -1,0 +1,16 @@
+import std::cells;
+import "../../cells.act";
+
+defproc test1()
+{
+  pint NUM = 1000;
+
+  std::cells::INVX1 tst[NUM]; /* put your cell name here */
+
+  // connect the output of cell i to the input of
+  // cell i+1; you will have to change these to
+  // correct port names for the cell you are testing
+  (i:NUM-1: tst[i].Y=tst[i+1].A;)
+}
+
+test1 t;

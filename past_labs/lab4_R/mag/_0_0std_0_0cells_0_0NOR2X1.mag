@@ -1,0 +1,109 @@
+magic
+tech sky130l
+timestamp 1729030605
+<< ndiffusion >>
+rect 8 10 13 12
+rect 8 7 9 10
+rect 12 7 13 10
+rect 8 6 13 7
+rect 15 11 20 12
+rect 15 8 16 11
+rect 19 8 20 11
+rect 15 6 20 8
+rect 22 10 27 12
+rect 22 7 23 10
+rect 26 7 27 10
+rect 22 6 27 7
+<< ndc >>
+rect 9 7 12 10
+rect 16 8 19 11
+rect 23 7 26 10
+<< ntransistor >>
+rect 13 6 15 12
+rect 20 6 22 12
+<< pdiffusion >>
+rect 8 33 13 34
+rect 8 30 9 33
+rect 12 30 13 33
+rect 8 19 13 30
+rect 15 19 20 34
+rect 22 23 27 34
+rect 22 20 23 23
+rect 26 20 27 23
+rect 22 19 27 20
+<< pdc >>
+rect 9 30 12 33
+rect 23 20 26 23
+<< ptransistor >>
+rect 13 19 15 34
+rect 20 19 22 34
+<< polysilicon >>
+rect 13 44 20 45
+rect 13 41 16 44
+rect 19 41 20 44
+rect 13 40 20 41
+rect 24 41 29 42
+rect 13 34 15 40
+rect 24 38 25 41
+rect 28 38 29 41
+rect 24 37 29 38
+rect 20 35 29 37
+rect 20 34 22 35
+rect 13 12 15 19
+rect 20 12 22 19
+rect 13 4 15 6
+rect 20 4 22 6
+<< pc >>
+rect 16 41 19 44
+rect 25 38 28 41
+<< m1 >>
+rect 16 44 20 45
+rect 19 41 20 44
+rect 8 39 12 40
+rect 11 36 12 39
+rect 16 36 20 41
+rect 24 41 28 42
+rect 24 38 25 41
+rect 24 36 28 38
+rect 8 33 12 36
+rect 8 30 9 33
+rect 8 29 12 30
+rect 16 20 23 23
+rect 26 20 27 23
+rect 16 11 19 20
+rect 8 10 12 11
+rect 8 7 9 10
+rect 8 4 12 7
+rect 23 10 26 11
+rect 16 4 20 8
+rect 23 6 26 7
+<< m2c >>
+rect 8 36 11 39
+rect 9 7 12 10
+rect 23 7 26 10
+<< m2 >>
+rect 7 39 12 40
+rect 7 36 8 39
+rect 11 36 12 39
+rect 7 35 12 36
+rect 8 10 27 11
+rect 8 7 9 10
+rect 12 7 23 10
+rect 26 7 27 10
+rect 8 6 27 7
+<< labels >>
+rlabel ndiffusion 23 7 23 7 3 GND
+rlabel pdiffusion 23 20 23 20 3 Y
+rlabel polysilicon 21 13 21 13 3 B
+rlabel polysilicon 21 18 21 18 3 B
+rlabel ndiffusion 16 7 16 7 3 Y
+rlabel polysilicon 14 13 14 13 3 A
+rlabel polysilicon 14 18 14 18 3 A
+rlabel pdiffusion 9 20 9 20 3 Vdd
+rlabel m2c 9 37 9 37 3 Vdd
+rlabel m1 17 5 17 5 3 Y
+rlabel m2 9 7 9 7 3 GND
+rlabel m1 9 5 9 5 3 GND
+rlabel m1 17 37 17 37 3 A
+rlabel m1 25 37 25 37 3 B
+<< end >>

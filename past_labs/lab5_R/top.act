@@ -1,0 +1,2 @@
+import "lab4.act";
+accum a;

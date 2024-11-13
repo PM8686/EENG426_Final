@@ -1,0 +1,318 @@
+magic
+tech sky130l
+timestamp 1731046425
+<< ndiffusion >>
+rect 8 15 13 16
+rect 8 12 9 15
+rect 12 12 13 15
+rect 8 6 13 12
+rect 15 10 20 16
+rect 15 7 16 10
+rect 19 7 20 10
+rect 15 6 20 7
+rect 22 15 27 16
+rect 22 12 23 15
+rect 26 12 27 15
+rect 22 6 27 12
+rect 33 15 38 16
+rect 33 12 34 15
+rect 37 12 38 15
+rect 33 6 38 12
+rect 40 10 47 16
+rect 40 7 43 10
+rect 46 7 47 10
+rect 40 6 47 7
+rect 49 15 54 16
+rect 49 12 50 15
+rect 53 12 54 15
+rect 49 6 54 12
+rect 60 15 65 16
+rect 60 12 61 15
+rect 64 12 65 15
+rect 60 6 65 12
+rect 67 10 74 16
+rect 67 7 68 10
+rect 71 7 74 10
+rect 67 6 74 7
+rect 76 15 81 16
+rect 76 12 77 15
+rect 80 12 81 15
+rect 76 6 81 12
+<< ndc >>
+rect 9 12 12 15
+rect 16 7 19 10
+rect 23 12 26 15
+rect 34 12 37 15
+rect 43 7 46 10
+rect 50 12 53 15
+rect 61 12 64 15
+rect 68 7 71 10
+rect 77 12 80 15
+<< ntransistor >>
+rect 13 6 15 16
+rect 20 6 22 16
+rect 38 6 40 16
+rect 47 6 49 16
+rect 65 6 67 16
+rect 74 6 76 16
+<< pdiffusion >>
+rect 8 37 13 38
+rect 8 34 9 37
+rect 12 34 13 37
+rect 8 23 13 34
+rect 15 37 20 38
+rect 15 34 16 37
+rect 19 34 20 37
+rect 15 23 20 34
+rect 22 37 27 38
+rect 22 34 23 37
+rect 26 34 27 37
+rect 22 23 27 34
+rect 43 33 47 43
+rect 33 27 38 33
+rect 33 24 34 27
+rect 37 24 38 27
+rect 33 23 38 24
+rect 40 27 47 33
+rect 40 24 43 27
+rect 46 24 47 27
+rect 40 23 47 24
+rect 49 34 54 43
+rect 49 31 50 34
+rect 53 31 54 34
+rect 70 33 74 43
+rect 49 23 54 31
+rect 60 27 65 33
+rect 60 24 61 27
+rect 64 24 65 27
+rect 60 23 65 24
+rect 67 32 74 33
+rect 67 29 70 32
+rect 73 29 74 32
+rect 67 23 74 29
+rect 76 34 81 43
+rect 76 31 77 34
+rect 80 31 81 34
+rect 76 23 81 31
+<< pdc >>
+rect 9 34 12 37
+rect 16 34 19 37
+rect 23 34 26 37
+rect 34 24 37 27
+rect 43 24 46 27
+rect 50 31 53 34
+rect 61 24 64 27
+rect 70 29 73 32
+rect 77 31 80 34
+<< ptransistor >>
+rect 13 23 15 38
+rect 20 23 22 38
+rect 38 23 40 33
+rect 47 23 49 43
+rect 65 23 67 33
+rect 74 23 76 43
+<< polysilicon >>
+rect 44 50 49 51
+rect 44 47 45 50
+rect 48 47 49 50
+rect 44 46 49 47
+rect 47 43 49 46
+rect 74 50 80 51
+rect 74 47 76 50
+rect 79 47 80 50
+rect 74 46 80 47
+rect 74 43 76 46
+rect 13 38 15 40
+rect 20 38 22 40
+rect 38 33 40 35
+rect 62 41 67 42
+rect 62 38 63 41
+rect 66 38 67 41
+rect 62 37 67 38
+rect 65 33 67 37
+rect 13 16 15 23
+rect 20 16 22 23
+rect 38 16 40 23
+rect 47 16 49 23
+rect 65 16 67 23
+rect 74 16 76 23
+rect 13 2 15 6
+rect 10 1 15 2
+rect 10 -2 11 1
+rect 14 -2 15 1
+rect 20 4 22 6
+rect 38 4 40 6
+rect 47 4 49 6
+rect 65 4 67 6
+rect 74 4 76 6
+rect 20 3 26 4
+rect 20 0 22 3
+rect 25 0 26 3
+rect 20 -1 26 0
+rect 35 3 40 4
+rect 35 0 36 3
+rect 39 0 40 3
+rect 35 -1 40 0
+rect 10 -3 15 -2
+<< pc >>
+rect 45 47 48 50
+rect 76 47 79 50
+rect 63 38 66 41
+rect 11 -2 14 1
+rect 22 0 25 3
+rect 36 0 39 3
+<< m1 >>
+rect 0 47 4 60
+rect 32 56 36 60
+rect 88 56 92 60
+rect 32 50 35 56
+rect 76 50 79 51
+rect 0 44 12 47
+rect 9 41 12 44
+rect 9 37 12 38
+rect 9 15 12 34
+rect 16 45 17 48
+rect 16 37 20 45
+rect 19 34 20 37
+rect 16 33 20 34
+rect 23 47 45 50
+rect 48 47 49 50
+rect 70 48 73 49
+rect 23 37 26 47
+rect 88 48 91 56
+rect 79 47 91 48
+rect 76 45 91 47
+rect 62 38 63 41
+rect 66 38 67 41
+rect 9 11 12 12
+rect 23 15 26 34
+rect 49 31 50 34
+rect 53 31 54 34
+rect 70 32 73 45
+rect 76 31 77 34
+rect 80 31 81 34
+rect 70 28 73 29
+rect 43 27 46 28
+rect 33 24 34 27
+rect 37 24 38 27
+rect 60 24 61 27
+rect 64 24 65 27
+rect 33 12 34 15
+rect 37 12 38 15
+rect 23 11 26 12
+rect 16 10 19 11
+rect 43 10 46 24
+rect 49 12 50 15
+rect 53 12 61 15
+rect 64 12 65 15
+rect 76 12 77 15
+rect 80 12 81 15
+rect 16 6 19 7
+rect 22 4 28 8
+rect 68 10 71 11
+rect 22 3 40 4
+rect 10 -2 11 1
+rect 14 -2 15 1
+rect 25 0 36 3
+rect 39 0 40 3
+rect 43 1 46 7
+rect 63 5 64 8
+rect 67 7 68 8
+rect 67 5 71 7
+rect 63 4 71 5
+rect 22 -1 25 0
+rect 43 -3 46 -2
+<< m2c >>
+rect 9 38 12 41
+rect 17 45 20 48
+rect 70 45 73 48
+rect 63 38 66 41
+rect 50 31 53 34
+rect 77 31 80 34
+rect 34 24 37 27
+rect 61 24 64 27
+rect 34 12 37 15
+rect 16 7 19 10
+rect 77 12 80 15
+rect 11 -2 14 1
+rect 64 5 67 8
+rect 43 -2 46 1
+<< m2 >>
+rect 16 48 74 49
+rect 16 45 17 48
+rect 20 45 70 48
+rect 73 45 74 48
+rect 16 44 74 45
+rect 8 41 67 42
+rect 8 38 9 41
+rect 12 38 63 41
+rect 66 38 67 41
+rect 8 37 67 38
+rect 49 34 81 35
+rect 49 31 50 34
+rect 53 31 77 34
+rect 80 31 81 34
+rect 49 30 81 31
+rect 33 27 65 28
+rect 33 24 34 27
+rect 37 24 61 27
+rect 64 24 65 27
+rect 33 23 65 24
+rect 33 15 81 16
+rect 33 12 34 15
+rect 37 12 77 15
+rect 80 12 81 15
+rect 33 11 81 12
+rect 15 10 20 11
+rect 15 7 16 10
+rect 19 9 20 10
+rect 19 8 68 9
+rect 19 7 64 8
+rect 15 5 64 7
+rect 67 5 68 8
+rect 15 4 68 5
+rect 8 1 47 2
+rect 8 -2 11 1
+rect 14 -2 43 1
+rect 46 -2 47 1
+rect 8 -3 47 -2
+<< labels >>
+rlabel ndiffusion 23 7 23 7 3 _clk
+rlabel pdiffusion 23 24 23 24 3 _clk
+rlabel polysilicon 21 17 21 17 3 CLK
+rlabel polysilicon 21 22 21 22 3 CLK
+rlabel ndiffusion 16 7 16 7 3 GND
+rlabel pdiffusion 16 24 16 24 3 Vdd
+rlabel polysilicon 14 17 14 17 3 _q
+rlabel polysilicon 14 22 14 22 3 _q
+rlabel ndiffusion 9 7 9 7 3 Q
+rlabel pdiffusion 9 24 9 24 3 Q
+rlabel pdiffusion 50 24 50 24 3 #7
+rlabel ndiffusion 50 7 50 7 3 #10
+rlabel polysilicon 48 17 48 17 3 _clk
+rlabel polysilicon 48 22 48 22 3 _clk
+rlabel ndiffusion 41 7 41 7 3 _q
+rlabel pdiffusion 41 24 41 24 3 _q
+rlabel polysilicon 39 17 39 17 3 CLK
+rlabel polysilicon 39 22 39 22 3 CLK
+rlabel ndiffusion 34 7 34 7 3 #5
+rlabel pdiffusion 34 24 34 24 3 #8
+rlabel pdiffusion 77 24 77 24 3 #7
+rlabel ndiffusion 77 7 77 7 3 #5
+rlabel polysilicon 75 17 75 17 3 D
+rlabel polysilicon 75 22 75 22 3 D
+rlabel ndiffusion 68 7 68 7 3 GND
+rlabel pdiffusion 68 24 68 24 3 Vdd
+rlabel polysilicon 66 17 66 17 3 Q
+rlabel polysilicon 66 22 66 22 3 Q
+rlabel ndiffusion 61 7 61 7 3 #10
+rlabel pdiffusion 61 24 61 24 3 #8
+rlabel m1 9 45 9 45 3 Q
+rlabel m1 17 45 17 45 3 Vdd
+rlabel m1 81 45 81 45 3 D
+rlabel m2 68 45 68 45 3 Vdd
+rlabel m1 65 5 65 5 3 GND
+rlabel m2 57 5 57 5 3 GND
+rlabel m1 25 5 25 5 3 CLK
+rlabel m1 33 57 33 57 3 CLK
+<< end >>
