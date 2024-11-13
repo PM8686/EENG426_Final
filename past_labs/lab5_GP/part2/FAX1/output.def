@@ -1,0 +1,1744 @@
+###########################
+# Written by PhyDB at 2024-11-05.01:00:16
+###########################
+VERSION 5.6 ;
+
+DIVIDERCHAR "/" ;
+
+BUSBITCHARS "[]" ;
+
+DESIGN faxtest3 ;
+
+UNITS DISTANCE MICRONS 1000 ;
+
+DIEAREA ( 6000 5400 ) ( 133200 135000 ) ;
+
+
+TRACKS X 6150 DO 212 STEP 600 LAYER li ;
+TRACKS Y 5550 DO 216 STEP 600 LAYER li ;
+TRACKS X 6075 DO 424 STEP 300 LAYER met1 ;
+TRACKS Y 5475 DO 432 STEP 300 LAYER met1 ;
+TRACKS X 6075 DO 424 STEP 300 LAYER met2 ;
+TRACKS Y 5475 DO 432 STEP 300 LAYER met2 ;
+TRACKS X 6150 DO 212 STEP 600 LAYER met3 ;
+TRACKS Y 5550 DO 216 STEP 600 LAYER met3 ;
+TRACKS X 6150 DO 212 STEP 600 LAYER met4 ;
+TRACKS Y 5550 DO 216 STEP 600 LAYER met4 ;
+TRACKS X 6825 DO 38 STEP 3300 LAYER met5 ;
+TRACKS Y 6225 DO 39 STEP 3300 LAYER met5 ;
+
+GCELLGRID X 6000 DO 29 STEP 4500 ;
+GCELLGRID X 132000 DO 2 STEP 1200 ;
+GCELLGRID Y 5400 DO 29 STEP 4500 ;
+GCELLGRID Y 131400 DO 2 STEP 3600 ;
+
+COMPONENTS 132 ;
+   - fax_50_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 126000 ) N ;
+   - fax_51_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 19800 126000 ) N ;
+   - fax_52_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 30000 126000 ) N ;
+   - fax_53_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 40200 126000 ) N ;
+   - fax_54_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 50400 126000 ) N ;
+   - fax_55_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 15000 117600 ) FS ;
+   - fax_56_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 25200 117600 ) FS ;
+   - fax_57_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 35400 117600 ) FS ;
+   - fax_58_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 45600 117600 ) FS ;
+   - fax_59_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 55800 117600 ) FS ;
+   - fax_510_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 36000 109200 ) N ;
+   - fax_511_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 46200 109200 ) N ;
+   - fax_512_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 56400 109200 ) N ;
+   - fax_513_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 66600 109200 ) N ;
+   - fax_514_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 76800 109200 ) N ;
+   - fax_515_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 75600 100500 ) FS ;
+   - fax_516_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 44400 100500 ) FS ;
+   - fax_517_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 54600 100500 ) FS ;
+   - fax_518_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 64800 100500 ) FS ;
+   - fax_519_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 86400 100500 ) FS ;
+   - fax_520_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 90000 91800 ) N ;
+   - fax_521_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 66600 91800 ) N ;
+   - fax_522_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 45000 91800 ) N ;
+   - fax_523_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 25200 91800 ) N ;
+   - fax_524_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 91800 ) N ;
+   - fax_525_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 83400 ) FS ;
+   - fax_526_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 22200 83400 ) FS ;
+   - fax_527_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 38400 83400 ) FS ;
+   - fax_528_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 55800 83400 ) FS ;
+   - fax_529_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 74400 83400 ) FS ;
+   - fax_530_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 22800 74400 ) N ;
+   - fax_531_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 39600 74400 ) N ;
+   - fax_532_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 57600 74400 ) N ;
+   - fax_533_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 76200 74400 ) N ;
+   - fax_534_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 37200 66900 ) FS ;
+   - fax_535_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 51000 66900 ) FS ;
+   - fax_536_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 66600 66900 ) FS ;
+   - fax_537_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 82800 66900 ) FS ;
+   - fax_538_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 100200 66900 ) FS ;
+   - fax_539_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 55200 58200 ) N ;
+   - fax_540_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 65400 58200 ) N ;
+   - fax_541_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 75600 58200 ) N ;
+   - fax_542_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 85800 58200 ) N ;
+   - fax_543_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 96000 58200 ) N ;
+   - fax_544_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 102600 49500 ) FS ;
+   - fax_545_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 88800 49500 ) FS ;
+   - fax_546_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 50400 49500 ) FS ;
+   - fax_547_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 62400 49500 ) FS ;
+   - fax_548_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 75000 49500 ) FS ;
+   - fax_549_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 81600 42000 ) N ;
+   - fax_550_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 63600 42000 ) N ;
+   - fax_551_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 46200 42000 ) N ;
+   - fax_552_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 30600 42000 ) N ;
+   - fax_553_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 16200 42000 ) N ;
+   - fax_554_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 33600 ) FS ;
+   - fax_555_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 22200 33600 ) FS ;
+   - fax_556_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 38400 33600 ) FS ;
+   - fax_557_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 56400 33600 ) FS ;
+   - fax_558_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 75600 33600 ) FS ;
+   - fax_559_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 14400 24900 ) N ;
+   - fax_560_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 31800 24900 ) N ;
+   - fax_561_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 49200 24900 ) N ;
+   - fax_562_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 63600 16500 ) FS ;
+   - fax_563_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 46800 16500 ) FS ;
+   - fax_564_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 30600 16500 ) FS ;
+   - fax_565_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 36000 8100 ) N ;
+   - fax_566_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 46200 8100 ) N ;
+   - fax_567_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 56400 8100 ) N ;
+   - fax_568_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 66600 8100 ) N ;
+   - fax_569_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 76800 8100 ) N ;
+   - fax_570_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 87000 8100 ) N ;
+   - fax_571_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 97200 8100 ) N ;
+   - fax_572_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 100200 16500 ) FS ;
+   - fax_573_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 81600 16500 ) FS ;
+   - fax_574_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 66000 24900 ) N ;
+   - fax_575_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 82800 24900 ) N ;
+   - fax_576_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 99600 24900 ) N ;
+   - fax_577_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 95400 33600 ) FS ;
+   - fax_578_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 99600 42000 ) N ;
+   - fax_579_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 106800 58200 ) N ;
+   - fax_580_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 95400 74400 ) N ;
+   - fax_581_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 94200 83400 ) FS ;
+   - fax_582_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 97200 100500 ) FS ;
+   - fax_583_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 87000 109200 ) N ;
+   - fax_584_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 97200 109200 ) N ;
+   - fax_585_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 109200 ) N ;
+   - fax_586_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 117600 109200 ) N ;
+   - fax_587_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 117600 100500 ) FS ;
+   - fax_588_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 100500 ) FS ;
+   - fax_589_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 113400 91800 ) N ;
+   - fax_590_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 114000 83400 ) FS ;
+   - fax_591_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 115200 74400 ) N ;
+   - fax_592_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 117600 66900 ) FS ;
+   - fax_593_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 117600 58200 ) N ;
+   - fax_594_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 117000 49500 ) FS ;
+   - fax_595_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 115200 33600 ) FS ;
+   - fax_596_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 116400 24900 ) N ;
+   - fax_597_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 117600 16500 ) FS ;
+   - fax_598_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 117600 8100 ) N ;
+   - fax_599_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 107400 8100 ) N ;
+   - __well_tap__0 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 9900 ) N ;
+   - __well_tap__1 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 9900 ) N ;
+   - __well_tap__2 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 20100 ) FS ;
+   - __well_tap__3 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 20100 ) FS ;
+   - __well_tap__4 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 26700 ) N ;
+   - __well_tap__5 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 26700 ) N ;
+   - __well_tap__6 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 37200 ) FS ;
+   - __well_tap__7 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 37200 ) FS ;
+   - __well_tap__8 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 43800 ) N ;
+   - __well_tap__9 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 43800 ) N ;
+   - __well_tap__10 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 53100 ) FS ;
+   - __well_tap__11 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 53100 ) FS ;
+   - __well_tap__12 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 60000 ) N ;
+   - __well_tap__13 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 60000 ) N ;
+   - __well_tap__14 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 70500 ) FS ;
+   - __well_tap__15 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 70500 ) FS ;
+   - __well_tap__16 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 76200 ) N ;
+   - __well_tap__17 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 76200 ) N ;
+   - __well_tap__18 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 87000 ) FS ;
+   - __well_tap__19 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 87000 ) FS ;
+   - __well_tap__20 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 93600 ) N ;
+   - __well_tap__21 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 93600 ) N ;
+   - __well_tap__22 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 104100 ) FS ;
+   - __well_tap__23 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 104100 ) FS ;
+   - __well_tap__24 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 111000 ) N ;
+   - __well_tap__25 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 111000 ) N ;
+   - __well_tap__26 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 121200 ) FS ;
+   - __well_tap__27 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 121200 ) FS ;
+   - __well_tap__28 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 127800 ) N ;
+   - __well_tap__29 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 128400 127800 ) N ;
+   - ppnps circuitppnp 
+      + SOURCE USER 
+      + COVER ( 6000 5400 ) N ;
+   - npwells circuitwell 
+      + SOURCE USER 
+      + COVER ( 6000 5400 ) N ;
+END COMPONENTS
+
+PINS 0 ;
+END PINS
+
+SPECIALNETS 2 ;
+   - Vdd ( * Vdd ) 
+      + USE POWER
+      + ROUTED met4 600
+      + SHAPE STRIPE ( 7500 5400 ) ( 7500 135000 ) NEW met4 600
+      + SHAPE STRIPE ( 131850 5400 ) ( 131850 135000 ) NEW met3 450
+      + SHAPE STRIPE ( 7500 15600 300 ) ( 131850 15600 300 ) NEW met4 0
+      + SHAPE STRIPE ( 7500 15600 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 131850 15600 ) v3_C NEW met3 450
+      + SHAPE STRIPE ( 7500 32400 300 ) ( 131850 32400 300 ) NEW met4 0
+      + SHAPE STRIPE ( 7500 32400 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 131850 32400 ) v3_C NEW met3 450
+      + SHAPE STRIPE ( 7500 49500 300 ) ( 131850 49500 300 ) NEW met4 0
+      + SHAPE STRIPE ( 7500 49500 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 131850 49500 ) v3_C NEW met3 450
+      + SHAPE STRIPE ( 7500 65700 300 ) ( 131850 65700 300 ) NEW met4 0
+      + SHAPE STRIPE ( 7500 65700 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 131850 65700 ) v3_C NEW met3 450
+      + SHAPE STRIPE ( 7500 81900 300 ) ( 131850 81900 300 ) NEW met4 0
+      + SHAPE STRIPE ( 7500 81900 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 131850 81900 ) v3_C NEW met3 450
+      + SHAPE STRIPE ( 7500 99300 300 ) ( 131850 99300 300 ) NEW met4 0
+      + SHAPE STRIPE ( 7500 99300 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 131850 99300 ) v3_C NEW met3 450
+      + SHAPE STRIPE ( 7500 116700 300 ) ( 131850 116700 300 ) NEW met4 0
+      + SHAPE STRIPE ( 7500 116700 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 131850 116700 ) v3_C NEW met3 450
+      + SHAPE STRIPE ( 7500 133500 300 ) ( 131850 133500 300 ) NEW met4 0
+      + SHAPE STRIPE ( 7500 133500 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 131850 133500 ) v3_C NEW met2 150
+      + SHAPE STRIPE ( 10275 129375 ) ( 10275 133500 ) NEW met2 0
+      + SHAPE STRIPE ( 10275 129375 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 10275 133500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 20475 129375 ) ( 20475 133500 ) NEW met2 0
+      + SHAPE STRIPE ( 20475 129375 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 20475 133500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 30675 129375 ) ( 30675 133500 ) NEW met2 0
+      + SHAPE STRIPE ( 30675 129375 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 30675 133500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 40875 129375 ) ( 40875 133500 ) NEW met2 0
+      + SHAPE STRIPE ( 40875 129375 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 40875 133500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 51075 129375 ) ( 51075 133500 ) NEW met2 0
+      + SHAPE STRIPE ( 51075 129375 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 51075 133500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 15675 121725 ) ( 15675 116700 ) NEW met2 0
+      + SHAPE STRIPE ( 15675 121725 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 15675 116700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 25875 121725 ) ( 25875 116700 ) NEW met2 0
+      + SHAPE STRIPE ( 25875 121725 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 25875 116700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 36075 121725 ) ( 36075 116700 ) NEW met2 0
+      + SHAPE STRIPE ( 36075 121725 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 36075 116700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 46275 121725 ) ( 46275 116700 ) NEW met2 0
+      + SHAPE STRIPE ( 46275 121725 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 46275 116700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 56475 121725 ) ( 56475 116700 ) NEW met2 0
+      + SHAPE STRIPE ( 56475 121725 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 56475 116700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 36675 112575 ) ( 36675 116700 ) NEW met2 0
+      + SHAPE STRIPE ( 36675 112575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 36675 116700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 46875 112575 ) ( 46875 116700 ) NEW met2 0
+      + SHAPE STRIPE ( 46875 112575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 46875 116700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 57075 112575 ) ( 57075 116700 ) NEW met2 0
+      + SHAPE STRIPE ( 57075 112575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 57075 116700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 67275 112575 ) ( 67275 116700 ) NEW met2 0
+      + SHAPE STRIPE ( 67275 112575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 67275 116700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 77475 112575 ) ( 77475 116700 ) NEW met2 0
+      + SHAPE STRIPE ( 77475 112575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 77475 116700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 76275 104625 ) ( 76275 99300 ) NEW met2 0
+      + SHAPE STRIPE ( 76275 104625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 76275 99300 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 45075 104625 ) ( 45075 99300 ) NEW met2 0
+      + SHAPE STRIPE ( 45075 104625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 45075 99300 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 55275 104625 ) ( 55275 99300 ) NEW met2 0
+      + SHAPE STRIPE ( 55275 104625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 55275 99300 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 65475 104625 ) ( 65475 99300 ) NEW met2 0
+      + SHAPE STRIPE ( 65475 104625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 65475 99300 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 87075 104625 ) ( 87075 99300 ) NEW met2 0
+      + SHAPE STRIPE ( 87075 104625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 87075 99300 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 90675 95175 ) ( 90675 99300 ) NEW met2 0
+      + SHAPE STRIPE ( 90675 95175 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 90675 99300 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 67275 95175 ) ( 67275 99300 ) NEW met2 0
+      + SHAPE STRIPE ( 67275 95175 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 67275 99300 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 45675 95175 ) ( 45675 99300 ) NEW met2 0
+      + SHAPE STRIPE ( 45675 95175 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 45675 99300 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 25875 95175 ) ( 25875 99300 ) NEW met2 0
+      + SHAPE STRIPE ( 25875 95175 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 25875 99300 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 10275 95175 ) ( 10275 99300 ) NEW met2 0
+      + SHAPE STRIPE ( 10275 95175 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 10275 99300 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 10275 87525 ) ( 10275 81900 ) NEW met2 0
+      + SHAPE STRIPE ( 10275 87525 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 10275 81900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 22875 87525 ) ( 22875 81900 ) NEW met2 0
+      + SHAPE STRIPE ( 22875 87525 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 22875 81900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 39075 87525 ) ( 39075 81900 ) NEW met2 0
+      + SHAPE STRIPE ( 39075 87525 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 39075 81900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 56475 87525 ) ( 56475 81900 ) NEW met2 0
+      + SHAPE STRIPE ( 56475 87525 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 56475 81900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 75075 87525 ) ( 75075 81900 ) NEW met2 0
+      + SHAPE STRIPE ( 75075 87525 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 75075 81900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 23475 77775 ) ( 23475 81900 ) NEW met2 0
+      + SHAPE STRIPE ( 23475 77775 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 23475 81900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 40275 77775 ) ( 40275 81900 ) NEW met2 0
+      + SHAPE STRIPE ( 40275 77775 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 40275 81900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 58275 77775 ) ( 58275 81900 ) NEW met2 0
+      + SHAPE STRIPE ( 58275 77775 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 58275 81900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 76875 77775 ) ( 76875 81900 ) NEW met2 0
+      + SHAPE STRIPE ( 76875 77775 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 76875 81900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 37875 71025 ) ( 37875 65700 ) NEW met2 0
+      + SHAPE STRIPE ( 37875 71025 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 37875 65700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 51675 71025 ) ( 51675 65700 ) NEW met2 0
+      + SHAPE STRIPE ( 51675 71025 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 51675 65700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 67275 71025 ) ( 67275 65700 ) NEW met2 0
+      + SHAPE STRIPE ( 67275 71025 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 67275 65700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 83475 71025 ) ( 83475 65700 ) NEW met2 0
+      + SHAPE STRIPE ( 83475 71025 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 83475 65700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 100875 71025 ) ( 100875 65700 ) NEW met2 0
+      + SHAPE STRIPE ( 100875 71025 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 100875 65700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 55875 61575 ) ( 55875 65700 ) NEW met2 0
+      + SHAPE STRIPE ( 55875 61575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 55875 65700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 66075 61575 ) ( 66075 65700 ) NEW met2 0
+      + SHAPE STRIPE ( 66075 61575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 66075 65700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 76275 61575 ) ( 76275 65700 ) NEW met2 0
+      + SHAPE STRIPE ( 76275 61575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 76275 65700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 86475 61575 ) ( 86475 65700 ) NEW met2 0
+      + SHAPE STRIPE ( 86475 61575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 86475 65700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 96675 61575 ) ( 96675 65700 ) NEW met2 0
+      + SHAPE STRIPE ( 96675 61575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 96675 65700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 103275 53625 ) ( 103275 49500 ) NEW met2 0
+      + SHAPE STRIPE ( 103275 53625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 103275 49500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 89475 53625 ) ( 89475 49500 ) NEW met2 0
+      + SHAPE STRIPE ( 89475 53625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 89475 49500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 51075 53625 ) ( 51075 49500 ) NEW met2 0
+      + SHAPE STRIPE ( 51075 53625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 51075 49500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 63075 53625 ) ( 63075 49500 ) NEW met2 0
+      + SHAPE STRIPE ( 63075 53625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 63075 49500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 75675 53625 ) ( 75675 49500 ) NEW met2 0
+      + SHAPE STRIPE ( 75675 53625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 75675 49500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 82275 45375 ) ( 82275 49500 ) NEW met2 0
+      + SHAPE STRIPE ( 82275 45375 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 82275 49500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 64275 45375 ) ( 64275 49500 ) NEW met2 0
+      + SHAPE STRIPE ( 64275 45375 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 64275 49500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 46875 45375 ) ( 46875 49500 ) NEW met2 0
+      + SHAPE STRIPE ( 46875 45375 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 46875 49500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 31275 45375 ) ( 31275 49500 ) NEW met2 0
+      + SHAPE STRIPE ( 31275 45375 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 31275 49500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 16875 45375 ) ( 16875 49500 ) NEW met2 0
+      + SHAPE STRIPE ( 16875 45375 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 16875 49500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 10275 37725 ) ( 10275 32400 ) NEW met2 0
+      + SHAPE STRIPE ( 10275 37725 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 10275 32400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 22875 37725 ) ( 22875 32400 ) NEW met2 0
+      + SHAPE STRIPE ( 22875 37725 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 22875 32400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 39075 37725 ) ( 39075 32400 ) NEW met2 0
+      + SHAPE STRIPE ( 39075 37725 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 39075 32400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 57075 37725 ) ( 57075 32400 ) NEW met2 0
+      + SHAPE STRIPE ( 57075 37725 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 57075 32400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 76275 37725 ) ( 76275 32400 ) NEW met2 0
+      + SHAPE STRIPE ( 76275 37725 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 76275 32400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 15075 28275 ) ( 15075 32400 ) NEW met2 0
+      + SHAPE STRIPE ( 15075 28275 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 15075 32400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 32475 28275 ) ( 32475 32400 ) NEW met2 0
+      + SHAPE STRIPE ( 32475 28275 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 32475 32400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 49875 28275 ) ( 49875 32400 ) NEW met2 0
+      + SHAPE STRIPE ( 49875 28275 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 49875 32400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 64275 20625 ) ( 64275 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 64275 20625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 64275 15600 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 47475 20625 ) ( 47475 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 47475 20625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 47475 15600 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 31275 20625 ) ( 31275 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 31275 20625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 31275 15600 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 36675 11475 ) ( 36675 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 36675 11475 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 36675 15600 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 46875 11475 ) ( 46875 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 46875 11475 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 46875 15600 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 57075 11475 ) ( 57075 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 57075 11475 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 57075 15600 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 67275 11475 ) ( 67275 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 67275 11475 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 67275 15600 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 77475 11475 ) ( 77475 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 77475 11475 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 77475 15600 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 87675 11475 ) ( 87675 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 87675 11475 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 87675 15600 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 97875 11475 ) ( 97875 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 97875 11475 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 97875 15600 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 100875 20625 ) ( 100875 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 100875 20625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 100875 15600 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 82275 20625 ) ( 82275 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 82275 20625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 82275 15600 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 66675 28275 ) ( 66675 32400 ) NEW met2 0
+      + SHAPE STRIPE ( 66675 28275 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 66675 32400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 83475 28275 ) ( 83475 32400 ) NEW met2 0
+      + SHAPE STRIPE ( 83475 28275 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 83475 32400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 100275 28275 ) ( 100275 32400 ) NEW met2 0
+      + SHAPE STRIPE ( 100275 28275 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 100275 32400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 96075 37725 ) ( 96075 32400 ) NEW met2 0
+      + SHAPE STRIPE ( 96075 37725 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 96075 32400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 100275 45375 ) ( 100275 49500 ) NEW met2 0
+      + SHAPE STRIPE ( 100275 45375 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 100275 49500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 107475 61575 ) ( 107475 65700 ) NEW met2 0
+      + SHAPE STRIPE ( 107475 61575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 107475 65700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 96075 77775 ) ( 96075 81900 ) NEW met2 0
+      + SHAPE STRIPE ( 96075 77775 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 96075 81900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 94875 87525 ) ( 94875 81900 ) NEW met2 0
+      + SHAPE STRIPE ( 94875 87525 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 94875 81900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 97875 104625 ) ( 97875 99300 ) NEW met2 0
+      + SHAPE STRIPE ( 97875 104625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 97875 99300 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 87675 112575 ) ( 87675 116700 ) NEW met2 0
+      + SHAPE STRIPE ( 87675 112575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 87675 116700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 97875 112575 ) ( 97875 116700 ) NEW met2 0
+      + SHAPE STRIPE ( 97875 112575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 97875 116700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 108075 112575 ) ( 108075 116700 ) NEW met2 0
+      + SHAPE STRIPE ( 108075 112575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 108075 116700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 118275 112575 ) ( 118275 116700 ) NEW met2 0
+      + SHAPE STRIPE ( 118275 112575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 118275 116700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 118275 104625 ) ( 118275 99300 ) NEW met2 0
+      + SHAPE STRIPE ( 118275 104625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 118275 99300 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 108075 104625 ) ( 108075 99300 ) NEW met2 0
+      + SHAPE STRIPE ( 108075 104625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 108075 99300 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 114075 95175 ) ( 114075 99300 ) NEW met2 0
+      + SHAPE STRIPE ( 114075 95175 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 114075 99300 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 114675 87525 ) ( 114675 81900 ) NEW met2 0
+      + SHAPE STRIPE ( 114675 87525 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 114675 81900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 115875 77775 ) ( 115875 81900 ) NEW met2 0
+      + SHAPE STRIPE ( 115875 77775 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 115875 81900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 118275 71025 ) ( 118275 65700 ) NEW met2 0
+      + SHAPE STRIPE ( 118275 71025 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 118275 65700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 118275 61575 ) ( 118275 65700 ) NEW met2 0
+      + SHAPE STRIPE ( 118275 61575 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 118275 65700 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 117675 53625 ) ( 117675 49500 ) NEW met2 0
+      + SHAPE STRIPE ( 117675 53625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 117675 49500 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 115875 37725 ) ( 115875 32400 ) NEW met2 0
+      + SHAPE STRIPE ( 115875 37725 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 115875 32400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 117075 28275 ) ( 117075 32400 ) NEW met2 0
+      + SHAPE STRIPE ( 117075 28275 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 117075 32400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 118275 20625 ) ( 118275 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 118275 20625 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 118275 15600 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 118275 11475 ) ( 118275 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 118275 11475 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 118275 15600 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 108075 11475 ) ( 108075 15600 ) NEW met2 0
+      + SHAPE STRIPE ( 108075 11475 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 108075 15600 ) v2_C NEW met1 0
+      + SHAPE STRIPE ( 8475 11625 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 11625 ) ( 8475 15600 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 15600 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 11625 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 11625 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 11625 ) ( 129075 15600 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 15600 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 11625 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 20475 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 20475 ) ( 8475 15600 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 15600 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 20475 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 20475 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 20475 ) ( 129075 15600 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 15600 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 20475 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 28425 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 28425 ) ( 8475 32400 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 32400 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 28425 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 28425 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 28425 ) ( 129075 32400 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 32400 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 28425 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 37575 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 37575 ) ( 8475 32400 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 32400 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 37575 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 37575 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 37575 ) ( 129075 32400 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 32400 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 37575 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 45525 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 45525 ) ( 8475 49500 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 49500 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 45525 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 45525 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 45525 ) ( 129075 49500 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 49500 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 45525 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 53475 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 53475 ) ( 8475 49500 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 49500 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 53475 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 53475 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 53475 ) ( 129075 49500 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 49500 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 53475 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 61725 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 61725 ) ( 8475 65700 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 65700 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 61725 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 61725 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 61725 ) ( 129075 65700 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 65700 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 61725 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 70875 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 70875 ) ( 8475 65700 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 65700 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 70875 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 70875 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 70875 ) ( 129075 65700 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 65700 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 70875 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 77925 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 77925 ) ( 8475 81900 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 81900 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 77925 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 77925 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 77925 ) ( 129075 81900 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 81900 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 77925 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 87375 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 87375 ) ( 8475 81900 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 81900 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 87375 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 87375 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 87375 ) ( 129075 81900 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 81900 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 87375 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 95325 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 95325 ) ( 8475 99300 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 99300 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 95325 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 95325 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 95325 ) ( 129075 99300 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 99300 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 95325 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 104475 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 104475 ) ( 8475 99300 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 99300 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 104475 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 104475 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 104475 ) ( 129075 99300 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 99300 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 104475 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 112725 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 112725 ) ( 8475 116700 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 116700 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 112725 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 112725 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 112725 ) ( 129075 116700 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 116700 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 112725 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 121575 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 121575 ) ( 8475 116700 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 116700 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 121575 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 121575 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 121575 ) ( 129075 116700 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 116700 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 121575 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 129525 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 129525 ) ( 8475 133500 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 133500 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 129525 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 129525 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 129525 ) ( 129075 133500 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 133500 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 129525 ) v1_C ;
+   - GND ( * GND ) 
+      + USE GROUND
+      + ROUTED met4 600
+      + SHAPE STRIPE ( 6600 5400 ) ( 6600 135000 ) NEW met4 600
+      + SHAPE STRIPE ( 130950 5400 ) ( 130950 135000 ) NEW met3 450
+      + SHAPE STRIPE ( 6600 8100 300 ) ( 130950 8100 300 ) NEW met4 0
+      + SHAPE STRIPE ( 6600 8100 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 130950 8100 ) v3_C NEW met3 450
+      + SHAPE STRIPE ( 6600 24000 300 ) ( 130950 24000 300 ) NEW met4 0
+      + SHAPE STRIPE ( 6600 24000 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 130950 24000 ) v3_C NEW met3 450
+      + SHAPE STRIPE ( 6600 41100 300 ) ( 130950 41100 300 ) NEW met4 0
+      + SHAPE STRIPE ( 6600 41100 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 130950 41100 ) v3_C NEW met3 450
+      + SHAPE STRIPE ( 6600 57000 300 ) ( 130950 57000 300 ) NEW met4 0
+      + SHAPE STRIPE ( 6600 57000 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 130950 57000 ) v3_C NEW met3 450
+      + SHAPE STRIPE ( 6600 74400 300 ) ( 130950 74400 300 ) NEW met4 0
+      + SHAPE STRIPE ( 6600 74400 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 130950 74400 ) v3_C NEW met3 450
+      + SHAPE STRIPE ( 6600 90900 300 ) ( 130950 90900 300 ) NEW met4 0
+      + SHAPE STRIPE ( 6600 90900 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 130950 90900 ) v3_C NEW met3 450
+      + SHAPE STRIPE ( 6600 108000 300 ) ( 130950 108000 300 ) NEW met4 0
+      + SHAPE STRIPE ( 6600 108000 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 130950 108000 ) v3_C NEW met3 450
+      + SHAPE STRIPE ( 6600 125100 300 ) ( 130950 125100 300 ) NEW met4 0
+      + SHAPE STRIPE ( 6600 125100 ) v3_C NEW met4 0
+      + SHAPE STRIPE ( 130950 125100 ) v3_C NEW met2 150
+      + SHAPE STRIPE ( 12075 128250 ) ( 12075 125100 ) NEW met2 0
+      + SHAPE STRIPE ( 12075 128250 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 12075 125100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 22275 128250 ) ( 22275 125100 ) NEW met2 0
+      + SHAPE STRIPE ( 22275 128250 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 22275 125100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 32475 128250 ) ( 32475 125100 ) NEW met2 0
+      + SHAPE STRIPE ( 32475 128250 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 32475 125100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 42675 128250 ) ( 42675 125100 ) NEW met2 0
+      + SHAPE STRIPE ( 42675 128250 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 42675 125100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 52875 128250 ) ( 52875 125100 ) NEW met2 0
+      + SHAPE STRIPE ( 52875 128250 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 52875 125100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 17475 122850 ) ( 17475 125100 ) NEW met2 0
+      + SHAPE STRIPE ( 17475 122850 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 17475 125100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 27675 122850 ) ( 27675 125100 ) NEW met2 0
+      + SHAPE STRIPE ( 27675 122850 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 27675 125100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 37875 122850 ) ( 37875 125100 ) NEW met2 0
+      + SHAPE STRIPE ( 37875 122850 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 37875 125100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 48075 122850 ) ( 48075 125100 ) NEW met2 0
+      + SHAPE STRIPE ( 48075 122850 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 48075 125100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 58275 122850 ) ( 58275 125100 ) NEW met2 0
+      + SHAPE STRIPE ( 58275 122850 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 58275 125100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 38475 111450 ) ( 38475 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 38475 111450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 38475 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 48675 111450 ) ( 48675 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 48675 111450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 48675 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 58875 111450 ) ( 58875 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 58875 111450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 58875 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 69075 111450 ) ( 69075 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 69075 111450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 69075 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 79275 111450 ) ( 79275 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 79275 111450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 79275 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 78075 105750 ) ( 78075 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 78075 105750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 78075 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 46875 105750 ) ( 46875 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 46875 105750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 46875 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 57075 105750 ) ( 57075 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 57075 105750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 57075 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 67275 105750 ) ( 67275 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 67275 105750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 67275 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 88875 105750 ) ( 88875 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 88875 105750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 88875 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 92475 94050 ) ( 92475 90900 ) NEW met2 0
+      + SHAPE STRIPE ( 92475 94050 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 92475 90900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 69075 94050 ) ( 69075 90900 ) NEW met2 0
+      + SHAPE STRIPE ( 69075 94050 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 69075 90900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 47475 94050 ) ( 47475 90900 ) NEW met2 0
+      + SHAPE STRIPE ( 47475 94050 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 47475 90900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 27675 94050 ) ( 27675 90900 ) NEW met2 0
+      + SHAPE STRIPE ( 27675 94050 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 27675 90900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 12075 94050 ) ( 12075 90900 ) NEW met2 0
+      + SHAPE STRIPE ( 12075 94050 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 12075 90900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 12075 88650 ) ( 12075 90900 ) NEW met2 0
+      + SHAPE STRIPE ( 12075 88650 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 12075 90900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 24675 88650 ) ( 24675 90900 ) NEW met2 0
+      + SHAPE STRIPE ( 24675 88650 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 24675 90900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 40875 88650 ) ( 40875 90900 ) NEW met2 0
+      + SHAPE STRIPE ( 40875 88650 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 40875 90900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 58275 88650 ) ( 58275 90900 ) NEW met2 0
+      + SHAPE STRIPE ( 58275 88650 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 58275 90900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 76875 88650 ) ( 76875 90900 ) NEW met2 0
+      + SHAPE STRIPE ( 76875 88650 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 76875 90900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 25275 76650 ) ( 25275 74400 ) NEW met2 0
+      + SHAPE STRIPE ( 25275 76650 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 25275 74400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 42075 76650 ) ( 42075 74400 ) NEW met2 0
+      + SHAPE STRIPE ( 42075 76650 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 42075 74400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 60075 76650 ) ( 60075 74400 ) NEW met2 0
+      + SHAPE STRIPE ( 60075 76650 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 60075 74400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 78675 76650 ) ( 78675 74400 ) NEW met2 0
+      + SHAPE STRIPE ( 78675 76650 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 78675 74400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 39675 72150 ) ( 39675 74400 ) NEW met2 0
+      + SHAPE STRIPE ( 39675 72150 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 39675 74400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 53475 72150 ) ( 53475 74400 ) NEW met2 0
+      + SHAPE STRIPE ( 53475 72150 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 53475 74400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 69075 72150 ) ( 69075 74400 ) NEW met2 0
+      + SHAPE STRIPE ( 69075 72150 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 69075 74400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 85275 72150 ) ( 85275 74400 ) NEW met2 0
+      + SHAPE STRIPE ( 85275 72150 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 85275 74400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 102675 72150 ) ( 102675 74400 ) NEW met2 0
+      + SHAPE STRIPE ( 102675 72150 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 102675 74400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 57675 60450 ) ( 57675 57000 ) NEW met2 0
+      + SHAPE STRIPE ( 57675 60450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 57675 57000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 67875 60450 ) ( 67875 57000 ) NEW met2 0
+      + SHAPE STRIPE ( 67875 60450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 67875 57000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 78075 60450 ) ( 78075 57000 ) NEW met2 0
+      + SHAPE STRIPE ( 78075 60450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 78075 57000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 88275 60450 ) ( 88275 57000 ) NEW met2 0
+      + SHAPE STRIPE ( 88275 60450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 88275 57000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 98475 60450 ) ( 98475 57000 ) NEW met2 0
+      + SHAPE STRIPE ( 98475 60450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 98475 57000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 105075 54750 ) ( 105075 57000 ) NEW met2 0
+      + SHAPE STRIPE ( 105075 54750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 105075 57000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 91275 54750 ) ( 91275 57000 ) NEW met2 0
+      + SHAPE STRIPE ( 91275 54750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 91275 57000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 52875 54750 ) ( 52875 57000 ) NEW met2 0
+      + SHAPE STRIPE ( 52875 54750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 52875 57000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 64875 54750 ) ( 64875 57000 ) NEW met2 0
+      + SHAPE STRIPE ( 64875 54750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 64875 57000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 77475 54750 ) ( 77475 57000 ) NEW met2 0
+      + SHAPE STRIPE ( 77475 54750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 77475 57000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 84075 44250 ) ( 84075 41100 ) NEW met2 0
+      + SHAPE STRIPE ( 84075 44250 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 84075 41100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 66075 44250 ) ( 66075 41100 ) NEW met2 0
+      + SHAPE STRIPE ( 66075 44250 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 66075 41100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 48675 44250 ) ( 48675 41100 ) NEW met2 0
+      + SHAPE STRIPE ( 48675 44250 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 48675 41100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 33075 44250 ) ( 33075 41100 ) NEW met2 0
+      + SHAPE STRIPE ( 33075 44250 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 33075 41100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 18675 44250 ) ( 18675 41100 ) NEW met2 0
+      + SHAPE STRIPE ( 18675 44250 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 18675 41100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 12075 38850 ) ( 12075 41100 ) NEW met2 0
+      + SHAPE STRIPE ( 12075 38850 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 12075 41100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 24675 38850 ) ( 24675 41100 ) NEW met2 0
+      + SHAPE STRIPE ( 24675 38850 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 24675 41100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 40875 38850 ) ( 40875 41100 ) NEW met2 0
+      + SHAPE STRIPE ( 40875 38850 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 40875 41100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 58875 38850 ) ( 58875 41100 ) NEW met2 0
+      + SHAPE STRIPE ( 58875 38850 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 58875 41100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 78075 38850 ) ( 78075 41100 ) NEW met2 0
+      + SHAPE STRIPE ( 78075 38850 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 78075 41100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 16875 27150 ) ( 16875 24000 ) NEW met2 0
+      + SHAPE STRIPE ( 16875 27150 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 16875 24000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 34275 27150 ) ( 34275 24000 ) NEW met2 0
+      + SHAPE STRIPE ( 34275 27150 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 34275 24000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 51675 27150 ) ( 51675 24000 ) NEW met2 0
+      + SHAPE STRIPE ( 51675 27150 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 51675 24000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 66075 21750 ) ( 66075 24000 ) NEW met2 0
+      + SHAPE STRIPE ( 66075 21750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 66075 24000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 49275 21750 ) ( 49275 24000 ) NEW met2 0
+      + SHAPE STRIPE ( 49275 21750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 49275 24000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 33075 21750 ) ( 33075 24000 ) NEW met2 0
+      + SHAPE STRIPE ( 33075 21750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 33075 24000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 38475 10350 ) ( 38475 8100 ) NEW met2 0
+      + SHAPE STRIPE ( 38475 10350 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 38475 8100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 48675 10350 ) ( 48675 8100 ) NEW met2 0
+      + SHAPE STRIPE ( 48675 10350 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 48675 8100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 58875 10350 ) ( 58875 8100 ) NEW met2 0
+      + SHAPE STRIPE ( 58875 10350 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 58875 8100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 69075 10350 ) ( 69075 8100 ) NEW met2 0
+      + SHAPE STRIPE ( 69075 10350 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 69075 8100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 79275 10350 ) ( 79275 8100 ) NEW met2 0
+      + SHAPE STRIPE ( 79275 10350 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 79275 8100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 89475 10350 ) ( 89475 8100 ) NEW met2 0
+      + SHAPE STRIPE ( 89475 10350 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 89475 8100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 99675 10350 ) ( 99675 8100 ) NEW met2 0
+      + SHAPE STRIPE ( 99675 10350 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 99675 8100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 102675 21750 ) ( 102675 24000 ) NEW met2 0
+      + SHAPE STRIPE ( 102675 21750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 102675 24000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 84075 21750 ) ( 84075 24000 ) NEW met2 0
+      + SHAPE STRIPE ( 84075 21750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 84075 24000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 68475 27150 ) ( 68475 24000 ) NEW met2 0
+      + SHAPE STRIPE ( 68475 27150 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 68475 24000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 85275 27150 ) ( 85275 24000 ) NEW met2 0
+      + SHAPE STRIPE ( 85275 27150 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 85275 24000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 102075 27150 ) ( 102075 24000 ) NEW met2 0
+      + SHAPE STRIPE ( 102075 27150 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 102075 24000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 97875 38850 ) ( 97875 41100 ) NEW met2 0
+      + SHAPE STRIPE ( 97875 38850 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 97875 41100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 102075 44250 ) ( 102075 41100 ) NEW met2 0
+      + SHAPE STRIPE ( 102075 44250 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 102075 41100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 109275 60450 ) ( 109275 57000 ) NEW met2 0
+      + SHAPE STRIPE ( 109275 60450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 109275 57000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 97875 76650 ) ( 97875 74400 ) NEW met2 0
+      + SHAPE STRIPE ( 97875 76650 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 97875 74400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 96675 88650 ) ( 96675 90900 ) NEW met2 0
+      + SHAPE STRIPE ( 96675 88650 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 96675 90900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 99675 105750 ) ( 99675 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 99675 105750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 99675 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 89475 111450 ) ( 89475 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 89475 111450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 89475 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 99675 111450 ) ( 99675 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 99675 111450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 99675 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 109875 111450 ) ( 109875 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 109875 111450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 109875 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 120075 111450 ) ( 120075 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 120075 111450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 120075 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 120075 105750 ) ( 120075 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 120075 105750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 120075 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 109875 105750 ) ( 109875 108000 ) NEW met2 0
+      + SHAPE STRIPE ( 109875 105750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 109875 108000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 115875 94050 ) ( 115875 90900 ) NEW met2 0
+      + SHAPE STRIPE ( 115875 94050 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 115875 90900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 116475 88650 ) ( 116475 90900 ) NEW met2 0
+      + SHAPE STRIPE ( 116475 88650 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 116475 90900 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 117675 76650 ) ( 117675 74400 ) NEW met2 0
+      + SHAPE STRIPE ( 117675 76650 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 117675 74400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 120075 72150 ) ( 120075 74400 ) NEW met2 0
+      + SHAPE STRIPE ( 120075 72150 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 120075 74400 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 120075 60450 ) ( 120075 57000 ) NEW met2 0
+      + SHAPE STRIPE ( 120075 60450 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 120075 57000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 119475 54750 ) ( 119475 57000 ) NEW met2 0
+      + SHAPE STRIPE ( 119475 54750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 119475 57000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 117675 38850 ) ( 117675 41100 ) NEW met2 0
+      + SHAPE STRIPE ( 117675 38850 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 117675 41100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 118875 27150 ) ( 118875 24000 ) NEW met2 0
+      + SHAPE STRIPE ( 118875 27150 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 118875 24000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 120075 21750 ) ( 120075 24000 ) NEW met2 0
+      + SHAPE STRIPE ( 120075 21750 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 120075 24000 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 120075 10350 ) ( 120075 8100 ) NEW met2 0
+      + SHAPE STRIPE ( 120075 10350 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 120075 8100 ) v2_C NEW met2 150
+      + SHAPE STRIPE ( 109875 10350 ) ( 109875 8100 ) NEW met2 0
+      + SHAPE STRIPE ( 109875 10350 ) v1_C NEW met3 0
+      + SHAPE STRIPE ( 109875 8100 ) v2_C NEW met1 0
+      + SHAPE STRIPE ( 8475 10275 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 10275 ) ( 8475 8100 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 8100 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 10275 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 10275 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 10275 ) ( 129075 8100 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 8100 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 10275 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 21825 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 21825 ) ( 8475 24000 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 24000 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 21825 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 21825 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 21825 ) ( 129075 24000 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 24000 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 21825 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 27075 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 27075 ) ( 8475 24000 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 24000 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 27075 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 27075 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 27075 ) ( 129075 24000 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 24000 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 27075 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 38925 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 38925 ) ( 8475 41100 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 41100 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 38925 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 38925 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 38925 ) ( 129075 41100 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 41100 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 38925 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 44175 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 44175 ) ( 8475 41100 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 41100 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 44175 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 44175 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 44175 ) ( 129075 41100 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 41100 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 44175 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 54825 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 54825 ) ( 8475 57000 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 57000 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 54825 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 54825 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 54825 ) ( 129075 57000 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 57000 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 54825 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 60375 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 60375 ) ( 8475 57000 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 57000 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 60375 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 60375 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 60375 ) ( 129075 57000 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 57000 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 60375 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 72225 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 72225 ) ( 8475 74400 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 74400 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 72225 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 72225 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 72225 ) ( 129075 74400 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 74400 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 72225 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 76575 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 76575 ) ( 8475 74400 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 74400 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 76575 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 76575 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 76575 ) ( 129075 74400 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 74400 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 76575 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 88725 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 88725 ) ( 8475 90900 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 90900 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 88725 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 88725 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 88725 ) ( 129075 90900 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 90900 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 88725 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 93975 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 93975 ) ( 8475 90900 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 90900 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 93975 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 93975 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 93975 ) ( 129075 90900 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 90900 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 93975 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 105825 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 105825 ) ( 8475 108000 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 108000 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 105825 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 105825 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 105825 ) ( 129075 108000 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 108000 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 105825 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 111375 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 111375 ) ( 8475 108000 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 108000 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 111375 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 111375 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 111375 ) ( 129075 108000 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 108000 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 111375 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 122925 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 122925 ) ( 8475 125100 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 125100 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 122925 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 122925 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 122925 ) ( 129075 125100 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 125100 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 122925 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 8475 128175 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 8475 128175 ) ( 8475 125100 ) NEW met3 0
+      + SHAPE STRIPE ( 8475 125100 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 8475 128175 ) v1_C NEW met1 0
+      + SHAPE STRIPE ( 129075 128175 ) mcon_C NEW met2 150
+      + SHAPE STRIPE ( 129075 128175 ) ( 129075 125100 ) NEW met3 0
+      + SHAPE STRIPE ( 129075 125100 ) v2_C NEW met2 0
+      + SHAPE STRIPE ( 129075 128175 ) v1_C ;
+END SPECIALNETS
+
+NETS 401 ;
+   - fax[0].A ( fax_50_6 A )  ;
+   - fax[0].B ( fax_50_6 B )  ;
+   - fax[0].C ( fax_50_6 C )  ;
+   - fax[0].YC ( fax_50_6 YC )  ( fax_51_6 C )  ;
+   - fax[0].YS ( fax_50_6 YS )  ;
+   - fax[1].A ( fax_51_6 A )  ;
+   - fax[1].B ( fax_51_6 B )  ;
+   - fax[1].YC ( fax_51_6 YC )  ( fax_52_6 C )  ;
+   - fax[1].YS ( fax_51_6 YS )  ;
+   - fax[2].A ( fax_52_6 A )  ;
+   - fax[2].B ( fax_52_6 B )  ;
+   - fax[2].YC ( fax_52_6 YC )  ( fax_53_6 C )  ;
+   - fax[2].YS ( fax_52_6 YS )  ;
+   - fax[3].A ( fax_53_6 A )  ;
+   - fax[3].B ( fax_53_6 B )  ;
+   - fax[3].YC ( fax_53_6 YC )  ( fax_54_6 C )  ;
+   - fax[3].YS ( fax_53_6 YS )  ;
+   - fax[4].A ( fax_54_6 A )  ;
+   - fax[4].B ( fax_54_6 B )  ;
+   - fax[4].YC ( fax_54_6 YC )  ( fax_55_6 C )  ;
+   - fax[4].YS ( fax_54_6 YS )  ;
+   - fax[5].A ( fax_55_6 A )  ;
+   - fax[5].B ( fax_55_6 B )  ;
+   - fax[5].YC ( fax_55_6 YC )  ( fax_56_6 C )  ;
+   - fax[5].YS ( fax_55_6 YS )  ;
+   - fax[6].A ( fax_56_6 A )  ;
+   - fax[6].B ( fax_56_6 B )  ;
+   - fax[6].YC ( fax_56_6 YC )  ( fax_57_6 C )  ;
+   - fax[6].YS ( fax_56_6 YS )  ;
+   - fax[7].A ( fax_57_6 A )  ;
+   - fax[7].B ( fax_57_6 B )  ;
+   - fax[7].YC ( fax_57_6 YC )  ( fax_58_6 C )  ;
+   - fax[7].YS ( fax_57_6 YS )  ;
+   - fax[8].A ( fax_58_6 A )  ;
+   - fax[8].B ( fax_58_6 B )  ;
+   - fax[8].YC ( fax_58_6 YC )  ( fax_59_6 C )  ;
+   - fax[8].YS ( fax_58_6 YS )  ;
+   - fax[9].A ( fax_59_6 A )  ;
+   - fax[9].B ( fax_59_6 B )  ;
+   - fax[9].YC ( fax_59_6 YC )  ( fax_510_6 C )  ;
+   - fax[9].YS ( fax_59_6 YS )  ;
+   - fax[10].A ( fax_510_6 A )  ;
+   - fax[10].B ( fax_510_6 B )  ;
+   - fax[10].YC ( fax_510_6 YC )  ( fax_511_6 C )  ;
+   - fax[10].YS ( fax_510_6 YS )  ;
+   - fax[11].A ( fax_511_6 A )  ;
+   - fax[11].B ( fax_511_6 B )  ;
+   - fax[11].YC ( fax_511_6 YC )  ( fax_512_6 C )  ;
+   - fax[11].YS ( fax_511_6 YS )  ;
+   - fax[12].A ( fax_512_6 A )  ;
+   - fax[12].B ( fax_512_6 B )  ;
+   - fax[12].YC ( fax_512_6 YC )  ( fax_513_6 C )  ;
+   - fax[12].YS ( fax_512_6 YS )  ;
+   - fax[13].A ( fax_513_6 A )  ;
+   - fax[13].B ( fax_513_6 B )  ;
+   - fax[13].YC ( fax_513_6 YC )  ( fax_514_6 C )  ;
+   - fax[13].YS ( fax_513_6 YS )  ;
+   - fax[14].A ( fax_514_6 A )  ;
+   - fax[14].B ( fax_514_6 B )  ;
+   - fax[14].YC ( fax_514_6 YC )  ( fax_515_6 C )  ;
+   - fax[14].YS ( fax_514_6 YS )  ;
+   - fax[15].A ( fax_515_6 A )  ;
+   - fax[15].B ( fax_515_6 B )  ;
+   - fax[15].YC ( fax_515_6 YC )  ( fax_516_6 C )  ;
+   - fax[15].YS ( fax_515_6 YS )  ;
+   - fax[16].A ( fax_516_6 A )  ;
+   - fax[16].B ( fax_516_6 B )  ;
+   - fax[16].YC ( fax_516_6 YC )  ( fax_517_6 C )  ;
+   - fax[16].YS ( fax_516_6 YS )  ;
+   - fax[17].A ( fax_517_6 A )  ;
+   - fax[17].B ( fax_517_6 B )  ;
+   - fax[17].YC ( fax_517_6 YC )  ( fax_518_6 C )  ;
+   - fax[17].YS ( fax_517_6 YS )  ;
+   - fax[18].A ( fax_518_6 A )  ;
+   - fax[18].B ( fax_518_6 B )  ;
+   - fax[18].YC ( fax_518_6 YC )  ( fax_519_6 C )  ;
+   - fax[18].YS ( fax_518_6 YS )  ;
+   - fax[19].A ( fax_519_6 A )  ;
+   - fax[19].B ( fax_519_6 B )  ;
+   - fax[19].YC ( fax_519_6 YC )  ( fax_520_6 C )  ;
+   - fax[19].YS ( fax_519_6 YS )  ;
+   - fax[20].A ( fax_520_6 A )  ;
+   - fax[20].B ( fax_520_6 B )  ;
+   - fax[20].YC ( fax_520_6 YC )  ( fax_521_6 C )  ;
+   - fax[20].YS ( fax_520_6 YS )  ;
+   - fax[21].A ( fax_521_6 A )  ;
+   - fax[21].B ( fax_521_6 B )  ;
+   - fax[21].YC ( fax_521_6 YC )  ( fax_522_6 C )  ;
+   - fax[21].YS ( fax_521_6 YS )  ;
+   - fax[22].A ( fax_522_6 A )  ;
+   - fax[22].B ( fax_522_6 B )  ;
+   - fax[22].YC ( fax_522_6 YC )  ( fax_523_6 C )  ;
+   - fax[22].YS ( fax_522_6 YS )  ;
+   - fax[23].A ( fax_523_6 A )  ;
+   - fax[23].B ( fax_523_6 B )  ;
+   - fax[23].YC ( fax_523_6 YC )  ( fax_524_6 C )  ;
+   - fax[23].YS ( fax_523_6 YS )  ;
+   - fax[24].A ( fax_524_6 A )  ;
+   - fax[24].B ( fax_524_6 B )  ;
+   - fax[24].YC ( fax_524_6 YC )  ( fax_525_6 C )  ;
+   - fax[24].YS ( fax_524_6 YS )  ;
+   - fax[25].A ( fax_525_6 A )  ;
+   - fax[25].B ( fax_525_6 B )  ;
+   - fax[25].YC ( fax_525_6 YC )  ( fax_526_6 C )  ;
+   - fax[25].YS ( fax_525_6 YS )  ;
+   - fax[26].A ( fax_526_6 A )  ;
+   - fax[26].B ( fax_526_6 B )  ;
+   - fax[26].YC ( fax_526_6 YC )  ( fax_527_6 C )  ;
+   - fax[26].YS ( fax_526_6 YS )  ;
+   - fax[27].A ( fax_527_6 A )  ;
+   - fax[27].B ( fax_527_6 B )  ;
+   - fax[27].YC ( fax_527_6 YC )  ( fax_528_6 C )  ;
+   - fax[27].YS ( fax_527_6 YS )  ;
+   - fax[28].A ( fax_528_6 A )  ;
+   - fax[28].B ( fax_528_6 B )  ;
+   - fax[28].YC ( fax_528_6 YC )  ( fax_529_6 C )  ;
+   - fax[28].YS ( fax_528_6 YS )  ;
+   - fax[29].A ( fax_529_6 A )  ;
+   - fax[29].B ( fax_529_6 B )  ;
+   - fax[29].YC ( fax_529_6 YC )  ( fax_530_6 C )  ;
+   - fax[29].YS ( fax_529_6 YS )  ;
+   - fax[30].A ( fax_530_6 A )  ;
+   - fax[30].B ( fax_530_6 B )  ;
+   - fax[30].YC ( fax_530_6 YC )  ( fax_531_6 C )  ;
+   - fax[30].YS ( fax_530_6 YS )  ;
+   - fax[31].A ( fax_531_6 A )  ;
+   - fax[31].B ( fax_531_6 B )  ;
+   - fax[31].YC ( fax_531_6 YC )  ( fax_532_6 C )  ;
+   - fax[31].YS ( fax_531_6 YS )  ;
+   - fax[32].A ( fax_532_6 A )  ;
+   - fax[32].B ( fax_532_6 B )  ;
+   - fax[32].YC ( fax_532_6 YC )  ( fax_533_6 C )  ;
+   - fax[32].YS ( fax_532_6 YS )  ;
+   - fax[33].A ( fax_533_6 A )  ;
+   - fax[33].B ( fax_533_6 B )  ;
+   - fax[33].YC ( fax_533_6 YC )  ( fax_534_6 C )  ;
+   - fax[33].YS ( fax_533_6 YS )  ;
+   - fax[34].A ( fax_534_6 A )  ;
+   - fax[34].B ( fax_534_6 B )  ;
+   - fax[34].YC ( fax_534_6 YC )  ( fax_535_6 C )  ;
+   - fax[34].YS ( fax_534_6 YS )  ;
+   - fax[35].A ( fax_535_6 A )  ;
+   - fax[35].B ( fax_535_6 B )  ;
+   - fax[35].YC ( fax_535_6 YC )  ( fax_536_6 C )  ;
+   - fax[35].YS ( fax_535_6 YS )  ;
+   - fax[36].A ( fax_536_6 A )  ;
+   - fax[36].B ( fax_536_6 B )  ;
+   - fax[36].YC ( fax_536_6 YC )  ( fax_537_6 C )  ;
+   - fax[36].YS ( fax_536_6 YS )  ;
+   - fax[37].A ( fax_537_6 A )  ;
+   - fax[37].B ( fax_537_6 B )  ;
+   - fax[37].YC ( fax_537_6 YC )  ( fax_538_6 C )  ;
+   - fax[37].YS ( fax_537_6 YS )  ;
+   - fax[38].A ( fax_538_6 A )  ;
+   - fax[38].B ( fax_538_6 B )  ;
+   - fax[38].YC ( fax_538_6 YC )  ( fax_539_6 C )  ;
+   - fax[38].YS ( fax_538_6 YS )  ;
+   - fax[39].A ( fax_539_6 A )  ;
+   - fax[39].B ( fax_539_6 B )  ;
+   - fax[39].YC ( fax_539_6 YC )  ( fax_540_6 C )  ;
+   - fax[39].YS ( fax_539_6 YS )  ;
+   - fax[40].A ( fax_540_6 A )  ;
+   - fax[40].B ( fax_540_6 B )  ;
+   - fax[40].YC ( fax_540_6 YC )  ( fax_541_6 C )  ;
+   - fax[40].YS ( fax_540_6 YS )  ;
+   - fax[41].A ( fax_541_6 A )  ;
+   - fax[41].B ( fax_541_6 B )  ;
+   - fax[41].YC ( fax_541_6 YC )  ( fax_542_6 C )  ;
+   - fax[41].YS ( fax_541_6 YS )  ;
+   - fax[42].A ( fax_542_6 A )  ;
+   - fax[42].B ( fax_542_6 B )  ;
+   - fax[42].YC ( fax_542_6 YC )  ( fax_543_6 C )  ;
+   - fax[42].YS ( fax_542_6 YS )  ;
+   - fax[43].A ( fax_543_6 A )  ;
+   - fax[43].B ( fax_543_6 B )  ;
+   - fax[43].YC ( fax_543_6 YC )  ( fax_544_6 C )  ;
+   - fax[43].YS ( fax_543_6 YS )  ;
+   - fax[44].A ( fax_544_6 A )  ;
+   - fax[44].B ( fax_544_6 B )  ;
+   - fax[44].YC ( fax_544_6 YC )  ( fax_545_6 C )  ;
+   - fax[44].YS ( fax_544_6 YS )  ;
+   - fax[45].A ( fax_545_6 A )  ;
+   - fax[45].B ( fax_545_6 B )  ;
+   - fax[45].YC ( fax_545_6 YC )  ( fax_546_6 C )  ;
+   - fax[45].YS ( fax_545_6 YS )  ;
+   - fax[46].A ( fax_546_6 A )  ;
+   - fax[46].B ( fax_546_6 B )  ;
+   - fax[46].YC ( fax_546_6 YC )  ( fax_547_6 C )  ;
+   - fax[46].YS ( fax_546_6 YS )  ;
+   - fax[47].A ( fax_547_6 A )  ;
+   - fax[47].B ( fax_547_6 B )  ;
+   - fax[47].YC ( fax_547_6 YC )  ( fax_548_6 C )  ;
+   - fax[47].YS ( fax_547_6 YS )  ;
+   - fax[48].A ( fax_548_6 A )  ;
+   - fax[48].B ( fax_548_6 B )  ;
+   - fax[48].YC ( fax_548_6 YC )  ( fax_549_6 C )  ;
+   - fax[48].YS ( fax_548_6 YS )  ;
+   - fax[49].A ( fax_549_6 A )  ;
+   - fax[49].B ( fax_549_6 B )  ;
+   - fax[49].YC ( fax_549_6 YC )  ( fax_550_6 C )  ;
+   - fax[49].YS ( fax_549_6 YS )  ;
+   - fax[50].A ( fax_550_6 A )  ;
+   - fax[50].B ( fax_550_6 B )  ;
+   - fax[50].YC ( fax_550_6 YC )  ( fax_551_6 C )  ;
+   - fax[50].YS ( fax_550_6 YS )  ;
+   - fax[51].A ( fax_551_6 A )  ;
+   - fax[51].B ( fax_551_6 B )  ;
+   - fax[51].YC ( fax_551_6 YC )  ( fax_552_6 C )  ;
+   - fax[51].YS ( fax_551_6 YS )  ;
+   - fax[52].A ( fax_552_6 A )  ;
+   - fax[52].B ( fax_552_6 B )  ;
+   - fax[52].YC ( fax_552_6 YC )  ( fax_553_6 C )  ;
+   - fax[52].YS ( fax_552_6 YS )  ;
+   - fax[53].A ( fax_553_6 A )  ;
+   - fax[53].B ( fax_553_6 B )  ;
+   - fax[53].YC ( fax_553_6 YC )  ( fax_554_6 C )  ;
+   - fax[53].YS ( fax_553_6 YS )  ;
+   - fax[54].A ( fax_554_6 A )  ;
+   - fax[54].B ( fax_554_6 B )  ;
+   - fax[54].YC ( fax_554_6 YC )  ( fax_555_6 C )  ;
+   - fax[54].YS ( fax_554_6 YS )  ;
+   - fax[55].A ( fax_555_6 A )  ;
+   - fax[55].B ( fax_555_6 B )  ;
+   - fax[55].YC ( fax_555_6 YC )  ( fax_556_6 C )  ;
+   - fax[55].YS ( fax_555_6 YS )  ;
+   - fax[56].A ( fax_556_6 A )  ;
+   - fax[56].B ( fax_556_6 B )  ;
+   - fax[56].YC ( fax_556_6 YC )  ( fax_557_6 C )  ;
+   - fax[56].YS ( fax_556_6 YS )  ;
+   - fax[57].A ( fax_557_6 A )  ;
+   - fax[57].B ( fax_557_6 B )  ;
+   - fax[57].YC ( fax_557_6 YC )  ( fax_558_6 C )  ;
+   - fax[57].YS ( fax_557_6 YS )  ;
+   - fax[58].A ( fax_558_6 A )  ;
+   - fax[58].B ( fax_558_6 B )  ;
+   - fax[58].YC ( fax_558_6 YC )  ( fax_559_6 C )  ;
+   - fax[58].YS ( fax_558_6 YS )  ;
+   - fax[59].A ( fax_559_6 A )  ;
+   - fax[59].B ( fax_559_6 B )  ;
+   - fax[59].YC ( fax_559_6 YC )  ( fax_560_6 C )  ;
+   - fax[59].YS ( fax_559_6 YS )  ;
+   - fax[60].A ( fax_560_6 A )  ;
+   - fax[60].B ( fax_560_6 B )  ;
+   - fax[60].YC ( fax_560_6 YC )  ( fax_561_6 C )  ;
+   - fax[60].YS ( fax_560_6 YS )  ;
+   - fax[61].A ( fax_561_6 A )  ;
+   - fax[61].B ( fax_561_6 B )  ;
+   - fax[61].YC ( fax_561_6 YC )  ( fax_562_6 C )  ;
+   - fax[61].YS ( fax_561_6 YS )  ;
+   - fax[62].A ( fax_562_6 A )  ;
+   - fax[62].B ( fax_562_6 B )  ;
+   - fax[62].YC ( fax_562_6 YC )  ( fax_563_6 C )  ;
+   - fax[62].YS ( fax_562_6 YS )  ;
+   - fax[63].A ( fax_563_6 A )  ;
+   - fax[63].B ( fax_563_6 B )  ;
+   - fax[63].YC ( fax_563_6 YC )  ( fax_564_6 C )  ;
+   - fax[63].YS ( fax_563_6 YS )  ;
+   - fax[64].A ( fax_564_6 A )  ;
+   - fax[64].B ( fax_564_6 B )  ;
+   - fax[64].YC ( fax_564_6 YC )  ( fax_565_6 C )  ;
+   - fax[64].YS ( fax_564_6 YS )  ;
+   - fax[65].A ( fax_565_6 A )  ;
+   - fax[65].B ( fax_565_6 B )  ;
+   - fax[65].YC ( fax_565_6 YC )  ( fax_566_6 C )  ;
+   - fax[65].YS ( fax_565_6 YS )  ;
+   - fax[66].A ( fax_566_6 A )  ;
+   - fax[66].B ( fax_566_6 B )  ;
+   - fax[66].YC ( fax_566_6 YC )  ( fax_567_6 C )  ;
+   - fax[66].YS ( fax_566_6 YS )  ;
+   - fax[67].A ( fax_567_6 A )  ;
+   - fax[67].B ( fax_567_6 B )  ;
+   - fax[67].YC ( fax_567_6 YC )  ( fax_568_6 C )  ;
+   - fax[67].YS ( fax_567_6 YS )  ;
+   - fax[68].A ( fax_568_6 A )  ;
+   - fax[68].B ( fax_568_6 B )  ;
+   - fax[68].YC ( fax_568_6 YC )  ( fax_569_6 C )  ;
+   - fax[68].YS ( fax_568_6 YS )  ;
+   - fax[69].A ( fax_569_6 A )  ;
+   - fax[69].B ( fax_569_6 B )  ;
+   - fax[69].YC ( fax_569_6 YC )  ( fax_570_6 C )  ;
+   - fax[69].YS ( fax_569_6 YS )  ;
+   - fax[70].A ( fax_570_6 A )  ;
+   - fax[70].B ( fax_570_6 B )  ;
+   - fax[70].YC ( fax_570_6 YC )  ( fax_571_6 C )  ;
+   - fax[70].YS ( fax_570_6 YS )  ;
+   - fax[71].A ( fax_571_6 A )  ;
+   - fax[71].B ( fax_571_6 B )  ;
+   - fax[71].YC ( fax_571_6 YC )  ( fax_572_6 C )  ;
+   - fax[71].YS ( fax_571_6 YS )  ;
+   - fax[72].A ( fax_572_6 A )  ;
+   - fax[72].B ( fax_572_6 B )  ;
+   - fax[72].YC ( fax_572_6 YC )  ( fax_573_6 C )  ;
+   - fax[72].YS ( fax_572_6 YS )  ;
+   - fax[73].A ( fax_573_6 A )  ;
+   - fax[73].B ( fax_573_6 B )  ;
+   - fax[73].YC ( fax_573_6 YC )  ( fax_574_6 C )  ;
+   - fax[73].YS ( fax_573_6 YS )  ;
+   - fax[74].A ( fax_574_6 A )  ;
+   - fax[74].B ( fax_574_6 B )  ;
+   - fax[74].YC ( fax_574_6 YC )  ( fax_575_6 C )  ;
+   - fax[74].YS ( fax_574_6 YS )  ;
+   - fax[75].A ( fax_575_6 A )  ;
+   - fax[75].B ( fax_575_6 B )  ;
+   - fax[75].YC ( fax_575_6 YC )  ( fax_576_6 C )  ;
+   - fax[75].YS ( fax_575_6 YS )  ;
+   - fax[76].A ( fax_576_6 A )  ;
+   - fax[76].B ( fax_576_6 B )  ;
+   - fax[76].YC ( fax_576_6 YC )  ( fax_577_6 C )  ;
+   - fax[76].YS ( fax_576_6 YS )  ;
+   - fax[77].A ( fax_577_6 A )  ;
+   - fax[77].B ( fax_577_6 B )  ;
+   - fax[77].YC ( fax_577_6 YC )  ( fax_578_6 C )  ;
+   - fax[77].YS ( fax_577_6 YS )  ;
+   - fax[78].A ( fax_578_6 A )  ;
+   - fax[78].B ( fax_578_6 B )  ;
+   - fax[78].YC ( fax_578_6 YC )  ( fax_579_6 C )  ;
+   - fax[78].YS ( fax_578_6 YS )  ;
+   - fax[79].A ( fax_579_6 A )  ;
+   - fax[79].B ( fax_579_6 B )  ;
+   - fax[79].YC ( fax_579_6 YC )  ( fax_580_6 C )  ;
+   - fax[79].YS ( fax_579_6 YS )  ;
+   - fax[80].A ( fax_580_6 A )  ;
+   - fax[80].B ( fax_580_6 B )  ;
+   - fax[80].YC ( fax_580_6 YC )  ( fax_581_6 C )  ;
+   - fax[80].YS ( fax_580_6 YS )  ;
+   - fax[81].A ( fax_581_6 A )  ;
+   - fax[81].B ( fax_581_6 B )  ;
+   - fax[81].YC ( fax_581_6 YC )  ( fax_582_6 C )  ;
+   - fax[81].YS ( fax_581_6 YS )  ;
+   - fax[82].A ( fax_582_6 A )  ;
+   - fax[82].B ( fax_582_6 B )  ;
+   - fax[82].YC ( fax_582_6 YC )  ( fax_583_6 C )  ;
+   - fax[82].YS ( fax_582_6 YS )  ;
+   - fax[83].A ( fax_583_6 A )  ;
+   - fax[83].B ( fax_583_6 B )  ;
+   - fax[83].YC ( fax_583_6 YC )  ( fax_584_6 C )  ;
+   - fax[83].YS ( fax_583_6 YS )  ;
+   - fax[84].A ( fax_584_6 A )  ;
+   - fax[84].B ( fax_584_6 B )  ;
+   - fax[84].YC ( fax_584_6 YC )  ( fax_585_6 C )  ;
+   - fax[84].YS ( fax_584_6 YS )  ;
+   - fax[85].A ( fax_585_6 A )  ;
+   - fax[85].B ( fax_585_6 B )  ;
+   - fax[85].YC ( fax_585_6 YC )  ( fax_586_6 C )  ;
+   - fax[85].YS ( fax_585_6 YS )  ;
+   - fax[86].A ( fax_586_6 A )  ;
+   - fax[86].B ( fax_586_6 B )  ;
+   - fax[86].YC ( fax_586_6 YC )  ( fax_587_6 C )  ;
+   - fax[86].YS ( fax_586_6 YS )  ;
+   - fax[87].A ( fax_587_6 A )  ;
+   - fax[87].B ( fax_587_6 B )  ;
+   - fax[87].YC ( fax_587_6 YC )  ( fax_588_6 C )  ;
+   - fax[87].YS ( fax_587_6 YS )  ;
+   - fax[88].A ( fax_588_6 A )  ;
+   - fax[88].B ( fax_588_6 B )  ;
+   - fax[88].YC ( fax_588_6 YC )  ( fax_589_6 C )  ;
+   - fax[88].YS ( fax_588_6 YS )  ;
+   - fax[89].A ( fax_589_6 A )  ;
+   - fax[89].B ( fax_589_6 B )  ;
+   - fax[89].YC ( fax_589_6 YC )  ( fax_590_6 C )  ;
+   - fax[89].YS ( fax_589_6 YS )  ;
+   - fax[90].A ( fax_590_6 A )  ;
+   - fax[90].B ( fax_590_6 B )  ;
+   - fax[90].YC ( fax_590_6 YC )  ( fax_591_6 C )  ;
+   - fax[90].YS ( fax_590_6 YS )  ;
+   - fax[91].A ( fax_591_6 A )  ;
+   - fax[91].B ( fax_591_6 B )  ;
+   - fax[91].YC ( fax_591_6 YC )  ( fax_592_6 C )  ;
+   - fax[91].YS ( fax_591_6 YS )  ;
+   - fax[92].A ( fax_592_6 A )  ;
+   - fax[92].B ( fax_592_6 B )  ;
+   - fax[92].YC ( fax_592_6 YC )  ( fax_593_6 C )  ;
+   - fax[92].YS ( fax_592_6 YS )  ;
+   - fax[93].A ( fax_593_6 A )  ;
+   - fax[93].B ( fax_593_6 B )  ;
+   - fax[93].YC ( fax_593_6 YC )  ( fax_594_6 C )  ;
+   - fax[93].YS ( fax_593_6 YS )  ;
+   - fax[94].A ( fax_594_6 A )  ;
+   - fax[94].B ( fax_594_6 B )  ;
+   - fax[94].YC ( fax_594_6 YC )  ( fax_595_6 C )  ;
+   - fax[94].YS ( fax_594_6 YS )  ;
+   - fax[95].A ( fax_595_6 A )  ;
+   - fax[95].B ( fax_595_6 B )  ;
+   - fax[95].YC ( fax_595_6 YC )  ( fax_596_6 C )  ;
+   - fax[95].YS ( fax_595_6 YS )  ;
+   - fax[96].A ( fax_596_6 A )  ;
+   - fax[96].B ( fax_596_6 B )  ;
+   - fax[96].YC ( fax_596_6 YC )  ( fax_597_6 C )  ;
+   - fax[96].YS ( fax_596_6 YS )  ;
+   - fax[97].A ( fax_597_6 A )  ;
+   - fax[97].B ( fax_597_6 B )  ;
+   - fax[97].YC ( fax_597_6 YC )  ( fax_598_6 C )  ;
+   - fax[97].YS ( fax_597_6 YS )  ;
+   - fax[98].A ( fax_598_6 A )  ;
+   - fax[98].B ( fax_598_6 B )  ;
+   - fax[98].YC ( fax_598_6 YC )  ( fax_599_6 C )  ;
+   - fax[98].YS ( fax_598_6 YS )  ;
+   - fax[99].A ( fax_599_6 A )  ;
+   - fax[99].B ( fax_599_6 B )  ;
+   - fax[99].YC ( fax_599_6 YC )  ;
+   - fax[99].YS ( fax_599_6 YS )  ;
+END NETS
+
+
+END DESIGN
+

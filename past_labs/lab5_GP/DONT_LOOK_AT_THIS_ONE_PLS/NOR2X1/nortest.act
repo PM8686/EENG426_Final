@@ -1,0 +1,21 @@
+import "cells.act";
+import std::cells;
+open std::cells;
+defproc nortest1() {
+    pint NUM = 100;
+    NOR2X1 nor[NUM];
+
+    // connect the output of cell i to input 0 of cell i+1
+    (i:NUM-1: nor[i].Y=nor[i+1].A;) 
+}
+
+defproc nortest2() {
+    pint NUM = 100;
+    NOR2X1 nor[NUM];
+
+    // connect the output of cell i to input 1 of cell i+1
+    (i:NUM-1: nor[i].Y=nor[i+1].B;) 
+}
+
+nortest1 t1;
+nortest2 t2;

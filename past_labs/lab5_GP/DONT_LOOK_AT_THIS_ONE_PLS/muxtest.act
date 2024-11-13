@@ -1,0 +1,33 @@
+import "cells.act";
+import std::cells;
+import std::gates;
+open std::cells;
+open std::gates;
+
+defproc muxtest1() {
+    pint NUM = 100;
+    MUX2X1 mux[NUM];
+
+    // connect the output of cell i to input 0 of cell i+1
+    (i:NUM-1: mux[i].Y=mux[i+1].A;) 
+}
+
+defproc muxtest2() {
+    pint NUM = 100;
+    MUX2X1 mux[NUM];
+
+    // connect the output of cell i to input 1 of cell i+1
+    (i:NUM-1: mux[i].Y=mux[i+1].B;) 
+}
+
+defproc muxtest3() {
+    pint NUM = 100;
+    MUX2X1 mux[NUM];
+
+    // connect the output of cell i to input 1 of cell i+1
+    (i:NUM-1: mux[i].Y=mux[i+1].S;) 
+}
+
+muxtest1 t1;
+muxtest2 t2;
+muxtest3 t3;

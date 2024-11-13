@@ -1,0 +1,11 @@
+import "cells.act";
+import std::cells;
+open std::cells;
+defproc tielotest() {
+    pint NUM = 1000;
+    INVX1 tielo[NUM];
+
+    (i:NUM-1: tielo[i].Y=tielo[i+1].Y;)
+}
+
+tielotest t;

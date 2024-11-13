@@ -1,0 +1,22 @@
+import "cells.act";
+import std::cells;
+open std::cells;
+
+defproc latchtest1() {
+    pint NUM = 100;
+    LATCH latch[NUM];
+
+    // connect the output of cell i to input 0 of cell i+1
+    (i:NUM-1: latch[i].Q=latch[i+1].CLK;) 
+}
+
+defproc latchtest2() {
+    pint NUM = 100;
+    LATCH latch[NUM];
+
+    // connect the output of cell i to input 1 of cell i+1
+    (i:NUM-1: latch[i].Q=latch[i+1].D;) 
+}
+
+latchtest1 t1;
+latchtest2 t2;

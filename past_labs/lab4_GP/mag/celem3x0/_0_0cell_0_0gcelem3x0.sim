@@ -1,0 +1,13 @@
+| units: 7.5 tech: sky130l format: MIT
+p #10 a_27_27# out 2 6 44 27
+n in(1) a_55_5# a_60_5# 2 15 58 5
+n out GND #10 4 6 70 14
+n Vdd GND a_41_14# 28 6 13 14
+n in(2) out a_55_5# 2 15 53 5
+p in(0) a_60_27# Vdd 2 18 63 27
+p in(1) a_55_27# a_60_27# 2 18 58 27
+n in(0) a_60_5# GND 2 15 63 5
+p out Vdd #10 4 10 70 27
+p in(2) out a_55_27# 2 18 53 27
+n #10 a_41_14# out 2 6 44 14
+p GND Vdd a_27_27# 14 6 13 27

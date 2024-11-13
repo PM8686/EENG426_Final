@@ -1,0 +1,33 @@
+import "cells.act";
+import std::cells;
+import std::gates;
+open std::cells;
+open std::gates;
+
+defproc faxtest1() {
+    pint NUM = 100;
+    FAX1 fax[NUM];
+
+    // connect the output of cell i to input 0 of cell i+1
+    (i:NUM-1: fax[i].YC=fax[i+1].A;) 
+}
+
+defproc faxtest2() {
+    pint NUM = 100;
+    FAX1 fax[NUM];
+
+    // connect the output of cell i to input 1 of cell i+1
+    (i:NUM-1: fax[i].YS=fax[i+1].B;) 
+}
+
+defproc faxtest3() {
+    pint NUM = 100;
+    FAX1 fax[NUM];
+
+    // connect the output of cell i to input 1 of cell i+1
+    (i:NUM-1: fax[i].YC=fax[i+1].C;) 
+}
+
+faxtest1 t1;
+faxtest2 t2;
+faxtest3 t3;

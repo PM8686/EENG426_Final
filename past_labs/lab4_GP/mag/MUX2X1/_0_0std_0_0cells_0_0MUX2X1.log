@@ -1,0 +1,168 @@
+
+Magic 8.3 revision 105 - Compiled on Mon, 06 Dec 2021 22:32:27 +0200.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Input style generic: scaleFactor=15, multiplier=2
+Processing system .magicrc file
+Loading "_0_0std_0_0cells_0_0MUX2X1" from command line.
+Warning: cell <_0_0std_0_0cells_0_0MUX2X1> from file _0_0std_0_0cells_0_0MUX2X1.mag is not writeable
+Using technology "sky130l", version 1
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:    0.08 x 0.08    (  0.00,  0.00 ), (  0.08,  0.08 )  0.01      
+lambda:        1 x 1       (     0,  0    ), (     1,  1    )  1         
+Extracting _0_0std_0_0cells_0_0MUX2X1 into _0_0std_0_0cells_0_0MUX2X1.ext:
+
+Magic 8.3 revision 105 - Compiled on Mon, 06 Dec 2021 22:32:27 +0200.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Input style generic: scaleFactor=15, multiplier=2
+Processing system .magicrc file
+Loading "_0_0std_0_0cells_0_0MUX2X1" from command line.
+Warning: cell <_0_0std_0_0cells_0_0MUX2X1> from file _0_0std_0_0cells_0_0MUX2X1.mag is not writeable
+Using technology "sky130l", version 1
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:    0.08 x 0.08    (  0.00,  0.00 ), (  0.08,  0.08 )  0.01      
+lambda:        1 x 1       (     0,  0    ), (     1,  1    )  1         
+exttosim finished.
+
+Magic 8.3 revision 105 - Compiled on Mon, 06 Dec 2021 22:32:27 +0200.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Input style generic: scaleFactor=15, multiplier=2
+Processing system .magicrc file
+Loading "_0_0std_0_0cells_0_0MUX2X1" from command line.
+Warning: cell <_0_0std_0_0cells_0_0MUX2X1> from file _0_0std_0_0cells_0_0MUX2X1.mag is not writeable
+Using technology "sky130l", version 1
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:    0.08 x 0.08    (  0.00,  0.00 ), (  0.08,  0.08 )  0.01      
+lambda:        1 x 1       (     0,  0    ), (     1,  1    )  1         
+Extracting _0_0std_0_0cells_0_0MUX2X1 into _0_0std_0_0cells_0_0MUX2X1.ext:
+
+Magic 8.3 revision 105 - Compiled on Mon, 06 Dec 2021 22:32:27 +0200.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Input style generic: scaleFactor=15, multiplier=2
+Processing system .magicrc file
+Loading "_0_0std_0_0cells_0_0MUX2X1" from command line.
+Warning: cell <_0_0std_0_0cells_0_0MUX2X1> from file _0_0std_0_0cells_0_0MUX2X1.mag is not writeable
+Using technology "sky130l", version 1
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:    0.08 x 0.08    (  0.00,  0.00 ), (  0.08,  0.08 )  0.01      
+lambda:        1 x 1       (     0,  0    ), (     1,  1    )  1         
+exttosim finished.
+
+Magic 8.3 revision 105 - Compiled on Mon, 06 Dec 2021 22:32:27 +0200.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Input style generic: scaleFactor=15, multiplier=2
+Processing system .magicrc file
+Loading "_0_0std_0_0cells_0_0MUX2X1" from command line.
+Warning: cell <_0_0std_0_0cells_0_0MUX2X1> from file _0_0std_0_0cells_0_0MUX2X1.mag is not writeable
+Using technology "sky130l", version 1
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:    0.08 x 0.08    (  0.00,  0.00 ), (  0.08,  0.08 )  0.01      
+lambda:        1 x 1       (     0,  0    ), (     1,  1    )  1         
+Extracting _0_0std_0_0cells_0_0MUX2X1 into _0_0std_0_0cells_0_0MUX2X1.ext:
+
+Magic 8.3 revision 105 - Compiled on Mon, 06 Dec 2021 22:32:27 +0200.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Input style generic: scaleFactor=15, multiplier=2
+Processing system .magicrc file
+Loading "_0_0std_0_0cells_0_0MUX2X1" from command line.
+Warning: cell <_0_0std_0_0cells_0_0MUX2X1> from file _0_0std_0_0cells_0_0MUX2X1.mag is not writeable
+Using technology "sky130l", version 1
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:    0.08 x 0.08    (  0.00,  0.00 ), (  0.08,  0.08 )  0.01      
+lambda:        1 x 1       (     0,  0    ), (     1,  1    )  1         
+exttosim finished.
+
+Magic 8.3 revision 105 - Compiled on Mon, 06 Dec 2021 22:32:27 +0200.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Input style generic: scaleFactor=15, multiplier=2
+Processing system .magicrc file
+Loading "_0_0std_0_0cells_0_0MUX2X1" from command line.
+Warning: cell <_0_0std_0_0cells_0_0MUX2X1> from file _0_0std_0_0cells_0_0MUX2X1.mag is not writeable
+Using technology "sky130l", version 1
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:    0.08 x 0.08    (  0.00,  0.00 ), (  0.08,  0.08 )  0.01      
+lambda:        1 x 1       (     0,  0    ), (     1,  1    )  1         
+Extracting _0_0std_0_0cells_0_0MUX2X1 into _0_0std_0_0cells_0_0MUX2X1.ext:
+
+Magic 8.3 revision 105 - Compiled on Mon, 06 Dec 2021 22:32:27 +0200.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Input style generic: scaleFactor=15, multiplier=2
+Processing system .magicrc file
+Loading "_0_0std_0_0cells_0_0MUX2X1" from command line.
+Warning: cell <_0_0std_0_0cells_0_0MUX2X1> from file _0_0std_0_0cells_0_0MUX2X1.mag is not writeable
+Using technology "sky130l", version 1
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:    0.08 x 0.08    (  0.00,  0.00 ), (  0.08,  0.08 )  0.01      
+lambda:        1 x 1       (     0,  0    ), (     1,  1    )  1         
+exttosim finished.
+
+Magic 8.3 revision 105 - Compiled on Mon, 06 Dec 2021 22:32:27 +0200.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Input style generic: scaleFactor=15, multiplier=2
+Processing system .magicrc file
+Loading "_0_0std_0_0cells_0_0MUX2X1" from command line.
+Using technology "sky130l", version 1
+Extracting _0_0std_0_0cells_0_0MUX2X1 into _0_0std_0_0cells_0_0MUX2X1.ext:
+
+Magic 8.3 revision 105 - Compiled on Mon, 06 Dec 2021 22:32:27 +0200.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Input style generic: scaleFactor=15, multiplier=2
+Processing system .magicrc file
+Loading "_0_0std_0_0cells_0_0MUX2X1" from command line.
+Using technology "sky130l", version 1
+exttosim finished.
+
+Magic 8.3 revision 105 - Compiled on Mon, 06 Dec 2021 22:32:27 +0200.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Input style generic: scaleFactor=15, multiplier=2
+Processing system .magicrc file
+Loading "_0_0std_0_0cells_0_0MUX2X1" from command line.
+Using technology "sky130l", version 1
+Extracting _0_0std_0_0cells_0_0MUX2X1 into _0_0std_0_0cells_0_0MUX2X1.ext:
+
+Magic 8.3 revision 105 - Compiled on Mon, 06 Dec 2021 22:32:27 +0200.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Input style generic: scaleFactor=15, multiplier=2
+Processing system .magicrc file
+Loading "_0_0std_0_0cells_0_0MUX2X1" from command line.
+Using technology "sky130l", version 1
+exttosim finished.

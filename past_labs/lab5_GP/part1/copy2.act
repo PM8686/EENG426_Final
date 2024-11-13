@@ -1,0 +1,90 @@
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "pulse.act";
+
+
+open std::cells;
+open std::channel;
+open std::gates;
+namespace globals { }
+
+//2 way copy
+defproc copy2(bd?<8> L; bd!<8> R1; bd!<8> R2)
+{
+  // Internal signals
+  bool control[3];
+
+  // also add reset using nor gate 
+  bool tmp[3];
+  NOR2X1 nor_2(Reset, R1.a, tmp[1]); //need to reset both R channels
+  NOR2X1 nor_3(Reset, R2.a, tmp[2]); 
+  INVX1 inv_1(tmp[1], control[1]);
+  INVX1 inv_2(tmp[2], control[2]);
+
+  INVX1 inv_3(L.r, tmp[0]);
+  OR2X1 or_1(Reset, tmp[0], control[0]); //redundancy
+
+  // C-element control logic: synchronize between request from L and ack from R
+  ctree<3, true> celem(control, L.a);
+
+  // add pulse generator based on control (L.a)
+  bool pulse; 
+  pulseGen pulseG(L.a, pulse);
+
+  // Latch the data from the L channel using the control signal
+  // use an array of latches since each latch only takes one bit at a time (these are done in parallel)
+  LATCH l[8]; //array of latches, one for each of the 8 bits
+  bool tmp_arr[8]; // store initial results to then be NOR with Reset so that initialized to 0
+  l[0](pulse, L.d[0], tmp_arr[0]);
+  l[1](pulse, L.d[1], tmp_arr[1]);
+  l[2](pulse, L.d[2], tmp_arr[2]);
+  l[3](pulse, L.d[3], tmp_arr[3]);
+  l[4](pulse, L.d[4], tmp_arr[4]);
+  l[5](pulse, L.d[5], tmp_arr[5]);
+  l[6](pulse, L.d[6], tmp_arr[6]);
+  l[7](pulse, L.d[7], tmp_arr[7]);
+
+  // inver tmp_arr so nor will output the right thing
+  bool tmp2_arr[8];
+  INVX1 inv1(tmp_arr[0], tmp2_arr[0]);
+  INVX1 inv2(tmp_arr[1], tmp2_arr[1]);
+  INVX1 inv3(tmp_arr[2], tmp2_arr[2]);
+  INVX1 inv4(tmp_arr[3], tmp2_arr[3]);
+  INVX1 inv5(tmp_arr[4], tmp2_arr[4]);
+  INVX1 inv6(tmp_arr[5], tmp2_arr[5]);
+  INVX1 inv7(tmp_arr[6], tmp2_arr[6]);
+  INVX1 inv8(tmp_arr[7], tmp2_arr[7]);
+
+
+  // NOR with Reset so that initialized to 0 on reset
+  NOR2X1 nor1(Reset, tmp2_arr[0], R1.d[0]);
+  NOR2X1 nor2(Reset, tmp2_arr[1], R1.d[1]);
+  NOR2X1 nor3(Reset, tmp2_arr[2], R1.d[2]);
+  NOR2X1 nor4(Reset, tmp2_arr[3], R1.d[3]);
+  NOR2X1 nor5(Reset, tmp2_arr[4], R1.d[4]);
+  NOR2X1 nor6(Reset, tmp2_arr[5], R1.d[5]);
+  NOR2X1 nor7(Reset, tmp2_arr[6], R1.d[6]);
+  NOR2X1 nor8(Reset, tmp2_arr[7], R1.d[7]);
+
+  // wire together R1 and R2 data
+  R2.d[0] = R1.d[0];
+  R2.d[1] = R1.d[1];
+  R2.d[2] = R1.d[2];
+  R2.d[3] = R1.d[3];
+  R2.d[4] = R1.d[4];
+  R2.d[5] = R1.d[5];
+  R2.d[6] = R1.d[6];
+  R2.d[7] = R1.d[7];
+
+
+  // write to right request using delay
+  bool tmp_Rr1, tmp_Rr2;
+  CLKBUF3 delay1(L.a, tmp_Rr1);
+  CLKBUF3 delay2(tmp_Rr1, tmp_Rr2);
+  CLKBUF3 delay3(tmp_Rr2, R1.r);
+  R2.r = R1.r;
+}
+
+// have to use tmp variables for inverting or else repeats forever

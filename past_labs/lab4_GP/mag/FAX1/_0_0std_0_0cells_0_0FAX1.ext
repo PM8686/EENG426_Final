@@ -1,0 +1,102 @@
+timestamp 1729066705
+version 8.3
+tech sky130l
+style generic
+scale 1 1 7.5
+resistclasses 1000 1000
+node "a_91_4#" 6666 0 91 4 ndiffusion 60 46 0 0
+node "a_86_4#" 6666 0 86 4 ndiffusion 60 46 0 0
+node "#15" 10403 0 54 4 ndiffusion 200 100 0 0
+equiv "#15" "#15"
+node "GND" 24461 0 31 14 ndiffusion 416 210 0 0
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+equiv "GND" "GND"
+node "a_24_14#" 2000 0 24 14 ndiffusion 50 30 0 0
+node "#3" 6854 0 8 14 ndiffusion 100 60 0 0
+equiv "#3" "#3"
+node "YS" 2800 0 114 31 pdiffusion 30 22 40 26
+equiv "YS" "YS"
+equiv "YS" "YS"
+node "YC" 2800 0 103 18 ndiffusion 30 22 40 26
+equiv "YC" "YC"
+equiv "YC" "YC"
+node "a_91_31#" 16000 0 91 31 pdiffusion 0 0 144 102
+node "a_86_31#" 16000 0 86 31 pdiffusion 0 0 144 102
+node "_YS" 10814 0 77 4 ndiffusion 140 54 300 110
+equiv "_YS" "_YS"
+equiv "_YS" "_YS"
+equiv "_YS" "_YS"
+node "#12" 17613 0 54 31 pdiffusion 0 0 376 172
+equiv "#12" "#12"
+node "a_38_31#" 4600 0 38 31 pdiffusion 0 0 115 56
+node "_YC" 6028 0 15 14 ndiffusion 70 34 115 56
+equiv "_YC" "_YC"
+equiv "_YC" "_YC"
+equiv "_YC" "_YC"
+equiv "_YC" "_YC"
+equiv "_YC" "_YC"
+node "#8" 11932 0 15 31 pdiffusion 0 0 240 116
+equiv "#8" "#8"
+node "Vdd" 36095 0 8 31 pdiffusion 0 0 776 344
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+node "B" 0 0 21 77 polysilicon 0 0 0 0
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+equiv "B" "B"
+node "C" 0 0 13 12 polysilicon 0 0 0 0
+equiv "C" "C"
+equiv "C" "C"
+equiv "C" "C"
+equiv "C" "C"
+equiv "C" "C"
+equiv "C" "C"
+node "A" 0 0 29 12 polysilicon 0 0 0 0
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+equiv "A" "A"
+device mosfet nfet 119 18 120 19 2 6 "Gnd!" "_YS" 4 0 "GND" 6 0 "YS" 6 0
+device mosfet nfet 101 18 102 19 2 6 "Gnd!" "_YC" 4 0 "GND" 6 0 "YC" 6 0
+device mosfet nfet 94 4 95 5 2 20 "Gnd!" "A" 4 0 "a_91_4#" 20 0 "GND" 20 0
+device mosfet nfet 89 4 90 5 2 20 "Gnd!" "B" 4 0 "a_86_4#" 20 0 "a_91_4#" 20 0
+device mosfet nfet 84 4 85 5 2 20 "Gnd!" "C" 4 0 "_YS" 20 0 "a_86_4#" 20 0
+device mosfet nfet 75 4 76 5 2 20 "Gnd!" "_YC" 4 0 "#15" 20 0 "_YS" 20 0
+device mosfet nfet 68 4 69 5 2 20 "Gnd!" "A" 4 0 "GND" 20 0 "#15" 20 0
+device mosfet nfet 59 4 60 5 2 20 "Gnd!" "C" 4 0 "#15" 20 0 "GND" 20 0
+device mosfet nfet 52 4 53 5 2 20 "Gnd!" "B" 4 0 "GND" 20 0 "#15" 20 0
+device mosfet nfet 43 14 44 15 2 10 "Gnd!" "A" 4 0 "#3" 10 0 "GND" 10 0
+device mosfet nfet 36 14 37 15 2 10 "Gnd!" "B" 4 0 "GND" 10 0 "#3" 10 0
+device mosfet nfet 29 14 30 15 2 10 "Gnd!" "A" 4 0 "a_24_14#" 10 0 "GND" 10 0
+device mosfet nfet 22 14 23 15 2 10 "Gnd!" "B" 4 0 "_YC" 10 0 "a_24_14#" 10 0
+device mosfet nfet 13 14 14 15 2 10 "Gnd!" "C" 4 0 "#3" 10 0 "_YC" 10 0
+device mosfet pfet 119 31 120 32 2 8 "Vdd!" "_YS" 4 0 "YS" 8 0 "Vdd" 8 0
+device mosfet pfet 101 31 102 32 2 8 "Vdd!" "_YC" 4 0 "Vdd" 8 0 "YC" 8 0
+device mosfet pfet 94 31 95 32 2 48 "Vdd!" "A" 4 0 "a_91_31#" 48 0 "Vdd" 48 0
+device mosfet pfet 89 31 90 32 2 48 "Vdd!" "B" 4 0 "a_86_31#" 48 0 "a_91_31#" 48 0
+device mosfet pfet 84 31 85 32 2 48 "Vdd!" "C" 4 0 "_YS" 48 0 "a_86_31#" 48 0
+device mosfet pfet 75 31 76 32 2 36 "Vdd!" "_YC" 4 0 "#12" 36 0 "_YS" 36 0
+device mosfet pfet 68 31 69 32 2 40 "Vdd!" "A" 4 0 "Vdd" 40 0 "#12" 40 0
+device mosfet pfet 59 31 60 32 2 36 "Vdd!" "C" 4 0 "#12" 36 0 "Vdd" 36 0
+device mosfet pfet 52 31 53 32 2 36 "Vdd!" "B" 4 0 "Vdd" 36 0 "#12" 36 0
+device mosfet pfet 43 31 44 32 2 23 "Vdd!" "A" 4 0 "a_38_31#" 23 0 "Vdd" 23 0
+device mosfet pfet 36 31 37 32 2 23 "Vdd!" "B" 4 0 "#8" 23 0 "a_38_31#" 23 0
+device mosfet pfet 29 31 30 32 2 23 "Vdd!" "A" 4 0 "_YC" 23 0 "#8" 23 0
+device mosfet pfet 22 31 23 32 2 23 "Vdd!" "B" 4 0 "#8" 23 0 "_YC" 23 0
+device mosfet pfet 13 31 14 32 2 11 "Vdd!" "C" 4 0 "Vdd" 11 0 "#8" 11 0

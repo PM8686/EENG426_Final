@@ -1,0 +1,2 @@
+import "accum.act";
+accum ac;

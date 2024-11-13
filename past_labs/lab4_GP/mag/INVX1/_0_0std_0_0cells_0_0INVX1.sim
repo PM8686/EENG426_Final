@@ -1,0 +1,3 @@
+| units: 7.5 tech: sky130l format: MIT
+n A GND Y 2 6 13 6
+p A Vdd Y 2 8 13 19

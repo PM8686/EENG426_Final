@@ -1,0 +1,219 @@
+magic
+tech sky130l
+timestamp 1730593976
+<< m1 >>
+rect 10 49 15 54
+rect 18 49 22 54
+rect 25 49 26 52
+rect 25 48 29 49
+rect 32 48 36 52
+rect 25 44 28 48
+rect 23 41 28 44
+rect 9 28 12 40
+rect 23 33 26 41
+rect 8 23 13 24
+rect 8 20 9 23
+rect 12 20 13 23
+rect 8 19 13 20
+rect 8 15 12 16
+rect 11 12 12 15
+rect 16 4 19 31
+rect 22 23 27 24
+rect 22 20 23 23
+rect 26 20 27 23
+rect 22 19 27 20
+rect 33 23 36 48
+rect 33 19 36 20
+rect 40 15 43 36
+rect 25 3 30 8
+<< m2c >>
+rect 26 49 29 52
+rect 9 20 12 23
+rect 8 12 11 15
+rect 23 20 26 23
+rect 33 20 36 23
+rect 40 12 43 15
+<< m2 >>
+rect 25 52 30 53
+rect 25 49 26 52
+rect 29 49 30 52
+rect 25 48 30 49
+rect 8 27 20 32
+rect 8 23 13 24
+rect 8 20 9 23
+rect 12 22 13 23
+rect 22 23 27 24
+rect 22 22 23 23
+rect 12 20 23 22
+rect 26 22 27 23
+rect 32 23 37 24
+rect 32 22 33 23
+rect 26 20 33 22
+rect 36 20 37 23
+rect 8 19 37 20
+rect 7 15 12 16
+rect 39 15 44 16
+rect 7 12 8 15
+rect 11 12 40 15
+rect 43 12 44 15
+rect 7 11 12 12
+rect 39 11 44 12
+rect 15 3 30 8
+<< labels >>
+rlabel m1 s 19 50 22 53 6 A
+port 1 nsew signal input
+rlabel m1 s 18 49 22 50 6 A
+port 1 nsew signal input
+rlabel m1 s 18 50 19 53 6 A
+port 1 nsew signal input
+rlabel m1 s 18 53 22 54 6 A
+port 1 nsew signal input
+rlabel m1 s 14 50 15 53 6 B
+port 2 nsew signal input
+rlabel m1 s 11 50 14 53 6 B
+port 2 nsew signal input
+rlabel m1 s 10 49 15 50 6 B
+port 2 nsew signal input
+rlabel m1 s 10 50 11 53 6 B
+port 2 nsew signal input
+rlabel m1 s 10 53 15 54 6 B
+port 2 nsew signal input
+rlabel m2 s 39 11 44 12 6 Y
+port 3 nsew signal output
+rlabel m2 s 39 15 44 16 6 Y
+port 3 nsew signal output
+rlabel m2 s 43 12 44 15 6 Y
+port 3 nsew signal output
+rlabel m2 s 40 12 43 15 6 Y
+port 3 nsew signal output
+rlabel m2 s 11 12 40 15 6 Y
+port 3 nsew signal output
+rlabel m2 s 8 12 11 15 6 Y
+port 3 nsew signal output
+rlabel m2 s 7 11 12 12 6 Y
+port 3 nsew signal output
+rlabel m2 s 7 12 8 15 6 Y
+port 3 nsew signal output
+rlabel m2 s 7 15 12 16 6 Y
+port 3 nsew signal output
+rlabel m2c s 40 12 43 15 6 Y
+port 3 nsew signal output
+rlabel m2c s 8 12 11 15 6 Y
+port 3 nsew signal output
+rlabel m1 s 40 20 43 23 6 Y
+port 3 nsew signal output
+rlabel m1 s 40 23 43 32 6 Y
+port 3 nsew signal output
+rlabel m1 s 40 32 43 35 6 Y
+port 3 nsew signal output
+rlabel m1 s 40 35 43 36 6 Y
+port 3 nsew signal output
+rlabel m1 s 40 12 43 15 6 Y
+port 3 nsew signal output
+rlabel m1 s 40 15 43 20 6 Y
+port 3 nsew signal output
+rlabel m1 s 11 12 12 15 6 Y
+port 3 nsew signal output
+rlabel m1 s 8 12 11 15 6 Y
+port 3 nsew signal output
+rlabel m1 s 8 15 12 16 6 Y
+port 3 nsew signal output
+rlabel m2 s 29 49 30 52 6 Vdd
+port 4 nsew power input
+rlabel m2 s 26 49 29 52 6 Vdd
+port 4 nsew power input
+rlabel m2 s 25 48 30 49 6 Vdd
+port 4 nsew power input
+rlabel m2 s 25 49 26 52 6 Vdd
+port 4 nsew power input
+rlabel m2 s 25 52 30 53 6 Vdd
+port 4 nsew power input
+rlabel m2c s 26 49 29 52 6 Vdd
+port 4 nsew power input
+rlabel m1 s 26 49 29 52 6 Vdd
+port 4 nsew power input
+rlabel m1 s 25 44 28 48 6 Vdd
+port 4 nsew power input
+rlabel m1 s 25 48 29 49 6 Vdd
+port 4 nsew power input
+rlabel m1 s 25 49 26 52 6 Vdd
+port 4 nsew power input
+rlabel m1 s 23 33 26 34 6 Vdd
+port 4 nsew power input
+rlabel m1 s 23 34 26 37 6 Vdd
+port 4 nsew power input
+rlabel m1 s 23 37 26 41 6 Vdd
+port 4 nsew power input
+rlabel m1 s 23 41 28 44 6 Vdd
+port 4 nsew power input
+rlabel m2 s 32 22 33 23 6 GND
+port 5 nsew ground input
+rlabel m2 s 32 23 37 24 6 GND
+port 5 nsew ground input
+rlabel m2 s 22 22 23 23 6 GND
+port 5 nsew ground input
+rlabel m2 s 22 23 27 24 6 GND
+port 5 nsew ground input
+rlabel m2 s 36 20 37 23 6 GND
+port 5 nsew ground input
+rlabel m2 s 33 20 36 23 6 GND
+port 5 nsew ground input
+rlabel m2 s 26 20 33 22 6 GND
+port 5 nsew ground input
+rlabel m2 s 26 22 27 23 6 GND
+port 5 nsew ground input
+rlabel m2 s 23 20 26 23 6 GND
+port 5 nsew ground input
+rlabel m2 s 12 20 23 22 6 GND
+port 5 nsew ground input
+rlabel m2 s 12 22 13 23 6 GND
+port 5 nsew ground input
+rlabel m2 s 9 20 12 23 6 GND
+port 5 nsew ground input
+rlabel m2 s 8 19 37 20 6 GND
+port 5 nsew ground input
+rlabel m2 s 8 20 9 23 6 GND
+port 5 nsew ground input
+rlabel m2 s 8 23 13 24 6 GND
+port 5 nsew ground input
+rlabel m2c s 33 20 36 23 6 GND
+port 5 nsew ground input
+rlabel m2c s 23 20 26 23 6 GND
+port 5 nsew ground input
+rlabel m2c s 9 20 12 23 6 GND
+port 5 nsew ground input
+rlabel m1 s 33 19 36 20 6 GND
+port 5 nsew ground input
+rlabel m1 s 33 20 36 23 6 GND
+port 5 nsew ground input
+rlabel m1 s 33 23 36 48 6 GND
+port 5 nsew ground input
+rlabel m1 s 32 48 36 52 6 GND
+port 5 nsew ground input
+rlabel m1 s 26 20 27 23 6 GND
+port 5 nsew ground input
+rlabel m1 s 23 20 26 23 6 GND
+port 5 nsew ground input
+rlabel m1 s 22 19 27 20 6 GND
+port 5 nsew ground input
+rlabel m1 s 22 20 23 23 6 GND
+port 5 nsew ground input
+rlabel m1 s 22 23 27 24 6 GND
+port 5 nsew ground input
+rlabel m1 s 12 20 13 23 6 GND
+port 5 nsew ground input
+rlabel m1 s 9 20 12 23 6 GND
+port 5 nsew ground input
+rlabel m1 s 8 19 13 20 6 GND
+port 5 nsew ground input
+rlabel m1 s 8 20 9 23 6 GND
+port 5 nsew ground input
+rlabel m1 s 8 23 13 24 6 GND
+port 5 nsew ground input
+<< properties >>
+string LEFsite CoreSite
+string LEFclass CORE
+string FIXED_BBOX 0 0 48 56
+string LEFsymmetry X Y
+string LEFview TRUE
+<< end >>

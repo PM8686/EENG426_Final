@@ -1,0 +1,22 @@
+import "cells.act";
+import std::cells;
+open std::cells;
+
+defproc ortest1() {
+    pint NUM = 100;
+    OR2X1 or[NUM];
+
+    // connect the output of cell i to input 0 of cell i+1
+    (i:NUM-1: or[i].Y=or[i+1].A;) 
+}
+
+defproc ortest2() {
+    pint NUM = 100;
+    OR2X1 or[NUM];
+
+    // connect the output of cell i to input 1 of cell i+1
+    (i:NUM-1: or[i].Y=or[i+1].B;) 
+}
+
+ortest1 t1;
+ortest2 t2;

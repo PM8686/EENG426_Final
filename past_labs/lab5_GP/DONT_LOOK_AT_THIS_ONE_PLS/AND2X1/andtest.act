@@ -1,0 +1,22 @@
+import "cells.act";
+import std::cells;
+open std::cells;
+
+defproc andtest1() {
+    pint NUM = 100;
+    AND2X1 and[NUM];
+
+    // connect the output of cell i to input 0 of cell i+1
+    (i:NUM-1: and[i].Y=and[i+1].A;) 
+}
+
+defproc andtest2() {
+    pint NUM = 100;
+    AND2X1 and[NUM];
+
+    // connect the output of cell i to input 1 of cell i+1
+    (i:NUM-1: and[i].Y=and[i+1].B;) 
+}
+
+andtest1 t1;
+andtest2 t2;

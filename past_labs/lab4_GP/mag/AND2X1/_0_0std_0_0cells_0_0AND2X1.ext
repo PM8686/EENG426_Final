@@ -1,0 +1,31 @@
+timestamp 1729430656
+version 8.3
+tech sky130l
+style generic
+scale 1 1 7.5
+resistclasses 1000 1000
+port "B" 3 17 33 17 33 m1
+node "GND" 2489 0 22 6 ndiffusion 46 30 0 0
+node "a_15_6#" 2000 0 15 6 ndiffusion 50 30 0 0
+node "Y" 2800 0 29 10 ndiffusion 30 22 40 26
+equiv "Y" "Y"
+equiv "Y" "Y"
+node "_Y" 1600 0 15 23 pdiffusion 0 0 40 26
+node "Vdd" 6291 0 8 23 pdiffusion 0 0 80 52
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+node "_Y" 2000 0 8 6 ndiffusion 50 30 0 0
+equiv "_Y" "_Y"
+equiv "_Y" "_Y"
+node "A" 0 0 16 -4 polysilicon 0 0 0 0
+equiv "A" "A"
+equiv "A" "A"
+node "B" 0 0 17 33 m1 0 0 0 0
+equiv "B" "B"
+equiv "B" "B"
+device mosfet nfet 27 10 28 11 2 6 "Gnd!" "_Y" 4 0 "GND" 6 0 "Y" 6 0
+device mosfet nfet 20 6 21 7 2 10 "Gnd!" "A" 4 0 "a_15_6#" 10 0 "GND" 10 0
+device mosfet nfet 13 6 14 7 2 10 "Gnd!" "B" 4 0 "_Y" 10 0 "a_15_6#" 10 0
+device mosfet pfet 27 23 28 24 2 8 "Vdd!" "_Y" 4 0 "Vdd" 8 0 "Y" 8 0
+device mosfet pfet 20 23 21 24 2 8 "Vdd!" "A" 4 0 "_Y" 8 0 "Vdd" 8 0
+device mosfet pfet 13 23 14 24 2 8 "Vdd!" "B" 4 0 "Vdd" 8 0 "_Y" 8 0

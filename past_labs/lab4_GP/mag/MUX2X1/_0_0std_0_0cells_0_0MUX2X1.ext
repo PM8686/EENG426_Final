@@ -1,0 +1,49 @@
+timestamp 1729040465
+version 8.3
+tech sky130l
+style generic
+scale 1 1 7.5
+resistclasses 1000 1000
+port "A" 6 9 41 9 41 m1
+node "#10" 6854 0 49 6 ndiffusion 100 60 0 0
+equiv "#10" "#10"
+node "a_15_6#" 2000 0 15 6 ndiffusion 50 30 0 0
+node "GND" 7345 0 8 6 ndiffusion 108 64 0 0
+equiv "GND" "GND"
+equiv "GND" "GND"
+node "a_40_23#" 2142 0 40 23 pdiffusion 0 0 105 44
+node "Y" 15403 0 22 6 ndiffusion 100 60 150 80
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+equiv "Y" "Y"
+node "Vdd" 9078 0 15 23 pdiffusion 0 0 143 80
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+node "#5" 8549 0 8 23 pdiffusion 0 0 150 80
+equiv "#5" "#5"
+node "_S" 2800 0 22 23 pdiffusion 30 22 40 26
+equiv "_S" "_S"
+equiv "_S" "_S"
+equiv "_S" "_S"
+node "B" 0 0 43 41 polysilicon 0 0 0 0
+equiv "B" "B"
+equiv "B" "B"
+node "S" 0 0 20 4 polysilicon 0 0 0 0
+equiv "S" "S"
+equiv "S" "S"
+equiv "S" "S"
+equiv "S" "S"
+node "A" 0 0 9 41 m1 0 0 0 0
+equiv "A" "A"
+equiv "A" "A"
+device mosfet nfet 65 6 66 7 2 10 "Gnd!" "_S" 4 0 "Y" 10 0 "#10" 10 0
+device mosfet nfet 47 6 48 7 2 10 "Gnd!" "B" 4 0 "GND" 10 0 "#10" 10 0
+device mosfet nfet 38 10 39 11 2 6 "Gnd!" "S" 4 0 "_S" 6 0 "GND" 6 0
+device mosfet nfet 20 6 21 7 2 10 "Gnd!" "S" 4 0 "a_15_6#" 10 0 "Y" 10 0
+device mosfet nfet 13 6 14 7 2 10 "Gnd!" "A" 4 0 "GND" 10 0 "a_15_6#" 10 0
+device mosfet pfet 65 23 66 24 2 15 "Vdd!" "_S" 4 0 "#5" 15 0 "Y" 15 0
+device mosfet pfet 47 23 48 24 2 15 "Vdd!" "B" 4 0 "a_40_23#" 15 0 "Vdd" 15 0
+device mosfet pfet 38 23 39 24 2 15 "Vdd!" "S" 4 0 "Y" 15 0 "a_40_23#" 15 0
+device mosfet pfet 20 23 21 24 2 8 "Vdd!" "S" 4 0 "Vdd" 8 0 "_S" 8 0
+device mosfet pfet 13 23 14 24 2 15 "Vdd!" "A" 4 0 "#5" 15 0 "Vdd" 15 0

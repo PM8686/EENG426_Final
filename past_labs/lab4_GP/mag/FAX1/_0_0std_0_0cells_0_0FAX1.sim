@@ -1,0 +1,36 @@
+| units: 7.5 tech: sky130l format: MIT
+p B #8 _YC 2 23 22 31
+n B _YC a_24_14# 2 10 22 14
+p A Vdd #12 2 40 68 31
+n _YC #15 _YS 2 20 75 4
+n B a_86_4# a_91_4# 2 20 89 4
+p A _YC #8 2 23 29 31
+p B Vdd #12 2 36 52 31
+p _YC #12 _YS 2 36 75 31
+n A a_24_14# GND 2 10 29 14
+n C _YS a_86_4# 2 20 84 4
+p C Vdd #8 2 11 13 31
+p B #8 a_38_31# 2 23 36 31
+n C #3 _YC 2 10 13 14
+n _YC GND YC 2 6 101 18
+p C #12 Vdd 2 36 59 31
+n B GND #3 2 10 36 14
+p A a_91_31# Vdd 2 48 94 31
+n A a_91_4# GND 2 20 94 4
+n _YS GND YS 2 6 119 18
+p A a_38_31# Vdd 2 23 43 31
+p _YC Vdd YC 2 8 101 31
+n A #3 GND 2 10 43 14
+n C #15 GND 2 20 59 4
+p B a_86_31# a_91_31# 2 48 89 31
+p C _YS a_86_31# 2 48 84 31
+p _YS YS Vdd 2 8 119 31
+n A GND #15 2 20 68 4
+n B GND #15 2 20 52 4
+R GND 24
+R a_91_31# 16
+R a_86_31# 16
+R _YS 11
+R #12 18
+R #8 12
+R Vdd 36

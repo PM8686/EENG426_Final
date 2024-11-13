@@ -1,0 +1,1503 @@
+###########################
+# Written by PhyDB at 2024-10-30.02:29:29
+###########################
+VERSION 5.6 ;
+
+DIVIDERCHAR "/" ;
+
+BUSBITCHARS "[]" ;
+
+DESIGN accum ;
+
+UNITS DISTANCE MICRONS 1000 ;
+
+DIEAREA ( 6000 5400 ) ( 106800 108000 ) ;
+
+
+TRACKS X 6150 DO 168 STEP 600 LAYER li ;
+TRACKS Y 5550 DO 171 STEP 600 LAYER li ;
+TRACKS X 6075 DO 336 STEP 300 LAYER met1 ;
+TRACKS Y 5475 DO 342 STEP 300 LAYER met1 ;
+TRACKS X 6075 DO 336 STEP 300 LAYER met2 ;
+TRACKS Y 5475 DO 342 STEP 300 LAYER met2 ;
+TRACKS X 6150 DO 168 STEP 600 LAYER met3 ;
+TRACKS Y 5550 DO 171 STEP 600 LAYER met3 ;
+TRACKS X 6150 DO 168 STEP 600 LAYER met4 ;
+TRACKS Y 5550 DO 171 STEP 600 LAYER met4 ;
+TRACKS X 6825 DO 30 STEP 3300 LAYER met5 ;
+TRACKS Y 6225 DO 31 STEP 3300 LAYER met5 ;
+
+
+COMPONENTS 331 ;
+   - src_asetGND1 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 63000 83700 ) FS ;
+   - src_asetGND3 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 73200 75600 ) N ;
+   - src_asetGND5 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 67800 49200 ) N ;
+   - src_asetGND6 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 48600 34500 ) N ;
+   - src_asetGND7 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 64800 34500 ) N ;
+   - src_anor _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 78000 42600 ) FS ;
+   - src_asetGND0 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 54000 83700 ) FS ;
+   - src_asetGND4 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 69600 62100 ) N ;
+   - src_asetGND2 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 51000 83700 ) FS ;
+   - add_adelay2_acx6 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 99000 20100 ) N ;
+   - add_adelay2_acx0 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 96600 33600 ) N ;
+   - add_adelay2_acx2 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 99000 27000 ) FS ;
+   - add_adelay2_acx4 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 93600 27000 ) FS ;
+   - add_adelay2_acx7 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 99000 13800 ) FS ;
+   - add_adelay2_acx5 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 96600 20100 ) N ;
+   - add_adelay2_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 99000 33600 ) N ;
+   - add_adelay2_acx3 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 96600 27000 ) FS ;
+   - add_apulseG_ai8 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 22200 7500 ) N ;
+   - add_apulseG_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 65400 21000 ) N ;
+   - add_apulseG_aand _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 10200 20100 ) N ;
+   - add_apulseG_ai4 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 15000 7500 ) N ;
+   - add_apulseG_anor _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 51000 15600 ) FS ;
+   - add_apulseG_ai7 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 20400 7500 ) N ;
+   - add_apulseG_ai6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 18600 7500 ) N ;
+   - add_apulseG_ai5 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 16800 7500 ) N ;
+   - add_apulseG_ai3 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 13200 7500 ) N ;
+   - add_apulseG_ai2 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 10800 15900 ) FS ;
+   - add_apulseG_ai9 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 14400 15900 ) FS ;
+   - add_apulseG_ai1 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 12600 15900 ) FS ;
+   - add_ainv__r _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 81000 29100 ) FS ;
+   - add_aor__l1 _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 85200 15600 ) FS ;
+   - add_ainv__l1 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 94200 21000 ) N ;
+   - add_aadd_50_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 16200 88200 ) N ;
+   - add_aadd_51_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 26400 88200 ) N ;
+   - add_aadd_52_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 24600 80700 ) FS ;
+   - add_aadd_53_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 16200 67200 ) FS ;
+   - add_aadd_54_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 22800 47700 ) N ;
+   - add_aadd_55_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 25200 39900 ) FS ;
+   - add_aadd_56_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 22200 26100 ) FS ;
+   - add_aadd_57_6 _0_0std_0_0cells_0_0FAX1 
+      + SOURCE NETLIST 
+      + PLACED ( 32400 26100 ) FS ;
+   - add_ainv1 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 56400 89700 ) N ;
+   - add_ainv5 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 54600 57300 ) FS ;
+   - add_anor7 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 42600 34200 ) N ;
+   - add_anor1 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 57000 83400 ) FS ;
+   - add_ainv8 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 57600 29100 ) FS ;
+   - add_ainv4 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 42600 75600 ) N ;
+   - add_ainv3 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 34800 83700 ) FS ;
+   - add_ainv__l2 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 73800 7500 ) N ;
+   - add_ainv6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 45600 49200 ) N ;
+   - add_anor2 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 66600 83400 ) FS ;
+   - add_anor4 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 45000 75300 ) N ;
+   - add_anor8 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 59400 34200 ) N ;
+   - add_anor5 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 63000 57000 ) FS ;
+   - add_al1_50_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 15000 96900 ) FS ;
+   - add_al1_51_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 43200 88800 ) N ;
+   - add_al1_52_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 49800 88800 ) N ;
+   - add_al1_53_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 19200 74700 ) N ;
+   - add_al1_54_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 19800 56400 ) FS ;
+   - add_al1_55_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 48300 ) N ;
+   - add_al1_56_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 21600 33600 ) N ;
+   - add_al1_57_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 42600 28200 ) FS ;
+   - add_anor6 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 47400 48900 ) N ;
+   - add_aor__l2 _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 75600 15600 ) FS ;
+   - add_atoGND _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 20400 102600 ) N ;
+   - add_ainv2 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 59400 89700 ) N ;
+   - add_anor3 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 45600 83400 ) FS ;
+   - add_anor _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 75600 34200 ) N ;
+   - add_ainv7 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 38400 34500 ) N ;
+   - add_adelay3_acx6 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 86400 6600 ) N ;
+   - add_adelay3_acx0 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 96600 13800 ) FS ;
+   - add_adelay3_acx2 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 97200 6600 ) N ;
+   - add_adelay3_acx4 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 92400 6600 ) N ;
+   - add_adelay3_acx7 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 83400 6600 ) N ;
+   - add_adelay3_acx5 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 89400 6600 ) N ;
+   - add_adelay3_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 93600 13800 ) FS ;
+   - add_adelay3_acx3 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 94800 6600 ) N ;
+   - add_adelay1_acx6 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 90000 33600 ) N ;
+   - add_adelay1_acx0 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 87000 48300 ) N ;
+   - add_adelay1_acx2 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 93000 48300 ) N ;
+   - add_adelay1_acx4 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 94200 40800 ) FS ;
+   - add_adelay1_acx7 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 93600 33600 ) N ;
+   - add_adelay1_acx5 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 91800 40800 ) FS ;
+   - add_adelay1_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 90000 48300 ) N ;
+   - add_adelay1_acx3 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 96000 48300 ) N ;
+   - add_acelem_acx0 _0_0cell_0_0gcelem3x0 
+      + SOURCE NETLIST 
+      + PLACED ( 79800 20400 ) N ;
+   - add_al2_50_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 88800 ) N ;
+   - add_al2_51_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 36600 88800 ) N ;
+   - add_al2_52_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 82800 ) FS ;
+   - add_al2_53_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 27000 74700 ) N ;
+   - add_al2_54_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 16200 48300 ) N ;
+   - add_al2_55_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 42000 ) FS ;
+   - add_al2_56_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 28200 ) FS ;
+   - add_al2_57_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 28800 20100 ) N ;
+   - src2_asetGND1 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 102600 ) N ;
+   - src2_asetGND3 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 58200 102600 ) N ;
+   - src2_asetGND5 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 79800 102600 ) N ;
+   - src2_asetGND6 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 7500 ) N ;
+   - src2_asetGND7 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 99600 102600 ) N ;
+   - src2_anor _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 70200 15600 ) FS ;
+   - src2_asetGND0 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 99600 7500 ) N ;
+   - src2_asetGND4 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 69000 102600 ) N ;
+   - src2_asetGND2 _0_0std_0_0cells_0_0TIELOX1 
+      + SOURCE NETLIST 
+      + PLACED ( 11400 7500 ) N ;
+   - copy_adelay2_acx6 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 78000 95700 ) FS ;
+   - copy_adelay2_acx0 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 45600 101700 ) N ;
+   - copy_adelay2_acx2 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 54000 95700 ) FS ;
+   - copy_adelay2_acx4 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 65400 95700 ) FS ;
+   - copy_adelay2_acx7 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 69600 88800 ) N ;
+   - copy_adelay2_acx5 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 71400 95700 ) FS ;
+   - copy_adelay2_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 48600 95700 ) FS ;
+   - copy_adelay2_acx3 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 59400 95700 ) FS ;
+   - copy_apulseG_ai8 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 22800 15900 ) FS ;
+   - copy_apulseG_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 54000 21000 ) N ;
+   - copy_apulseG_aand _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 25800 20100 ) N ;
+   - copy_apulseG_ai4 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 32400 15900 ) FS ;
+   - copy_apulseG_anor _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 45000 15600 ) FS ;
+   - copy_apulseG_ai7 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 35400 15900 ) FS ;
+   - copy_apulseG_ai6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 43200 7500 ) N ;
+   - copy_apulseG_ai5 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 39600 7500 ) N ;
+   - copy_apulseG_ai3 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 29400 15900 ) FS ;
+   - copy_apulseG_ai2 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 27000 15900 ) FS ;
+   - copy_apulseG_ai9 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 24000 21000 ) N ;
+   - copy_apulseG_ai1 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 24600 15900 ) FS ;
+   - copy_ainv__1 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 64800 15900 ) FS ;
+   - copy_al_50_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 27600 56400 ) FS ;
+   - copy_al_51_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 52200 61200 ) N ;
+   - copy_al_52_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 35400 61200 ) N ;
+   - copy_al_53_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 60600 61200 ) N ;
+   - copy_al_54_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 42600 56400 ) FS ;
+   - copy_al_55_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 40200 42000 ) FS ;
+   - copy_al_56_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 51000 28200 ) FS ;
+   - copy_al_57_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 55800 20100 ) N ;
+   - copy_anor__2 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 59400 15600 ) FS ;
+   - copy_ainv1 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 27600 62100 ) N ;
+   - copy_ainv5 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 40200 57300 ) FS ;
+   - copy_ainv8 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 52200 21000 ) N ;
+   - copy_anor1 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 23400 61800 ) N ;
+   - copy_anor7 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 19800 20700 ) N ;
+   - copy_ainv4 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 37200 70200 ) FS ;
+   - copy_ainv3 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 33600 62100 ) N ;
+   - copy_ainv__2 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 73800 21000 ) N ;
+   - copy_ainv6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 37200 42900 ) FS ;
+   - copy_anor2 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 45600 69900 ) FS ;
+   - copy_anor__3 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 75600 20700 ) N ;
+   - copy_anor4 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 33000 69900 ) FS ;
+   - copy_anor5 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 35400 57000 ) FS ;
+   - copy_anor8 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 48000 20700 ) N ;
+   - copy_aor__1 _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 86400 20100 ) N ;
+   - copy_ainv2 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 49800 70200 ) FS ;
+   - copy_anor6 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 31200 34200 ) N ;
+   - copy_ainv7 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 49200 29100 ) FS ;
+   - copy_anor3 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 29400 61800 ) N ;
+   - copy_adelay3_acx6 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 88200 61200 ) N ;
+   - copy_adelay3_acx0 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 72600 88800 ) N ;
+   - copy_adelay3_acx2 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 79200 81600 ) FS ;
+   - copy_adelay3_acx4 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 90000 74700 ) N ;
+   - copy_adelay3_acx7 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 96000 55200 ) FS ;
+   - copy_adelay3_acx5 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 92400 68100 ) FS ;
+   - copy_adelay3_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 78000 88800 ) N ;
+   - copy_adelay3_acx3 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 89400 81600 ) FS ;
+   - copy_adelay1_acx6 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 27600 95700 ) FS ;
+   - copy_adelay1_acx0 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 75600 68100 ) FS ;
+   - copy_adelay1_acx2 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 66000 88800 ) N ;
+   - copy_adelay1_acx4 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 42600 95700 ) FS ;
+   - copy_adelay1_acx7 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 33000 101700 ) N ;
+   - copy_adelay1_acx5 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 35400 95700 ) FS ;
+   - copy_adelay1_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 72000 81600 ) FS ;
+   - copy_adelay1_acx3 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 62400 88800 ) N ;
+   - copy_acelem_acx0 _0_0cell_0_0gcelem3x0 
+      + SOURCE NETLIST 
+      + PLACED ( 67200 20400 ) N ;
+   - copy_ainv__3 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 87000 29100 ) FS ;
+   - merge_amux_50_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 57600 75300 ) N ;
+   - merge_amux_51_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 65400 75300 ) N ;
+   - merge_amux_52_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 49800 75300 ) N ;
+   - merge_amux_53_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 76800 75300 ) N ;
+   - merge_amux_54_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 67800 57000 ) FS ;
+   - merge_amux_55_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 60000 48900 ) N ;
+   - merge_amux_56_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 51600 34200 ) N ;
+   - merge_amux_57_6 _0_0std_0_0cells_0_0MUX2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 67800 34200 ) N ;
+   - merge_adelay2_acx6 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 92400 95700 ) FS ;
+   - merge_adelay2_acx0 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 88200 68100 ) FS ;
+   - merge_adelay2_acx2 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 82200 81600 ) FS ;
+   - merge_adelay2_acx4 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 86400 88800 ) N ;
+   - merge_adelay2_acx7 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 92400 88800 ) N ;
+   - merge_adelay2_acx5 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 89400 88800 ) N ;
+   - merge_adelay2_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 85800 81600 ) FS ;
+   - merge_adelay2_acx3 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 83400 88800 ) N ;
+   - merge_apulseG_ai8 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 56400 7500 ) N ;
+   - merge_apulseG_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 81000 34500 ) N ;
+   - merge_apulseG_aand _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 62400 20100 ) N ;
+   - merge_apulseG_ai4 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 62400 7500 ) N ;
+   - merge_apulseG_anor _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 82800 28800 ) FS ;
+   - merge_apulseG_ai7 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 50400 7500 ) N ;
+   - merge_apulseG_ai6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 46800 7500 ) N ;
+   - merge_apulseG_ai5 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 53400 7500 ) N ;
+   - merge_apulseG_ai3 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 65400 7500 ) N ;
+   - merge_apulseG_ai2 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 68400 7500 ) N ;
+   - merge_apulseG_ai9 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 59400 7500 ) N ;
+   - merge_apulseG_ai1 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 67800 15900 ) FS ;
+   - merge_al_50_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 58200 69300 ) FS ;
+   - merge_al_51_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 69000 69300 ) FS ;
+   - merge_al_52_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 51600 69300 ) FS ;
+   - merge_al_53_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 78000 69300 ) FS ;
+   - merge_al_54_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 56400 56400 ) FS ;
+   - merge_al_55_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 52200 48300 ) N ;
+   - merge_al_56_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 63600 28200 ) FS ;
+   - merge_al_57_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 74400 28200 ) FS ;
+   - merge_aor__L1 _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 84600 42600 ) FS ;
+   - merge_anor7 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 59400 28800 ) FS ;
+   - merge_anor1 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 42000 61800 ) N ;
+   - merge_aor__Cf _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 78000 48300 ) N ;
+   - merge_aand2 _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 81000 57300 ) FS ;
+   - merge_anor__Ra _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 53400 42600 ) FS ;
+   - merge_ainv__L2 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 81600 7500 ) N ;
+   - merge_aor__L2 _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 80400 15600 ) FS ;
+   - merge_ainv__Ra _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 58800 42900 ) FS ;
+   - merge_ainv__L1 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 82200 42900 ) FS ;
+   - merge_ainv1__Cd _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 78600 57300 ) FS ;
+   - merge_aor__Ct _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 70800 48300 ) N ;
+   - merge_anor2 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 64800 69900 ) FS ;
+   - merge_ainv__Cf _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 81600 49200 ) N ;
+   - merge_anor4 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 74400 61800 ) N ;
+   - merge_adelay4_acx6 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 96600 40800 ) FS ;
+   - merge_adelay4_acx0 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 99000 68100 ) FS ;
+   - merge_adelay4_acx2 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 94200 61200 ) N ;
+   - merge_adelay4_acx4 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 99000 48300 ) N ;
+   - merge_adelay4_acx7 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 84000 33600 ) N ;
+   - merge_adelay4_acx5 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 99000 40800 ) FS ;
+   - merge_adelay4_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 99000 61200 ) N ;
+   - merge_adelay4_acx3 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 99000 55200 ) FS ;
+   - merge_acelem1_acx0 _0_0cell_0_0gcelem3x0 
+      + SOURCE NETLIST 
+      + PLACED ( 67800 41700 ) FS ;
+   - merge_anor8 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 70200 28800 ) FS ;
+   - merge_anor5 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 49800 57000 ) FS ;
+   - merge_anor6 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 48000 42600 ) FS ;
+   - merge_acelem2_acx0 _0_0cell_0_0gcelem3x0 
+      + SOURCE NETLIST 
+      + PLACED ( 61200 41700 ) FS ;
+   - merge_anor3 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 46800 61800 ) N ;
+   - merge_ainv__Ct _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 75600 49200 ) N ;
+   - merge_adelay3_acx6 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 95400 74700 ) N ;
+   - merge_adelay3_acx0 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 95400 88800 ) N ;
+   - merge_adelay3_acx2 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 93000 81600 ) FS ;
+   - merge_adelay3_acx4 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 99000 81600 ) FS ;
+   - merge_adelay3_acx7 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 96600 68100 ) FS ;
+   - merge_adelay3_acx5 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 99000 74700 ) N ;
+   - merge_adelay3_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 98400 88800 ) N ;
+   - merge_adelay3_acx3 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 96600 81600 ) FS ;
+   - merge_adelay1_acx6 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 84600 68100 ) FS ;
+   - merge_adelay1_acx0 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 90000 101700 ) N ;
+   - merge_adelay1_acx2 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 80400 88800 ) N ;
+   - merge_adelay1_acx4 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 75600 81600 ) FS ;
+   - merge_adelay1_acx7 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 82200 61200 ) N ;
+   - merge_adelay1_acx5 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 85200 74700 ) N ;
+   - merge_adelay1_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 85200 95700 ) FS ;
+   - merge_adelay1_acx3 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 75600 88800 ) N ;
+   - merge_aand1 _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 75000 57300 ) FS ;
+   - merge_aor _0_0std_0_0cells_0_0OR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 74400 42600 ) FS ;
+   - ibuff_apulseG_ai8 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 29400 7500 ) N ;
+   - ibuff_apulseG_ai _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 56400 15900 ) FS ;
+   - ibuff_apulseG_aand _0_0std_0_0cells_0_0AND2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 18000 15900 ) FS ;
+   - ibuff_apulseG_ai4 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 31200 7500 ) N ;
+   - ibuff_apulseG_anor _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 39000 15600 ) FS ;
+   - ibuff_apulseG_ai7 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 27600 7500 ) N ;
+   - ibuff_apulseG_ai6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 25800 7500 ) N ;
+   - ibuff_apulseG_ai5 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 24000 7500 ) N ;
+   - ibuff_apulseG_ai3 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 33000 7500 ) N ;
+   - ibuff_apulseG_ai2 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 36000 7500 ) N ;
+   - ibuff_apulseG_ai9 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 16200 15900 ) FS ;
+   - ibuff_apulseG_ai1 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 21000 15900 ) FS ;
+   - ibuff_ainv6 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 16200 42900 ) FS ;
+   - ibuff_anor2 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 40200 83400 ) FS ;
+   - ibuff_ainv1 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 16800 75600 ) N ;
+   - ibuff_al_50_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 16800 61200 ) N ;
+   - ibuff_al_51_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 39000 69300 ) FS ;
+   - ibuff_al_52_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 9600 69300 ) FS ;
+   - ibuff_al_53_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 26400 69300 ) FS ;
+   - ibuff_al_54_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 39000 48300 ) N ;
+   - ibuff_al_55_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 11400 33600 ) N ;
+   - ibuff_al_56_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 13200 20100 ) N ;
+   - ibuff_al_57_6 _0_0std_0_0cells_0_0LATCH 
+      + SOURCE NETLIST 
+      + PLACED ( 41400 20100 ) N ;
+   - ibuff_ainv5 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 37200 49200 ) N ;
+   - ibuff_anor4 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 37800 75300 ) N ;
+   - ibuff_anor8 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 35400 20700 ) N ;
+   - ibuff_anor7 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 18000 28800 ) FS ;
+   - ibuff_anor5 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 33000 48900 ) N ;
+   - ibuff_ainv8 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 39600 21000 ) N ;
+   - ibuff_anor1 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 20400 83400 ) FS ;
+   - ibuff_anor6 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 19200 42600 ) FS ;
+   - ibuff_ainv2 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 37200 83700 ) FS ;
+   - ibuff_ainv4 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 34800 75600 ) N ;
+   - ibuff_anor3 _0_0std_0_0cells_0_0NOR2X1 
+      + SOURCE NETLIST 
+      + PLACED ( 16200 83400 ) FS ;
+   - ibuff_ainv3 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 15000 75600 ) N ;
+   - ibuff_ainv7 _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 16200 29100 ) FS ;
+   - ibuff_ac__elem__better_acx0 _0_0cell_0_0g0n1n2naa_012aox0 
+      + SOURCE NETLIST 
+      + PLACED ( 85200 57300 ) FS ;
+   - ibuff_ac__elem__better_adelay_acx6 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 79200 6600 ) N ;
+   - ibuff_ac__elem__better_adelay_acx0 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 84000 48300 ) N ;
+   - ibuff_ac__elem__better_adelay_acx2 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 87000 33600 ) N ;
+   - ibuff_ac__elem__better_adelay_acx4 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 90600 20100 ) N ;
+   - ibuff_ac__elem__better_adelay_acx7 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 76200 6600 ) N ;
+   - ibuff_ac__elem__better_adelay_acx5 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 90000 13800 ) FS ;
+   - ibuff_ac__elem__better_adelay_acx1 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 88800 40800 ) FS ;
+   - ibuff_ac__elem__better_adelay_acx3 _0_0cell_0_0ginvx0 
+      + SOURCE NETLIST 
+      + PLACED ( 90000 27000 ) FS ;
+   - ibuff_ac__elem__better_am1__inv _0_0std_0_0cells_0_0INVX1 
+      + SOURCE NETLIST 
+      + PLACED ( 71400 7500 ) N ;
+   - __well_tap__0 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 7800 ) N ;
+   - __well_tap__1 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 7800 ) N ;
+   - __well_tap__2 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 16500 ) FS ;
+   - __well_tap__3 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 16500 ) FS ;
+   - __well_tap__4 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 21300 ) N ;
+   - __well_tap__5 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 21300 ) N ;
+   - __well_tap__6 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 29700 ) FS ;
+   - __well_tap__7 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 29700 ) FS ;
+   - __well_tap__8 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 34800 ) N ;
+   - __well_tap__9 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 34800 ) N ;
+   - __well_tap__10 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 43500 ) FS ;
+   - __well_tap__11 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 43500 ) FS ;
+   - __well_tap__12 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 49500 ) N ;
+   - __well_tap__13 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 49500 ) N ;
+   - __well_tap__14 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 57900 ) FS ;
+   - __well_tap__15 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 57900 ) FS ;
+   - __well_tap__16 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 62400 ) N ;
+   - __well_tap__17 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 62400 ) N ;
+   - __well_tap__18 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 70800 ) FS ;
+   - __well_tap__19 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 70800 ) FS ;
+   - __well_tap__20 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 75900 ) N ;
+   - __well_tap__21 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 75900 ) N ;
+   - __well_tap__22 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 84300 ) FS ;
+   - __well_tap__23 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 84300 ) FS ;
+   - __well_tap__24 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 90000 ) N ;
+   - __well_tap__25 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 90000 ) N ;
+   - __well_tap__26 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 98400 ) FS ;
+   - __well_tap__27 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 98400 ) FS ;
+   - __well_tap__28 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 7800 102900 ) N ;
+   - __well_tap__29 welltap_svt 
+      + SOURCE USER 
+      + PLACED ( 102000 102900 ) N ;
+   - ppnps circuitppnp 
+      + SOURCE USER 
+      + COVER ( 6000 5400 ) N ;
+   - npwells circuitwell 
+      + SOURCE USER 
+      + COVER ( 6000 5400 ) N ;
+END COMPONENTS
+
+PINS 24 ;
+   - L.d[0] + NET L.d[0]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 101100 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.d[1] + NET L.d[1]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 31200 108000 ) S
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.d[2] + NET L.d[2]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 56400 108000 ) S
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.d[3] + NET L.d[3]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 94200 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.d[4] + NET L.d[4]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 60000 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.d[5] + NET L.d[5]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 46500 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.d[6] + NET L.d[6]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 32700 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.d[7] + NET L.d[7]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 19200 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.r + NET L.r
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 106800 20100 ) W
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - L.a + NET L.a
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 106800 49500 ) W
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - C.d[0] + NET C.d[0]
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 106800 78600 ) W
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - C.r + NET C.r
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 81600 108000 ) S
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - C.a + NET C.a
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 106800 63900 ) W
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[0] + NET R.d[0]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 6000 66900 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[1] + NET R.d[1]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 6000 80700 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[2] + NET R.d[2]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 6000 73800 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[3] + NET R.d[3]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 6000 87600 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[4] + NET R.d[4]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 6000 53400 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[5] + NET R.d[5]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 6000 25800 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[6] + NET R.d[6]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 6000 12300 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.d[7] + NET R.d[7]
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 56400 5400 ) N
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.r + NET R.r
+      + DIRECTION OUTPUT
+      + USE SIGNAL
+      + PLACED ( 106800 93300 ) W
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - R.a + NET R.a
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 106800 34800 ) W
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+   - Reset + NET Reset
+      + DIRECTION INPUT
+      + USE SIGNAL
+      + PLACED ( 6000 39600 ) E
+      + LAYER li ( -150 0 ) ( 150 300 ) ;
+END PINS
+
+NETS 321 ;
+   - Src_Z.d[0] ( src_asetGND0 Y )  ( merge_amux_50_6 A )  ;
+   - Src_Z.d[1] ( src_asetGND1 Y )  ( merge_amux_51_6 A )  ;
+   - Src_Z.d[2] ( src_asetGND2 Y )  ( merge_amux_52_6 A )  ;
+   - Src_Z.d[3] ( src_asetGND3 Y )  ( merge_amux_53_6 A )  ;
+   - Src_Z.d[4] ( src_asetGND4 Y )  ( merge_amux_54_6 A )  ;
+   - Src_Z.d[5] ( src_asetGND5 Y )  ( merge_amux_55_6 A )  ;
+   - Src_Z.d[6] ( src_asetGND6 Y )  ( merge_amux_56_6 A )  ;
+   - Src_Z.d[7] ( src_asetGND7 Y )  ( merge_amux_57_6 A )  ;
+   - Src_Z.r ( src_anor Y )  ( merge_ainv__L1 A )  ;
+   - Src_Z.a ( src_anor B )  ( merge_acelem1_acx0 out )  ( merge_aor A )  ;
+   - Reset ( PIN Reset )  ( src_anor A )  ( add_apulseG_anor A ) 
+ ( add_aor__l1 A )  ( add_anor7 A )  ( add_anor1 A )  ( add_anor2 A ) 
+ ( add_anor4 A )  ( add_anor8 A )  ( add_anor5 A )  ( add_anor6 A ) 
+ ( add_aor__l2 A )  ( add_anor3 A )  ( add_anor A )  ( src2_anor A ) 
+ ( copy_apulseG_anor A )  ( copy_anor__2 A )  ( copy_anor1 A )  ( copy_anor7 A ) 
+ ( copy_anor2 A )  ( copy_anor__3 A )  ( copy_anor4 A )  ( copy_anor5 A ) 
+ ( copy_anor8 A )  ( copy_aor__1 A )  ( copy_anor6 A )  ( copy_anor3 A ) 
+ ( merge_apulseG_anor A )  ( merge_aor__L1 A )  ( merge_anor7 A )  ( merge_anor1 A ) 
+ ( merge_aor__Cf A )  ( merge_anor__Ra A )  ( merge_aor__L2 A )  ( merge_aor__Ct A ) 
+ ( merge_anor2 A )  ( merge_anor4 A )  ( merge_anor8 A )  ( merge_anor5 A ) 
+ ( merge_anor6 A )  ( merge_anor3 A )  ( ibuff_apulseG_anor A )  ( ibuff_anor2 A ) 
+ ( ibuff_anor4 A )  ( ibuff_anor8 A )  ( ibuff_anor7 A )  ( ibuff_anor5 A ) 
+ ( ibuff_anor1 A )  ( ibuff_anor6 A )  ( ibuff_anor3 A )  ( ibuff_ac__elem__better_acx0 in_50_6 )  ;
+   - L.d[0] ( PIN L.d[0] )  ( add_al1_50_6 D )  ;
+   - L.d[1] ( PIN L.d[1] )  ( add_al1_51_6 D )  ;
+   - L.d[2] ( PIN L.d[2] )  ( add_al1_52_6 D )  ;
+   - L.d[3] ( PIN L.d[3] )  ( add_al1_53_6 D )  ;
+   - L.d[4] ( PIN L.d[4] )  ( add_al1_54_6 D )  ;
+   - L.d[5] ( PIN L.d[5] )  ( add_al1_55_6 D )  ;
+   - L.d[6] ( PIN L.d[6] )  ( add_al1_56_6 D )  ;
+   - L.d[7] ( PIN L.d[7] )  ( add_al1_57_6 D )  ;
+   - L.r ( PIN L.r )  ( add_ainv__l1 A )  ;
+   - L.a ( PIN L.a )  ( add_apulseG_ai A )  ( add_adelay1_acx0 in_50_6 ) 
+ ( add_acelem_acx0 out )  ( ibuff_ac__elem__better_acx0 in_52_6 )  ;
+   - B_out.d[0] ( add_al2_50_6 D )  ( ibuff_anor1 Y )  ;
+   - B_out.d[1] ( add_al2_51_6 D )  ( ibuff_anor2 Y )  ;
+   - B_out.d[2] ( add_al2_52_6 D )  ( ibuff_anor3 Y )  ;
+   - B_out.d[3] ( add_al2_53_6 D )  ( ibuff_anor4 Y )  ;
+   - B_out.d[4] ( add_al2_54_6 D )  ( ibuff_anor5 Y )  ;
+   - B_out.d[5] ( add_al2_55_6 D )  ( ibuff_anor6 Y )  ;
+   - B_out.d[6] ( add_al2_56_6 D )  ( ibuff_anor7 Y )  ;
+   - B_out.d[7] ( add_al2_57_6 D )  ( ibuff_anor8 Y )  ;
+   - B_out.r ( add_ainv__l2 A )  ( ibuff_ac__elem__better_adelay_acx7 out )  ( ibuff_ac__elem__better_am1__inv A )  ;
+   - Sum.d[0] ( add_anor1 Y )  ( merge_amux_50_6 B )  ;
+   - Sum.d[1] ( add_anor2 Y )  ( merge_amux_51_6 B )  ;
+   - Sum.d[2] ( add_anor3 Y )  ( merge_amux_52_6 B )  ;
+   - Sum.d[3] ( add_anor4 Y )  ( merge_amux_53_6 B )  ;
+   - Sum.d[4] ( add_anor5 Y )  ( merge_amux_54_6 B )  ;
+   - Sum.d[5] ( add_anor6 Y )  ( merge_amux_55_6 B )  ;
+   - Sum.d[6] ( add_anor7 Y )  ( merge_amux_56_6 B )  ;
+   - Sum.d[7] ( add_anor8 Y )  ( merge_amux_57_6 B )  ;
+   - Sum.r ( add_adelay3_acx7 out )  ( merge_ainv__L2 A )  ;
+   - Sum.a ( add_anor B )  ( merge_acelem2_acx0 out )  ( merge_aor B )  ;
+   - src2.R.d[0] ( src2_asetGND0 Y )  ;
+   - src2.R.d[1] ( src2_asetGND1 Y )  ;
+   - src2.R.d[2] ( src2_asetGND2 Y )  ;
+   - src2.R.d[3] ( src2_asetGND3 Y )  ;
+   - src2.R.d[4] ( src2_asetGND4 Y )  ;
+   - src2.R.d[5] ( src2_asetGND5 Y )  ;
+   - src2.R.d[6] ( src2_asetGND6 Y )  ;
+   - src2.R.d[7] ( src2_asetGND7 Y )  ;
+   - src2.R.r ( src2_anor Y )  ;
+   - src2.R.a ( src2_anor B )  ;
+   - Mrg.d[0] ( copy_al_50_6 D )  ( merge_anor1 Y )  ;
+   - Mrg.d[1] ( copy_al_51_6 D )  ( merge_anor2 Y )  ;
+   - Mrg.d[2] ( copy_al_52_6 D )  ( merge_anor3 Y )  ;
+   - Mrg.d[3] ( copy_al_53_6 D )  ( merge_anor4 Y )  ;
+   - Mrg.d[4] ( copy_al_54_6 D )  ( merge_anor5 Y )  ;
+   - Mrg.d[5] ( copy_al_55_6 D )  ( merge_anor6 Y )  ;
+   - Mrg.d[6] ( copy_al_56_6 D )  ( merge_anor7 Y )  ;
+   - Mrg.d[7] ( copy_al_57_6 D )  ( merge_anor8 Y )  ;
+   - Mrg.r ( copy_ainv__3 A )  ( merge_adelay4_acx7 out )  ;
+   - Mrg.a ( copy_apulseG_ai A )  ( copy_adelay1_acx0 in_50_6 )  ( copy_acelem_acx0 out ) 
+ ( merge_anor__Ra B )  ;
+   - R.d[0] ( PIN R.d[0] )  ( copy_anor1 Y )  ( ibuff_al_50_6 D )  ;
+   - R.d[1] ( PIN R.d[1] )  ( copy_anor2 Y )  ( ibuff_al_51_6 D )  ;
+   - R.d[2] ( PIN R.d[2] )  ( copy_anor3 Y )  ( ibuff_al_52_6 D )  ;
+   - R.d[3] ( PIN R.d[3] )  ( copy_anor4 Y )  ( ibuff_al_53_6 D )  ;
+   - R.d[4] ( PIN R.d[4] )  ( copy_anor5 Y )  ( ibuff_al_54_6 D )  ;
+   - R.d[5] ( PIN R.d[5] )  ( copy_anor6 Y )  ( ibuff_al_55_6 D )  ;
+   - R.d[6] ( PIN R.d[6] )  ( copy_anor7 Y )  ( ibuff_al_56_6 D )  ;
+   - R.d[7] ( PIN R.d[7] )  ( copy_anor8 Y )  ( ibuff_al_57_6 D )  ;
+   - R.r ( PIN R.r )  ( copy_adelay3_acx7 out )  ( ibuff_ac__elem__better_acx0 in_51_6 )  ;
+   - Y.a ( copy_anor__2 B )  ( ibuff_apulseG_ai A )  ( ibuff_ac__elem__better_am1__inv Y )  ;
+   - R.a ( PIN R.a )  ( copy_anor__3 B )  ;
+   - C.d[0] ( PIN C.d[0] )  ( merge_amux_50_6 S )  ( merge_amux_51_6 S ) 
+ ( merge_amux_52_6 S )  ( merge_amux_53_6 S )  ( merge_amux_54_6 S )  ( merge_amux_55_6 S ) 
+ ( merge_amux_56_6 S )  ( merge_amux_57_6 S )  ( merge_ainv1__Cd A )  ( merge_aand1 A )  ;
+   - C.r ( PIN C.r )  ( merge_adelay1_acx0 in_50_6 )  ;
+   - C.a ( PIN C.a )  ( merge_adelay2_acx0 in_50_6 )  ( merge_apulseG_ai A ) 
+ ( merge_aor Y )  ;
+   - add.tmp_Rr1 ( add_adelay2_acx0 in_50_6 )  ( add_adelay1_acx7 out )  ;
+   - add.tmp_Rr2 ( add_adelay2_acx7 out )  ( add_adelay3_acx0 in_50_6 )  ;
+   - add.pulse ( add_apulseG_aand Y )  ( add_al1_50_6 CLK )  ( add_al1_51_6 CLK ) 
+ ( add_al1_52_6 CLK )  ( add_al1_53_6 CLK )  ( add_al1_54_6 CLK )  ( add_al1_55_6 CLK ) 
+ ( add_al1_56_6 CLK )  ( add_al1_57_6 CLK )  ( add_al2_50_6 CLK )  ( add_al2_51_6 CLK ) 
+ ( add_al2_52_6 CLK )  ( add_al2_53_6 CLK )  ( add_al2_54_6 CLK )  ( add_al2_55_6 CLK ) 
+ ( add_al2_56_6 CLK )  ( add_al2_57_6 CLK )  ;
+   - add.tmp_Ra ( add_ainv__r A )  ( add_anor Y )  ;
+   - add.inv_r.Y ( add_ainv__r Y )  ( add_acelem_acx0 in_52_6 )  ;
+   - add.tmp[0] ( add_aor__l1 B )  ( add_ainv__l1 Y )  ;
+   - add.or_l1.Y ( add_aor__l1 Y )  ( add_acelem_acx0 in_50_6 )  ;
+   - add.in1[0] ( add_aadd_50_6 A )  ( add_al1_50_6 Q )  ;
+   - add.in2[0] ( add_aadd_50_6 B )  ( add_al2_50_6 Q )  ;
+   - add.cin0 ( add_aadd_50_6 C )  ( add_atoGND Y )  ;
+   - add.cout[0] ( add_aadd_50_6 YC )  ( add_aadd_51_6 C )  ;
+   - add.inv1.A ( add_aadd_50_6 YS )  ( add_ainv1 A )  ;
+   - add.in1[1] ( add_aadd_51_6 A )  ( add_al1_51_6 Q )  ;
+   - add.in2[1] ( add_aadd_51_6 B )  ( add_al2_51_6 Q )  ;
+   - add.cout[1] ( add_aadd_51_6 YC )  ( add_aadd_52_6 C )  ;
+   - add.inv2.A ( add_aadd_51_6 YS )  ( add_ainv2 A )  ;
+   - add.in1[2] ( add_aadd_52_6 A )  ( add_al1_52_6 Q )  ;
+   - add.in2[2] ( add_aadd_52_6 B )  ( add_al2_52_6 Q )  ;
+   - add.cout[2] ( add_aadd_52_6 YC )  ( add_aadd_53_6 C )  ;
+   - add.inv3.A ( add_aadd_52_6 YS )  ( add_ainv3 A )  ;
+   - add.in1[3] ( add_aadd_53_6 A )  ( add_al1_53_6 Q )  ;
+   - add.in2[3] ( add_aadd_53_6 B )  ( add_al2_53_6 Q )  ;
+   - add.cout[3] ( add_aadd_53_6 YC )  ( add_aadd_54_6 C )  ;
+   - add.inv4.A ( add_aadd_53_6 YS )  ( add_ainv4 A )  ;
+   - add.in1[4] ( add_aadd_54_6 A )  ( add_al1_54_6 Q )  ;
+   - add.in2[4] ( add_aadd_54_6 B )  ( add_al2_54_6 Q )  ;
+   - add.cout[4] ( add_aadd_54_6 YC )  ( add_aadd_55_6 C )  ;
+   - add.inv5.A ( add_aadd_54_6 YS )  ( add_ainv5 A )  ;
+   - add.in1[5] ( add_aadd_55_6 A )  ( add_al1_55_6 Q )  ;
+   - add.in2[5] ( add_aadd_55_6 B )  ( add_al2_55_6 Q )  ;
+   - add.cout[5] ( add_aadd_55_6 YC )  ( add_aadd_56_6 C )  ;
+   - add.inv6.A ( add_aadd_55_6 YS )  ( add_ainv6 A )  ;
+   - add.in1[6] ( add_aadd_56_6 A )  ( add_al1_56_6 Q )  ;
+   - add.in2[6] ( add_aadd_56_6 B )  ( add_al2_56_6 Q )  ;
+   - add.cout[6] ( add_aadd_56_6 YC )  ( add_aadd_57_6 C )  ;
+   - add.inv7.A ( add_aadd_56_6 YS )  ( add_ainv7 A )  ;
+   - add.in1[7] ( add_aadd_57_6 A )  ( add_al1_57_6 Q )  ;
+   - add.in2[7] ( add_aadd_57_6 B )  ( add_al2_57_6 Q )  ;
+   - add.cout[7] ( add_aadd_57_6 YC )  ;
+   - add.inv8.A ( add_aadd_57_6 YS )  ( add_ainv8 A )  ;
+   - add.inv1.Y ( add_ainv1 Y )  ( add_anor1 B )  ;
+   - add.inv5.Y ( add_ainv5 Y )  ( add_anor5 B )  ;
+   - add.inv7.Y ( add_anor7 B )  ( add_ainv7 Y )  ;
+   - add.inv8.Y ( add_ainv8 Y )  ( add_anor8 B )  ;
+   - add.inv4.Y ( add_ainv4 Y )  ( add_anor4 B )  ;
+   - add.inv3.Y ( add_ainv3 Y )  ( add_anor3 B )  ;
+   - add.tmp[1] ( add_ainv__l2 Y )  ( add_aor__l2 B )  ;
+   - add.inv6.Y ( add_ainv6 Y )  ( add_anor6 B )  ;
+   - add.inv2.Y ( add_anor2 B )  ( add_ainv2 Y )  ;
+   - add.or_l2.Y ( add_aor__l2 Y )  ( add_acelem_acx0 in_51_6 )  ;
+   - add.delay2.cx5.out ( add_adelay2_acx6 in_50_6 )  ( add_adelay2_acx5 out )  ;
+   - add.delay2.cx6.out ( add_adelay2_acx6 out )  ( add_adelay2_acx7 in_50_6 )  ;
+   - add.delay2.cx0.out ( add_adelay2_acx0 out )  ( add_adelay2_acx1 in_50_6 )  ;
+   - add.delay2.cx1.out ( add_adelay2_acx2 in_50_6 )  ( add_adelay2_acx1 out )  ;
+   - add.delay2.cx2.out ( add_adelay2_acx2 out )  ( add_adelay2_acx3 in_50_6 )  ;
+   - add.delay2.cx3.out ( add_adelay2_acx4 in_50_6 )  ( add_adelay2_acx3 out )  ;
+   - add.delay2.cx4.out ( add_adelay2_acx4 out )  ( add_adelay2_acx5 in_50_6 )  ;
+   - add.pulseG.i7.Y ( add_apulseG_ai8 A )  ( add_apulseG_ai7 Y )  ;
+   - add.pulseG.i8.Y ( add_apulseG_ai8 Y )  ( add_apulseG_ai9 A )  ;
+   - add.pulseG.sig_inv ( add_apulseG_ai Y )  ( add_apulseG_anor B )  ;
+   - add.pulseG.sgn ( add_apulseG_aand A )  ( add_apulseG_anor Y )  ( add_apulseG_ai1 A )  ;
+   - add.pulseG.i9.Y ( add_apulseG_aand B )  ( add_apulseG_ai9 Y )  ;
+   - add.pulseG.i3.Y ( add_apulseG_ai4 A )  ( add_apulseG_ai3 Y )  ;
+   - add.pulseG.i4.Y ( add_apulseG_ai4 Y )  ( add_apulseG_ai5 A )  ;
+   - add.pulseG.i6.Y ( add_apulseG_ai7 A )  ( add_apulseG_ai6 Y )  ;
+   - add.pulseG.i5.Y ( add_apulseG_ai6 A )  ( add_apulseG_ai5 Y )  ;
+   - add.pulseG.i2.Y ( add_apulseG_ai3 A )  ( add_apulseG_ai2 Y )  ;
+   - add.pulseG.i1.Y ( add_apulseG_ai2 A )  ( add_apulseG_ai1 Y )  ;
+   - add.delay3.cx5.out ( add_adelay3_acx6 in_50_6 )  ( add_adelay3_acx5 out )  ;
+   - add.delay3.cx6.out ( add_adelay3_acx6 out )  ( add_adelay3_acx7 in_50_6 )  ;
+   - add.delay3.cx0.out ( add_adelay3_acx0 out )  ( add_adelay3_acx1 in_50_6 )  ;
+   - add.delay3.cx1.out ( add_adelay3_acx2 in_50_6 )  ( add_adelay3_acx1 out )  ;
+   - add.delay3.cx2.out ( add_adelay3_acx2 out )  ( add_adelay3_acx3 in_50_6 )  ;
+   - add.delay3.cx3.out ( add_adelay3_acx4 in_50_6 )  ( add_adelay3_acx3 out )  ;
+   - add.delay3.cx4.out ( add_adelay3_acx4 out )  ( add_adelay3_acx5 in_50_6 )  ;
+   - add.delay1.cx5.out ( add_adelay1_acx6 in_50_6 )  ( add_adelay1_acx5 out )  ;
+   - add.delay1.cx6.out ( add_adelay1_acx6 out )  ( add_adelay1_acx7 in_50_6 )  ;
+   - add.delay1.cx0.out ( add_adelay1_acx0 out )  ( add_adelay1_acx1 in_50_6 )  ;
+   - add.delay1.cx1.out ( add_adelay1_acx2 in_50_6 )  ( add_adelay1_acx1 out )  ;
+   - add.delay1.cx2.out ( add_adelay1_acx2 out )  ( add_adelay1_acx3 in_50_6 )  ;
+   - add.delay1.cx3.out ( add_adelay1_acx4 in_50_6 )  ( add_adelay1_acx3 out )  ;
+   - add.delay1.cx4.out ( add_adelay1_acx4 out )  ( add_adelay1_acx5 in_50_6 )  ;
+   - copy.tmp_Rr1 ( copy_adelay2_acx0 in_50_6 )  ( copy_adelay1_acx7 out )  ;
+   - copy.tmp_Rr2 ( copy_adelay2_acx7 out )  ( copy_adelay3_acx0 in_50_6 )  ;
+   - copy.pulse ( copy_apulseG_aand Y )  ( copy_al_50_6 CLK )  ( copy_al_51_6 CLK ) 
+ ( copy_al_52_6 CLK )  ( copy_al_53_6 CLK )  ( copy_al_54_6 CLK )  ( copy_al_55_6 CLK ) 
+ ( copy_al_56_6 CLK )  ( copy_al_57_6 CLK )  ;
+   - copy.tmp[1] ( copy_ainv__1 A )  ( copy_anor__2 Y )  ;
+   - copy.inv_1.Y ( copy_ainv__1 Y )  ( copy_acelem_acx0 in_51_6 )  ;
+   - copy.inv1.A ( copy_al_50_6 Q )  ( copy_ainv1 A )  ;
+   - copy.inv2.A ( copy_al_51_6 Q )  ( copy_ainv2 A )  ;
+   - copy.inv3.A ( copy_al_52_6 Q )  ( copy_ainv3 A )  ;
+   - copy.inv4.A ( copy_al_53_6 Q )  ( copy_ainv4 A )  ;
+   - copy.inv5.A ( copy_al_54_6 Q )  ( copy_ainv5 A )  ;
+   - copy.inv6.A ( copy_al_55_6 Q )  ( copy_ainv6 A )  ;
+   - copy.inv7.A ( copy_al_56_6 Q )  ( copy_ainv7 A )  ;
+   - copy.inv8.A ( copy_al_57_6 Q )  ( copy_ainv8 A )  ;
+   - copy.inv1.Y ( copy_ainv1 Y )  ( copy_anor1 B )  ;
+   - copy.inv5.Y ( copy_ainv5 Y )  ( copy_anor5 B )  ;
+   - copy.inv8.Y ( copy_ainv8 Y )  ( copy_anor8 B )  ;
+   - copy.inv7.Y ( copy_anor7 B )  ( copy_ainv7 Y )  ;
+   - copy.inv4.Y ( copy_ainv4 Y )  ( copy_anor4 B )  ;
+   - copy.inv3.Y ( copy_ainv3 Y )  ( copy_anor3 B )  ;
+   - copy.tmp[2] ( copy_ainv__2 A )  ( copy_anor__3 Y )  ;
+   - copy.inv_2.Y ( copy_ainv__2 Y )  ( copy_acelem_acx0 in_52_6 )  ;
+   - copy.inv6.Y ( copy_ainv6 Y )  ( copy_anor6 B )  ;
+   - copy.inv2.Y ( copy_anor2 B )  ( copy_ainv2 Y )  ;
+   - copy.tmp[0] ( copy_aor__1 B )  ( copy_ainv__3 Y )  ;
+   - copy.or_1.Y ( copy_aor__1 Y )  ( copy_acelem_acx0 in_50_6 )  ;
+   - copy.delay2.cx5.out ( copy_adelay2_acx6 in_50_6 )  ( copy_adelay2_acx5 out )  ;
+   - copy.delay2.cx6.out ( copy_adelay2_acx6 out )  ( copy_adelay2_acx7 in_50_6 )  ;
+   - copy.delay2.cx0.out ( copy_adelay2_acx0 out )  ( copy_adelay2_acx1 in_50_6 )  ;
+   - copy.delay2.cx1.out ( copy_adelay2_acx2 in_50_6 )  ( copy_adelay2_acx1 out )  ;
+   - copy.delay2.cx2.out ( copy_adelay2_acx2 out )  ( copy_adelay2_acx3 in_50_6 )  ;
+   - copy.delay2.cx3.out ( copy_adelay2_acx4 in_50_6 )  ( copy_adelay2_acx3 out )  ;
+   - copy.delay2.cx4.out ( copy_adelay2_acx4 out )  ( copy_adelay2_acx5 in_50_6 )  ;
+   - copy.pulseG.i7.Y ( copy_apulseG_ai8 A )  ( copy_apulseG_ai7 Y )  ;
+   - copy.pulseG.i8.Y ( copy_apulseG_ai8 Y )  ( copy_apulseG_ai9 A )  ;
+   - copy.pulseG.sig_inv ( copy_apulseG_ai Y )  ( copy_apulseG_anor B )  ;
+   - copy.pulseG.sgn ( copy_apulseG_aand A )  ( copy_apulseG_anor Y )  ( copy_apulseG_ai1 A )  ;
+   - copy.pulseG.i9.Y ( copy_apulseG_aand B )  ( copy_apulseG_ai9 Y )  ;
+   - copy.pulseG.i3.Y ( copy_apulseG_ai4 A )  ( copy_apulseG_ai3 Y )  ;
+   - copy.pulseG.i4.Y ( copy_apulseG_ai4 Y )  ( copy_apulseG_ai5 A )  ;
+   - copy.pulseG.i6.Y ( copy_apulseG_ai7 A )  ( copy_apulseG_ai6 Y )  ;
+   - copy.pulseG.i5.Y ( copy_apulseG_ai6 A )  ( copy_apulseG_ai5 Y )  ;
+   - copy.pulseG.i2.Y ( copy_apulseG_ai3 A )  ( copy_apulseG_ai2 Y )  ;
+   - copy.pulseG.i1.Y ( copy_apulseG_ai2 A )  ( copy_apulseG_ai1 Y )  ;
+   - copy.delay3.cx5.out ( copy_adelay3_acx6 in_50_6 )  ( copy_adelay3_acx5 out )  ;
+   - copy.delay3.cx6.out ( copy_adelay3_acx6 out )  ( copy_adelay3_acx7 in_50_6 )  ;
+   - copy.delay3.cx0.out ( copy_adelay3_acx0 out )  ( copy_adelay3_acx1 in_50_6 )  ;
+   - copy.delay3.cx1.out ( copy_adelay3_acx2 in_50_6 )  ( copy_adelay3_acx1 out )  ;
+   - copy.delay3.cx2.out ( copy_adelay3_acx2 out )  ( copy_adelay3_acx3 in_50_6 )  ;
+   - copy.delay3.cx3.out ( copy_adelay3_acx4 in_50_6 )  ( copy_adelay3_acx3 out )  ;
+   - copy.delay3.cx4.out ( copy_adelay3_acx4 out )  ( copy_adelay3_acx5 in_50_6 )  ;
+   - copy.delay1.cx5.out ( copy_adelay1_acx6 in_50_6 )  ( copy_adelay1_acx5 out )  ;
+   - copy.delay1.cx6.out ( copy_adelay1_acx6 out )  ( copy_adelay1_acx7 in_50_6 )  ;
+   - copy.delay1.cx0.out ( copy_adelay1_acx0 out )  ( copy_adelay1_acx1 in_50_6 )  ;
+   - copy.delay1.cx1.out ( copy_adelay1_acx2 in_50_6 )  ( copy_adelay1_acx1 out )  ;
+   - copy.delay1.cx2.out ( copy_adelay1_acx2 out )  ( copy_adelay1_acx3 in_50_6 )  ;
+   - copy.delay1.cx3.out ( copy_adelay1_acx4 in_50_6 )  ( copy_adelay1_acx3 out )  ;
+   - copy.delay1.cx4.out ( copy_adelay1_acx4 out )  ( copy_adelay1_acx5 in_50_6 )  ;
+   - merge.data[0] ( merge_amux_50_6 Y )  ( merge_al_50_6 D )  ;
+   - merge.data[1] ( merge_amux_51_6 Y )  ( merge_al_51_6 D )  ;
+   - merge.data[2] ( merge_amux_52_6 Y )  ( merge_al_52_6 D )  ;
+   - merge.data[3] ( merge_amux_53_6 Y )  ( merge_al_53_6 D )  ;
+   - merge.data[4] ( merge_amux_54_6 Y )  ( merge_al_54_6 D )  ;
+   - merge.data[5] ( merge_amux_55_6 Y )  ( merge_al_55_6 D )  ;
+   - merge.data[6] ( merge_amux_56_6 Y )  ( merge_al_56_6 D )  ;
+   - merge.data[7] ( merge_amux_57_6 Y )  ( merge_al_57_6 D )  ;
+   - merge.tmpRr1 ( merge_adelay2_acx7 out )  ( merge_adelay3_acx0 in_50_6 )  ;
+   - merge.pulse ( merge_apulseG_aand Y )  ( merge_al_50_6 CLK )  ( merge_al_51_6 CLK ) 
+ ( merge_al_52_6 CLK )  ( merge_al_53_6 CLK )  ( merge_al_54_6 CLK )  ( merge_al_55_6 CLK ) 
+ ( merge_al_56_6 CLK )  ( merge_al_57_6 CLK )  ;
+   - merge.nor1.B ( merge_al_50_6 Q )  ( merge_anor1 B )  ;
+   - merge.nor2.B ( merge_al_51_6 Q )  ( merge_anor2 B )  ;
+   - merge.nor3.B ( merge_al_52_6 Q )  ( merge_anor3 B )  ;
+   - merge.nor4.B ( merge_al_53_6 Q )  ( merge_anor4 B )  ;
+   - merge.nor5.B ( merge_al_54_6 Q )  ( merge_anor5 B )  ;
+   - merge.nor6.B ( merge_al_55_6 Q )  ( merge_anor6 B )  ;
+   - merge.nor7.B ( merge_al_56_6 Q )  ( merge_anor7 B )  ;
+   - merge.nor8.B ( merge_al_57_6 Q )  ( merge_anor8 B )  ;
+   - merge.tmp[0] ( merge_aor__L1 B )  ( merge_ainv__L1 Y )  ;
+   - merge.or_L1.Y ( merge_aor__L1 Y )  ( merge_acelem1_acx0 in_50_6 )  ;
+   - merge.tmp[3] ( merge_aor__Cf B )  ( merge_ainv__Cf Y )  ;
+   - merge.or_Cf.Y ( merge_aor__Cf Y )  ( merge_acelem2_acx0 in_51_6 )  ;
+   - merge.CdInv ( merge_aand2 A )  ( merge_ainv1__Cd Y )  ;
+   - merge.Crbuff ( merge_aand2 B )  ( merge_adelay1_acx7 out )  ( merge_aand1 B )  ;
+   - merge.tmpCf ( merge_aand2 Y )  ( merge_ainv__Cf A )  ;
+   - merge.tmp_Ra ( merge_anor__Ra Y )  ( merge_ainv__Ra A )  ;
+   - merge.tmp[1] ( merge_ainv__L2 Y )  ( merge_aor__L2 B )  ;
+   - merge.or_L2.Y ( merge_aor__L2 Y )  ( merge_acelem2_acx0 in_50_6 )  ;
+   - merge.inv_Ra.Y ( merge_ainv__Ra Y )  ( merge_acelem1_acx0 in_52_6 )  ( merge_acelem2_acx0 in_52_6 )  ;
+   - merge.tmp[2] ( merge_aor__Ct B )  ( merge_ainv__Ct Y )  ;
+   - merge.or_Ct.Y ( merge_aor__Ct Y )  ( merge_acelem1_acx0 in_51_6 )  ;
+   - merge.tmpRr2 ( merge_adelay4_acx0 in_50_6 )  ( merge_adelay3_acx7 out )  ;
+   - merge.tmpCt ( merge_ainv__Ct A )  ( merge_aand1 Y )  ;
+   - merge.delay2.cx5.out ( merge_adelay2_acx6 in_50_6 )  ( merge_adelay2_acx5 out )  ;
+   - merge.delay2.cx6.out ( merge_adelay2_acx6 out )  ( merge_adelay2_acx7 in_50_6 )  ;
+   - merge.delay2.cx0.out ( merge_adelay2_acx0 out )  ( merge_adelay2_acx1 in_50_6 )  ;
+   - merge.delay2.cx1.out ( merge_adelay2_acx2 in_50_6 )  ( merge_adelay2_acx1 out )  ;
+   - merge.delay2.cx2.out ( merge_adelay2_acx2 out )  ( merge_adelay2_acx3 in_50_6 )  ;
+   - merge.delay2.cx3.out ( merge_adelay2_acx4 in_50_6 )  ( merge_adelay2_acx3 out )  ;
+   - merge.delay2.cx4.out ( merge_adelay2_acx4 out )  ( merge_adelay2_acx5 in_50_6 )  ;
+   - merge.pulseG.i7.Y ( merge_apulseG_ai8 A )  ( merge_apulseG_ai7 Y )  ;
+   - merge.pulseG.i8.Y ( merge_apulseG_ai8 Y )  ( merge_apulseG_ai9 A )  ;
+   - merge.pulseG.sig_inv ( merge_apulseG_ai Y )  ( merge_apulseG_anor B )  ;
+   - merge.pulseG.sgn ( merge_apulseG_aand A )  ( merge_apulseG_anor Y )  ( merge_apulseG_ai1 A )  ;
+   - merge.pulseG.i9.Y ( merge_apulseG_aand B )  ( merge_apulseG_ai9 Y )  ;
+   - merge.pulseG.i3.Y ( merge_apulseG_ai4 A )  ( merge_apulseG_ai3 Y )  ;
+   - merge.pulseG.i4.Y ( merge_apulseG_ai4 Y )  ( merge_apulseG_ai5 A )  ;
+   - merge.pulseG.i6.Y ( merge_apulseG_ai7 A )  ( merge_apulseG_ai6 Y )  ;
+   - merge.pulseG.i5.Y ( merge_apulseG_ai6 A )  ( merge_apulseG_ai5 Y )  ;
+   - merge.pulseG.i2.Y ( merge_apulseG_ai3 A )  ( merge_apulseG_ai2 Y )  ;
+   - merge.pulseG.i1.Y ( merge_apulseG_ai2 A )  ( merge_apulseG_ai1 Y )  ;
+   - merge.delay4.cx5.out ( merge_adelay4_acx6 in_50_6 )  ( merge_adelay4_acx5 out )  ;
+   - merge.delay4.cx6.out ( merge_adelay4_acx6 out )  ( merge_adelay4_acx7 in_50_6 )  ;
+   - merge.delay4.cx0.out ( merge_adelay4_acx0 out )  ( merge_adelay4_acx1 in_50_6 )  ;
+   - merge.delay4.cx1.out ( merge_adelay4_acx2 in_50_6 )  ( merge_adelay4_acx1 out )  ;
+   - merge.delay4.cx2.out ( merge_adelay4_acx2 out )  ( merge_adelay4_acx3 in_50_6 )  ;
+   - merge.delay4.cx3.out ( merge_adelay4_acx4 in_50_6 )  ( merge_adelay4_acx3 out )  ;
+   - merge.delay4.cx4.out ( merge_adelay4_acx4 out )  ( merge_adelay4_acx5 in_50_6 )  ;
+   - merge.delay3.cx5.out ( merge_adelay3_acx6 in_50_6 )  ( merge_adelay3_acx5 out )  ;
+   - merge.delay3.cx6.out ( merge_adelay3_acx6 out )  ( merge_adelay3_acx7 in_50_6 )  ;
+   - merge.delay3.cx0.out ( merge_adelay3_acx0 out )  ( merge_adelay3_acx1 in_50_6 )  ;
+   - merge.delay3.cx1.out ( merge_adelay3_acx2 in_50_6 )  ( merge_adelay3_acx1 out )  ;
+   - merge.delay3.cx2.out ( merge_adelay3_acx2 out )  ( merge_adelay3_acx3 in_50_6 )  ;
+   - merge.delay3.cx3.out ( merge_adelay3_acx4 in_50_6 )  ( merge_adelay3_acx3 out )  ;
+   - merge.delay3.cx4.out ( merge_adelay3_acx4 out )  ( merge_adelay3_acx5 in_50_6 )  ;
+   - merge.delay1.cx5.out ( merge_adelay1_acx6 in_50_6 )  ( merge_adelay1_acx5 out )  ;
+   - merge.delay1.cx6.out ( merge_adelay1_acx6 out )  ( merge_adelay1_acx7 in_50_6 )  ;
+   - merge.delay1.cx0.out ( merge_adelay1_acx0 out )  ( merge_adelay1_acx1 in_50_6 )  ;
+   - merge.delay1.cx1.out ( merge_adelay1_acx2 in_50_6 )  ( merge_adelay1_acx1 out )  ;
+   - merge.delay1.cx2.out ( merge_adelay1_acx2 out )  ( merge_adelay1_acx3 in_50_6 )  ;
+   - merge.delay1.cx3.out ( merge_adelay1_acx4 in_50_6 )  ( merge_adelay1_acx3 out )  ;
+   - merge.delay1.cx4.out ( merge_adelay1_acx4 out )  ( merge_adelay1_acx5 in_50_6 )  ;
+   - ibuff.pulse ( ibuff_apulseG_aand Y )  ( ibuff_al_50_6 CLK )  ( ibuff_al_51_6 CLK ) 
+ ( ibuff_al_52_6 CLK )  ( ibuff_al_53_6 CLK )  ( ibuff_al_54_6 CLK )  ( ibuff_al_55_6 CLK ) 
+ ( ibuff_al_56_6 CLK )  ( ibuff_al_57_6 CLK )  ;
+   - ibuff.inv6.A ( ibuff_ainv6 A )  ( ibuff_al_55_6 Q )  ;
+   - ibuff.inv6.Y ( ibuff_ainv6 Y )  ( ibuff_anor6 B )  ;
+   - ibuff.inv2.Y ( ibuff_anor2 B )  ( ibuff_ainv2 Y )  ;
+   - ibuff.inv1.A ( ibuff_ainv1 A )  ( ibuff_al_50_6 Q )  ;
+   - ibuff.inv1.Y ( ibuff_ainv1 Y )  ( ibuff_anor1 B )  ;
+   - ibuff.inv2.A ( ibuff_al_51_6 Q )  ( ibuff_ainv2 A )  ;
+   - ibuff.inv3.A ( ibuff_al_52_6 Q )  ( ibuff_ainv3 A )  ;
+   - ibuff.inv4.A ( ibuff_al_53_6 Q )  ( ibuff_ainv4 A )  ;
+   - ibuff.inv5.A ( ibuff_al_54_6 Q )  ( ibuff_ainv5 A )  ;
+   - ibuff.inv7.A ( ibuff_al_56_6 Q )  ( ibuff_ainv7 A )  ;
+   - ibuff.inv8.A ( ibuff_al_57_6 Q )  ( ibuff_ainv8 A )  ;
+   - ibuff.inv5.Y ( ibuff_ainv5 Y )  ( ibuff_anor5 B )  ;
+   - ibuff.inv4.Y ( ibuff_anor4 B )  ( ibuff_ainv4 Y )  ;
+   - ibuff.inv8.Y ( ibuff_anor8 B )  ( ibuff_ainv8 Y )  ;
+   - ibuff.inv7.Y ( ibuff_anor7 B )  ( ibuff_ainv7 Y )  ;
+   - ibuff.inv3.Y ( ibuff_anor3 B )  ( ibuff_ainv3 Y )  ;
+   - ibuff.pulseG.i7.Y ( ibuff_apulseG_ai8 A )  ( ibuff_apulseG_ai7 Y )  ;
+   - ibuff.pulseG.i8.Y ( ibuff_apulseG_ai8 Y )  ( ibuff_apulseG_ai9 A )  ;
+   - ibuff.pulseG.sig_inv ( ibuff_apulseG_ai Y )  ( ibuff_apulseG_anor B )  ;
+   - ibuff.pulseG.sgn ( ibuff_apulseG_aand A )  ( ibuff_apulseG_anor Y )  ( ibuff_apulseG_ai1 A )  ;
+   - ibuff.pulseG.i9.Y ( ibuff_apulseG_aand B )  ( ibuff_apulseG_ai9 Y )  ;
+   - ibuff.pulseG.i3.Y ( ibuff_apulseG_ai4 A )  ( ibuff_apulseG_ai3 Y )  ;
+   - ibuff.pulseG.i4.Y ( ibuff_apulseG_ai4 Y )  ( ibuff_apulseG_ai5 A )  ;
+   - ibuff.pulseG.i6.Y ( ibuff_apulseG_ai7 A )  ( ibuff_apulseG_ai6 Y )  ;
+   - ibuff.pulseG.i5.Y ( ibuff_apulseG_ai6 A )  ( ibuff_apulseG_ai5 Y )  ;
+   - ibuff.pulseG.i2.Y ( ibuff_apulseG_ai3 A )  ( ibuff_apulseG_ai2 Y )  ;
+   - ibuff.pulseG.i1.Y ( ibuff_apulseG_ai2 A )  ( ibuff_apulseG_ai1 Y )  ;
+   - ibuff.c_elem_better.tmp_p1r ( ibuff_ac__elem__better_acx0 out )  ( ibuff_ac__elem__better_adelay_acx0 in_50_6 )  ;
+   - ibuff.c_elem_better.delay.cx5.out ( ibuff_ac__elem__better_adelay_acx6 in_50_6 )  ( ibuff_ac__elem__better_adelay_acx5 out )  ;
+   - ibuff.c_elem_better.delay.cx6.out ( ibuff_ac__elem__better_adelay_acx6 out )  ( ibuff_ac__elem__better_adelay_acx7 in_50_6 )  ;
+   - ibuff.c_elem_better.delay.cx0.out ( ibuff_ac__elem__better_adelay_acx0 out )  ( ibuff_ac__elem__better_adelay_acx1 in_50_6 )  ;
+   - ibuff.c_elem_better.delay.cx1.out ( ibuff_ac__elem__better_adelay_acx2 in_50_6 )  ( ibuff_ac__elem__better_adelay_acx1 out )  ;
+   - ibuff.c_elem_better.delay.cx2.out ( ibuff_ac__elem__better_adelay_acx2 out )  ( ibuff_ac__elem__better_adelay_acx3 in_50_6 )  ;
+   - ibuff.c_elem_better.delay.cx3.out ( ibuff_ac__elem__better_adelay_acx4 in_50_6 )  ( ibuff_ac__elem__better_adelay_acx3 out )  ;
+   - ibuff.c_elem_better.delay.cx4.out ( ibuff_ac__elem__better_adelay_acx4 out )  ( ibuff_ac__elem__better_adelay_acx5 in_50_6 )  ;
+END NETS
+
+
+END DESIGN
+

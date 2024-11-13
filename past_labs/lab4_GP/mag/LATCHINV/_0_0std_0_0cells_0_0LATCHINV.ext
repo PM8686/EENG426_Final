@@ -1,0 +1,49 @@
+timestamp 1729044670
+version 8.3
+tech sky130l
+style generic
+scale 1 1 7.5
+resistclasses 1000 1000
+port "q" 3 41 45 41 45 m1
+node "#10" 6854 0 47 6 ndiffusion 100 60 0 0
+equiv "#10" "#10"
+node "a_15_6#" 2000 0 15 6 ndiffusion 50 30 0 0
+node "GND" 6854 0 8 6 ndiffusion 100 60 0 0
+equiv "GND" "GND"
+equiv "GND" "GND"
+node "a_40_23#" 2000 0 40 23 pdiffusion 0 0 50 30
+node "_q" 15403 0 22 6 ndiffusion 100 60 150 80
+equiv "_q" "_q"
+equiv "_q" "_q"
+equiv "_q" "_q"
+equiv "_q" "_q"
+node "_clk" 5000 0 22 23 pdiffusion 50 30 75 40
+equiv "_clk" "_clk"
+equiv "_clk" "_clk"
+equiv "_clk" "_clk"
+node "Vdd" 8922 0 15 23 pdiffusion 0 0 145 80
+equiv "Vdd" "Vdd"
+equiv "Vdd" "Vdd"
+node "#7" 10403 0 8 23 pdiffusion 0 0 200 100
+equiv "#7" "#7"
+node "CLK" 0 0 20 4 polysilicon 0 0 0 0
+equiv "CLK" "CLK"
+equiv "CLK" "CLK"
+equiv "CLK" "CLK"
+equiv "CLK" "CLK"
+node "q" 0 0 41 45 m1 0 0 0 0
+equiv "q" "q"
+equiv "q" "q"
+node "D" 0 0 8 46 polysilicon 0 0 0 0
+equiv "D" "D"
+equiv "D" "D"
+device mosfet nfet 63 6 64 7 2 10 "Gnd!" "_clk" 4 0 "_q" 10 0 "#10" 10 0
+device mosfet nfet 45 6 46 7 2 10 "Gnd!" "q" 4 0 "GND" 10 0 "#10" 10 0
+device mosfet nfet 38 6 39 7 2 10 "Gnd!" "CLK" 4 0 "_clk" 10 0 "GND" 10 0
+device mosfet nfet 20 6 21 7 2 10 "Gnd!" "CLK" 4 0 "a_15_6#" 10 0 "_q" 10 0
+device mosfet nfet 13 6 14 7 2 10 "Gnd!" "D" 4 0 "GND" 10 0 "a_15_6#" 10 0
+device mosfet pfet 63 23 64 24 2 20 "Vdd!" "_clk" 4 0 "#7" 20 0 "_q" 20 0
+device mosfet pfet 45 23 46 24 2 10 "Vdd!" "q" 4 0 "a_40_23#" 10 0 "Vdd" 10 0
+device mosfet pfet 38 23 39 24 2 10 "Vdd!" "CLK" 4 0 "_q" 10 0 "a_40_23#" 10 0
+device mosfet pfet 20 23 21 24 2 15 "Vdd!" "CLK" 4 0 "Vdd" 15 0 "_clk" 15 0
+device mosfet pfet 13 23 14 24 2 20 "Vdd!" "D" 4 0 "#7" 20 0 "Vdd" 20 0

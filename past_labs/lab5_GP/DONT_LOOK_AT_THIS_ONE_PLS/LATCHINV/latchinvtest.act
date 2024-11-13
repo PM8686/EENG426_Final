@@ -1,0 +1,31 @@
+import "cells.act";
+import std::cells;
+open std::cells;
+
+defproc latchinvtest1() {
+    pint NUM = 1000;
+    LATCHINV latchinv[NUM];
+
+    // connect the output of cell i to input 0 of cell i+1
+    (i:NUM-1: latchinv[i]._q=latchinv[i+1].CLK;) 
+}
+
+defproc latchinvtest2() {
+    pint NUM = 1000;
+    LATCHINV latchinv[NUM];
+
+    // connect the output of cell i to input 1 of cell i+1
+    (i:NUM-1: latchinv[i]._q=latchinv[i+1].D;) 
+}
+
+defproc latchinvtest3() {
+    pint NUM = 1000;
+    LATCHINV latchinv[NUM];
+
+    // connect the output of cell i to input 1 of cell i+1
+    (i:NUM-1: latchinv[i]._q=latchinv[i+1].q;) 
+}
+
+latchinvtest1 t1;
+latchinvtest2 t2;
+latchinvtest3 t3;

@@ -1,0 +1,54 @@
+import std::channel;
+open std::channel;
+
+import "source.act";
+import "initBuffer.act";
+import "adder2.act";
+import "merge2.act";
+import "copy2.act";
+
+defproc accum (bd?<8> L; bd?<1> C; bd!<8> R)
+{
+    bd<8> Src_Z, Sum, Mrg, Y, B_out;
+    source src(Src_Z);
+    source src2;
+    initBuffer ibuff(Y, B_out); // works with ibuff(src2.R, B_out);
+    adder2 add(L, B_out, Sum);
+    merge2 merge(Src_Z, Sum, C, Mrg);
+    copy2 copy(Mrg, Y, R);
+}
+
+accum a;
+// starting from the copy step it doesn't work
+// the issue is, with our design, the output of merge is copied into R and Y, R is sent out while Y is used as an input into ibuff.
+// while everything is initialized to 0 on reset, once reset is off, then cycling causes X to appear in the data channels, but the handshake channels work properly
+// when removing the looping of Y, the output occurs as expected.
+
+// TL;DR data channels within loop are X-ed b/c the loop
+
+// Attempted Solutions:
+// - adding delays to all data flow components
+// - adding a buffer between copy and the ibuff
+// - adding a init buffer between copy and the ibuff
+
+// if ibuff input channel is not initialized, ibuff becomes X, and subsequently add becomes X and so on
+// can't have source go to two diff places or loops forever
+
+
+// Manohar 10/10:
+/*
+- all warnings are okay if reseting/setting up vars for testing, otherwise they are bad (use the mode reset and mode run thing from Rylan)
+- initBuffer should have R.r be 0 while in Reset (that is while Reset is 1), then the momment that Reset is 0, then can flip R.r to 1
+    - otherwise the R.r would be propagated through the loop and cause the L.a acknoledge bit not to match, thus deadlock
+- Testing:
+    - use watch ____ to see if we are cycling vs. Deadlock
+    - if deadlock, nothing will happen so simulation will just exit out
+
+- Part II: 
+    - just go through the script he laid out, nothing else should happen besides files being made
+
+- Part III:
+    - use the mag.pl executable to create the .tcl scripts, from there magic should be able to open .tcl scripts
+    - the only thing we need to do is the wiring, nothing else
+    - "this should be a relatiely quick lab"
+*/

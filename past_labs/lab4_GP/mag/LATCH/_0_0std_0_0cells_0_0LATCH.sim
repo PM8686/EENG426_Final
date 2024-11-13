@@ -1,0 +1,13 @@
+| units: 7.5 tech: sky130l format: MIT
+p _clk _q #7 2 20 47 23
+p _q Q Vdd 2 15 13 23
+p Q #8 Vdd 2 10 65 23
+p CLK Vdd _clk 2 15 20 23
+n Q #10 GND 2 10 65 6
+p CLK #8 _q 2 10 38 23
+n _q Q GND 2 10 13 6
+n D GND #5 2 10 74 6
+n CLK #5 _q 2 10 38 6
+p D Vdd #7 2 20 74 23
+n CLK GND _clk 2 10 20 6
+n _clk _q #10 2 10 47 6

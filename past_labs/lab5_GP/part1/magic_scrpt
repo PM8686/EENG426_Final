@@ -1,0 +1,12 @@
+mag.pl -prboundary _0_0cell_0_0gcelem3x0.rect > _0_0cell_0_0gcelem3x0.tcl
+mag.pl -prboundary _0_0std_0_0cells_0_0AND2X1.rect > _0_0std_0_0cells_0_0AND2X1.tcl
+mag.pl -prboundary _0_0std_0_0cells_0_0FAX1.rect > _0_0std_0_0cells_0_0FAX1.tcl
+mag.pl -prboundary _0_0std_0_0cells_0_0INVX1.rect > _0_0std_0_0cells_0_0INVX1.tcl
+mag.pl -prboundary _0_0std_0_0cells_0_0LATCH.rect > _0_0std_0_0cells_0_0LATCH.tcl
+mag.pl -prboundary _0_0std_0_0cells_0_0MUX2X1.rect > _0_0std_0_0cells_0_0MUX2X1.tcl
+mag.pl -prboundary _0_0std_0_0cells_0_0NOR2X1.rect > _0_0std_0_0cells_0_0NOR2X1.tcl
+mag.pl -prboundary _0_0std_0_0cells_0_0OR2X1.rect > _0_0std_0_0cells_0_0OR2X1.tcl
+mag.pl -prboundary  _0_0std_0_0cells_0_0TIELOX1.rect >  _0_0std_0_0cells_0_0TIELOX1.tcl
+
+lef read output.lef
+def read output.def

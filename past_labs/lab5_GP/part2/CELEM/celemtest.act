@@ -1,0 +1,33 @@
+import "cells.act";
+import std::cells;
+import std::gates;
+open std::cells;
+open std::gates;
+
+defproc celemtest1() {
+    pint NUM = 100;
+    ctree<3, true> celem[NUM];
+
+    // connect the output of cell i to input 0 of cell i+1
+    (i:NUM-1: celem[i].out=celem[i+1].in[0];) 
+}
+
+defproc celemtest2() {
+    pint NUM = 100;
+    ctree<3, true> celem[NUM];
+
+    // connect the output of cell i to input 1 of cell i+1
+    (i:NUM-1: celem[i].out=celem[i+1].in[1];) 
+}
+
+defproc celemtest3() {
+    pint NUM = 100;
+    ctree<3, true> celem[NUM];
+
+    // connect the output of cell i to input 1 of cell i+1
+    (i:NUM-1: celem[i].out=celem[i+1].in[2];) 
+}
+
+celemtest1 t1;
+celemtest2 t2;
+celemtest3 t3;

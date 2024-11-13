@@ -1,0 +1,18 @@
+timestamp 1729042338
+version 8.3
+tech sky130l
+style generic
+scale 1 1 7.5
+resistclasses 1000 1000
+node "GND" 1200 0 8 6 ndiffusion 30 22 0 0
+equiv "GND" "GND"
+node "Y" 2800 0 15 6 ndiffusion 30 22 40 26
+equiv "Y" "Y"
+equiv "Y" "Y"
+node "Vdd" 1600 0 8 19 pdiffusion 0 0 40 26
+equiv "Vdd" "Vdd"
+node "A" 0 0 13 4 polysilicon 0 0 0 0
+equiv "A" "A"
+equiv "A" "A"
+device mosfet nfet 13 6 14 7 2 6 "Gnd!" "A" 4 0 "GND" 6 0 "Y" 6 0
+device mosfet pfet 13 19 14 20 2 8 "Vdd!" "A" 4 0 "Vdd" 8 0 "Y" 8 0

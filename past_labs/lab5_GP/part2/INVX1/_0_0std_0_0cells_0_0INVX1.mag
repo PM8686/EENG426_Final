@@ -1,0 +1,100 @@
+magic
+tech sky130l
+timestamp 1730589202
+<< m1 >>
+rect 8 31 12 32
+rect 8 28 9 31
+rect 16 28 20 35
+rect 8 22 12 28
+rect 8 10 12 11
+rect 8 7 9 10
+rect 8 4 12 7
+rect 16 4 20 24
+<< m2c >>
+rect 9 28 12 31
+rect 9 7 12 10
+<< m2 >>
+rect 8 31 13 32
+rect 8 28 9 31
+rect 12 28 13 31
+rect 8 27 13 28
+rect 8 10 13 11
+rect 8 7 9 10
+rect 12 7 13 10
+rect 8 6 13 7
+<< labels >>
+rlabel m1 s 19 31 20 34 6 A
+port 1 nsew signal input
+rlabel m1 s 16 28 20 31 6 A
+port 1 nsew signal input
+rlabel m1 s 16 31 19 34 6 A
+port 1 nsew signal input
+rlabel m1 s 16 34 20 35 6 A
+port 1 nsew signal input
+rlabel m1 s 19 8 20 11 6 Y
+port 2 nsew signal output
+rlabel m1 s 19 20 20 23 6 Y
+port 2 nsew signal output
+rlabel m1 s 16 8 19 11 6 Y
+port 2 nsew signal output
+rlabel m1 s 16 11 20 20 6 Y
+port 2 nsew signal output
+rlabel m1 s 16 20 19 23 6 Y
+port 2 nsew signal output
+rlabel m1 s 16 23 20 24 6 Y
+port 2 nsew signal output
+rlabel m1 s 16 4 20 8 6 Y
+port 2 nsew signal output
+rlabel m2 s 12 28 13 31 6 Vdd
+port 3 nsew power input
+rlabel m2 s 9 28 12 31 6 Vdd
+port 3 nsew power input
+rlabel m2 s 8 27 13 28 6 Vdd
+port 3 nsew power input
+rlabel m2 s 8 28 9 31 6 Vdd
+port 3 nsew power input
+rlabel m2 s 8 31 13 32 6 Vdd
+port 3 nsew power input
+rlabel m2c s 9 28 12 31 6 Vdd
+port 3 nsew power input
+rlabel m1 s 9 23 12 26 6 Vdd
+port 3 nsew power input
+rlabel m1 s 9 28 12 31 6 Vdd
+port 3 nsew power input
+rlabel m1 s 8 22 12 23 6 Vdd
+port 3 nsew power input
+rlabel m1 s 8 23 9 26 6 Vdd
+port 3 nsew power input
+rlabel m1 s 8 26 12 28 6 Vdd
+port 3 nsew power input
+rlabel m1 s 8 28 9 31 6 Vdd
+port 3 nsew power input
+rlabel m1 s 8 31 12 32 6 Vdd
+port 3 nsew power input
+rlabel m2 s 12 7 13 10 6 GND
+port 4 nsew ground input
+rlabel m2 s 9 7 12 10 6 GND
+port 4 nsew ground input
+rlabel m2 s 8 6 13 7 6 GND
+port 4 nsew ground input
+rlabel m2 s 8 7 9 10 6 GND
+port 4 nsew ground input
+rlabel m2 s 8 10 13 11 6 GND
+port 4 nsew ground input
+rlabel m2c s 9 7 12 10 6 GND
+port 4 nsew ground input
+rlabel m1 s 9 7 12 10 6 GND
+port 4 nsew ground input
+rlabel m1 s 8 4 12 7 6 GND
+port 4 nsew ground input
+rlabel m1 s 8 7 9 10 6 GND
+port 4 nsew ground input
+rlabel m1 s 8 10 12 11 6 GND
+port 4 nsew ground input
+<< properties >>
+string LEFsite CoreSite
+string LEFclass CORE
+string FIXED_BBOX 0 0 24 40
+string LEFsymmetry X Y
+string LEFview TRUE
+<< end >>

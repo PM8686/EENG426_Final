@@ -1,0 +1,102 @@
+[2024-11-05 00:39:52.031946] [0x00007fdfd1299880] [info] ------------------------------------------------------------
+[2024-11-05 00:39:52.032232] [0x00007fdfd1299880] [info] Load information from PhyDB
+[2024-11-05 00:39:52.032266] [0x00007fdfd1299880] [info]   placement grid not set in PhyDB
+[2024-11-05 00:39:52.032295] [0x00007fdfd1299880] [info]   checking sites
+[2024-11-05 00:39:52.032304] [0x00007fdfd1299880] [info]     width : 0.6um
+[2024-11-05 00:39:52.032347] [0x00007fdfd1299880] [info]     height: 0.3um
+[2024-11-05 00:39:52.032668] [0x00007fdfd1299880] [info] No P-well layer info provided, creating fake info
+[2024-11-05 00:39:52.032726] [0x00007fdfd1299880] [info] (wall time: 0.000822s, cpu time: 0.000798)
+[2024-11-05 00:39:52.032736] [0x00007fdfd1299880] [info] ------------------------------------------------------------
+[2024-11-05 00:39:52.032761] [0x00007fdfd1299880] [info] Circuit brief summary:
+[2024-11-05 00:39:52.032790] [0x00007fdfd1299880] [info]   movable blocks: 100
+[2024-11-05 00:39:52.032837] [0x00007fdfd1299880] [info]   fixed blocks:   0
+[2024-11-05 00:39:52.032847] [0x00007fdfd1299880] [info]   blocks:         100
+[2024-11-05 00:39:52.032851] [0x00007fdfd1299880] [info]   iopins:         0
+[2024-11-05 00:39:52.032877] [0x00007fdfd1299880] [info]   nets:           301
+[2024-11-05 00:39:52.032886] [0x00007fdfd1299880] [info]   grid size x/y:  0.6/0.3um
+[2024-11-05 00:39:52.032894] [0x00007fdfd1299880] [info]   total movable blk area: 17600
+[2024-11-05 00:39:52.032938] [0x00007fdfd1299880] [info]   total white space     : 76428
+[2024-11-05 00:39:52.032971] [0x00007fdfd1299880] [info]   total block area      : 17600
+[2024-11-05 00:39:52.033000] [0x00007fdfd1299880] [info]   total space: 76428
+[2024-11-05 00:39:52.033013] [0x00007fdfd1299880] [info]     left:   10
+[2024-11-05 00:39:52.033018] [0x00007fdfd1299880] [info]     right:  203
+[2024-11-05 00:39:52.033024] [0x00007fdfd1299880] [info]     bottom: 18
+[2024-11-05 00:39:52.033030] [0x00007fdfd1299880] [info]     top:    414
+[2024-11-05 00:39:52.033055] [0x00007fdfd1299880] [info]   average movable width/height: 11/16um
+[2024-11-05 00:39:52.033098] [0x00007fdfd1299880] [info]   white space utility: 0.230282
+[2024-11-05 00:39:52.033114] [0x00007fdfd1299880] [info]   current weighted HPWL: 363.825um
+[2024-11-05 00:39:52.033163] [0x00007fdfd1299880] [info] ------------------------------------------------------------
+[2024-11-05 00:39:52.033170] [0x00007fdfd1299880] [info] Start global placement
+[2024-11-05 00:39:52.033177] [0x00007fdfd1299880] [info]   target density: 0.25
+[2024-11-05 00:39:52.033188] [0x00007fdfd1299880] [info]   Block location initialization:
+    HPWL before, 363.825
+[2024-11-05 00:39:52.033202] [0x00007fdfd1299880] [info]     HPWL after, 8071.7
+[2024-11-05 00:39:52.099657] [0x00007fdfd1299880] [info]   iter-0  : 2.0714e+00  8.3950e+02
+[2024-11-05 00:39:52.160998] [0x00007fdfd1299880] [info]   iter-1  : 9.9040e+01  7.3717e+02
+[2024-11-05 00:39:52.215351] [0x00007fdfd1299880] [info]   iter-2  : 1.4094e+02  8.1005e+02
+[2024-11-05 00:39:52.267993] [0x00007fdfd1299880] [info]   iter-3  : 1.7394e+02  5.1844e+02
+[2024-11-05 00:39:52.319675] [0x00007fdfd1299880] [info]   iter-4  : 1.7077e+02  8.0630e+02
+[2024-11-05 00:39:52.369597] [0x00007fdfd1299880] [info]   iter-5  : 2.1036e+02  7.5808e+02
+[2024-11-05 00:39:52.426704] [0x00007fdfd1299880] [info]   iter-6  : 2.3600e+02  7.5752e+02
+[2024-11-05 00:39:52.479696] [0x00007fdfd1299880] [info]   iter-7  : 2.6325e+02  7.5679e+02
+[2024-11-05 00:39:52.569968] [0x00007fdfd1299880] [info]   iter-8  : 2.8564e+02  7.6866e+02
+[2024-11-05 00:39:52.589944] [0x00007fdfd1299880] [info]   iter-9  : 3.1367e+02  7.5702e+02
+[2024-11-05 00:39:52.650001] [0x00007fdfd1299880] [info]   iter-10 : 3.4860e+02  7.5938e+02
+[2024-11-05 00:39:52.709567] [0x00007fdfd1299880] [info]   iter-11 : 3.8435e+02  7.6718e+02
+[2024-11-05 00:39:52.760182] [0x00007fdfd1299880] [info]   iter-12 : 4.1342e+02  7.6484e+02
+[2024-11-05 00:39:52.819700] [0x00007fdfd1299880] [info]   iter-13 : 4.3918e+02  7.6815e+02
+[2024-11-05 00:39:52.879634] [0x00007fdfd1299880] [info]   iter-14 : 4.5610e+02  7.6630e+02
+[2024-11-05 00:39:52.926583] [0x00007fdfd1299880] [info]   iter-15 : 4.7928e+02  7.7136e+02
+[2024-11-05 00:39:52.981955] [0x00007fdfd1299880] [info]   iter-16 : 5.1291e+02  7.5540e+02
+[2024-11-05 00:39:53.039236] [0x00007fdfd1299880] [info]   iter-17 : 5.1705e+02  5.1945e+02
+[2024-11-05 00:39:53.039337] [0x00007fdfd1299880] [info]   current weighted HPWL: 519.453um
+[2024-11-05 00:39:53.039393] [0x00007fdfd1299880] [info] [0;36mGlobal placement completed[0m
+[2024-11-05 00:39:53.039415] [0x00007fdfd1299880] [info] (wall time: 1.006248s, cpu time: 14.339291)
+[2024-11-05 00:39:53.039489] [0x00007fdfd1299880] [info] (peak memory: 13MB,  current memory: 13MB)
+[2024-11-05 00:39:53.039528] [0x00007fdfd1299880] [info] ------------------------------------------------------------
+[2024-11-05 00:39:53.039543] [0x00007fdfd1299880] [info] Start standard cluster well legalization
+[2024-11-05 00:39:53.039560] [0x00007fdfd1299880] [info]   Well max plug distance: 75um, 125 
+[2024-11-05 00:39:53.039578] [0x00007fdfd1299880] [info]   GridValueX: 0.6 um
+[2024-11-05 00:39:53.039595] [0x00007fdfd1299880] [info]   Well spacing: 1.275um, 3
+[2024-11-05 00:39:53.039610] [0x00007fdfd1299880] [info]   Well tap cell width: 2
+[2024-11-05 00:39:53.039928] [0x00007fdfd1299880] [info] Max movable cell width: 11
+[2024-11-05 00:39:53.039969] [0x00007fdfd1299880] [info] Using default gridded row width: 2*max_unplug_length_
+[2024-11-05 00:39:53.039987] [0x00007fdfd1299880] [info]   Total number of columns: 1
+[2024-11-05 00:39:53.040005] [0x00007fdfd1299880] [info]   Gridded row width: 112.2um, 187
+[2024-11-05 00:39:53.040089] [0x00007fdfd1299880] [info] Maximum possible number of gridded rows in a column: 24
+[2024-11-05 00:39:53.040130] [0x00007fdfd1299880] [info] Form block clustering
+[2024-11-05 00:39:53.040261] [0x00007fdfd1299880] [info]   current weighted HPWL: 789.975um
+[2024-11-05 00:39:53.040296] [0x00007fdfd1299880] [info] Flip cluster orientation
+[2024-11-05 00:39:53.040311] [0x00007fdfd1299880] [info]   current weighted HPWL: 848.475um
+[2024-11-05 00:39:53.040336] [0x00007fdfd1299880] [info] Perform local reordering
+[2024-11-05 00:39:53.040350] [0x00007fdfd1299880] [info] reorder iteration: 0
+[2024-11-05 00:39:53.041152] [0x00007fdfd1299880] [info]   current weighted HPWL: 1416.3um
+[2024-11-05 00:39:53.041251] [0x00007fdfd1299880] [info] reorder iteration: 1
+[2024-11-05 00:39:53.041736] [0x00007fdfd1299880] [info]   current weighted HPWL: 1398.45um
+[2024-11-05 00:39:53.041753] [0x00007fdfd1299880] [info] reorder iteration: 2
+[2024-11-05 00:39:53.042175] [0x00007fdfd1299880] [info]   current weighted HPWL: 1408.05um
+[2024-11-05 00:39:53.042199] [0x00007fdfd1299880] [info] reorder iteration: 3
+[2024-11-05 00:39:53.042591] [0x00007fdfd1299880] [info]   current weighted HPWL: 1419.3um
+[2024-11-05 00:39:53.042608] [0x00007fdfd1299880] [info] reorder iteration: 4
+[2024-11-05 00:39:53.042978] [0x00007fdfd1299880] [info]   current weighted HPWL: 1424.17um
+[2024-11-05 00:39:53.042994] [0x00007fdfd1299880] [info] reorder iteration: 5
+[2024-11-05 00:39:53.043362] [0x00007fdfd1299880] [info]   current weighted HPWL: 1428.38um
+[2024-11-05 00:39:53.043378] [0x00007fdfd1299880] [info] Insert well tap cells
+[2024-11-05 00:39:53.043423] [0x00007fdfd1299880] [info] Insertion complete: 42 well tap cell created
+[2024-11-05 00:39:53.043433] [0x00007fdfd1299880] [info] Skip creating end cap cells
+[2024-11-05 00:39:53.043442] [0x00007fdfd1299880] [info]   current weighted HPWL: 1426.58um
+[2024-11-05 00:39:53.043458] [0x00007fdfd1299880] [info] [0;36mStandard Cluster Well Legalization completed[0m
+[2024-11-05 00:39:53.043473] [0x00007fdfd1299880] [info] (wall time: 0.003942s, cpu time: 0.023826)
+[2024-11-05 00:39:53.043507] [0x00007fdfd1299880] [info] (peak memory: 13MB,  current memory: 13MB)
+[2024-11-05 00:39:53.043519] [0x00007fdfd1299880] [info] Writing PP and NP rect file: dali_outppnp.rect
+[2024-11-05 00:39:53.044111] [0x00007fdfd1299880] [info] Writing N-well rect file: dali_outwell.rect
+[2024-11-05 00:39:53.044345] [0x00007fdfd1299880] [info] Writing cluster rect file: dali_out_router.cluster
+[2024-11-05 00:39:53.044552] [0x00007fdfd1299880] [info] ------------------------------------------------------------
+[2024-11-05 00:39:53.044569] [0x00007fdfd1299880] [info] Start I/O Placement
+[2024-11-05 00:39:53.044582] [0x00007fdfd1299880] [info] [0;36mI/O Placement complete![0m
+[2024-11-05 00:39:53.044633] [0x00007fdfd1299880] [warning] IoPlace flag not specified, use --auto-place by default
+[2024-11-05 00:39:53.044644] [0x00007fdfd1299880] [info] ------------------------------------------------------------
+[2024-11-05 00:39:53.044653] [0x00007fdfd1299880] [info] Start I/O Placement
+[2024-11-05 00:39:53.044662] [0x00007fdfd1299880] [info] [0;36mI/O Placement complete![0m
+[2024-11-05 00:39:53.044783] [0x00007fdfd1299880] [info] Export Pplus/Nplus fillings to PhyDB
+[2024-11-05 00:39:53.044817] [0x00007fdfd1299880] [info] Export N wells to PhyDB

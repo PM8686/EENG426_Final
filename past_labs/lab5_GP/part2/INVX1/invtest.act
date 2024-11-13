@@ -1,0 +1,12 @@
+import "cells.act";
+import std::cells;
+open std::cells;
+defproc invtest() {
+    pint NUM = 1000;
+    INVX1 inv[NUM];
+
+    (i:NUM-1: inv[i].Y=inv[i+1].A;)
+    // inv[0].Y=inv[1].A;
+}
+
+invtest t;
