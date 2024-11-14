@@ -1,0 +1,21 @@
+
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "common.act";
+
+open std::cells;
+open std::channel;
+open std::gates;
+
+defproc source (bd!<8> R) {
+  // Reset mechanism:
+  //   - Reset R.a to 1, otherwise send ~R.a
+  //     - This is connected directly to R.r so it gets 1 on reset and ~R.a otherwise
+  reset_to_1_or_inv r(R.a, R.r);
+
+  // Connect the remaining data outputs directly to ground
+  TIELOX1 tlo[8];
+  ( i : 8 : R.d[i] = tlo[i].Y; )
+}

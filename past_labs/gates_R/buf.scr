@@ -1,0 +1,117 @@
+watch L.r
+watch L.a
+watch R.r
+watch R.a
+watch pulse_out
+watch R.d[0]
+watch R.d[1]
+watch R.d[2]
+watch R.d[3]
+watch R.d[4]
+watch R.d[5]
+watch R.d[6]
+watch R.d[7]
+watch Reset
+
+echo "Starting Initialization"
+mode reset
+set Reset 1
+set L.r 0
+set R.a 0
+set L.d[0] 0
+set L.d[1] 1
+set L.d[2] 0
+set L.d[3] 1
+set L.d[4] 0
+set L.d[5] 1
+set L.d[6] 0
+set L.d[7] 1
+cycle
+
+echo "Reset Complete"
+mode run
+set Reset 0
+cycle
+
+echo "Initial State:"
+get L.r
+get L.a
+get R.r
+get R.a
+
+echo "Send 0b10101010 to the buffer"
+echo "Expect: L.r+, L.a+, pulse_out to pulse, outputs to change"
+echo "Expect: R.r+ after a delay"
+set L.r 1
+cycle
+
+echo "Sender receives an ack and sets L.r-"
+echo "Receiver receives a req and sets R.a+"
+set L.r 0
+set R.a 1
+cycle
+
+echo "Expect: R.r-, L.a-"
+get R.r
+get L.a
+
+echo "Receiver notices req is gone, and sets R.a-"
+set R.a 0
+cycle
+
+echo "Expect the data output to be 0b10101010:"
+get R.d[7]
+get R.d[6]
+get R.d[5]
+get R.d[4]
+get R.d[3]
+get R.d[2]
+get R.d[1]
+get R.d[0]
+
+echo "Initialize second transfer"
+echo "Start in the initial state:"
+get L.r
+get L.a
+get R.r
+get R.a
+
+echo "Send 0b10001111 to the buffer"
+set L.d[0] 1
+set L.d[1] 1
+set L.d[2] 1
+set L.d[3] 1
+set L.d[4] 0
+set L.d[5] 0
+set L.d[6] 0
+set L.d[7] 1
+cycle
+
+echo "Expect: L.r+, L.a+, pulse_out to pulse, outputs to change"
+echo "Expect: R.r+ after a delay"
+set L.r 1
+cycle
+
+echo "Sender receives an ack and sets L.r-"
+echo "Receiver receives a req and sets R.a+"
+set L.r 0
+set R.a 1
+cycle
+
+echo "Expect: R.r-, L.a-"
+get R.r
+get L.a
+
+echo "Receiver notices req is gone, and sets R.a-"
+set R.a 0
+cycle
+
+echo "Expect the data output to be 0b10001111:"
+get R.d[7]
+get R.d[6]
+get R.d[5]
+get R.d[4]
+get R.d[3]
+get R.d[2]
+get R.d[1]
+get R.d[0]

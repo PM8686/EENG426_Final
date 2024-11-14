@@ -1,0 +1,58 @@
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "common.act";
+
+open std::cells;
+open std::channel;
+open std::gates;
+
+defproc split (bd?<1> C; bd?<8> L; bd!<8> R1; bd!<8> R2) {
+  bool c_ins[3];
+  bool c_out, c_out_delay;
+  bool pulse_out;
+  bool nor_ra_in1, nor_ra_in2, nor_ra_out;
+  bool ctrl, _ctrl;
+
+  // Reset mechanism:
+  //   - Reset C.r to 0, otherwise send C.r
+  //   - Reset L.r to 0, otherwise send L.r
+  //   - Reset R1.a to 1, otherwise send R1.a
+  //   - Reset R2.a to 1, otherwise send R2.a
+  //     - These are connected directly to the first C-element so it gets 1 on reset and R1.a/R2.a otherwise
+  //     - We want the ack C-element to send a 0 at first, but it's inverting so we actually need to send 1s.
+  reset_to_0 r0(C.r, c_ins[0]);
+  reset_to_0 r1(L.r, c_ins[1]);
+  reset_to_1 r2(R1.a, nor_ra_in1);
+  reset_to_1 r3(R2.a, nor_ra_in2);
+
+  // NOR the acks from the right rogether
+  // This is a NOR because we want to send the inverted output to the C-element
+  NOR2X1 nor_ra(nor_ra_in1, nor_ra_in2, nor_ra_out);
+  c_ins[2] = nor_ra_out;
+
+  ctree<3, false> c(c_ins, c_out);
+  C.a = c_out;
+  L.a = c_out;
+
+  // Add a delay between the C-element and the output mux
+  delay<3> d(c_out, c_out_delay);
+
+  pulse_gen p(c_out, pulse_out);
+
+  LATCH latch[8];
+  ( i : 8 : latch[i].CLK = pulse_out;
+            latch[i].D = L.d[i];
+            latch[i].Q = R1.d[i];
+            latch[i].Q = R2.d[i]; )
+
+  // Output mux:
+  //   - CTRL = 0 -> R1
+  //   - CTRL = 1 -> R2
+  // Note: use LATCHLO so that there's a default output direction because ctrl is used as gate input
+  LATCHLO c_latch(Reset, pulse_out, C.d[0], ctrl);
+  INVX1 c_latch_inv(ctrl, _ctrl);
+  AND2X1 r1_r(_ctrl, c_out_delay, R1.r);  // ~ctrl & R.r -> R1.r+
+  AND2X1 r2_r(ctrl, c_out_delay, R2.r);   // ctrl & R.r -> R2.r+
+}

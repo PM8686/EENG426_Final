@@ -1,0 +1,157 @@
+watch C.r
+watch C.a
+watch C.d[0]
+watch L.r
+watch L.a
+watch R1.r
+watch R2.r
+watch R1.a
+watch R2.a
+watch pulse_out
+watch R1.d[0]
+watch R1.d[1]
+watch R1.d[2]
+watch R1.d[3]
+watch R1.d[4]
+watch R1.d[5]
+watch R1.d[6]
+watch R1.d[7]
+watch R2.d[0]
+watch R2.d[1]
+watch R2.d[2]
+watch R2.d[3]
+watch R2.d[4]
+watch R2.d[5]
+watch R2.d[6]
+watch R2.d[7]
+watch Reset
+
+echo "Starting Initialization"
+mode reset
+set Reset 1
+set L.r 0
+set C.r 0
+set R1.a 0
+set R2.a 0
+set C.d[0] 0
+set L.d[0] 0
+set L.d[1] 1
+set L.d[2] 0
+set L.d[3] 1
+set L.d[4] 0
+set L.d[5] 1
+set L.d[6] 0
+set L.d[7] 1
+cycle
+
+echo "Reset Complete"
+mode run
+set Reset 0
+cycle
+
+echo "Initial State:"
+get C.r
+get C.a
+get L.r
+get L.a
+get R1.r
+get R2.r
+get R1.a
+get R2.a
+
+echo "Send 0b10101010 to output 1"
+echo "Expect: C.r+, L.r+, C.a+/L.a+, pulse_out to pulse, outputs to change"
+set C.d[0] 0
+set C.r 1
+set L.r 1
+cycle
+
+echo "Expect: R1.r+ and R2.r-"
+get R1.r
+get R2.r
+cycle
+
+echo "Sender receives an ack and sets L.r- and C.r-"
+echo "Receiver 1 receives a req and sets R1.a+"
+set L.r 0
+set C.r 0
+set R1.a 1
+cycle
+
+echo "Expect: R1.r-, R2.r-, C.a-, L.a-"
+get R1.r
+get R2.r
+get C.a
+get L.a
+
+echo "Receiver 1 notices req is gone, and sets R1.a-"
+set R1.a 0
+cycle
+
+echo "Expect the data 1 output to be 0b10101010:"
+get R1.d[7]
+get R1.d[6]
+get R1.d[5]
+get R1.d[4]
+get R1.d[3]
+get R1.d[2]
+get R1.d[1]
+get R1.d[0]
+
+echo "Initialize second transfer"
+echo "Start in the initial state:"
+get L.r
+get L.a
+get R1.r
+get R2.r
+get R1.a
+get R2.a
+
+echo "Send 0b10001111 to output 2"
+set L.d[0] 1
+set L.d[1] 1
+set L.d[2] 1
+set L.d[3] 1
+set L.d[4] 0
+set L.d[5] 0
+set L.d[6] 0
+set L.d[7] 1
+set C.d[0] 1
+cycle
+
+echo "Expect: C.r+, L.r+, C.a+/L.a+, pulse_out to pulse, outputs to change"
+set C.r 1
+set L.r 1
+cycle
+
+echo "Expect: R1.r- and R2.r+"
+get R1.r
+get R2.r
+cycle
+
+echo "Sender receives an ack and sets L.r- and C.r-"
+echo "Receiver 2 receives a req and sets R2.a+"
+set C.r 0
+set L.r 0
+set R2.a 1
+cycle
+
+echo "Expect: R1.r-, R2.r-, C.a-, L.a-"
+get R1.r
+get R2.r
+get C.a
+get L.a
+
+echo "Receiver 2 notices req is gone, and sets R2.a-"
+set R2.a 0
+cycle
+
+echo "Expect the data 2 output to be 0b10001111:"
+get R2.d[7]
+get R2.d[6]
+get R2.d[5]
+get R2.d[4]
+get R2.d[3]
+get R2.d[2]
+get R2.d[1]
+get R2.d[0]

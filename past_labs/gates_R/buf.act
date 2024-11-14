@@ -1,0 +1,35 @@
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "common.act";
+
+open std::cells;
+open std::channel;
+open std::gates;
+
+defproc buf (bd?<8> L; bd!<8> R) {
+  bool c_out, c_out_delay, pulse_out;
+  bool c_ins[2];
+
+  // Reset mechanism:
+  //   - Reset L.r to 0, otherwise send L.r
+  //   - Reset R.a to 0, otherwise send ~R.a
+  //     - This is connected directly to the C-element so it gets 0 on reset and ~R.a otherwise
+  reset_to_0 r0(L.r, c_ins[0]);
+  reset_to_0_or_inv r1(R.a, c_ins[1]);
+
+  ctree<2, false> c(c_ins, c_out);
+  L.a = c_out;
+
+  // Add a delay between the C-element and R.r
+  delay<3> d(c_out, c_out_delay);
+  R.r = c_out_delay;
+
+  pulse_gen p(c_out, pulse_out);
+
+  LATCH latch[8];
+  ( i : 8 : latch[i].CLK = pulse_out;
+            latch[i].D = L.d[i];
+            latch[i].Q = R.d[i]; )
+}

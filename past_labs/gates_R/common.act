@@ -1,0 +1,64 @@
+import globals;
+import std::cells;
+open std::cells;
+
+// Pulse generator
+defproc pulse_gen (bool? in; bool! out) {
+  pint N = 45;
+  INVX1 invs[N];
+  invs[0].A = in;
+  ( i : N-1 : invs[i].Y = invs[i+1].A; )
+  AND2X1 and(in, invs[N-1].Y, out);
+}
+
+// Delay the signal using N pairs of inverters
+template<pint N> defcell delay (bool? in; bool! out) {
+  INVX1 invs[N * 2];
+  invs[0].A = in;
+  invs[N*2-1].Y = out;
+  ( i : N*2-1 : invs[i].Y = invs[i+1].A; )
+}
+
+// We need a variety of reset handlers
+// In all cases, the reset signal is active-high
+// Cases:
+//   1. reset_to_zero
+//        When Reset is 1, output 0
+//        Else output A
+//   2. reset_to_zero_or_inv
+//        When Reset is 1, output 0
+//        Else output ~A
+//   3. reset_to_one
+//        When Reset is 1, output 1
+//        Else output A
+//   4. reset_to_one_or_inv
+//        When Reset is 1, output 1
+//        Else output ~A
+
+// When Reset is 1, output 0, else output A
+// Invert in, and pass into a NOR
+defcell reset_to_0 (bool? in; bool! out) {
+  bool _in;
+  INVX1 i(in, _in);
+  NOR2X1 n(Reset, _in, out);
+}
+
+// When Reset is 1, output 0, Else output ~A
+// Simply a NOR
+defcell reset_to_0_or_inv (bool? in; bool! out) {
+  NOR2X1 n(Reset, in, out);
+}
+
+// When Reset is 1, output 1, else output A
+// Simply an OR
+defcell reset_to_1 (bool? in; bool! out) {
+  OR2X1 n(Reset, in, out);
+}
+
+// When Reset is 1, output 1, else output ~A
+// Invert in, and pass into an OR
+defcell reset_to_1_or_inv (bool? in; bool! out) {
+  bool _in;
+  INVX1 i(in, _in);
+  OR2X1 n(Reset, _in, out);
+}
