@@ -1,0 +1,2 @@
+import "copy_1bit.act";
+copy_1bit cpy;
