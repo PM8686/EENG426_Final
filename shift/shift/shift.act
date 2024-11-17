@@ -9,7 +9,7 @@ import "copy_1bit.act";
 import "src_26.act";
 import "split2.act";
 
-defproc caesar (bd?<8> L1; bd?<8> L2; bd!<8> R)
+defproc shift (bd?<8> L1; bd?<8> L2; bd!<8> R)
 {
     // bd<8> Src_Z, Sum, Mrg, Y, B_out;
     bd<8> Sum, compSum, splitIn, subIn, toMux, subOut, negSrc1, negSrc2;
