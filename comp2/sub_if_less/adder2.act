@@ -1,0 +1,114 @@
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "../pulse.act";
+
+
+open std::cells;
+open std::channel;
+open std::gates;
+// namespace globals { }
+
+
+//two input function
+defproc adder2(bd?<8> L1; bd?<8> L2; bd!<8> R)
+{
+  // Internal signals
+  bool control[3];
+
+  // reset
+  bool tmp_Ra;
+  NOR2X1 nor(Reset, R.a, tmp_Ra);
+  INVX1 inv_r(tmp_Ra, control[2]);
+
+  // invert control (would be R.a without the reset)
+  bool tmp[2];
+  INVX1 inv_l1(L1.r, tmp[0]);
+  INVX1 inv_l2(L2.r, tmp[1]);
+  OR2X1 or_l1(Reset, tmp[0], control[0]);
+  OR2X1 or_l2(Reset, tmp[1], control[1]);
+
+  // C-element control logic: synchronize between request from L and ack from R
+  ctree<3, true> celem(control, L1.a); // inverting celem
+  L2.a = L1.a; //make both left acknowledges the same 
+
+  // add pulse generator based on control (L.a)
+  bool pulse; 
+  pulseGen pulseG(L1.a, pulse);
+
+  // Latch the data from the L channels using the control signal before giving to adder
+  bool in1[8]; //input for adder
+  bool in2[8];
+  LATCH l1[8]; //array of latches, one for each of the 8 bits
+  l1[0](pulse, L1.d[0], in1[0]);
+  l1[1](pulse, L1.d[1], in1[1]);
+  l1[2](pulse, L1.d[2], in1[2]);
+  l1[3](pulse, L1.d[3], in1[3]);
+  l1[4](pulse, L1.d[4], in1[4]);
+  l1[5](pulse, L1.d[5], in1[5]);
+  l1[6](pulse, L1.d[6], in1[6]);
+  l1[7](pulse, L1.d[7], in1[7]);
+
+  LATCH l2[8]; 
+  l2[0](pulse, L2.d[0], in2[0]);
+  l2[1](pulse, L2.d[1], in2[1]);
+  l2[2](pulse, L2.d[2], in2[2]);
+  l2[3](pulse, L2.d[3], in2[3]);
+  l2[4](pulse, L2.d[4], in2[4]);
+  l2[5](pulse, L2.d[5], in2[5]);
+  l2[6](pulse, L2.d[6], in2[6]);
+  l2[7](pulse, L2.d[7], in2[7]);
+
+
+  //use full adder to add two inputs one bit at a time
+  FAX1 add[8]; // takes from first latch
+  bool cin0; 
+  TIELOX1 toGND(cin0); //first add has no carry in
+  bool cout[8]; //ignore the last carry out
+  add[0](in1[0], in2[0], cin0, cout[0], R.d[0]); //R.d is the output
+  add[1](in1[1], in2[1], cout[0], cout[1], R.d[1]);
+  add[2](in1[2], in2[2], cout[1], cout[2], R.d[2]);
+  add[3](in1[3], in2[3], cout[2], cout[3], R.d[3]);
+  add[4](in1[4], in2[4], cout[3], cout[4], R.d[4]);
+  add[5](in1[5], in2[5], cout[4], cout[5], R.d[5]);
+  add[6](in1[6], in2[6], cout[5], cout[6], R.d[6]);
+  add[7](in1[7], in2[7], cout[6], cout[7], R.d[7]);
+
+  // bool tmp_arr[8]; // store initial results to then be NOR with Reset so that initialized to 0
+  // add[0](in1[0], in2[0], cin0, cout[0], tmp_arr[0]); //tmp_arr takes the tmp_arr output
+  // add[1](in1[1], in2[1], cout[0], cout[1], tmp_arr[1]);
+  // add[2](in1[2], in2[2], cout[1], cout[2], tmp_arr[2]);
+  // add[3](in1[3], in2[3], cout[2], cout[3], tmp_arr[3]);
+  // add[4](in1[4], in2[4], cout[3], cout[4], tmp_arr[4]);
+  // add[5](in1[5], in2[5], cout[4], cout[5], tmp_arr[5]);
+  // add[6](in1[6], in2[6], cout[5], cout[6], tmp_arr[6]);
+  // add[7](in1[7], in2[7], cout[6], cout[7], tmp_arr[7]);
+
+  // // inver tmp_arr so nor will output the right thing
+  // bool tmp2_arr[8];
+  // INVX1 inv1(tmp_arr[0], tmp2_arr[0]);
+  // INVX1 inv2(tmp_arr[1], tmp2_arr[1]);
+  // INVX1 inv3(tmp_arr[2], tmp2_arr[2]);
+  // INVX1 inv4(tmp_arr[3], tmp2_arr[3]);
+  // INVX1 inv5(tmp_arr[4], tmp2_arr[4]);
+  // INVX1 inv6(tmp_arr[5], tmp2_arr[5]);
+  // INVX1 inv7(tmp_arr[6], tmp2_arr[6]);
+  // INVX1 inv8(tmp_arr[7], tmp2_arr[7]);
+
+
+  // // NOR with Reset so that initialized to 0 on reset
+  // NOR2X1 nor1(Reset, tmp2_arr[0], R.d[0]);
+  // NOR2X1 nor2(Reset, tmp2_arr[1], R.d[1]);
+  // NOR2X1 nor3(Reset, tmp2_arr[2], R.d[2]);
+  // NOR2X1 nor4(Reset, tmp2_arr[3], R.d[3]);
+  // NOR2X1 nor5(Reset, tmp2_arr[4], R.d[4]);
+  // NOR2X1 nor6(Reset, tmp2_arr[5], R.d[5]);
+  // NOR2X1 nor7(Reset, tmp2_arr[6], R.d[6]);
+  // NOR2X1 nor8(Reset, tmp2_arr[7], R.d[7]);
+
+  // write to right request using delay
+  bool tmp_Rr;
+  CLKBUF3 delay1(L1.a, tmp_Rr);
+  CLKBUF3 delay2(tmp_Rr, R.r);
+}

@@ -1,0 +1,2 @@
+import "comp2.act";
+comp2 comp;

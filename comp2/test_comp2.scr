@@ -1,0 +1,77 @@
+get R.r 
+get L1.a 
+get L2.a 
+get R.d[0]
+
+mode reset
+set Reset 1
+cycle
+
+set L1.r 1
+set L2.r 1
+set R.a 0
+set L1.d[0] 1
+set L1.d[1] 0
+set L1.d[2] 0
+set L1.d[3] 0
+set L1.d[4] 0
+set L1.d[5] 0
+set L1.d[6] 0
+set L1.d[7] 0
+set L2.d[0] 1
+set L2.d[1] 0
+set L2.d[2] 0
+set L2.d[3] 0
+set L2.d[4] 0
+set L2.d[5] 0
+set L2.d[6] 0
+set L2.d[7] 0
+cycle
+
+set Reset 0
+mode run
+cycle
+get R.r 
+get L1.a 
+get L2.a
+get L1.d[0]
+get L2.d[0]
+get R.d[0]
+
+
+
+
+mode reset
+set Reset 1
+cycle
+
+set L1.r 1
+set L2.r 1
+set R.a 0
+set L1.d[0] 1
+set L1.d[1] 0
+set L1.d[2] 0
+set L1.d[3] 0
+set L1.d[4] 0
+set L1.d[5] 0
+set L1.d[6] 0
+set L1.d[7] 0
+set L2.d[0] 1
+set L2.d[1] 0
+set L2.d[2] 0
+set L2.d[3] 0
+set L2.d[4] 0
+set L2.d[5] 0
+set L2.d[6] 0
+set L2.d[7] 1
+cycle
+
+set Reset 0
+mode run
+cycle
+get R.r 
+get L1.a 
+get L2.a
+get L1.d[0]
+get L2.d[0]
+get R.d[0]
