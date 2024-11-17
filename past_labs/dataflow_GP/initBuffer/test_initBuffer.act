@@ -1,0 +1,2 @@
+import "initBuffer.act";
+initBuffer buf;

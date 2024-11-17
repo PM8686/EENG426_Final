@@ -1,0 +1,2 @@
+import "adder2.act";
+adder2 add;

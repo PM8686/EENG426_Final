@@ -1,0 +1,73 @@
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "../pulse.act";
+
+
+open std::cells;
+open std::channel;
+open std::gates;
+
+defproc buffer (bd?<8> L; bd!<8> R)
+{
+  // Internal signals
+  bool control[2];
+  bool tmp;
+
+  // // also add reset using nor gate 
+  NOR2X1 nor(Reset, R.a, tmp);
+
+  // invert control (would be tmp without the reset)
+  INVX1 inv_r(tmp, control[0]);
+
+  // OR L.r to ensure that on reset the input to Celem from L.r is 1 so that Celem output is 0
+  bool tmp2;
+  INVX1 inv_l(L.r, tmp2);
+  OR2X1 or_l(Reset, tmp2, control[1]);
+
+  // C-element control logic: synchronize between request from L and ack from R
+  ctree<2,true> celem(control, L.a);
+
+  // add pulse generator based on control (L.a)
+  bool pulse; 
+  pulseGen pulseG(L.a, pulse);
+
+  // Latch the data from the L channel using the control signal
+  // use an array of latches since each latch only takes one bit at a time (these are done in parallel)
+  LATCH l[8]; //array of latches, one for each of the 8 bits
+  bool tmp_arr[8]; // store initial results to then be NOR with Reset so that initialized to 0
+  l[0](pulse, L.d[0], tmp_arr[0]);
+  l[1](pulse, L.d[1], tmp_arr[1]);
+  l[2](pulse, L.d[2], tmp_arr[2]);
+  l[3](pulse, L.d[3], tmp_arr[3]);
+  l[4](pulse, L.d[4], tmp_arr[4]);
+  l[5](pulse, L.d[5], tmp_arr[5]);
+  l[6](pulse, L.d[6], tmp_arr[6]);
+  l[7](pulse, L.d[7], tmp_arr[7]);
+
+  // invert tmp_arr so nor will output the right thing
+  bool tmp2_arr[8];
+  INVX1 inv1(tmp_arr[0], tmp2_arr[0]);
+  INVX1 inv2(tmp_arr[1], tmp2_arr[1]);
+  INVX1 inv3(tmp_arr[2], tmp2_arr[2]);
+  INVX1 inv4(tmp_arr[3], tmp2_arr[3]);
+  INVX1 inv5(tmp_arr[4], tmp2_arr[4]);
+  INVX1 inv6(tmp_arr[5], tmp2_arr[5]);
+  INVX1 inv7(tmp_arr[6], tmp2_arr[6]);
+  INVX1 inv8(tmp_arr[7], tmp2_arr[7]);
+
+
+  // NOR with Reset so that initialized to 0 on reset
+  NOR2X1 nor1(Reset, tmp2_arr[0], R.d[0]);
+  NOR2X1 nor2(Reset, tmp2_arr[1], R.d[1]);
+  NOR2X1 nor3(Reset, tmp2_arr[2], R.d[2]);
+  NOR2X1 nor4(Reset, tmp2_arr[3], R.d[3]);
+  NOR2X1 nor5(Reset, tmp2_arr[4], R.d[4]);
+  NOR2X1 nor6(Reset, tmp2_arr[5], R.d[5]);
+  NOR2X1 nor7(Reset, tmp2_arr[6], R.d[6]);
+  NOR2X1 nor8(Reset, tmp2_arr[7], R.d[7]);
+
+  // write to right request using delay
+  CLKBUF3 delay(L.a, R.r);
+}

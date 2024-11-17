@@ -1,0 +1,2 @@
+import "copy2.act";
+copy2 cpy;

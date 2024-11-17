@@ -1,0 +1,17 @@
+get L.a
+
+set Reset 1
+cycle
+get L.a 
+
+set L.r 1
+cycle
+get L.a 
+
+set Reset 0
+cycle
+get L.a 
+
+set L.r 0
+cycle 
+get L.a 

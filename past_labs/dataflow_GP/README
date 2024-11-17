@@ -1,0 +1,113 @@
+EENG 426 Lab 3: Peter and Grace
+
+*Note: Because we as the environment do not control L.r for any of the circuits, we are adding in gates that take
+the L.r value and the reset value, and the output is then given to c-elem. We do this because we think it is not a reasonable 
+assumption to assume that L.r will always be set high when reset is set high, thus we add this layer of redundancy.
+
+
+Pulse generator:
+    Implementation: An odd number of inverters (3, in this case) are chained together and then input into an AND gate,
+    this ensures that a pulse only happens for a limited amount of time when it receives a high input, as there will be a residual
+    high given to one end of the AND gate due to the inverting chain, and the other end of the AND gets the new high value before the inverters change it.
+    Note: To make each circuit work, pulse.act must stay in the 'lab3' parent directory, because it is imported into each file using this location.
+
+Source:
+    Testing:
+        Run:
+        1) actsim test_src.act "source"
+        2) source test_src.scr
+    Output Explanation:
+        - First block shows that when actsim starts, everything is X
+        - Second block uses Reset and shows that all values that the source controls (R.d and R.r) are initialized
+        - Third block shows that when R.a is set to 0, reset keeps R.r down/0
+        - Fourth block shows that when Reset is 0 and R.a is 0, R.r is correctly ouputed as 1 and R.d is ready to send data
+        - Fifth block shows when evironment sets R.a to 1 R.r is set back to 0
+
+Sink:
+    Testing:
+        Run:
+        1) actsim test_sink.act "sink"
+        2) source test_sink.scr
+    Output Explanation:
+        *Note: Sink only controls L.a, so that is all we are focused on in this test sript
+        - First block shows L.a is initially X
+        - Second block shows L.a gets set to 0 by Reset
+        - Third block shows L.a is still 0 after L.r is 1 because Reset is still 1
+        - Fourth block shows Reset back to 0, L.a becomes 1 from L.r
+        - Fifth block shows L.r set to 0 sets L.a to 0
+
+Buffer:
+    Actsim Testing:
+        1) actsim test_buffer.act "buffer"
+        2) source test_buffer.scr
+    Irsim Testing:
+        1) irsim sky130l test_buffer.sim test_buffer.al
+        2) `in the magic terminal` @ test_buffer.irsim
+    Actsim Output Explanation:
+        *Note: buffer controls only L.a, R.r, and R.d so that is all we are focused on in this test sript
+        - First block shows L.a, R.r, and R.d are initially X
+        - Second block shows L.a, R.r, and R.d get set to 0 by Reset
+        - Third block shows L.a, R.r, and R.d is still 0 after L.r is 1, R.a is 0 and L.d is 255 because Reset is still 1
+        - Fourth block shows Reset back to 0, L.a, R.r and R.d become 255 from L.r, R.a and L.d.
+    Irsim Output Explanation:
+        Although the data that is passed through both L.d and R.d is reading as unstable (we do not know why), it is shown
+        that the data that L.d is initialized with is eventually given to R.d, which changes in value at the same time that L.a and R.r
+        go up, demonstrating the handshake. 
+
+Initialized Buffer:
+    Testing:
+        1) actsim test_initBuffer.act "initBuffer"
+        2) source test_initBuffer.scr
+    Output Explanation:
+        Note: initBuffer controls only L.a, R.r, and R.d so that is all we are focused on in this test sript
+        - First block shows L.a, R.r, and R.d are initially X
+        - Second block shows on reset, L.a = 0, R.r = 1, and R.d get set to 0
+        - Third block shows still L.a = 0, R.r = 1, and R.d is still 0 after L.r is 1, R.a is 0 and L.d is 255 because Reset is still 1
+        - Fourth block shows R.r being set to 0 and Reset back to 0. L.a, R.r become 1 and R.d becomes 255 from L.r, R.a and L.d.
+
+Adder Function:
+    Testing:
+        1) actsim test_adder2.act "adder2"
+        2) source test_adder2.scr
+    Output Explanation:
+        *Note: adder2 controls only L1.a, L2.a, R.r, and R.d so that is all we are focused on in this test sript
+        - First block shows L1.a, L2.a, R.r, and R.d are initially X
+        - Second block shows L1.a, L2.a, R.r, and R.d get set to 0 by Reset
+        - Third block shows L1.a, L2.a, R.r, and R.d is still 0 after L1.r = L2.r = 1, R.a is 0 and L1.d = L2.d = 1 because Reset is still 1
+        - Fourth block shows Reset back to 0; L1.a, L2.a, R.r become 1  and R.d becomes 2 (that is R.d[0] = 0 and R.d[1] = 1) from L1.r, L2.r, R.a, L1.d and L2.d.
+  
+Copy:
+    Testing:
+        1) actsim test_copy2.act "copy2"
+        2) source test_copy2.scr
+    Output Explanation:
+        *Note: copy2 controls only L.a, R1.r, R2.r, R1.d and R2.d so that is all we are focused on in this test sript
+        - First block shows L.a, R1.r, R2.r, R1.d and R2.d are initially X
+        - Second block shows L.a, R1.r, R2.r, R1.d and R2.d get set to 0 by Reset
+        - Third block shows L.a, R1.r, R2.r, R1.d and R2.d is still 0 after L.r = 1, R1.a = R2.a = 0 and L.d is 255 because Reset is still 1
+        - Fourth block shows Reset back to 0, L.a = R1.r = R2.r = R.d = 1 from L.r, R1.a, R2.a and L.d.
+
+Split:
+    Testing:
+        1) actsim test_split2.act "split2"
+        2) source test_split2.scr
+
+    Output Explanation:
+        *Note: split2 controls only L.a, C.a, R1.r, R2.r, R1.d and R2.d so that is all we are focused on in this test sript
+        - First block shows L.a, C.a, R1.r, R2.r, R1.d and R2.d are initially X
+        - Second block shows L.a, C.a, R1.r, R2.r, R1.d and R2.d get set to 0 by Reset
+        - Third block shows L.a, C.a, R1.r, R2.r, R1.d and R2.d is still 0 after L.r = C.r = 1, R1.a = R2.a = C.d = 0 and L.d is 255 because Reset is still 1
+        - Fourth block shows Reset back to 0; L.a = C.a = 1 and R1.d = R2.d = 255 from L.r, R.a and L.d. R2.r = 1 and R1.r = 0 because C.d = 0
+        - Fifth block shows after reseting, switching C.d to 1 swtiches R2.r = 0 and R1.r = 1
+
+Merge:
+    Testing:
+        1) actsim test_merge2.act "merge2"
+        2) source test_merge2.scr
+    Output Explanation:
+        *Note: merge2 controls only L1.a, L2.a, C.a, R.r, and R.d so that is all we are focused on in this test sript
+        - First block shows L1.a, L2.a, C.a, R.r, and R.d are initially X
+        - Second block shows L1.a, L2.a, C.a, R.r, and R.d get set to 0 by Reset
+        - Third block shows L1.a, L2.a, C.a, R.r, and R.d is still 0 after L1.r = L2.r = C.r = 1, R.a = C.d = 0, L2.d = 2 and L1.d = 255 because Reset is still 1
+        - Fourth block shows Reset back to 0; for C.d = 0, merge chooses L2 to send out, so L1.a = 0, L2.a = R.r = 1, and R.d = L2.d = 2.
+        - Fifth block shows after a reset and C.d = 1: merge chooses L1 to send out, so L1.a = R.r = 1, L2.a = 0 and R.d = L1.d = 255

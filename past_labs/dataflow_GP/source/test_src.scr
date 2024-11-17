@@ -1,0 +1,19 @@
+status X
+
+set Reset 1
+cycle
+status X
+
+set R.a 0
+cycle
+get R.r
+
+set Reset 0
+cycle
+get R.r
+get R.d[0]
+get R.d[7]
+
+set R.a 1
+cycle
+get R.r 

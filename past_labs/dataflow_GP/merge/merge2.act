@@ -1,0 +1,79 @@
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "../pulse.act";
+
+
+open std::cells;
+open std::channel;
+open std::gates;
+namespace globals { }
+
+//2 data input merge
+defproc merge2(bd?<8> L1; bd?<8>L2; bd?<1> C; bd?<8> R)
+{
+  bool Crbuff, Ctrue, Cfalse, CdInv;
+  CLKBUF3 delay1(C.r, Crbuff);
+
+  // reset Ctrue, Cfalse, R.a, L1.r, L2.r
+   INVX1 resetInv1(Ctrue, Ctrue);  
+   OR2X1 or1(Reset, Ctrue, Ctrue); //redundancy
+   INVX1 resetInv2(Cfalse, Cfalse); 
+   OR2X1 or2(Reset, Cfalse, Cfalse); //redundancy
+   INVX1 resetInv3(L1.r, L1.r); 
+   OR2X1 or3(Reset, L1.r, L1.r); //redundancy
+   INVX1 resetInv4(L2.r, L2.r); 
+   OR2X1 or4(Reset, L2.r, L2.r); //redundancy
+   NOR2X1 nor5(Reset, R.a, R.a);
+
+  // set Ctrue and Cfalse to choose which data to take from merge
+  INVX1 inv1(C.d[0], CdInv);
+  AND2X1 and1(C.d[0], Crbuff, Ctrue);
+  AND2X1 and2(CdInv, Crbuff, Cfalse);
+
+  // 2 celems for both right requests
+  bool RaInv, control1[3], control2[3];
+  INVX1 inv2(R.a, RaInv); //invert R.a before celem
+  control1[0] = L1.r;
+  control1[1] = Ctrue;
+  control1[2] = RaInv;
+  control2[0] = L2.r;
+  control2[1] = Cfalse;
+  control2[2] = RaInv;
+  ctree<3, true> celem1(control1, L1.a);
+  ctree<3, true> celem2(control2, L2.a);
+
+  // OR together the right acknowledges before pulse generator
+  bool requests, pulse;
+  OR2X1 or(L1.a, L2.a, requests);
+  pulseGen pulseG(requests, pulse);
+
+  // delay the request before giving to R.r
+  CLKBUF3 delay2(requests, R.r);
+  C.a = requests; // C ack also gets the output of OR 
+
+  // use mux so control chooses what data to merge
+  MUX2X1 mux[8];
+  bool data[8];
+  mux[0](L1.d[0], L2.d[0], C.d[0], data[0]);
+  mux[1](L1.d[1], L2.d[1], C.d[0], data[1]);
+  mux[2](L1.d[2], L2.d[2], C.d[0], data[2]);
+  mux[3](L1.d[3], L2.d[3], C.d[0], data[3]);
+  mux[4](L1.d[4], L2.d[4], C.d[0], data[4]);
+  mux[5](L1.d[5], L2.d[5], C.d[0], data[5]);
+  mux[6](L1.d[6], L2.d[6], C.d[0], data[6]);
+  mux[7](L1.d[7], L2.d[7], C.d[0], data[7]);
+
+  // use pulse to send data through latch
+  LATCH l[8]; 
+  l[0](pulse, data[0], R.d[0]);
+  l[1](pulse, data[1], R.d[1]);
+  l[2](pulse, data[2], R.d[2]);
+  l[3](pulse, data[3], R.d[3]);
+  l[4](pulse, data[4], R.d[4]);
+  l[5](pulse, data[5], R.d[5]);
+  l[6](pulse, data[6], R.d[6]);
+  l[7](pulse, data[7], R.d[7]);
+
+}

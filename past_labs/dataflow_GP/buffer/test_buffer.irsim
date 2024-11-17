@@ -1,0 +1,21 @@
+ana buf/L/a buf/R/r {buf/R/d[0]} {buf/R/d[7]} {buf/L/d[0]} {buf/L/d[7]}
+
+h Vdd!
+l GND!
+h reset
+s
+
+h buf/L/r
+l buf/R/a 
+h {buf/L/d[0]}
+h {buf/L/d[1]}
+h {buf/L/d[2]}
+h {buf/L/d[3]}
+h {buf/L/d[4]}
+h {buf/L/d[5]}
+h {buf/L/d[6]}
+h {buf/L/d[7]}
+s
+
+l reset
+s
