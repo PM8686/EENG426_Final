@@ -1,0 +1,2 @@
+import "subcomp2.act";
+subcomp2 subcomp;
