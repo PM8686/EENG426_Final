@@ -11,7 +11,6 @@ import "split2.act";
 
 defproc shift (bd?<8> L1; bd?<8> L2; bd!<8> R)
 {
-    // bd<8> Src_Z, Sum, Mrg, Y, B_out;
     bd<8> Sum, compSum, splitIn, subIn, toMux, subOut, negSrc1, negSrc2;
     bd<1> compOut, comp1, comp2;
 
