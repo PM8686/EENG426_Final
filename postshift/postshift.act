@@ -6,14 +6,18 @@ import "src97.act";
 import "adder2.act";
 import "merge2.act";
 import "split2.act";
+import "copy_1bit.act";
+
 
 defproc postshift (bd?<8> L; bd?<1> C; bd!<8> R)
 {
     bd<8> splitLeft, splitRight, addOut65, addOut97, srcOut65, srcOut97;
+    bd<1> compSplit, compMerge;
     source65 src65(srcOut65);
     source97 src97(srcOut97);
-    split2 split(L, C, splitLeft, splitRight);
+    copy_1bit cp1(C, compSplit, compMerge);
+    split2 split(L, compSplit, splitLeft, splitRight);
     adder2 adderLeft(splitLeft, srcOut65, addOut65);
     adder2 adderRight(splitRight, srcOut97, addOut97);
-    merge2 merge(addOut65, addOut97, C, R);
+    merge2 merge(addOut65, addOut97, compMerge, R);
 }
