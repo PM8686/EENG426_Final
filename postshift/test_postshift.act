@@ -1,0 +1,2 @@
+import "postshift.act";
+postshift post;
