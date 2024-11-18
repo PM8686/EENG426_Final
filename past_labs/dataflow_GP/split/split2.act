@@ -1,4 +1,4 @@
-import globals;
+  import globals;
 import std::cells;
 import std::channel;
 import std::gates;

@@ -24,7 +24,7 @@ defproc copy2(bd?<8> L; bd!<8> R1; bd!<8> R2)
   INVX1 inv_2(tmp[2], control[2]);
 
   INVX1 inv_3(L.r, tmp[0]);
-  OR2X1 or_1(Reset, tmp[0], control[0]); //redundancy
+  OR2X1 or_1(Reset, tmp[0], control[0]); 
 
   // C-element control logic: synchronize between request from L and ack from R
   ctree<3, true> celem(control, L.a);

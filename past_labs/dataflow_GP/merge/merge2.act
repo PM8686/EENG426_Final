@@ -18,13 +18,13 @@ defproc merge2(bd?<8> L1; bd?<8>L2; bd?<1> C; bd?<8> R)
 
   // reset Ctrue, Cfalse, R.a, L1.r, L2.r
    INVX1 resetInv1(Ctrue, Ctrue);  
-   OR2X1 or1(Reset, Ctrue, Ctrue); //redundancy
+   OR2X1 or1(Reset, Ctrue, Ctrue);
    INVX1 resetInv2(Cfalse, Cfalse); 
-   OR2X1 or2(Reset, Cfalse, Cfalse); //redundancy
+   OR2X1 or2(Reset, Cfalse, Cfalse);
    INVX1 resetInv3(L1.r, L1.r); 
-   OR2X1 or3(Reset, L1.r, L1.r); //redundancy
+   OR2X1 or3(Reset, L1.r, L1.r);
    INVX1 resetInv4(L2.r, L2.r); 
-   OR2X1 or4(Reset, L2.r, L2.r); //redundancy
+   OR2X1 or4(Reset, L2.r, L2.r);
    NOR2X1 nor5(Reset, R.a, R.a);
 
   // set Ctrue and Cfalse to choose which data to take from merge
