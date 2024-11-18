@@ -6,14 +6,18 @@ import "src97.act";
 import "adder2.act";
 import "merge2.act";
 import "split2.act";
+import "copy_1bit.act";
 
+// C.d=0 --> sub 65, C.d=1 --> sub 97
 defproc preshift (bd?<8> L; bd?<1> C; bd!<8> R)
 {
-    bd<8> splitLeft, splitRight, addOut65, addOut97, srcOut65, srcOut97;
+    bd<8> split65, split97, addOut65, addOut97, srcOut65, srcOut97;
+    bd<1> compSplit, compMerge;
     sourceNeg65 src65(srcOut65);
     sourceNeg97 src97(srcOut97);
-    split2 split(L, C, splitLeft, splitRight);
-    adder2 adderLeft(splitLeft, srcOut65, addOut65);
-    adder2 adderRight(splitRight, srcOut97, addOut97);
-    merge2 merge(addOut65, addOut97, C, R);
+    copy_1bit cp1(C, compSplit, compMerge);
+    split2 split(L, compSplit, split97, split65); //note: Cd=1 chooses R1 and Cd=0 chooses R2
+    adder2 adderLeft(split65, srcOut65, addOut65);
+    adder2 adderRight(split97, srcOut97, addOut97);
+    merge2 merge(split97, split65, compMerge, R); //note: C.d=1 chooses L1 and C.d=0 chooses L2
 }

@@ -60,9 +60,10 @@ defproc merge2(bd?<8> L1; bd?<8> L2; bd?<1> C; bd?<8> R)
   pulseGen pulseG(requests, pulse);
 
   // delay the request before giving to R.r
-  bool tmpRr;
-  CLKBUF3 delay2(requests, tmpRr);
-  CLKBUF3 delay3(tmpRr, R.r);
+  bool tmpRr1, tmpRr2;
+  CLKBUF3 delay2(requests, tmpRr1);
+  CLKBUF3 delay3(tmpRr1, tmpRr2);
+  CLKBUF3 delay4(tmpRr2, R.r);
   C.a = requests; // C ack also gets the output of OR 
 
   // use mux so control chooses what data to merge
@@ -77,9 +78,9 @@ defproc merge2(bd?<8> L1; bd?<8> L2; bd?<1> C; bd?<8> R)
   mux[6](L1.d[6], L2.d[6], C.d[0], data[6]);
   mux[7](L1.d[7], L2.d[7], C.d[0], data[7]);
 
-  // use pulse to send data through latch
+  // before is inverted, so un-invert
   LATCH l[8]; 
-  bool tmp_arr[8]; // store initial results to then be NOR with Reset so that initialized to 0
+  bool tmp_arr[8];
   l[0](pulse, data[0], tmp_arr[0]);
   l[1](pulse, data[1], tmp_arr[1]);
   l[2](pulse, data[2], tmp_arr[2]);
@@ -89,13 +90,23 @@ defproc merge2(bd?<8> L1; bd?<8> L2; bd?<1> C; bd?<8> R)
   l[6](pulse, data[6], tmp_arr[6]);
   l[7](pulse, data[7], tmp_arr[7]);
 
-  // NOR with Reset so that initialized to 0 on reset
-  NOR2X1 nor1(Reset, tmp_arr[0], R.d[0]);
-  NOR2X1 nor2(Reset, tmp_arr[1], R.d[1]);
-  NOR2X1 nor3(Reset, tmp_arr[2], R.d[2]);
-  NOR2X1 nor4(Reset, tmp_arr[3], R.d[3]);
-  NOR2X1 nor5(Reset, tmp_arr[4], R.d[4]);
-  NOR2X1 nor6(Reset, tmp_arr[5], R.d[5]);
-  NOR2X1 nor7(Reset, tmp_arr[6], R.d[6]);
-  NOR2X1 nor8(Reset, tmp_arr[7], R.d[7]);
+  // before is inverted, so un-invert
+  INVX1 inv1(tmp_arr[0], R.d[0]);
+  INVX1 inv2(tmp_arr[1], R.d[1]);
+  INVX1 inv3(tmp_arr[2], R.d[2]);
+  INVX1 inv4(tmp_arr[3], R.d[3]);
+  INVX1 inv5(tmp_arr[4], R.d[4]);
+  INVX1 inv6(tmp_arr[5], R.d[5]);
+  INVX1 inv7(tmp_arr[6], R.d[6]);
+  INVX1 inv8(tmp_arr[7], R.d[7]);
+
+  // // NOR with Reset so that initialized to 0 on reset
+  // NOR2X1 nor1(Reset, tmp_arr[0], R.d[0]);
+  // NOR2X1 nor2(Reset, tmp_arr[1], R.d[1]);
+  // NOR2X1 nor3(Reset, tmp_arr[2], R.d[2]);
+  // NOR2X1 nor4(Reset, tmp_arr[3], R.d[3]);
+  // NOR2X1 nor5(Reset, tmp_arr[4], R.d[4]);
+  // NOR2X1 nor6(Reset, tmp_arr[5], R.d[5]);
+  // NOR2X1 nor7(Reset, tmp_arr[6], R.d[6]);
+  // NOR2X1 nor8(Reset, tmp_arr[7], R.d[7]);
 }
