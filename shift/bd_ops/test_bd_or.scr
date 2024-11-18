@@ -1,0 +1,131 @@
+mode reset
+set Reset 1
+set L1.r 0
+set L2.r 0
+set R.a 0
+set L1.d[0] 0
+set L2.d[0] 0
+cycle
+set Reset 0
+cycle
+mode run
+
+echo ""
+echo "Test 0 | 0"
+set L1.d[0] 0
+cycle
+set L2.d[0] 0
+cycle
+set L1.r 1
+set L2.r 1
+cycle
+echo "Expect R.r = 1"
+get R.r
+echo "Expect R.d[0] = 0"
+get R.d[0]
+echo "Expect L1.a = 1"
+get L1.a
+echo "Expect L2.a = 1"
+get L2.a
+set L1.r 0
+set L2.r 0
+set R.a 1
+cycle
+echo "Expect R.r = 0"
+get R.r
+echo "Expect L1.a = 0"
+get L1.a
+echo "Expect L2.a = 0"
+get L2.a
+set R.a 0
+cycle
+
+echo ""
+echo "Test 0 | 1"
+set L1.d[0] 0
+cycle
+set L2.d[0] 1
+cycle
+set L1.r 1
+set L2.r 1
+cycle
+echo "Expect R.r = 1"
+get R.r
+echo "Expect R.d[0] = 1"
+get R.d[0]
+echo "Expect L1.a = 1"
+get L1.a
+echo "Expect L2.a = 1"
+get L2.a
+set L1.r 0
+set L2.r 0
+set R.a 1
+cycle
+echo "Expect R.r = 0"
+get R.r
+echo "Expect L1.a = 0"
+get L1.a
+echo "Expect L2.a = 0"
+get L2.a
+set R.a 0
+cycle
+
+echo ""
+echo "Test 1 | 0"
+set L1.d[0] 1
+cycle
+set L2.d[0] 0
+cycle
+set L1.r 1
+set L2.r 1
+cycle
+echo "Expect R.r = 1"
+get R.r
+echo "Expect R.d[0] = 1"
+get R.d[0]
+echo "Expect L1.a = 1"
+get L1.a
+echo "Expect L2.a = 1"
+get L2.a
+set L1.r 0
+set L2.r 0
+set R.a 1
+cycle
+echo "Expect R.r = 0"
+get R.r
+echo "Expect L1.a = 0"
+get L1.a
+echo "Expect L2.a = 0"
+get L2.a
+set R.a 0
+cycle
+
+echo ""
+echo "Test 1 | 1"
+set L1.d[0] 1
+cycle
+set L2.d[0] 1
+cycle
+set L1.r 1
+set L2.r 1
+cycle
+echo "Expect R.r = 1"
+get R.r
+echo "Expect R.d[0] = 1"
+get R.d[0]
+echo "Expect L1.a = 1"
+get L1.a
+echo "Expect L2.a = 1"
+get L2.a
+set L1.r 0
+set L2.r 0
+set R.a 1
+cycle
+echo "Expect R.r = 0"
+get R.r
+echo "Expect L1.a = 0"
+get L1.a
+echo "Expect L2.a = 0"
+get L2.a
+set R.a 0
+cycle
