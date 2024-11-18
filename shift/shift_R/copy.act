@@ -1,0 +1,88 @@
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "common.act";
+
+open std::cells;
+open std::channel;
+open std::gates;
+
+defproc copy (bd?<8> L; bd!<8> R1; bd!<8> R2) {
+  bool c_out, c_ra_out, c_out_delay, pulse_out;
+  bool c_ins[2];
+  bool c_ra_ins[2]; // The C-element for the acks on the right
+
+  // Reset mechanism:
+  //   - Reset L.r to 0, otherwise send L.r
+  //   - Reset R1.a to 1, otherwise send R1.a
+  //   - Reset R2.a to 1, otherwise send R2.a
+  //     - These are connected directly to the first C-element so it gets 1 on reset and R1.a/R2.a otherwise
+  //     - We want the ack C-element to send a 0 at first, but it's inverting so we actually need to send 1s.
+  reset_to_0 r0(L.r, c_ins[0]);
+  reset_to_1 r1(R1.a, c_ra_ins[0]);
+  reset_to_1 r2(R2.a, c_ra_ins[1]);
+
+  // C-element for the acks on the right
+  // This is inverting because:
+  //   - We want to send a 0 to the main C-element when both R1.a and R2.a are 1.
+  //   - We want to send a 1 to the main C-element when both R1.a and R2.a are 0.
+  ctree<2, true> c_ra(c_ra_ins, c_ra_out);
+  c_ins[1] = c_ra_out;
+
+  ctree<2, false> c(c_ins, c_out);
+  L.a = c_out;
+
+  // Add a delay between the C-element and R1.r/R2.r
+  delay<3> d(c_out, c_out_delay);
+  R1.r = c_out_delay;
+  R2.r = c_out_delay;
+
+  pulse_gen p(c_out, pulse_out);
+
+  LATCH latch[8];
+  ( i : 8 : latch[i].CLK = pulse_out;
+            latch[i].D = L.d[i];
+            latch[i].Q = R1.d[i];
+            latch[i].Q = R2.d[i]; )
+}
+
+defproc copy1b (bd?<1> L; bd!<1> R1; bd!<1> R2) {
+  bool c_out, c_ra_out, c_out_delay, pulse_out;
+  bool c_ins[2];
+  bool c_ra_ins[2]; // The C-element for the acks on the right
+
+  // Reset mechanism:
+  //   - Reset L.r to 0, otherwise send L.r
+  //   - Reset R1.a to 1, otherwise send R1.a
+  //   - Reset R2.a to 1, otherwise send R2.a
+  //     - These are connected directly to the first C-element so it gets 1 on reset and R1.a/R2.a otherwise
+  //     - We want the ack C-element to send a 0 at first, but it's inverting so we actually need to send 1s.
+  reset_to_0 r0(L.r, c_ins[0]);
+  reset_to_1 r1(R1.a, c_ra_ins[0]);
+  reset_to_1 r2(R2.a, c_ra_ins[1]);
+
+  // C-element for the acks on the right
+  // This is inverting because:
+  //   - We want to send a 0 to the main C-element when both R1.a and R2.a are 1.
+  //   - We want to send a 1 to the main C-element when both R1.a and R2.a are 0.
+  ctree<2, true> c_ra(c_ra_ins, c_ra_out);
+  c_ins[1] = c_ra_out;
+
+  ctree<2, false> c(c_ins, c_out);
+  L.a = c_out;
+
+  // Add a delay between the C-element and R1.r/R2.r
+  delay<3> d(c_out, c_out_delay);
+  R1.r = c_out_delay;
+  R2.r = c_out_delay;
+
+  pulse_gen p(c_out, pulse_out);
+
+  LATCH latch[1];
+  ( i : 1 : latch[i].CLK = pulse_out;
+            latch[i].D = L.d[i];
+            latch[i].Q = R1.d[i];
+            latch[i].Q = R2.d[i]; )
+
+}

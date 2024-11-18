@@ -35,8 +35,7 @@ defproc copy_1bit(bd?<1> L; bd!<1> R1; bd!<1> R2)
 
   // Latch the data from the L channel using the control signal
   // use an array of latches since each latch only takes one bit at a time (these are done in parallel)
-  LATCH l[8]; //array of latches, one for each of the 8 bits
-  bool tmp_arr[8]; // store initial results to then be NOR with Reset so that initialized to 0
+  LATCH l[1]; //array of latches, one for each of the 8 bits
   l[0](pulse, L.d[0], R1.d[0]);
 
   // wire together R1 and R2 data

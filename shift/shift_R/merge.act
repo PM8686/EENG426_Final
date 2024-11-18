@@ -1,0 +1,62 @@
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "common.act";
+
+open std::cells;
+open std::channel;
+open std::gates;
+
+defproc merge (bd?<1> C; bd?<8> L1; bd?<8> L2; bd!<8> R) {
+  bool cr, cr_delay, cd, _cd, ra_inv, ct, cf, c0_out, c1_out, c_out, pulse_out, c_out_delay;
+  bool c0_ins[3], c1_ins[3];
+
+  // Reset mechanism:
+  //   - Reset L1.r to 0, otherwise send L1.r
+  //   - Reset L2.r to 0, otherwise send L2.r
+  //   - Reset R.a to 0, otherwise send ~R.a
+  //     - This is connected directly to the C-element so it gets 0 on reset and ~R.a otherwise
+  //   - Reset C.r to 0, otherwise send C.r
+  //   - Reset C.d[0] to 0, otherwise send C.d[0]
+  reset_to_0 r3(C.r, cr);
+  reset_to_0 r4(C.d[0], cd);
+  reset_to_0 r0(L1.r, c0_ins[0]);
+  reset_to_0 r1(L2.r, c1_ins[0]);
+  reset_to_0_or_inv r2(R.a, ra_inv);
+
+  c0_ins[2] = ra_inv;
+  c1_ins[2] = ra_inv;
+
+  // Setup the control inputs
+  delay<1> d_cd(cr, cr_delay);
+  INVX1 inv_cd(cd, _cd);
+  AND2X1 and_ct(cr_delay, cd, ct);
+  AND2X1 and_cf(cr_delay, _cd, cf);
+  c0_ins[1] = ct;
+  c1_ins[1] = cf;
+
+  ctree<3, false> c0(c0_ins, c0_out);
+  ctree<3, false> c1(c1_ins, c1_out);
+  OR2X1 or_ca(c0_out, c1_out, c_out);
+  L1.a = c0_out;
+  L2.a = c1_out;
+  C.a = c_out;
+
+  // Add a delay between the C-element and R.r
+  delay<35> d(c_out, c_out_delay);
+  R.r = c_out_delay;
+
+  pulse_gen p(c_out, pulse_out);
+
+  LATCH latch[8];
+  MUX2X1 mux[8];
+  INVX1 inv[8];
+  ( i : 8 : mux[i].S = cd;
+            mux[i].A = L1.d[i];
+            mux[i].B = L2.d[i];
+            inv[i].A = mux[i].Y;
+            latch[i].CLK = pulse_out;
+            latch[i].D = inv[i].Y;
+            latch[i].Q = R.d[i]; )
+}
