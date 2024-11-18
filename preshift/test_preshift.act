@@ -1,0 +1,2 @@
+import "preshift.act";
+preshift pre;

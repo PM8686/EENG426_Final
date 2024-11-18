@@ -1,0 +1,101 @@
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "pulse.act";
+
+
+open std::cells;
+open std::channel;
+open std::gates;
+// namespace globals { }
+
+//2 data input merge
+defproc merge2(bd?<8> L1; bd?<8> L2; bd?<1> C; bd?<8> R)
+{
+  bool Crbuff, Ctrue, Cfalse, CdInv;
+  CLKBUF3 delay1(C.r, Crbuff);
+
+  // 2 celems for both right requests
+  bool control1[3], control2[3];
+
+  // set Ctrue and Cfalse to choose which data to take from merge
+  bool tmp[4];
+  bool tmpCt, tmpCf;
+  INVX1 inv1_Cd(C.d[0], CdInv);
+  AND2X1 and1(C.d[0], Crbuff, tmpCt);
+  AND2X1 and2(CdInv, Crbuff, tmpCf);
+
+  // reset Ctrue, Cfalse, R.a, L1.r, L2.r
+  INVX1 inv_Ct(tmpCt, tmp[2]);
+  OR2X1 or_Ct(Reset, tmp[2], control1[1]);
+  INVX1 inv_Cf(tmpCf, tmp[3]);
+  OR2X1 or_Cf(Reset, tmp[3], control2[1]);
+
+  // Reset Ra input to Celem
+  bool tmp_Ra;
+  NOR2X1 nor_Ra(Reset, R.a, tmp_Ra);
+  INVX1 inv_Ra(tmp_Ra, control1[2]);
+  control2[2] = control1[2];
+
+  // reset L1.r and L2.r input in Celem
+  INVX1 inv_L1(L1.r, tmp[0]);
+  OR2X1 or_L1(Reset, tmp[0], control1[0]);
+  INVX1 inv_L2(L2.r, tmp[1]);
+  OR2X1 or_L2(Reset, tmp[1], control2[0]);
+
+  // INVX1 inv2(R.a, RaInv); //invert R.a before celem
+  // control1[0] = L1.r;
+  // control1[1] = Ctrue;
+  // control1[2] = RaInv;
+  // control2[0] = L2.r;
+  // control2[1] = Cfalse;
+  // control2[2] = RaInv;
+  ctree<3, true> celem1(control1, L1.a);
+  ctree<3, true> celem2(control2, L2.a);
+
+  // OR together the right acknowledges before pulse generator
+  bool requests, pulse;
+  OR2X1 or(L1.a, L2.a, requests);
+  pulseGen pulseG(requests, pulse);
+
+  // delay the request before giving to R.r
+  bool tmpRr;
+  CLKBUF3 delay2(requests, tmpRr);
+  CLKBUF3 delay3(tmpRr, R.r);
+  C.a = requests; // C ack also gets the output of OR 
+
+  // use mux so control chooses what data to merge
+  MUX2X1 mux[8];
+  bool data[8];
+  mux[0](L1.d[0], L2.d[0], C.d[0], data[0]);
+  mux[1](L1.d[1], L2.d[1], C.d[0], data[1]);
+  mux[2](L1.d[2], L2.d[2], C.d[0], data[2]);
+  mux[3](L1.d[3], L2.d[3], C.d[0], data[3]);
+  mux[4](L1.d[4], L2.d[4], C.d[0], data[4]);
+  mux[5](L1.d[5], L2.d[5], C.d[0], data[5]);
+  mux[6](L1.d[6], L2.d[6], C.d[0], data[6]);
+  mux[7](L1.d[7], L2.d[7], C.d[0], data[7]);
+
+  // use pulse to send data through latch
+  LATCH l[8]; 
+  bool tmp_arr[8]; // store initial results to then be NOR with Reset so that initialized to 0
+  l[0](pulse, data[0], tmp_arr[0]);
+  l[1](pulse, data[1], tmp_arr[1]);
+  l[2](pulse, data[2], tmp_arr[2]);
+  l[3](pulse, data[3], tmp_arr[3]);
+  l[4](pulse, data[4], tmp_arr[4]);
+  l[5](pulse, data[5], tmp_arr[5]);
+  l[6](pulse, data[6], tmp_arr[6]);
+  l[7](pulse, data[7], tmp_arr[7]);
+
+  // NOR with Reset so that initialized to 0 on reset
+  NOR2X1 nor1(Reset, tmp_arr[0], R.d[0]);
+  NOR2X1 nor2(Reset, tmp_arr[1], R.d[1]);
+  NOR2X1 nor3(Reset, tmp_arr[2], R.d[2]);
+  NOR2X1 nor4(Reset, tmp_arr[3], R.d[3]);
+  NOR2X1 nor5(Reset, tmp_arr[4], R.d[4]);
+  NOR2X1 nor6(Reset, tmp_arr[5], R.d[5]);
+  NOR2X1 nor7(Reset, tmp_arr[6], R.d[6]);
+  NOR2X1 nor8(Reset, tmp_arr[7], R.d[7]);
+}
