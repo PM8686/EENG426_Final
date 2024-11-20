@@ -1,0 +1,38 @@
+import globals;
+import std::cells;
+import std::channel;
+
+//
+// your definitions go here
+// Reset will be available as a global signal at this point, as will
+// Vdd and GND
+// 
+// Process names from a namespace use C++ naming conventions
+// (e.g. std::channel::bd). You can also open a namespace.
+// The ACT command open std::cells will add std::cells to the
+// search path for process names.
+//
+open std::cells;
+open std::channel;
+
+defproc source123 (bd!<8> R)
+{
+    // 1) data is set in channel, a is 0 intitially
+    // 2) R.r gets set to 1 as the data is ready
+    // 3) a is set by env to 1 to acknoledge the data is read
+    // 4) r is set to 0 as request is done
+    // 5) a is set by env to 0 to acknledge data is not being sent
+
+    // -123 = 1000 0101
+    TIEHIX1 setGND0(R.d[0]);
+    TIELOX1 setGND1(R.d[1]);
+    TIEHIX1 setGND2(R.d[2]);
+    TIELOX1 setGND3(R.d[3]);
+    TIELOX1 setGND4(R.d[4]);
+    TIELOX1 setGND5(R.d[5]);
+    TIELOX1 setGND6(R.d[6]);
+    TIEHIX1 setGND7(R.d[7]);
+
+    // if reset is 1 then r will be 0, otherwise r = ~a
+    NOR2X1 nor(Reset, R.a, R.r);
+}
