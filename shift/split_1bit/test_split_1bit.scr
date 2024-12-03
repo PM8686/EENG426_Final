@@ -1,0 +1,149 @@
+mode reset
+set Reset 1
+set L.r 0
+set C.r 0
+set R1.a 0
+set R2.a 0
+set C.d[0] 0
+set L.d[0] 0
+cycle
+set Reset 0
+cycle
+mode run
+
+echo ""
+echo "Test C = 0, L = 0"
+# set C.d[0] 0
+# set L.d[0] 0
+cycle
+set L.r 1
+set C.r 1
+cycle
+
+echo "Expect R1.r = 1"
+get R1.r
+echo "Expect R2.r = 0"
+get R2.r
+echo "Expect R1.d[0] = 0"
+get R1.d[0]
+echo "Expect L.a = 1"
+get L.a
+echo "Expect C.a = 1"
+get C.a
+set L.r 0
+set C.r 0
+set R1.a 1
+cycle
+echo "Expect R1.r = 0"
+get R1.r
+echo "Expect R2.r = 0"
+get R2.r
+echo "Expect L.a = 0"
+get L.a
+echo "Expect C.a = 0"
+get C.a
+set R1.a 0
+set R2.a 0
+cycle
+
+echo ""
+echo "Test C = 0, L = 1"
+set L.d[0] 1
+set C.d[0] 0
+cycle
+set L.r 1
+set C.r 1
+cycle
+echo "Expect R1.r = 1"
+get R1.r
+echo "Expect R2.r = 0"
+get R2.r
+echo "Expect R1.d[0] = 1"
+get R1.d[0]
+echo "Expect L.a = 1"
+get L.a
+echo "Expect C.a = 1"
+get C.a
+set L.r 0
+set C.r 0
+set R1.a 1
+cycle
+echo "Expect R1.r = 0"
+get R1.r
+echo "Expect R2.r = 0"
+get R2.r
+echo "Expect L.a = 0"
+get L.a
+echo "Expect C.a = 0"
+get C.a
+set R1.a 0
+set R2.a 0
+cycle
+
+echo ""
+echo "Test C = 1, L = 0"
+set L.d[0] 0
+set C.d[0] 1
+cycle
+set L.r 1
+set C.r 1
+cycle
+echo "Expect R1.r = 0"
+get R1.r
+echo "Expect R2.r = 1"
+get R2.r
+echo "Expect R2.d[0] = 0"
+get R2.d[0]
+echo "Expect L.a = 1"
+get L.a
+echo "Expect C.a = 1"
+get C.a
+set L.r 0
+set C.r 0
+set R2.a 1
+cycle
+echo "Expect R1.r = 0"
+get R1.r
+echo "Expect R2.r = 0"
+get R2.r
+echo "Expect L.a = 0"
+get L.a
+echo "Expect C.a = 0"
+get C.a
+set R1.a 0
+set R2.a 0
+cycle
+
+echo ""
+echo "Test C = 1, L = 1"
+set L.d[0] 1
+set C.d[0] 1
+cycle
+set L.r 1
+set C.r 1
+cycle
+echo "Expect R1.r = 0"
+get R1.r
+echo "Expect R2.r = 1"
+get R2.r
+echo "Expect R2.d[0] = 1"
+get R2.d[0]
+echo "Expect L.a = 1"
+get L.a
+echo "Expect C.a = 1"
+get C.a
+set L.r 0
+set C.r 0
+set R2.a 1
+cycle
+echo "Expect R1.r = 0"
+get R1.r
+echo "Expect R2.r = 0"
+get R2.r
+echo "Expect L.a = 0"
+get L.a
+echo "Expect C.a = 0"
+get C.a
+set R1.a 0
+set R2.a 0
+cycle
