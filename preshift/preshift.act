@@ -1,8 +1,8 @@
 import std::channel;
 open std::channel;
 
-import "src65.act";
-import "src97.act";
+import "src_neg65.act";
+import "src_neg97.act";
 import "adder2.act";
 import "merge2.act";
 import "split2.act";
