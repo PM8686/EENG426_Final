@@ -1,0 +1,2 @@
+import "lower_check.act";
+lower_check lower;
