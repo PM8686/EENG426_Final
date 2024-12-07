@@ -3,8 +3,8 @@ open std::channel;
 
 import "comp2.act";
 import "copy2.act";
-import "src97.act";
-import "src123.act";
+import "src_neg97.act";
+import "src_neg123.act";
 import "bd_ops.act";
 
 // Outputs 1 if it is not a captial and 0 if it is
@@ -14,8 +14,8 @@ defproc lower_check (bd?<8> L; bd!<1> R)
     bd<1> afterSub97, afterSub123, invSub97;
 
     copy2 cp(L, to97comp, to123comp);
-    source123 src123(neg123);
-    source97 src97(neg97);
+    sourceNeg123 srcNeg123(neg123);
+    sourceNeg97 srcNeg97(neg97);
     comp2 cmp97(to97comp, neg97, afterSub97); // if L1 > L2 --> R.d[0] = 0, if L1 < L2 --> R.d[0] = 1
     bd_inv inv(afterSub97, invSub97);
     comp2 cmp123(to123comp, neg123, afterSub123); // if L1 > L2 --> R.d[0] = 0, if L1 < L2 --> R.d[0] = 1
