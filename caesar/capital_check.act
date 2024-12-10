@@ -1,0 +1,24 @@
+import std::channel;
+open std::channel;
+
+import "comp2.act";
+import "copy2.act";
+import "src_neg65.act";
+import "src_neg91.act";
+import "bd_ops.act";
+
+// Outputs 0 if it is not a captial and 1 if it is
+defproc capital_check (bd?<8> L; bd!<1> R)
+{
+    bd<8> to65comp, to91comp, neg91, neg65;
+    bd<1> afterSub65, afterSub91, invSub65;
+
+    copy2 cp(L, to65comp, to91comp);
+    sourceNeg91 srcNeg91(neg91);
+    sourceNeg65 srcNeg65(neg65);
+    comp2 cmp65(to65comp, neg65, afterSub65); // if L1 > L2 --> R.d[0] = 0, if L1 < L2 --> R.d[0] = 1
+    bd_inv inv(afterSub65, invSub65);
+    comp2 cmp91(to91comp, neg91, afterSub91); // if L1 > L2 --> R.d[0] = 0, if L1 < L2 --> R.d[0] = 1
+
+    bd_and and(invSub65, afterSub91, R);
+}
