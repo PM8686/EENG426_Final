@@ -24,14 +24,14 @@ defproc sourceNeg65 (bd!<8> R)
     // 5) a is set by env to 0 to acknledge data is not being sent
 
     // -65 = 10111111
-    TIEHIX1 setGND0(R.d[0]);
-    TIEHIX1 setGND1(R.d[1]);
-    TIEHIX1 setGND2(R.d[2]);
-    TIEHIX1 setGND3(R.d[3]);
-    TIEHIX1 setGND4(R.d[4]);
-    TIEHIX1 setGND5(R.d[5]);
-    TIELOX1 setGND6(R.d[6]);
-    TIEHIX1 setGND7(R.d[7]);
+    TIEHIX1 set0(R.d[0]);
+    TIEHIX1 set1(R.d[1]);
+    TIEHIX1 set2(R.d[2]);
+    TIEHIX1 set3(R.d[3]);
+    TIEHIX1 set4(R.d[4]);
+    TIEHIX1 set5(R.d[5]);
+    TIELOX1 set6(R.d[6]);
+    TIEHIX1 set7(R.d[7]);
 
     // if reset is 1 then r will be 0, otherwise r = ~a
     NOR2X1 nor(Reset, R.a, R.r);

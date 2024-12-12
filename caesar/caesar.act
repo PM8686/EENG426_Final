@@ -67,7 +67,7 @@ defproc caesar (std::channel::bd?<8> P; std::channel::bd?<8> K; std::channel::bd
   copy_1bit cp1(ctrl_lower_to_shifts, ctrl_lower_to_preshift, ctrl_lower_to_postshift);
 
   // Shift the value if needed
-  preshift pre(shift_split_to_preshift, ctrl_lower_to_preshift, preshift_to_shift);
+  preshift pre(shift_split_to_preshift, ctrl_lower_to_preshift, preshift_to_shift); 
   shift shft(preshift_to_shift, K, shift_to_postshift);
   postshift post(shift_to_postshift, ctrl_lower_to_postshift, postshift_to_merge);
 
