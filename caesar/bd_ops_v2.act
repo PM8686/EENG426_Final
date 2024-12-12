@@ -18,6 +18,12 @@ defcell elem_c_1x1 (bd?<1> L; bd!<1> R)
     Reset | (_Lr & R.a) -> c_out-
   }
 
+  // INVX1 ir(Reset, _Reset);
+  // INVX1 i2(L.r, _Lr);
+  // INVX1 i3(R.a, _Ra);
+  // AND2X1 a1(_Reset, _Lr, and_out_1);
+  // AND2X1 a2(and_out_1, _Ra, c_out);
+
   CLKBUF3 delay(c_out, R.r);
   L.a = c_out;
 }
