@@ -3,6 +3,7 @@ import std::cells;
 import std::channel;
 import std::gates;
 import "pulse.act";
+import "adder2.act";
 
 
 open std::cells;
@@ -63,7 +64,7 @@ defproc comp2(bd?<8> L1; bd?<8> L2; bd!<1> R)
 
 
   //use full adder to add two inputs one bit at a time
-  FAX1 add[8]; // takes from first latch
+  FAX1NEW add[8]; // takes from first latch
   bool cin0; 
   TIELOX1 toGND(cin0); //first add has no carry in
   bool cout[8]; //ignore the last carry out

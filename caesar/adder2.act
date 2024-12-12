@@ -10,6 +10,23 @@ open std::channel;
 open std::gates;
 // namespace globals { }
 
+defproc FAX1NEW (bool? A, B, C; bool! YC, YS)
+{
+  bool _YC, _YS;
+  spec {
+    hazard (_YC, _YS)
+  }
+  prs {
+    (A|B) & C | A&B => _YC-
+    _YC => YC-
+
+    (~A<40>|~B<36>|~C<36>)&~_YC<36> | ~A<48>&~B & ~C -> _YS+
+    (A<20>|B|C) & _YC | A&B&C -> _YS-  
+
+    _YS => YS-
+  }
+  sizing { _YC{-1}; YC{-1}; YS{-1} }
+}
 
 //two input function
 defproc adder2(bd?<8> L1; bd?<8> L2; bd!<8> R)
@@ -62,7 +79,7 @@ defproc adder2(bd?<8> L1; bd?<8> L2; bd!<8> R)
 
 
   //use full adder to add two inputs one bit at a time
-  FAX1 add[8]; // takes from first latch
+  FAX1NEW add[8]; // takes from first latch
   bool cin0; 
   TIELOX1 toGND(cin0); //first add has no carry in
   bool cout[8]; //ignore the last carry out
