@@ -11,6 +11,7 @@ open std::gates;
 // namespace globals { }
 
 //2 data input merge
+//note: C.d=1 chooses L1 and C.d=0 chooses L2
 defproc merge2(bd?<8> L1; bd?<8> L2; bd?<1> C; bd?<8> R)
 {
   bool Crbuff, Ctrue, Cfalse, CdInv;
@@ -79,7 +80,7 @@ defproc merge2(bd?<8> L1; bd?<8> L2; bd?<1> C; bd?<8> R)
 
   // use pulse to send data through latch
   LATCH l[8]; 
-  bool tmp_arr[8]; // store initial results to then be NOR with Reset so that initialized to 0
+  bool tmp_arr[8]; // store initial results to then be inverted
   l[0](pulse, data[0], tmp_arr[0]);
   l[1](pulse, data[1], tmp_arr[1]);
   l[2](pulse, data[2], tmp_arr[2]);
@@ -89,13 +90,13 @@ defproc merge2(bd?<8> L1; bd?<8> L2; bd?<1> C; bd?<8> R)
   l[6](pulse, data[6], tmp_arr[6]);
   l[7](pulse, data[7], tmp_arr[7]);
 
-  // NOR with Reset so that initialized to 0 on reset
-  NOR2X1 nor1(Reset, tmp_arr[0], R.d[0]);
-  NOR2X1 nor2(Reset, tmp_arr[1], R.d[1]);
-  NOR2X1 nor3(Reset, tmp_arr[2], R.d[2]);
-  NOR2X1 nor4(Reset, tmp_arr[3], R.d[3]);
-  NOR2X1 nor5(Reset, tmp_arr[4], R.d[4]);
-  NOR2X1 nor6(Reset, tmp_arr[5], R.d[5]);
-  NOR2X1 nor7(Reset, tmp_arr[6], R.d[6]);
-  NOR2X1 nor8(Reset, tmp_arr[7], R.d[7]);
+  // invert before outputting
+  INVX1 inv_Rd1(tmp_arr[0], R.d[0]);
+  INVX1 inv_Rd2(tmp_arr[1], R.d[1]);
+  INVX1 inv_Rd3(tmp_arr[2], R.d[2]);
+  INVX1 inv_Rd4(tmp_arr[3], R.d[3]);
+  INVX1 inv_Rd5(tmp_arr[4], R.d[4]);
+  INVX1 inv_Rd6(tmp_arr[5], R.d[5]);
+  INVX1 inv_Rd7(tmp_arr[6], R.d[6]);
+  INVX1 inv_Rd8(tmp_arr[7], R.d[7]);
 }
