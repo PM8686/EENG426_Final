@@ -1,0 +1,8 @@
+get split97.d[0]
+get split97.d[1]
+get split97.d[2]
+get split97.d[3]
+get split97.d[4]
+get split97.d[5]
+get split97.d[6]
+get split97.d[7]

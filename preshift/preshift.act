@@ -19,5 +19,5 @@ defproc preshift (bd?<8> L; bd?<1> C; bd!<8> R)
     split2 split(L, compSplit, split97, split65); //note: Cd=1 chooses R1 and Cd=0 chooses R2
     adder2 adderLeft(split65, srcOut65, addOut65);
     adder2 adderRight(split97, srcOut97, addOut97);
-    merge2 merge(split97, split65, compMerge, R); //note: C.d=1 chooses L1 and C.d=0 chooses L2
+    merge2 merge(addOut97, addOut65, compMerge, R); //note: C.d=1 chooses L1 and C.d=0 chooses L2
 }

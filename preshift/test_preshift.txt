@@ -11,8 +11,8 @@ set L.d[2] 0
 set L.d[3] 0
 set L.d[4] 0
 set L.d[5] 0
-set L.d[6] 0
-set L.d[7] 1
+set L.d[6] 1
+set L.d[7] 0
 set C.d[0] 0
 cycle
 
@@ -25,3 +25,10 @@ get C.a
 get L.d[0]
 get C.d[0]
 get R.d[0]
+get R.d[1]
+get R.d[2]
+get R.d[3]
+get R.d[4]
+get R.d[5]
+get R.d[6]
+get R.d[7]
