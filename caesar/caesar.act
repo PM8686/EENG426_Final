@@ -59,7 +59,7 @@ defproc caesar (std::channel::bd?<8> P; std::channel::bd?<8> K; std::channel::bd
   copy_1bit copy_ctrl_shift_splits(ctrl_shift_to_splits, ctrl_shift_to_shift_split, ctrl_shift_to_case_split);
 
   // Split between passing the value right through, and shifting
-  split2 shift_split(P_to_split, ctrl_shift_to_shift_split, shift_split_to_merge, shift_split_to_preshift);
+  split2 shift_split(P_to_split, ctrl_shift_to_shift_split, shift_split_to_preshift, shift_split_to_merge);
 
   // Split between ignoring the case value, and sending it to the shift logic
   split_1bit case_split(ctrl_lower_to_case_split, ctrl_shift_to_case_split, ctrl_lower_to_sink, ctrl_lower_to_shifts);

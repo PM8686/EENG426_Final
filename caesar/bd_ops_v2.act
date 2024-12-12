@@ -62,10 +62,10 @@ defproc bd_or(bd?<1> L1; bd?<1> L2; bd!<1> R)
 {
   bool pulse, Rd;
 
-  prs {
-    L1.d[0] | L2.d[0] => Rd+
-    ~L1.d[0] & ~L2.d[0] => Rd-
-  }
+  // prs {
+  //   L1.d[0] | L2.d[0] => Rd+
+  //   ~L1.d[0] & ~L2.d[0] => Rd-
+  // }
 
   OR2X1 or(L1.d[0], L2.d[0], Rd);
 
