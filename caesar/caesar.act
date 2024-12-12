@@ -11,152 +11,12 @@ import std::channel;
 
 
 import "capital_check.act";
-// // If 65 <= A < 91, output 1, otherwise output 0
-// defproc capital_check(std::channel::bd?<8> A, std::channel::bd?<8> CAPITAL) {
-//   std::channel::bd<8> n65,
-//                       n91,
-//                       A_to_compare_65,
-//                       A_to_compare_91;
-//   std::channel::bd<1> lt_65,
-//                       ge_65,
-//                       lt_91;
-
-//   SOURCE_NEG_65 source_n65(n65);
-//   SOURCE_NEG_91 source_n91(n91);
-
-//   COPY copy_A(A, A_to_compare_65, A_to_compare_91);
-
-//   // Check A < 65 and then invert the result to get A >= 65
-//   COMPARE compare_65(A_to_compare_65, n65, lt_65);
-//   BD_INV inv_compare_65(lt_65, ge_65);
-
-//   // Check A < 91
-//   COMPARE compare_91(A_to_compare_91, n65_to_lt_91, lt_91);
-
-//   // A >= 65 and A < 91
-//   BD_AND and(ge_65, lt_91, CAPITAL);
-// }
-
-
 import "lower_check.act";  // function name is lower_check ***
-// // If 97 <= A < 123, output 1, otherwise output 0
-// defproc lower_check(std::channel::bd?<8> A, std::channel::bd?<8> LOWER) {
-//   std::channel::bd<8> n97,
-//                       n123,
-//                       A_to_compare_97,
-//                       A_to_compare_123;
-//   std::channel::bd<1> lt_97,
-//                       ge_97,
-//                       lt_123;
-
-//   SOURCE_NEG_97 source_n97(n97);
-//   SOURCE_NEG_123 source_n123(n123);
-
-//   COPY copy_A(A, A_to_compare_97, A_to_compare_123);
-
-//   // Check A < 97 and then invert the result to get A >= 97
-//   COMPARE compare_97(A_to_compare_97, n97, lt_97);
-//   BD_INV inv_compare_97(lt_97, ge_97);
-
-//   // Check A < 123
-//   COMPARE compare_123(A_to_compare_123, n97_to_lt_123, lt_123);
-
-//   // A >= 97 and A < 123
-//   BD_AND and(ge_97, lt_123, LOWER);
-// }
-
-
 import "preshift.act"; // function name is preshift ***
-// // If LOWER = 0, output A - 65, otherwise output A - 97
-// defproc preshift (std::channel::bd?<8> A; std::channel::bd?<1> LOWER; std::channel::bd!<8> P) {
-//   std::channel::bd<8> split_to_subtract_65,
-//                       split_to_subtract_97,
-//                       n65_to_subtract_65,
-//                       n97_to_subtract_97,
-//                       subtract_65_to_merge,
-//                       subtract_97_to_merge;
-//   std::channel::bd<1> control_to_split,
-//                       control_to_merge,
-
-//   SOURCE_NEG_65 n65(n65_to_subtract_65);
-//   SOURCE_NEG_97 n97(n97_to_subtract_97);
-
-//   COPY1 case_copy(LOWER, control_to_split, control_to_merge);
-//   SPLIT choose_case(A, control_to_split, split_to_subtract_65, split_to_subtract_97);
-//   MERGE merge_case(subtract_65_to_merge, subtract_97_to_merge, control_to_merge, P);
-
-//   // Calculate A - 65 if LOWER = 0 (meaning capital letter)
-//   ADD subtract_65(split_to_subtract_65, n65_to_subtract_65, subtract_65_to_merge);
-
-//   // Calculate A - 97 if LOWER = 1 (meaning lowercase letter)
-//   ADD subtract_97(split_to_subtract_97, n97_to_subtract_97, subtract_97_to_merge);
-// }
-
-
 import "postshift.act"; // function name is postshift
-// // If LOWER = 0, output P + 65, otherwise output P + 97
-// defproc postshift (std::channel::bd?<8> P; std::channel::bd?<1> LOWER; std::channel::bd!<8> A) {
-//   std::channel::bd<8> split_to_add_65,
-//                       split_to_add_97,
-//                       p65_to_add_65,
-//                       p97_to_add_97,
-//                       add_65_to_merge,
-//                       add_97_to_merge;
-//   std::channel::bd<1> control_to_split,
-//                       control_to_merge,
-
-//   SOURCE_65 p65(p65_to_add_65);
-//   SOURCE_97 p97(p97_to_add_97);
-
-//   COPY1 case_copy(LOWER, control_to_split, control_to_merge);
-//   SPLIT choose_case(A, control_to_split, split_to_add_65, split_to_add_97);
-//   MERGE merge_case(add_65_to_merge, add_97_to_merge, control_to_merge, P);
-
-//   // Calculate P + 65 if LOWER = 0 (meaning capital letter)
-//   ADD add_65(split_to_add_65, p65_to_add_65, add_65_to_merge);
-
-//   // Calculate P + 97 if LOWER = 1 (meaning lowercase letter)
-//   ADD add_97(split_to_add_97, p97_to_add_97, add_97_to_merge);
-// }
-
-
 import "shift.act";
-// Output (P + K) % 26
-// defproc shift (std::channel::bd?<8> P; std::channel::bd?<8> K; std::channel::bd?<8> C) {
-//   std::channel::bd<8> add_out,
-//                       add_to_compare,
-//                       add_to_split,
-//                       m26_to_compare,
-//                       split_to_merge,
-//                       split_to_subtract,
-//                       m26_to_subtract,
-//                       subtract_to_merge;
-//   std::channel::bd<1> compare_out,
-//                       compare_to_split,
-//                       compare_to_merge,
 
-//   SOURCE_NEG_26 m26_for_compare(m26_to_compare);
-//   SOURCE_NEG_26 m26_for_subtract(m26_to_subtract);
-
-//   // Calculate P+K
-//   ADD add_k(P, K, add_out);
-//   COPY copy_add_result(add_out, add_to_compare, add_to_split);
-
-//   // Check whether P+K < 26
-//   COMPARE less_than_26(add_to_compare, m26_to_compare, compare_out);
-//   COPY1 compare_result_copy(compare_out, compare_to_split, compare_to_merge);
-
-//   // Split P+K based based on whether P+K < 26
-//   SPLIT split_add(add_to_split, compare_to_split, split_to_merge, split_to_subtract);
-
-//   // Calculate P+K-26 if P+K >= 26
-//   ADD subtract_26(split_to_subtract, m26_6o_subtract, subtract_to_merge);
-
-//   // Choose either P+K or P+K-26 depending on whether P+K < 26
-//   MERGE merge_add_and_subtract(split_to_merge, subtract_to_merge, compare_to_merge, C);
-// }
-
-import "bd_ops.act";
+import "bd_ops_v2.act";
 import "sink_1bit.act";
 import "split_1bit.act";
 import "copy_1bit.act";
@@ -212,5 +72,5 @@ defproc caesar (std::channel::bd?<8> P; std::channel::bd?<8> K; std::channel::bd
   postshift post(shift_to_postshift, ctrl_lower_to_postshift, postshift_to_merge);
 
   // Merge the unshifted and regular value
-  merge2 merge(shift_split_to_merge, postshift_to_merge, ctrl_shift_to_merge, C);
+  merge2 merge(postshift_to_merge, shift_split_to_merge, ctrl_shift_to_merge, C);
 }
