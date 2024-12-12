@@ -1,0 +1,1405 @@
+VERSION 5.6 ;
+
+BUSBITCHARS "[]" ;
+
+DIVIDERCHAR "/" ;
+
+UNITS
+    DATABASE MICRONS 1000 ;
+END UNITS
+
+MANUFACTURINGGRID 0.005000 ; 
+
+CLEARANCEMEASURE EUCLIDEAN ; 
+
+USEMINSPACING OBS ON ; 
+
+SITE CoreSite
+    CLASS CORE ;
+    SIZE 0.540000 BY 0.900000 ;
+END CoreSite
+
+LAYER m1
+   TYPE ROUTING ;
+   DIRECTION VERTICAL ;
+   MINWIDTH 0.270000 ;
+   WIDTH 0.270000 ;
+   SPACINGTABLE
+      PARALLELRUNLENGTH 0.0
+      WIDTH 0.0 0.270000 ;
+   PITCH 0.540000 0.540000 ;
+END m1
+
+LAYER v1
+    TYPE CUT ;
+    SPACING 0.270000 ;
+    WIDTH 0.270000 ;
+    ENCLOSURE ABOVE 0.090000 0.090000 ;
+    ENCLOSURE BELOW 0.090000 0.090000 ;
+END v1
+
+LAYER m2
+   TYPE ROUTING ;
+   DIRECTION HORIZONTAL ;
+   MINWIDTH 0.450000 ;
+   WIDTH 0.450000 ;
+   SPACINGTABLE
+      PARALLELRUNLENGTH 0.0
+      WIDTH 0.0 0.450000 ;
+   PITCH 0.900000 0.900000 ;
+END m2
+
+LAYER v2
+    TYPE CUT ;
+    SPACING 0.270000 ;
+    WIDTH 0.270000 ;
+    ENCLOSURE ABOVE 0.090000 0.090000 ;
+    ENCLOSURE BELOW 0.090000 0.090000 ;
+END v2
+
+LAYER m3
+   TYPE ROUTING ;
+   DIRECTION VERTICAL ;
+   MINWIDTH 0.450000 ;
+   WIDTH 0.450000 ;
+   SPACINGTABLE
+      PARALLELRUNLENGTH 0.0
+      WIDTH 0.0 0.450000 ;
+   PITCH 0.900000 0.900000 ;
+END m3
+
+LAYER v3
+    TYPE CUT ;
+    SPACING 0.270000 ;
+    WIDTH 0.270000 ;
+    ENCLOSURE ABOVE 0.090000 0.090000 ;
+    ENCLOSURE BELOW 0.090000 0.090000 ;
+END v3
+
+LAYER m4
+   TYPE ROUTING ;
+   DIRECTION HORIZONTAL ;
+   MINWIDTH 0.450000 ;
+   WIDTH 0.450000 ;
+   SPACINGTABLE
+      PARALLELRUNLENGTH 0.0
+      WIDTH 0.0 0.450000 ;
+   PITCH 0.900000 0.900000 ;
+END m4
+
+LAYER v4
+    TYPE CUT ;
+    SPACING 0.270000 ;
+    WIDTH 0.270000 ;
+    ENCLOSURE ABOVE 0.090000 0.090000 ;
+    ENCLOSURE BELOW 0.090000 0.090000 ;
+END v4
+
+LAYER m5
+   TYPE ROUTING ;
+   DIRECTION VERTICAL ;
+   MINWIDTH 0.450000 ;
+   WIDTH 0.450000 ;
+   SPACINGTABLE
+      PARALLELRUNLENGTH 0.0
+      WIDTH 0.0 0.450000 ;
+   PITCH 0.900000 0.900000 ;
+END m5
+
+LAYER v5
+    TYPE CUT ;
+    SPACING 0.270000 ;
+    WIDTH 0.270000 ;
+    ENCLOSURE ABOVE 0.090000 0.090000 ;
+    ENCLOSURE BELOW 0.090000 0.090000 ;
+END v5
+
+LAYER m6
+   TYPE ROUTING ;
+   DIRECTION HORIZONTAL ;
+   MINWIDTH 0.450000 ;
+   WIDTH 0.450000 ;
+   SPACINGTABLE
+      PARALLELRUNLENGTH 0.0
+      WIDTH 0.0 0.450000 ;
+   PITCH 0.900000 0.900000 ;
+END m6
+
+LAYER OVERLAP
+   TYPE OVERLAP ;
+END OVERLAP
+
+VIA v1_C DEFAULT
+   LAYER m1 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v1 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m2 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v1_C
+
+VIA v1_Ch
+   LAYER m1 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v1 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m2 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v1_Ch
+
+VIA v1_Cv
+   LAYER m1 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v1 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m2 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v1_Cv
+
+VIA v2_C DEFAULT
+   LAYER m2 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v2 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m3 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v2_C
+
+VIA v2_Ch
+   LAYER m2 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v2 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m3 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v2_Ch
+
+VIA v2_Cv
+   LAYER m2 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v2 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m3 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v2_Cv
+
+VIA v3_C DEFAULT
+   LAYER m3 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v3 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m4 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v3_C
+
+VIA v3_Ch
+   LAYER m3 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v3 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m4 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v3_Ch
+
+VIA v3_Cv
+   LAYER m3 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v3 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m4 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v3_Cv
+
+VIA v4_C DEFAULT
+   LAYER m4 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v4 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m5 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v4_C
+
+VIA v4_Ch
+   LAYER m4 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v4 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m5 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v4_Ch
+
+VIA v4_Cv
+   LAYER m4 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v4 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m5 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v4_Cv
+
+VIA v5_C DEFAULT
+   LAYER m5 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v5 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m6 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v5_C
+
+VIA v5_Ch
+   LAYER m5 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v5 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m6 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v5_Ch
+
+VIA v5_Cv
+   LAYER m5 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+   LAYER v5 ;
+     RECT -0.135000 -0.135000 0.135000 0.135000 ;
+   LAYER m6 ;
+     RECT -0.225000 -0.225000 0.225000 0.225000 ;
+END v5_Cv
+
+MACRO _0_0cell_0_0g0n_0x0
+    CLASS CORE ;
+    FOREIGN _0_0cell_0_0g0n_0x0 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 3.240000 BY 9.900000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN in_50_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 8.730000 0.810000 9.000000 ;
+        END
+    END in_50_6
+    PIN out
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 3.888000 ;
+    END out
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 1.620000 8.730000 1.890000 9.000000 ;
+        END
+        ANTENNADIFFAREA 3.888000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 2.700000 8.730000 2.970000 9.000000 ;
+        END
+        ANTENNADIFFAREA 0.972000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 2.610000 8.190000 ;
+    END
+END _0_0cell_0_0g0n_0x0
+
+MACRO _0_0std_0_0cells_0_0INVX1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0INVX1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 2.160000 BY 5.400000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 4.230000 0.810000 4.500000 ;
+        END
+    END A
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 0.631800 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 1.080000 4.230000 1.350000 4.500000 ;
+        END
+        ANTENNADIFFAREA 0.388800 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 1.620000 4.230000 1.890000 4.500000 ;
+        END
+        ANTENNADIFFAREA 0.243000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 1.530000 3.690000 ;
+    END
+END _0_0std_0_0cells_0_0INVX1
+
+MACRO _0_0std_0_0cells_0_0AND2X1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0AND2X1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 4.320000 BY 6.300000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 5.130000 0.810000 5.400000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 1.620000 5.130000 1.890000 5.400000 ;
+        END
+    END B
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 0.631800 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 2.700000 5.130000 2.970000 5.400000 ;
+        END
+        ANTENNADIFFAREA 0.777600 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 3.780000 5.130000 4.050000 5.400000 ;
+        END
+        ANTENNADIFFAREA 0.324000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 3.690000 4.590000 ;
+    END
+END _0_0std_0_0cells_0_0AND2X1
+
+MACRO _0_0std_0_0cells_0_0NOR2X1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0NOR2X1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 2.700000 BY 5.400000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 4.230000 0.810000 4.500000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 1.080000 4.230000 1.350000 4.500000 ;
+        END
+    END B
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 0.972000 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 1.620000 4.230000 1.890000 4.500000 ;
+        END
+        ANTENNADIFFAREA 0.729000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 2.160000 4.230000 2.430000 4.500000 ;
+        END
+        ANTENNADIFFAREA 0.486000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 2.070000 3.690000 ;
+    END
+END _0_0std_0_0cells_0_0NOR2X1
+
+MACRO _0_0cell_0_0g0n1n2noo3na0n1n2naao_012oo3a012aaox0
+    CLASS CORE ;
+    FOREIGN _0_0cell_0_0g0n1n2noo3na0n1n2naao_012oo3a012aaox0 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 6.480000 BY 10.800000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN in_50_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 9.630000 0.810000 9.900000 ;
+        END
+    END in_50_6
+    PIN in_51_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 1.620000 9.630000 1.890000 9.900000 ;
+        END
+    END in_51_6
+    PIN in_52_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 2.700000 9.630000 2.970000 9.900000 ;
+        END
+    END in_52_6
+    PIN in_53_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 3.780000 9.630000 4.050000 9.900000 ;
+        END
+    END in_53_6
+    PIN out
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 2.138400 ;
+    END out
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 4.860000 9.630000 5.130000 9.900000 ;
+        END
+        ANTENNADIFFAREA 5.054400 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 5.940000 9.630000 6.210000 9.900000 ;
+        END
+        ANTENNADIFFAREA 1.944000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 5.850000 9.090000 ;
+    END
+END _0_0cell_0_0g0n1n2noo3na0n1n2naao_012oo3a012aaox0
+
+MACRO _0_0cell_0_0g0n1na2no0n1noa_01o2a01aox0
+    CLASS CORE ;
+    FOREIGN _0_0cell_0_0g0n1na2no0n1noa_01o2a01aox0 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 5.400000 BY 7.200000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN in_50_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 6.030000 0.810000 6.300000 ;
+        END
+    END in_50_6
+    PIN in_51_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 1.620000 6.030000 1.890000 6.300000 ;
+        END
+    END in_51_6
+    PIN in_52_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 2.700000 6.030000 2.970000 6.300000 ;
+        END
+    END in_52_6
+    PIN out
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 1.603800 ;
+    END out
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 3.780000 6.030000 4.050000 6.300000 ;
+        END
+        ANTENNADIFFAREA 1.652400 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 4.860000 6.030000 5.130000 6.300000 ;
+        END
+        ANTENNADIFFAREA 0.972000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 4.770000 5.490000 ;
+    END
+END _0_0cell_0_0g0n1na2no0n1noa_01o2a01aox0
+
+MACRO _0_0cell_0_0g0n_0x1
+    CLASS CORE ;
+    FOREIGN _0_0cell_0_0g0n_0x1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 2.160000 BY 5.400000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN in_50_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 4.230000 0.810000 4.500000 ;
+        END
+    END in_50_6
+    PIN out
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 0.631800 ;
+    END out
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 1.080000 4.230000 1.350000 4.500000 ;
+        END
+        ANTENNADIFFAREA 0.388800 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 1.620000 4.230000 1.890000 4.500000 ;
+        END
+        ANTENNADIFFAREA 0.243000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 1.530000 3.690000 ;
+    END
+END _0_0cell_0_0g0n_0x1
+
+MACRO _0_0std_0_0cells_0_0OR2X1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0OR2X1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 4.320000 BY 5.400000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 4.230000 0.810000 4.500000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 1.620000 4.230000 1.890000 4.500000 ;
+        END
+    END B
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 0.631800 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 2.700000 4.230000 2.970000 4.500000 ;
+        END
+        ANTENNADIFFAREA 0.486000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 3.780000 4.230000 4.050000 4.500000 ;
+        END
+        ANTENNADIFFAREA 0.486000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 3.690000 3.690000 ;
+    END
+END _0_0std_0_0cells_0_0OR2X1
+
+MACRO _0_0std_0_0cells_0_0LATCH
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0LATCH 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 8.100000 BY 7.200000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN CLK
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 6.030000 0.810000 6.300000 ;
+        END
+    END CLK
+    PIN D
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 2.700000 6.030000 2.970000 6.300000 ;
+        END
+    END D
+    PIN Q
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 1.215000 ;
+    END Q
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 4.860000 6.030000 5.130000 6.300000 ;
+        END
+        ANTENNADIFFAREA 1.053000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 7.020000 6.030000 7.290000 6.300000 ;
+        END
+        ANTENNADIFFAREA 1.134000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 7.470000 5.490000 ;
+    END
+END _0_0std_0_0cells_0_0LATCH
+
+MACRO _0_0std_0_0cells_0_0TIELOX1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0TIELOX1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 2.700000 BY 4.500000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 0.145800 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 3.330000 0.810000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.145800 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 2.160000 3.330000 2.430000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.145800 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 2.070000 2.790000 ;
+    END
+END _0_0std_0_0cells_0_0TIELOX1
+
+MACRO _0_0cell_0_0g0n1n2naa_012aax0
+    CLASS CORE ;
+    FOREIGN _0_0cell_0_0g0n1n2naa_012aax0 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 6.480000 BY 7.200000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN in_50_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 6.030000 0.810000 6.300000 ;
+        END
+    END in_50_6
+    PIN in_51_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 1.620000 6.030000 1.890000 6.300000 ;
+        END
+    END in_51_6
+    PIN in_52_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 2.700000 6.030000 2.970000 6.300000 ;
+        END
+    END in_52_6
+    PIN out
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 0.194400 ;
+    END out
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 3.780000 6.030000 4.050000 6.300000 ;
+        END
+        ANTENNADIFFAREA 0.729000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 4.860000 6.030000 5.130000 6.300000 ;
+        END
+        ANTENNADIFFAREA 0.631800 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 5.850000 5.490000 ;
+    END
+END _0_0cell_0_0g0n1n2naa_012aax0
+
+MACRO _0_0std_0_0cells_0_0TIEHIX1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0TIEHIX1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 2.700000 BY 4.500000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 0.145800 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 3.330000 0.810000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.145800 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 2.160000 3.330000 2.430000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.145800 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 2.070000 2.790000 ;
+    END
+END _0_0std_0_0cells_0_0TIEHIX1
+
+MACRO _0_0cell_0_0g0n1n2n3naaa_0123aaox0
+    CLASS CORE ;
+    FOREIGN _0_0cell_0_0g0n1n2n3naaa_0123aaox0 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 17.280000 BY 4.500000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN in_50_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 3.330000 0.810000 3.600000 ;
+        END
+    END in_50_6
+    PIN in_51_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 3.780000 3.330000 4.050000 3.600000 ;
+        END
+    END in_51_6
+    PIN in_52_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 7.020000 3.330000 7.290000 3.600000 ;
+        END
+    END in_52_6
+    PIN in_53_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 10.260000 3.330000 10.530000 3.600000 ;
+        END
+    END in_53_6
+    PIN out
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 0.437400 ;
+    END out
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 13.500000 3.330000 13.770000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.583200 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 16.740000 3.330000 17.010000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.583200 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 16.650000 2.790000 ;
+    END
+END _0_0cell_0_0g0n1n2n3naaa_0123aaox0
+
+MACRO _0_0cell_0_0g0n_0x2
+    CLASS CORE ;
+    FOREIGN _0_0cell_0_0g0n_0x2 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 2.160000 BY 4.500000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN in_50_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 3.330000 0.810000 3.600000 ;
+        END
+    END in_50_6
+    PIN out
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 0.291600 ;
+    END out
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 1.080000 3.330000 1.350000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.145800 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 1.620000 3.330000 1.890000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.145800 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 1.530000 2.790000 ;
+    END
+END _0_0cell_0_0g0n_0x2
+
+MACRO _0_0cell_0_0g0n1n2naa_012aox0
+    CLASS CORE ;
+    FOREIGN _0_0cell_0_0g0n1n2naa_012aox0 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 14.040000 BY 4.500000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN in_50_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 3.330000 0.810000 3.600000 ;
+        END
+    END in_50_6
+    PIN in_51_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 3.780000 3.330000 4.050000 3.600000 ;
+        END
+    END in_51_6
+    PIN in_52_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 7.020000 3.330000 7.290000 3.600000 ;
+        END
+    END in_52_6
+    PIN out
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 0.437400 ;
+    END out
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 10.260000 3.330000 10.530000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.583200 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 13.500000 3.330000 13.770000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.583200 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 13.410000 2.790000 ;
+    END
+END _0_0cell_0_0g0n1n2naa_012aox0
+
+MACRO _0_0std_0_0cells_0_0MUX2X1
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0MUX2X1 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 7.560000 BY 6.300000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 5.130000 0.810000 5.400000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 2.160000 5.130000 2.430000 5.400000 ;
+        END
+    END B
+    PIN S
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 3.780000 5.130000 4.050000 5.400000 ;
+        END
+    END S
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 2.430000 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 5.400000 5.130000 5.670000 5.400000 ;
+        END
+        ANTENNADIFFAREA 1.215000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 7.020000 5.130000 7.290000 5.400000 ;
+        END
+        ANTENNADIFFAREA 0.648000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 6.930000 4.590000 ;
+    END
+END _0_0std_0_0cells_0_0MUX2X1
+
+MACRO _0_0std_0_0cells_0_0NOR2X2
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0NOR2X2 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 2.700000 BY 8.100000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN A
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 6.930000 0.810000 7.200000 ;
+        END
+    END A
+    PIN B
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 1.080000 6.930000 1.350000 7.200000 ;
+        END
+    END B
+    PIN Y
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 1.944000 ;
+    END Y
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 1.620000 6.930000 1.890000 7.200000 ;
+        END
+        ANTENNADIFFAREA 1.458000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 2.160000 6.930000 2.430000 7.200000 ;
+        END
+        ANTENNADIFFAREA 0.972000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 2.070000 6.390000 ;
+    END
+END _0_0std_0_0cells_0_0NOR2X2
+
+MACRO _0_0std_0_0cells_0_0LATCHINV
+    CLASS CORE ;
+    FOREIGN _0_0std_0_0cells_0_0LATCHINV 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 7.560000 BY 7.200000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN CLK
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 6.030000 0.810000 6.300000 ;
+        END
+    END CLK
+    PIN D
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 2.160000 6.030000 2.430000 6.300000 ;
+        END
+    END D
+    PIN q
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 3.780000 6.030000 4.050000 6.300000 ;
+        END
+    END q
+    PIN __q
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 2.430000 ;
+    END __q
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 5.400000 6.030000 5.670000 6.300000 ;
+        END
+        ANTENNADIFFAREA 1.134000 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 7.020000 6.030000 7.290000 6.300000 ;
+        END
+        ANTENNADIFFAREA 0.972000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 6.930000 5.490000 ;
+    END
+END _0_0std_0_0cells_0_0LATCHINV
+
+MACRO _0_0cell_0_0g0n1n2n3n4naaaa_01234oaaox0
+    CLASS CORE ;
+    FOREIGN _0_0cell_0_0g0n1n2n3n4naaaa_01234oaaox0 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 27.000000 BY 4.500000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN in_50_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 3.330000 0.810000 3.600000 ;
+        END
+    END in_50_6
+    PIN in_51_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 4.860000 3.330000 5.130000 3.600000 ;
+        END
+    END in_51_6
+    PIN in_52_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 9.180000 3.330000 9.450000 3.600000 ;
+        END
+    END in_52_6
+    PIN in_53_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 13.500000 3.330000 13.770000 3.600000 ;
+        END
+    END in_53_6
+    PIN in_54_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 17.820000 3.330000 18.090000 3.600000 ;
+        END
+    END in_54_6
+    PIN out
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 0.729000 ;
+    END out
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 22.140000 3.330000 22.410000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.437400 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 26.460000 3.330000 26.730000 3.600000 ;
+        END
+        ANTENNADIFFAREA 0.243000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 26.370000 2.790000 ;
+    END
+END _0_0cell_0_0g0n1n2n3n4naaaa_01234oaaox0
+
+MACRO welltap_svt
+    CLASS CORE WELLTAP ;
+    FOREIGN welltap_svt 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 1.620000 BY 2.700000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 1.530000 0.810000 1.800000 ;
+        END
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+    END GND
+END welltap_svt
+
+MACRO circuitppnp
+   CLASS CORE ;
+   FOREIGN circuitppnp 0.000000 0.000000 ;
+   ORIGIN 0.000000 0.000000 ; 
+   SIZE 358.020000 BY 372.600000 ; 
+   SYMMETRY X Y ;
+   SITE CoreSite ;
+END circuitppnp
+
+MACRO circuitwell
+   CLASS CORE ;
+   FOREIGN circuitwell 0.000000 0.000000 ;
+   ORIGIN 0.000000 0.000000 ; 
+   SIZE 358.020000 BY 372.600000 ; 
+   SYMMETRY X Y ;
+   SITE CoreSite ;
+END circuitwell
+

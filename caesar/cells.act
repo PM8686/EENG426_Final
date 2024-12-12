@@ -1,5 +1,13 @@
 namespace cell {
 
+export defcell g0n1n2n3n4naaaa_01234oaaox0 (bool? in[5]; bool! out)
+{
+   prs {
+   in[0] | in[1] & in[2] & (in[3] | in[4]) -> out-
+   ~in[0] & ~in[1] & ~in[2] & ~(in[3] | in[4]) -> out+
+   }
+}
+
 export defcell g0n1n2n3naaa_0123aaox0 (bool? in[4]; bool! out)
 {
    prs {
