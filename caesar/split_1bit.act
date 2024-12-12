@@ -24,13 +24,35 @@ defcell elem_c_split (bd?<1> L; bd?<1> C; bool? ctrl; bd!<1> R1; bd!<1> R2)
   }
 
   // THIS BROKE WHEN NON-ASCII CHARACTER USED (think b/c the above is not a combinational gate)
-  // bool _Reset, or_out, inv_or_out, and_out_1, and_out_2;
+  // We tried to make it so c_out_up when true forces to 1 and when c_out_down is true forces to 0 otherwise nothing
+  // // c_out pull up
+  // bool _Reset, or_out, inv_or_out, and_out_1, and_out_2, c_out_up;
   // INVX1 i1(Reset, _Reset);
   // OR2X1 o1(R1.a, R2.a, or_out);
   // INVX1 i2(or_out, inv_or_out);
   // AND2X1 a1(_Reset, L.r, and_out_1);
   // AND2X1 a2(C.r, inv_or_out, and_out_2);
-  // AND2X1 a3(and_out_1, and_out_2, c_out);
+  // AND2X1 a3(and_out_1, and_out_2, c_out_up);
+
+  // // c_out pull down     Reset | (_Lr & _Cr & (R1.a | R2.a)) -> c_out-
+  // bool _Reset_down, or_out_down, inv_or_out_down, and_out_1_down, and_out_2_down, _Cr_down, _Lr_down;
+  // bool c_out_down;
+  // OR2X1 or2(R1.a, R2.a, or_out_down);
+  // INVX1 i3(C.r, _Cr_down);
+  // INVX1 iLr(L.r, _Lr_down);
+  // AND2X1 and1(or_out_down, _Lr_down, and_out_1_down);
+  // AND2X1 and2(_Cr_down, and_out_1_down, and_out_2_down);
+  // OR2X1 or3(and_out_2_down, Reset, or_out_down);
+
+  // // combining c_out_up and c_out_down to determine c_out
+  // bool c_out_cp1, c_out_cp2, tmp1, tmp2, inv_cout_down;
+  // INVX1 cp1a(c_out, tmp1);
+  // INVX1 cp1b(tmp1, c_out_cp1);
+  // INVX1 cp2a(c_out, tmp2);
+  // INVX1 cp2b(tmp2, c_out_cp2);
+  // OR2X1 or4(c_out_up, c_out_cp1, c_out); // pullup if c_out_up = 1
+  // INVX1 down(c_out_down, inv_cout_down); // pulldown if c_out_down = 1
+  // AND2X1 and_out(inv_cout_down, c_out_cp2, c_out);
 
   INVX1 ctrl_inv(ctrl, _ctrl);
   AND2X1 andR1(c_out_delay, _ctrl, R1.r);
