@@ -68,6 +68,7 @@ defproc bd_or(bd?<1> L1; bd?<1> L2; bd!<1> R)
 
   prs {
     L1.d[0] | L2.d[0] => Rd+
+    ~L1.d[0] & ~L2.d[0] => Rd-
   }
 
   elem_c_2x1 elem_c(L1, L2, R);

@@ -38,9 +38,7 @@ defproc bd_inv(bd?<1> L; bd!<1> R)
 {
   bool pulse, Rd;
 
-  prs {
-    L.d[0] => Rd-
-  }
+  INVX1 in(L.d[0], Rd);
 
   elem_c_1x1 elem_c(L, R);
   pulseGen pulseG(L.a, pulse);
@@ -52,9 +50,7 @@ defproc bd_and(bd?<1> L1; bd?<1> L2; bd!<1> R)
 {
   bool pulse, Rd;
 
-  prs {
-    L1.d[0] & L2.d[0] => Rd+
-  }
+  AND2X1 and(L1.d[0], L2.d[0], Rd);
 
   elem_c_2x1 elem_c(L1, L2, R);
   pulseGen pulseG(L1.a, pulse);
@@ -66,9 +62,12 @@ defproc bd_or(bd?<1> L1; bd?<1> L2; bd!<1> R)
 {
   bool pulse, Rd;
 
-  prs {
-    L1.d[0] | L2.d[0] => Rd+
-  }
+  // prs {
+  //   L1.d[0] | L2.d[0] => Rd+
+  //   ~L1.d[0] & ~L2.d[0] => Rd-
+  // }
+
+  OR2X1 or(L1.d[0], L2.d[0], Rd);
 
   elem_c_2x1 elem_c(L1, L2, R);
   pulseGen pulseG(L1.a, pulse);

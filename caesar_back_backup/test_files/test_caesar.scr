@@ -1,0 +1,19 @@
+watch in
+watch shift
+watch out
+status X
+
+set in 66
+set shift 1
+cycle
+get out
+
+set in 0
+set shift 10
+cycle
+get out
+
+set in 111
+set shift 30
+cycle
+get out

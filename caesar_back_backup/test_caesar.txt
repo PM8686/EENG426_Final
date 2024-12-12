@@ -1,0 +1,48 @@
+mode reset 
+set Reset 1
+cycle
+
+set P.r 1
+set K.r 1
+set C.a 0
+set P.d[0] 1
+set P.d[1] 0
+set P.d[2] 0
+set P.d[3] 0
+set P.d[4] 0
+set P.d[5] 1
+set P.d[6] 1
+set P.d[7] 0
+set K.d[0] 1
+set K.d[1] 0
+set K.d[2] 0
+set K.d[3] 0
+set K.d[4] 0
+set K.d[5] 0
+set K.d[6] 0
+set K.d[7] 0
+cycle
+get C.r 
+get P.a 
+get K.a
+get P.d[0]
+get K.d[0]
+get C.d[0]
+get C.d[1]
+
+set Reset 0
+mode run
+cycle
+get C.r 
+get P.a 
+get K.a
+get P.d[0]
+get K.d[0]
+get C.d[0]
+get C.d[1]
+get C.d[2]
+get C.d[3]
+get C.d[4]
+get C.d[5]
+get C.d[6]
+get C.d[7]

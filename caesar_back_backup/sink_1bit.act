@@ -1,0 +1,14 @@
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+
+open std::cells;
+open std::channel;
+open std::gates;
+
+defproc sink_1bit(bd?<1> L) {
+  bool _Lr;
+  INVX1 i(L.r, _Lr);
+  NOR2X1 n(Reset, _Lr, L.a);
+}

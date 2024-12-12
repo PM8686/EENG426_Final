@@ -66,7 +66,7 @@ set L1.r 1
 set L2.r 1
 set C.r 1
 set R.a 0
-set C.d[0] 1
+set C.d[0] 0
 set L1.d[0] 1
 set L1.d[1] 1
 set L1.d[2] 1
