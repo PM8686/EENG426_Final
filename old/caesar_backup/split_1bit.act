@@ -1,0 +1,50 @@
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "pulse.act";
+
+open std::cells;
+open std::channel;
+open std::gates;
+
+// CTRL = 0 -> R1
+// CTRL = 1 -> R2
+defcell elem_c_split (bd?<1> L; bd?<1> C; bool? ctrl; bd!<1> R1; bd!<1> R2)
+{
+  bool _ctrl, c_out, c_out_delay;
+  bool _Lr, _Cr;
+
+  prs {
+    L.r => _Lr-
+    C.r => _Cr-
+
+    ~Reset & (~_Lr & ~_Cr & ~(R1.a | R2.a)) -> c_out+
+    Reset | (_Lr & _Cr & (R1.a | R2.a)) -> c_out-
+  }
+
+  // bool _Reset, or_out, inv_or_out, and_out_1, and_out_2;
+  // INVX1 i1(Reset, _Reset);
+  // OR2X1 o1(R1.a, R2.a, or_out);
+  // INVX1 i2(or_out, inv_or_out);
+  // AND2X1 a1(_Reset, L.r, and_out_1);
+  // AND2X1 a2(C.r, inv_or_out, and_out_2);
+  // AND2X1 a3(and_out_1, and_out_2, c_out);
+
+  INVX1 ctrl_inv(ctrl, _ctrl);
+  AND2X1 andR1(c_out_delay, _ctrl, R1.r);
+  AND2X1 andR2(c_out_delay, ctrl, R2.r);
+  CLKBUF3 delay(c_out, c_out_delay);
+  L.a = c_out;
+  C.a = c_out;
+}
+
+defproc split_1bit(bd?<1> L; bd?<1> C; bd!<1> R1; bd!<1> R2) {
+  bool pulse, ctrl;
+
+  elem_c_split elem_c(L, C, ctrl, R1, R2);
+  pulseGen pulseG(L.a, pulse);
+  LATCHLO ctrl_latch(Reset, pulse, C.d[0], ctrl);
+  LATCH data_latch(pulse, L.d[0], R1.d[0]);
+  R2.d[0] = R1.d[0];
+}

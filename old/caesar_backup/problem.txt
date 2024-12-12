@@ -1,0 +1,20 @@
+- adding split1bit
+
+
+- have switched: all sources
+    - bd_ops_v2.act
+    - adder2.act
+    - caesar.act
+    - capital_check.act
+    - comp2.act 
+    - copy_1bit.act
+    - copy2.act
+    - lower_check.act
+    - merge2.act
+    - postshift.act
+    - preshift.act
+    - pulse.act
+    - shift.act
+    - sink_1bit.act
+    - split2.act
+

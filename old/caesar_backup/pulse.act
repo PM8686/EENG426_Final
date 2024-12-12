@@ -1,0 +1,30 @@
+import std::cells;
+open std::cells;
+
+// NOTE: THIS IS WORKING!! (TESTED)
+// pulse generator generates a single pulse when input is high (which is c-elem output)
+defproc pulseGen(bool? signal; bool! out) {
+  // signal storage between inverters
+  bool temp[9]; 
+  
+  // initialize the pulseGen on Reset
+  bool sgn;
+  bool sig_inv;
+  INVX1 i(signal, sig_inv);
+  NOR2X1 nor(Reset, sig_inv, sgn);
+
+  // Chain the inverters (odd number)
+  // conceptual for grace: the last inverter will retain a high value because of the initial low reset, and this will allow for the one pulse because once input is high, there will be a brief period of delay where the and gate gets two high inputs for a bit
+  INVX1 i1(sgn, temp[0]);
+  INVX1 i2(temp[0], temp[1]);
+  INVX1 i3(temp[1], temp[2]);
+  INVX1 i4(temp[2], temp[3]);
+  INVX1 i5(temp[3], temp[4]);
+  INVX1 i6(temp[4], temp[5]);
+  INVX1 i7(temp[5], temp[6]);
+  INVX1 i8(temp[6], temp[7]);
+  INVX1 i9(temp[7], temp[8]);
+
+  // AND gate takes original input and inverter chain output
+  AND2X1 and(sgn, temp[8], out);
+}

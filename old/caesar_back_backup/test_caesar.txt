@@ -11,7 +11,7 @@ set P.d[2] 0
 set P.d[3] 0
 set P.d[4] 0
 set P.d[5] 1
-set P.d[6] 1
+set P.d[6] 0
 set P.d[7] 0
 set K.d[0] 1
 set K.d[1] 0
