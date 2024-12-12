@@ -13,10 +13,11 @@ open std::gates;
 defcell elem_c_split (bd?<1> L; bd?<1> C; bool? ctrl; bd!<1> R1; bd!<1> R2)
 {
   bool _ctrl, c_out, c_out_delay;
+  bool _Lr, _Cr;
 
   prs {
-    ~Reset & (L.r & C.r & ~(R1.a | R2.a)) -> c_out+
-    Reset | (~L.r & ~C.r & (R1.a | R2.a)) -> c_out-
+    ~Reset & (~_Lr & ~_Cr & ~(R1.a | R2.a)) -> c_out+
+    Reset | (_Lr & _Cr & (R1.a | R2.a)) -> c_out-
   }
 
   INVX1 ctrl_inv(ctrl, _ctrl);

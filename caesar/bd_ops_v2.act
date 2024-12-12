@@ -9,10 +9,13 @@ open std::channel;
 defcell elem_c_1x1 (bd?<1> L; bd!<1> R)
 {
   bool c_out;
+  bool _Lr;
 
   prs {
-    ~Reset & (L.r & ~R.a) -> c_out+
-    Reset | (~L.r & R.a) -> c_out-
+    L.r => _Lr-
+
+    ~Reset & (~_Lr & ~R.a) -> c_out+
+    Reset | (_Lr & R.a) -> c_out-
   }
 
   CLKBUF3 delay(c_out, R.r);
@@ -22,10 +25,14 @@ defcell elem_c_1x1 (bd?<1> L; bd!<1> R)
 defcell elem_c_2x1 (bd?<1> L1; bd?<1> L2; bd!<1> R)
 {
   bool c_out;
+  bool _L1r, _L2r;
 
   prs {
-    ~Reset & (L1.r & L2.r & ~R.a) -> c_out+
-    Reset | (~L1.r & ~L2.r & R.a) -> c_out-
+    L1.r => _L1r-
+    L2.r => _L2r-
+
+    ~Reset & (~_L1r & ~_L2r & ~R.a) -> c_out+
+    Reset | (_L1r & _L2r & R.a) -> c_out-
   }
 
   CLKBUF3 delay(c_out, R.r);
