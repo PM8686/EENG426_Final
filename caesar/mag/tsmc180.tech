@@ -1,0 +1,468 @@
+tech
+   format 33
+   TSMC180
+end
+
+version
+   version 1
+   description "Maintained regularly by Ruslan Dashkin AVLSI"
+end
+
+#--- Planes ---
+planes
+   well,w
+   select,s
+   active,a
+   metal1,m1
+   via1,v1
+   metal2,m2
+   via2,v2
+   metal3,m3
+   via3,v3
+   metal4,m4
+   via4,v4
+   metal5,m5
+   via5,v5
+   metal6,m6
+   comment
+end
+
+#--- Tile types ---
+types
+   well   nwell
+   active   ppdiff
+   active   nndiff
+   
+   active   ndiffusion
+   active   ndcontact
+   active   psubstratepcontact
+   active   ntransistor
+   active   pdiffusion
+   active   pdcontact
+   active   nsubstratencontact
+   active   ptransistor
+   active   polysilicon
+   active   polycontact
+   
+   metal1 m1
+   metal1 m1pin
+   metal1 m2c,v1
+   metal2 m2
+   metal2 m2pin
+   metal2 m3c,v2
+   metal3 m3
+   metal3 m3pin
+   metal3 m4c,v3
+   metal4 m4
+   metal4 m4pin
+   metal4 m5c,v4
+   metal5 m5
+   metal5 m5pin
+   metal5 m6c,v5
+   metal6 m6
+   metal6 m6pin
+   comment comment
+end
+
+#--- contacts ---
+contact
+   polycontact polysilicon m1
+   ndcontact ndiffusion m1
+   psubstratepcontact ppdiff m1
+   pdcontact pdiffusion m1
+   nsubstratencontact nndiff m1
+   m2c m1 m2
+   m3c m2 m3
+   m4c m3 m4
+   m5c m4 m5
+   m6c m5 m6
+   stackable
+end
+
+aliases
+   allm1 *m1
+   allm2 *m2
+   allm3 *m3
+   allm4 *m4
+   allm5 *m5
+   allm6 *m6
+   allpolynonfet polysilicon,polycontact
+   allfet ntransistor,ptransistor
+   allndiff ndiffusion,ndcontact
+   allppdiff ppdiff,psubstratepcontact
+   allpdiff pdiffusion,pdcontact
+   allnndiff nndiff,nsubstratencontact
+   allactivenonfet allndiff,allpdiff,allnndiff,allppdiff
+end
+
+styles
+   styletype mos
+      ndiffusion ndiffusion
+      ndcontact ndiffusion metal1 contact_X'es
+      ntransistor ntransistor ntransistor_stripes
+      ppdiff pdiff_in_pwell
+      psubstratepcontact pdiff_in_pwell metal1_alt contact_X'es
+      nwell nwell
+      pdiffusion pdiffusion
+      pdcontact pdiffusion metal1 contact_X'es
+      ptransistor ptransistor ptransistor_stripes
+      nndiff ndiff_in_nwell
+      nsubstratencontact ndiff_in_nwell metal1_alt contact_X'es
+      polysilicon polysilicon
+      polycontact poly_contact contact_X'es
+      m1 metal1
+      m2 metal2
+      m2c metal1 metal2 via1
+      m3 metal3
+      m3c metal2 metal3 via2
+      m4 metal4
+      m4c metal3 metal4 via3
+      m5 metal5
+      m5c metal4 metal5 via4
+      m6 metal6
+      m6c metal5 metal6 via5
+      error_p error_waffle
+      error_s error_waffle
+      error_ps error_waffle
+      
+end
+
+compose
+   compose ntransistor polysilicon ndiffusion
+   compose ptransistor polysilicon pdiffusion
+   paint ndiffusion nwell pdiffusion
+   paint ntransistor nwell ptransistor
+   
+end
+
+connect
+   polysilicon,polycontact/a,ntransistor,ptransistor polysilicon,polycontact/a,ntransistor,ptransistor
+   ndiffusion,ndcontact/a ndiffusion,ndcontact/a
+   nndiff,nwell,nsubstratencontact/a nndiff,nwell,nsubstratencontact/a
+   pdiffusion,pdcontact/a pdiffusion,pdcontact/a
+   m1,m2c/m1,polycontact/m1,psubstratepcontact/a,ndcontact/a,nsubstratencontact/a,pdcontact/a m1,m2c/m1,polycontact/m1,psubstratepcontact/a,ndcontact/a,nsubstratencontact/a,pdcontact/a
+   m2,m2c/m2,m3c/m2 m2,m2c/m2,m3c/m2
+   m3,m3c/m3,m4c/m3 m3,m3c/m3,m4c/m3
+   m4,m4c/m4,m5c/m4 m4,m4c/m4,m5c/m4
+   m5,m5c/m5,m6c/m5 m5,m5c/m5,m6c/m5
+   m6,m6c/m6 m6,m6c/m6
+end
+
+cifoutput
+   style generic
+   scalefactor 90 nanometers
+   options calma-permissive-labels
+   
+   
+end
+
+cifinput
+   style generic
+   scalefactor 90 nanometers
+   
+   
+end
+
+mzrouter
+   # this is a dummy section
+   style irouter
+   layer m1  2 1 1 1
+   layer polysilicon 2 2 1 1
+   contact polycontact m1 polysilicon 10
+end
+
+drc
+   # rules for ndiffusion
+   width ndiffusion,ndcontact,ntransistor 3 \
+      "ndiffusion width < 3"
+   spacing ndiffusion,ndcontact,ntransistor ndiffusion,ndcontact,ntransistor 4 touching_ok\
+      "ndiffusion,ndcontact,ntransistor to ndiffusion,ndcontact,ntransistor spacing < 4 "
+   spacing polycontact ndiffusion,ndcontact,ntransistor 3 touching_illegal\
+      "polycontact to ndiffusion,ndcontact,ntransistor spacing < 3 "
+   # more rules for ndiffusion
+   overhang ndiffusion,ndcontact ntransistor 4 \
+      "ndiffusion overhang of ntransistor < 4"
+   # rules for ndcontact
+   width ndcontact 2 \
+      "ndcontact width < 2"
+   spacing ndcontact ndcontact 2 touching_ok\
+      "ndcontact to ndcontact spacing < 2 "
+   surround ndcontact ndiffusion 1 absence_illegal \
+      "ndiffusion surround of ndcontact < 1"
+   surround ndcontact (allm1)/m1 1 absence_illegal \
+      "m1 surround of ndcontact < 1"
+   # rules for ntransistor
+   width ntransistor 2 \
+      "ntransistor width < 2"
+   spacing ntransistor ntransistor 4 touching_ok\
+      "ntransistor to ntransistor spacing < 4 "
+   # rules for ppdiff
+   width ppdiff,psubstratepcontact 5 \
+      "ppdiff width < 5"
+   spacing ppdiff,psubstratepcontact ppdiff,psubstratepcontact 5 touching_ok\
+      "ppdiff,psubstratepcontact to ppdiff,psubstratepcontact spacing < 5 "
+   # rules for psubstratepcontact
+   width psubstratepcontact 2 \
+      "psubstratepcontact width < 2"
+   spacing psubstratepcontact psubstratepcontact 2 touching_ok\
+      "psubstratepcontact to psubstratepcontact spacing < 2 "
+   surround psubstratepcontact ppdiff 1 absence_illegal \
+      "ppdiff surround of psubstratepcontact < 1"
+   surround psubstratepcontact (allm1)/m1 1 absence_illegal \
+      "m1 surround of psubstratepcontact < 1"
+   # diff to contact spacing
+   spacing ntransistor ndcontact 1 touching_illegal\
+      "ntransistor to ndcontact spacing < 1 "
+   # rules for pdiffusion
+   width pdiffusion,pdcontact,ptransistor 3 \
+      "pdiffusion width < 3"
+   spacing pdiffusion,pdcontact,ptransistor pdiffusion,pdcontact,ptransistor 4 touching_ok\
+      "pdiffusion,pdcontact,ptransistor to pdiffusion,pdcontact,ptransistor spacing < 4 "
+   spacing polycontact pdiffusion,pdcontact,ptransistor 3 touching_illegal\
+      "polycontact to pdiffusion,pdcontact,ptransistor spacing < 3 "
+   # more rules for pdiffusion
+   overhang pdiffusion,pdcontact ptransistor 4 \
+      "pdiffusion overhang of ptransistor < 4"
+   # rules for pdcontact
+   width pdcontact 2 \
+      "pdcontact width < 2"
+   spacing pdcontact pdcontact 2 touching_ok\
+      "pdcontact to pdcontact spacing < 2 "
+   surround pdcontact pdiffusion 1 absence_illegal \
+      "pdiffusion surround of pdcontact < 1"
+   surround pdcontact (allm1)/m1 1 absence_illegal \
+      "m1 surround of pdcontact < 1"
+   surround pdiffusion,pdcontact,ptransistor nwell 8 absence_ok \
+      "nwell surround of pdiffusion,pdcontact,ptransistor < 8"
+   # rules for ptransistor
+   width ptransistor 2 \
+      "ptransistor width < 2"
+   spacing ptransistor ptransistor 4 touching_ok\
+      "ptransistor to ptransistor spacing < 4 "
+   # rules for nndiff
+   width nndiff,nsubstratencontact 5 \
+      "nndiff width < 5"
+   spacing nndiff,nsubstratencontact nndiff,nsubstratencontact 5 touching_ok\
+      "nndiff,nsubstratencontact to nndiff,nsubstratencontact spacing < 5 "
+   # rules for nwell
+   width nwell 10 \
+      "nwell width < 10"
+   spacing nwell nwell 7 touching_ok\
+      "nwell to nwell spacing < 7 "
+   # rules for nsubstratencontact
+   width nsubstratencontact 2 \
+      "nsubstratencontact width < 2"
+   spacing nsubstratencontact nsubstratencontact 2 touching_ok\
+      "nsubstratencontact to nsubstratencontact spacing < 2 "
+   surround nsubstratencontact nndiff 1 absence_illegal \
+      "nndiff surround of nsubstratencontact < 1"
+   surround nsubstratencontact (allm1)/m1 1 absence_illegal \
+      "m1 surround of nsubstratencontact < 1"
+   # diff to contact spacing
+   spacing ptransistor pdcontact 1 touching_illegal\
+      "ptransistor to pdcontact spacing < 1 "
+   spacing nwell ndiffusion 8 touching_illegal\
+      "nwell to ndiffusion spacing < 8 "
+   spacing allndiff allpdiff 16 touching_illegal\
+      "allndiff to allpdiff spacing < 16 "
+   spacing allnndiff allppdiff 5 touching_illegal\
+      "allnndiff to allppdiff spacing < 5 "
+   spacing allndiff allppdiff 16 touching_ok\
+      "allndiff to allppdiff spacing < 16 "
+   spacing allpdiff allnndiff 16 touching_ok\
+      "allpdiff to allnndiff spacing < 16 "
+   # rules for polysilicon
+   width allpolynonfet,allfet 2 \
+      "polysilicon width < 2"
+   spacing allpolynonfet,allfet allpolynonfet,allfet 4 touching_ok\
+      "allpolynonfet,allfet to allpolynonfet,allfet spacing < 4 "
+   # rules for polycontact
+   width polycontact 2 \
+      "polycontact width < 2"
+   spacing polycontact polycontact 2 touching_ok\
+      "polycontact to polycontact spacing < 2 "
+   surround polycontact polysilicon 1 absence_illegal \
+      "polysilicon surround of polycontact < 1"
+   surround polycontact (allm1)/m1 1 absence_illegal \
+      "m1 surround of polycontact < 1"
+   # more rules for polysilicon
+   overhang allpolynonfet allfet 3 \
+      "polysilicon overhang of allfet < 3"
+   spacing allpolynonfet allfet 2 touching_ok\
+      "allpolynonfet to allfet spacing < 2 "
+   spacing allpolynonfet allactivenonfet 2 corner_ok allfet\
+      "allpolynonfet to allactivenonfet spacing < 2 "
+   # rules for m1
+   width (allm1)/m1 3 \
+      "m1 width < 3"
+   spacing (allm1)/m1 (allm1)/m1 3 touching_ok\
+      "(allm1)/m1 to (allm1)/m1 spacing < 3 "
+   # rules for v1
+   width v1 3 \
+      "v1 width < 3"
+   spacing v1 v1 3 touching_ok\
+      "v1 to v1 spacing < 3 "
+   surround v1 *m1 1 absence_illegal \
+      "m1 surround of v1 < 1"
+   surround v1 *m2 1 absence_illegal \
+      "m2 surround of v1 < 1"
+   # rules for m2
+   width (allm2)/m2 5 \
+      "m2 width < 5"
+   spacing (allm2)/m2 (allm2)/m2 5 touching_ok\
+      "(allm2)/m2 to (allm2)/m2 spacing < 5 "
+   # rules for v2
+   width v2 3 \
+      "v2 width < 3"
+   spacing v2 v2 3 touching_ok\
+      "v2 to v2 spacing < 3 "
+   surround v2 *m2 1 absence_illegal \
+      "m2 surround of v2 < 1"
+   surround v2 *m3 1 absence_illegal \
+      "m3 surround of v2 < 1"
+   # rules for m3
+   width (allm3)/m3 5 \
+      "m3 width < 5"
+   spacing (allm3)/m3 (allm3)/m3 5 touching_ok\
+      "(allm3)/m3 to (allm3)/m3 spacing < 5 "
+   # rules for v3
+   width v3 3 \
+      "v3 width < 3"
+   spacing v3 v3 3 touching_ok\
+      "v3 to v3 spacing < 3 "
+   surround v3 *m3 1 absence_illegal \
+      "m3 surround of v3 < 1"
+   surround v3 *m4 1 absence_illegal \
+      "m4 surround of v3 < 1"
+   # rules for m4
+   width (allm4)/m4 5 \
+      "m4 width < 5"
+   spacing (allm4)/m4 (allm4)/m4 5 touching_ok\
+      "(allm4)/m4 to (allm4)/m4 spacing < 5 "
+   # rules for v4
+   width v4 3 \
+      "v4 width < 3"
+   spacing v4 v4 3 touching_ok\
+      "v4 to v4 spacing < 3 "
+   surround v4 *m4 1 absence_illegal \
+      "m4 surround of v4 < 1"
+   surround v4 *m5 1 absence_illegal \
+      "m5 surround of v4 < 1"
+   # rules for m5
+   width (allm5)/m5 5 \
+      "m5 width < 5"
+   spacing (allm5)/m5 (allm5)/m5 5 touching_ok\
+      "(allm5)/m5 to (allm5)/m5 spacing < 5 "
+   # rules for v5
+   width v5 3 \
+      "v5 width < 3"
+   spacing v5 v5 3 touching_ok\
+      "v5 to v5 spacing < 3 "
+   surround v5 *m5 1 absence_illegal \
+      "m5 surround of v5 < 1"
+   surround v5 *m6 1 absence_illegal \
+      "m6 surround of v5 < 1"
+   # rules for m6
+   width (allm6)/m6 5 \
+      "m6 width < 5"
+   spacing (allm6)/m6 (allm6)/m6 5 touching_ok\
+      "(allm6)/m6 to (allm6)/m6 spacing < 5 "
+   
+end
+
+lef
+   masterslice nwell nwell
+   routing m1 m1 metal1
+   routing m2 m2 metal2
+   routing m3 m3 metal3
+   routing m4 m4 metal4
+   routing m5 m5 metal5
+   routing m6 m6 metal6
+   cut m2c via1 v1
+   cut m3c via2 v2
+   cut m4c via3 v3
+   cut m5c via4 v4
+   cut m6c via5 v5
+   
+end
+
+extract
+   style generic
+   cscale 1
+   lambda 9.000000
+   step 100
+   sidehalo 8
+   rscale 1
+   planeorder well 0
+   planeorder select 1
+   planeorder active 2
+   planeorder metal1 3
+   planeorder metal2 4
+   planeorder metal3 5
+   planeorder metal4 6
+   planeorder metal5 7
+   planeorder metal6 8
+   planeorder via1 9
+   planeorder via2 10
+   planeorder via3 11
+   planeorder via4 12
+   planeorder via5 13
+   planeorder comment 14
+   resist (ndiffusion,ndcontact/a,ppdiff,psubstratepcontact/a) 1000
+   resist (pdiffusion,pdcontact/a,nndiff,nsubstratencontact/a) 1000
+   device mosfet nfet ntransistor allndiff space/w,space Gnd!
+   device mosfet pfet ptransistor allpdiff nwell,space Vdd!
+   
+end
+
+wiring
+   # dummy
+   contact m2c 28 m1 0 m2 0
+   contact m3c 28 m2 0 m3 0
+   contact m4c 28 m3 0 m4 0
+   contact m5c 28 m4 0 m5 0
+   contact m6c 28 m5 0 m6 0
+   contact polycontact 28 m1 0 polysilicon 0
+end
+
+router
+   # dummy
+   layer1  m1 18 m1,m2c/m1 18
+   layer2  m2 20 m2c/m2,m3c,m2 20
+   contacts m2c 28
+   gridspacing 8
+end
+
+plowing
+   # dummy
+   fixed ntransistor,ptransistor
+   covered ntransistor,ptransistor
+   drag ntransistor,ptransistor
+end
+
+plot
+   style pnm
+      draw m1
+      draw m2
+      draw m3
+      draw m4
+      draw m5
+      draw m6
+      draw polysilicon
+      draw ntransistor
+      draw ndiffusion
+      draw ptransistor
+      draw pdiffusion
+      
+      map polycontact polysilicon m1
+      map v1 m1 m2
+      map v2 m2 m3
+      map v3 m3 m4
+      map v4 m4 m5
+      map v5 m5 m6
+      map ndcontact ndiffusion m1
+      map pdcontact pdiffusion m1
+      
+   
+end
+
