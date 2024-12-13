@@ -13,15 +13,28 @@ open std::gates;
 defcell elem_c_split (bd?<1> L; bd?<1> C; bool? ctrl; bd!<1> R1; bd!<1> R2)
 {
   bool _ctrl, c_out, c_out_delay;
-  bool _Lr, _Cr;
+  bool c_ins[3];
 
-  prs {
-    L.r => _Lr-
-    C.r => _Cr-
+  // When reset is true, in0 should be 0
+  // When reset is false, in0 should be L.r
+  // Therefore, in0 is true if ~Reset & L.r
+  bool _Reset;
+  INVX1 i1(Reset, _Reset);
+  AND2X1 a1(_Reset, L.r, c_ins[0]);
 
-    ~Reset & (~_Lr & ~_Cr & ~(R1.a | R2.a)) -> c_out+
-    Reset | (_Lr & _Cr & (R1.a | R2.a)) -> c_out-
-  }
+  // When reset is true, in1 should be 0
+  // When reset is false, in1 should be C.r
+  // Therefore, in1 is true if ~Reset & C.r
+  AND2X1 a2(_Reset, C.r, c_ins[1]);
+
+  // When reset is true, in2 should be 0
+  // When reset is false, in2 should be ~(R1.a | R2.a)
+  // Therefore, in2 is true if ~Reset & ~(R1.a | R2.a)
+  bool nor_out;
+  NOR2X1 n1(R1.a, R2.a, nor_out);
+  AND2X1 a3(_Reset, nor_out, c_ins[2]);
+
+  ctree<3, false> c1(c_ins, c_out);
 
   // THIS BROKE WHEN NON-ASCII CHARACTER USED (think b/c the above is not a combinational gate)
   // We tried to make it so c_out_up when true forces to 1 and when c_out_down is true forces to 0 otherwise nothing

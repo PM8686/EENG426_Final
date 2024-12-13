@@ -1,0 +1,100 @@
+import globals;
+import std::cells;
+import std::channel;
+import std::gates;
+import "pulse.act";
+
+open std::cells;
+open std::channel;
+open std::gates;
+
+defcell elem_c_1x1 (bd?<1> L; bd!<1> R)
+{
+  bool c_out;
+  bool c_ins[2];
+
+  // When reset is true, in0 should be 0
+  // When reset is false, in0 should be L.r
+  // Therefore, the in0 is true if ~Reset & L.r
+  bool _Reset;
+  INVX1 i1(Reset, _Reset);
+  AND2X1 a1(_Reset, L.r, c_ins[0]);
+
+  // When reset is true, in1 should be 0
+  // When reset is false, in1 should be ~R.a
+  // Therefore, in1 is true if ~Reset & ~R.a -> ~(Reset | R.a)
+  NOR2X1 n1(Reset, R.a, c_ins[1]);
+
+  ctree<2, false> c1(c_ins, c_out);
+  CLKBUF3 delay(c_out, R.r);
+  L.a = c_out;
+}
+
+defcell elem_c_2x1 (bd?<1> L1; bd?<1> L2; bd!<1> R)
+{
+  bool c_out;
+  bool c_ins[3];
+
+  // When reset is true, in0 should be 0
+  // When reset is false, in0 should be L1.r
+  // Therefore, in0 is true if ~Reset & L1.r
+  bool _Reset;
+  INVX1 i1(Reset, _Reset);
+  AND2X1 a1(_Reset, L1.r, c_ins[0]);
+
+  // When reset is true, in1 should be 0
+  // When reset is false, in1 should be L2.r
+  // Therefore, in1 is true if ~Reset & L2.r
+  AND2X1 a2(_Reset, L2.r, c_ins[1]);
+
+  // When reset is true, in2 should be 0
+  // When reset is false, in2 should be ~R.a
+  // Therefore, in2 is true if ~Reset & ~R.a -> ~(Reset | R.a)
+  NOR2X1 n1(Reset, R.a, c_ins[2]);
+
+  ctree<3, false> c1(c_ins, c_out);
+  CLKBUF3 delay(c_out, R.r);
+  L1.a = c_out;
+  L2.a = c_out;
+}
+
+// Bundled-data channel INV
+defproc bd_inv(bd?<1> L; bd!<1> R)
+{
+  bool pulse, Rd;
+
+  INVX1 in(L.d[0], Rd);
+
+  elem_c_1x1 elem_c(L, R);
+  pulseGen pulseG(L.a, pulse);
+  LATCH latch(pulse, Rd, R.d[0]);
+}
+
+// Bundled-data channel AND
+defproc bd_and(bd?<1> L1; bd?<1> L2; bd!<1> R)
+{
+  bool pulse, Rd;
+
+  AND2X1 and(L1.d[0], L2.d[0], Rd);
+
+  elem_c_2x1 elem_c(L1, L2, R);
+  pulseGen pulseG(L1.a, pulse);
+  LATCH latch(pulse, Rd, R.d[0]);
+}
+
+// Bundled-data channel OR
+defproc bd_or(bd?<1> L1; bd?<1> L2; bd!<1> R)
+{
+  bool pulse, Rd;
+
+  // prs {
+  //   L1.d[0] | L2.d[0] => Rd+
+  //   ~L1.d[0] & ~L2.d[0] => Rd-
+  // }
+
+  OR2X1 or(L1.d[0], L2.d[0], Rd);
+
+  elem_c_2x1 elem_c(L1, L2, R);
+  pulseGen pulseG(L1.a, pulse);
+  LATCH latch(pulse, Rd, R.d[0]);
+}

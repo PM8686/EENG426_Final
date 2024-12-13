@@ -16,7 +16,7 @@ import "preshift.act";
 import "postshift.act";
 import "shift.act";
 
-import "bd_ops_v2.act";
+import "bd_ops.act";
 import "sink_1bit.act";
 import "split_1bit.act";
 import "copy_1bit.act";

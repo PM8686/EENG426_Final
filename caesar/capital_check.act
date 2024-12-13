@@ -5,7 +5,7 @@ import "comp2.act";
 import "copy2.act";
 import "src_neg65.act";
 import "src_neg91.act";
-import "bd_ops_v2.act";
+import "bd_ops.act";
 
 // Outputs 0 if it is not a captial and 1 if it is
 defproc capital_check (bd?<8> L; bd!<1> R)

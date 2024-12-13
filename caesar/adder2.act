@@ -12,20 +12,15 @@ open std::gates;
 
 defproc FAX1NEW (bool? A, B, C; bool! YC, YS)
 {
-  bool _YC, _YS;
-  spec {
-    hazard (_YC, _YS)
-  }
-  prs {
-    (A|B) & C | A&B => _YC-
-    _YC => YC-
+  bool xor_out;
+  XOR2X1 x1(A, B, xor_out);
+  XOR2X1 x2(xor_out, C, YS);
 
-    (~A<40>|~B<36>|~C<36>)&~_YC<36> | ~A<48>&~B & ~C -> _YS+
-    (A<20>|B|C) & _YC | A&B&C -> _YS-  
-
-    _YS => YS-
-  }
-  sizing { _YC{-1}; YC{-1}; YS{-1} }
+  bool a_or_b, a_or_b_and_c, a_and_b;
+  OR2X1 or1(A, B, a_or_b);
+  AND2X1 and1(a_or_b, C, a_or_b_and_c);
+  AND2X1 and2(A, B, a_and_b);
+  OR2X1 or2(a_or_b_and_c, a_and_b, YC);
 }
 
 //two input function
