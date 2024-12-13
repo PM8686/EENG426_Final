@@ -25,6 +25,16 @@ defproc FAX1NEW (bool? A, B, C; bool! YC, YS)
     _YS => YS-
   }
   sizing { _YC{-1}; YC{-1}; YS{-1} }
+
+  // bool xor_out;
+  // XOR2X1 x1(A, B, xor_out);
+  // XOR2X1 x2(xor_out, C, YS);
+
+  // bool a_or_b, a_or_b_and_c, a_and_b;
+  // OR2X1 or1(A, B, a_or_b);
+  // AND2X1 and1(a_or_b, C, a_or_b_and_c);
+  // AND2X1 and2(A, B, a_and_b);
+  // OR2X1 or2(a_or_b_and_c, a_and_b, YC);
 }
 
 //two input function
