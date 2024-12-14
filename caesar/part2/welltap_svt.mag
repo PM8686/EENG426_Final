@@ -1,0 +1,52 @@
+magic
+tech TSMC180
+timestamp 1734150731
+<< error_p >>
+rect 6 12 11 13
+<< ppdiff >>
+rect 6 6 11 8
+rect 6 4 7 6
+rect 9 4 11 6
+rect 6 3 11 4
+<< nndiff >>
+rect 6 16 11 17
+rect 6 14 7 16
+rect 9 14 11 16
+rect 6 12 11 14
+<< psubstratepcontact >>
+rect 7 4 9 6
+<< nsubstratencontact >>
+rect 7 14 9 16
+<< m1 >>
+rect 5 17 10 18
+rect 5 14 6 17
+rect 9 14 10 17
+rect 5 13 10 14
+rect 5 6 10 7
+rect 5 3 6 6
+rect 9 3 10 6
+rect 5 2 10 3
+<< m2c >>
+rect 6 16 9 17
+rect 6 14 7 16
+rect 7 14 9 16
+rect 6 4 7 6
+rect 7 4 9 6
+rect 6 3 9 4
+<< m2 >>
+rect 5 17 10 23
+rect 5 14 6 17
+rect 9 14 10 17
+rect 5 13 10 14
+rect 5 6 10 7
+rect 5 3 6 6
+rect 9 3 10 6
+rect 5 -3 10 3
+<< labels >>
+rlabel m1 7 18 7 18 3 Vdd
+port 2 e
+rlabel ppdiff 7 4 7 4 3 GND
+rlabel nndiff 7 13 7 13 3 Vdd
+rlabel m2 6 19 6 19 4 Vdd
+rlabel m2 6 -2 6 -2 2 GND
+<< end >>
