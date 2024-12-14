@@ -1,4 +1,4 @@
-conf:set_string "lefdef.rect_inpath" "../final_layout"
+conf:set_string "lefdef.rect_inpath" "../final_rect"
 conf:set_string "lefdef.rect_outdir" "."
 
 # set initial rect output directory
