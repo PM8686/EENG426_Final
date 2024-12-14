@@ -1,0 +1,26 @@
+import std::channel;
+open std::channel;
+
+import "comp2.act";
+import "adder2.act";
+import "merge2.act";
+import "copy2.act";
+import "copy_1bit.act";
+import "src_neg26.act";
+import "split2.act";
+
+defproc shift (bd?<8> L1; bd?<8> L2; bd!<8> R)
+{
+    bd<8> Sum, compSum, splitIn, subIn, toMux, subOut, negSrc1, negSrc2;
+    bd<1> compOut, comp1, comp2;
+
+    adder2 add_key(L1, L2, Sum);
+    copy2 sums(Sum, compSum, splitIn); 
+    sourceNeg26 src1(negSrc1);
+    sourceNeg26 src2(negSrc2);
+    comp2 comp(compSum, negSrc1, compOut); // if L1 >= |L2| --> R.d[0] = 0, if L1 < |L2| --> R.d[0] = 1
+    copy_1bit comps(compOut, comp1, comp2);
+    split2 split(splitIn, comp1, toMux, subIn); //note: Cd=1 chooses R1 and Cd=0 chooses R2
+    adder2 sub(subIn, negSrc2, subOut);
+    merge2 merge(toMux, subOut, comp2, R); //note: C.d=1 chooses L1 and C.d=0 chooses L2
+}

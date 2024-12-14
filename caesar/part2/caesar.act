@@ -1,0 +1,76 @@
+import globals;
+import std::channel;
+
+// In general, channel letters have the following meaning:
+// - A: ascii value - 8b
+// - P: character index - 8b - [0,26)
+// - K: shift amount - 8b - [0,26)
+// - C: character index - 8b - [0,26)
+// - CAPITAL: 1b - true if capital letter
+// - LOWER: 1b - true if lowercase letter
+
+
+import "capital_check.act";
+import "lower_check.act";  
+import "preshift.act"; 
+import "postshift.act";
+import "shift.act";
+
+import "bd_ops.act";
+import "sink_1bit.act";
+import "split_1bit.act";
+import "copy_1bit.act";
+defproc caesar (std::channel::bd?<8> P; std::channel::bd?<8> K; std::channel::bd!<8> C) {
+  std::channel::bd<8> P_to_comparisons,
+                      P_to_split,
+                      P_to_check_caps,
+                      P_to_check_lower,
+                      shift_split_to_merge,
+                      shift_split_to_preshift,
+                      preshift_to_shift,
+                      shift_to_postshift,
+                      postshift_to_merge;
+  std::channel::bd<1> ctrl_capital,
+                      ctrl_lower,
+                      ctrl_lower_to_or,
+                      ctrl_lower_to_case_split,
+                      ctrl_shift,
+                      ctrl_shift_to_splits,
+                      ctrl_shift_to_merge,
+                      ctrl_shift_to_shift_split,
+                      ctrl_shift_to_case_split,
+                      ctrl_lower_to_sink,
+                      ctrl_lower_to_shifts,
+                      ctrl_lower_to_preshift,
+                      ctrl_lower_to_postshift;
+
+  copy2 copy_P(P, P_to_comparisons, P_to_split);
+  copy2 copy_P_comparisons(P_to_comparisons, P_to_check_caps, P_to_check_lower);
+
+  // Check whether the input is a letter or not
+  // - ctrl_capital: true if the input is a capital letter
+  // - ctrl_lower: true if the input is a lowercase letter
+  // - ctrl_shift: true if the input should be shifted (i.e. is a capital or lowercase letter)
+  capital_check check_caps(P_to_check_caps, ctrl_capital);
+  lower_check check_lower(P_to_check_lower, ctrl_lower);
+  copy_1bit ctrl_lower_copy(ctrl_lower, ctrl_lower_to_or, ctrl_lower_to_case_split);
+  bd_or or(ctrl_capital, ctrl_lower_to_or, ctrl_shift);
+  copy_1bit copy_ctrl_shift(ctrl_shift, ctrl_shift_to_splits, ctrl_shift_to_merge);
+  copy_1bit copy_ctrl_shift_splits(ctrl_shift_to_splits, ctrl_shift_to_shift_split, ctrl_shift_to_case_split);
+
+  // Split between passing the value right through, and shifting
+  split2 shift_split(P_to_split, ctrl_shift_to_shift_split, shift_split_to_preshift, shift_split_to_merge);
+
+  // Split between ignoring the case value, and sending it to the shift logic
+  split_1bit case_split(ctrl_lower_to_case_split, ctrl_shift_to_case_split, ctrl_lower_to_sink, ctrl_lower_to_shifts);
+  sink_1bit sink_ctrl_lower(ctrl_lower_to_sink);
+  copy_1bit cp1(ctrl_lower_to_shifts, ctrl_lower_to_preshift, ctrl_lower_to_postshift);
+
+  // Shift the value if needed
+  preshift pre(shift_split_to_preshift, ctrl_lower_to_preshift, preshift_to_shift); 
+  shift shft(preshift_to_shift, K, shift_to_postshift);
+  postshift post(shift_to_postshift, ctrl_lower_to_postshift, postshift_to_merge);
+
+  // Merge the unshifted and regular value
+  merge2 merge(postshift_to_merge, shift_split_to_merge, ctrl_shift_to_merge, C);
+}

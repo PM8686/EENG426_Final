@@ -29,7 +29,7 @@ ckt:map
 load-scm "phydb.scm"
 
   # set the layout density, and calculate the area multiplier
-define density 0.5    
+define density 0.25    
 define area (* 1.05 (/ 1 density))
 
   # create the layout problem with aspect ratio 1.0
