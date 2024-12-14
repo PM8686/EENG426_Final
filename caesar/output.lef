@@ -472,6 +472,190 @@ MACRO _0_0std_0_0cells_0_0NOR2X1
     END
 END _0_0std_0_0cells_0_0NOR2X1
 
+MACRO _0_0cell_0_0g0n1n2noo3na0n1n2naao_012oo3a012aaox0
+    CLASS CORE ;
+    FOREIGN _0_0cell_0_0g0n1n2noo3na0n1n2naao_012oo3a012aaox0 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 6.480000 BY 10.800000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN in_50_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 9.630000 0.810000 9.900000 ;
+        END
+    END in_50_6
+    PIN in_51_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 1.620000 9.630000 1.890000 9.900000 ;
+        END
+    END in_51_6
+    PIN in_52_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 2.700000 9.630000 2.970000 9.900000 ;
+        END
+    END in_52_6
+    PIN in_53_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 3.780000 9.630000 4.050000 9.900000 ;
+        END
+    END in_53_6
+    PIN out
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 2.138400 ;
+    END out
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 4.860000 9.630000 5.130000 9.900000 ;
+        END
+        ANTENNADIFFAREA 5.054400 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 5.940000 9.630000 6.210000 9.900000 ;
+        END
+        ANTENNADIFFAREA 1.944000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 5.850000 9.090000 ;
+    END
+END _0_0cell_0_0g0n1n2noo3na0n1n2naao_012oo3a012aaox0
+
+MACRO _0_0cell_0_0g0n1na2no0n1noa_01o2a01aox0
+    CLASS CORE ;
+    FOREIGN _0_0cell_0_0g0n1na2no0n1noa_01o2a01aox0 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 5.400000 BY 7.200000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN in_50_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 6.030000 0.810000 6.300000 ;
+        END
+    END in_50_6
+    PIN in_51_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 1.620000 6.030000 1.890000 6.300000 ;
+        END
+    END in_51_6
+    PIN in_52_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 2.700000 6.030000 2.970000 6.300000 ;
+        END
+    END in_52_6
+    PIN out
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 1.603800 ;
+    END out
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 3.780000 6.030000 4.050000 6.300000 ;
+        END
+        ANTENNADIFFAREA 1.652400 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 4.860000 6.030000 5.130000 6.300000 ;
+        END
+        ANTENNADIFFAREA 0.972000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 4.770000 5.490000 ;
+    END
+END _0_0cell_0_0g0n1na2no0n1noa_01o2a01aox0
+
+MACRO _0_0cell_0_0g0n_0x2
+    CLASS CORE ;
+    FOREIGN _0_0cell_0_0g0n_0x2 0.000000 0.000000 ;
+    ORIGIN 0.000000 0.000000 ;
+    SIZE 2.160000 BY 5.400000 ;
+    SYMMETRY X Y ;
+    SITE CoreSite ;
+    PIN in_50_6
+        DIRECTION INPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 4.230000 0.810000 4.500000 ;
+        END
+    END in_50_6
+    PIN out
+        DIRECTION OUTPUT ;
+        USE SIGNAL ;
+        PORT
+        LAYER m1 ;
+        RECT 0.540000 0.900000 0.810000 1.170000 ;
+        END
+        ANTENNADIFFAREA 0.631800 ;
+    END out
+    PIN Vdd
+        DIRECTION INPUT ;
+        USE POWER ;
+        PORT
+        LAYER m1 ;
+        RECT 1.080000 4.230000 1.350000 4.500000 ;
+        END
+        ANTENNADIFFAREA 0.388800 ;
+    END Vdd
+    PIN GND
+        DIRECTION INPUT ;
+        USE GROUND ;
+        PORT
+        LAYER m1 ;
+        RECT 1.620000 4.230000 1.890000 4.500000 ;
+        END
+        ANTENNADIFFAREA 0.243000 ;
+    END GND
+    OBS
+      LAYER m1 ;
+         RECT 0.540000 1.620000 1.530000 3.690000 ;
+    END
+END _0_0cell_0_0g0n_0x2
+
 MACRO _0_0std_0_0cells_0_0OR2X1
     CLASS CORE ;
     FOREIGN _0_0std_0_0cells_0_0OR2X1 0.000000 0.000000 ;
@@ -527,62 +711,6 @@ MACRO _0_0std_0_0cells_0_0OR2X1
          RECT 0.540000 1.620000 3.690000 3.690000 ;
     END
 END _0_0std_0_0cells_0_0OR2X1
-
-MACRO _0_0std_0_0cells_0_0XOR2X1
-    CLASS CORE ;
-    FOREIGN _0_0std_0_0cells_0_0XOR2X1 0.000000 0.000000 ;
-    ORIGIN 0.000000 0.000000 ;
-    SIZE 7.560000 BY 6.300000 ;
-    SYMMETRY X Y ;
-    SITE CoreSite ;
-    PIN A
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER m1 ;
-        RECT 0.540000 5.130000 0.810000 5.400000 ;
-        END
-    END A
-    PIN B
-        DIRECTION INPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER m1 ;
-        RECT 2.700000 5.130000 2.970000 5.400000 ;
-        END
-    END B
-    PIN Y
-        DIRECTION OUTPUT ;
-        USE SIGNAL ;
-        PORT
-        LAYER m1 ;
-        RECT 0.540000 0.900000 0.810000 1.170000 ;
-        END
-        ANTENNADIFFAREA 1.215000 ;
-    END Y
-    PIN Vdd
-        DIRECTION INPUT ;
-        USE POWER ;
-        PORT
-        LAYER m1 ;
-        RECT 4.860000 5.130000 5.130000 5.400000 ;
-        END
-        ANTENNADIFFAREA 1.117800 ;
-    END Vdd
-    PIN GND
-        DIRECTION INPUT ;
-        USE GROUND ;
-        PORT
-        LAYER m1 ;
-        RECT 7.020000 5.130000 7.290000 5.400000 ;
-        END
-        ANTENNADIFFAREA 0.729000 ;
-    END GND
-    OBS
-      LAYER m1 ;
-         RECT 0.540000 1.620000 6.930000 4.590000 ;
-    END
-END _0_0std_0_0cells_0_0XOR2X1
 
 MACRO _0_0std_0_0cells_0_0LATCH
     CLASS CORE ;
@@ -1101,7 +1229,7 @@ MACRO circuitppnp
    CLASS CORE ;
    FOREIGN circuitppnp 0.000000 0.000000 ;
    ORIGIN 0.000000 0.000000 ; 
-   SIZE 374.760000 BY 388.800000 ; 
+   SIZE 358.560000 BY 372.600000 ; 
    SYMMETRY X Y ;
    SITE CoreSite ;
 END circuitppnp
@@ -1110,7 +1238,7 @@ MACRO circuitwell
    CLASS CORE ;
    FOREIGN circuitwell 0.000000 0.000000 ;
    ORIGIN 0.000000 0.000000 ; 
-   SIZE 374.760000 BY 388.800000 ; 
+   SIZE 358.560000 BY 372.600000 ; 
    SYMMETRY X Y ;
    SITE CoreSite ;
 END circuitwell
