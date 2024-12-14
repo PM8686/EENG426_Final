@@ -1,18 +1,19 @@
 magic
 tech TSMC180
-timestamp 1734143631
+timestamp 1734150802
+<< ppdiff >>
+rect 6 3 11 8
+<< nndiff >>
+rect 6 13 11 18
 << m1 >>
 rect 6 17 9 20
 rect 6 10 9 13
 << labels >>
-rlabel m1 s 6 17 9 20 6 Vdd
-port 1 nsew power input
-rlabel m1 s 6 10 9 13 6 GND
-port 2 nsew ground input
-<< properties >>
-string FIXED_BBOX 0 0 18 30
-string LEFclass CORE WELLTAP
-string LEFsite CoreSite
-string LEFsymmetry X Y
-string LEFview TRUE
+rlabel space 0 0 18 30 6 prboundary
+rlabel m1 7 11 7 11 3 GND
+port 1 e
+rlabel m1 7 18 7 18 3 Vdd
+port 2 e
+rlabel ppdiff 7 4 7 4 3 GND
+rlabel nndiff 7 13 7 13 3 Vdd
 << end >>

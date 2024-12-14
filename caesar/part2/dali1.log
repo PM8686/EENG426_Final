@@ -1,0 +1,126 @@
+[2024-12-13 23:44:58.010454] [0x00001484e28dc980] [info] ------------------------------------------------------------
+[2024-12-13 23:44:58.013100] [0x00001484e28dc980] [info] Load information from PhyDB
+[2024-12-13 23:44:58.013117] [0x00001484e28dc980] [info]   placement grid not set in PhyDB
+[2024-12-13 23:44:58.013122] [0x00001484e28dc980] [info]   checking sites
+[2024-12-13 23:44:58.013127] [0x00001484e28dc980] [info]     width : 0.54um
+[2024-12-13 23:44:58.013141] [0x00001484e28dc980] [info]     height: 0.9um
+[2024-12-13 23:44:58.015726] [0x00001484e28dc980] [info] No P-well layer info provided, creating fake info
+[2024-12-13 23:44:58.015764] [0x00001484e28dc980] [info] (wall time: 0.005382s, cpu time: 0.002865)
+[2024-12-13 23:44:58.015771] [0x00001484e28dc980] [info] ------------------------------------------------------------
+[2024-12-13 23:44:58.015775] [0x00001484e28dc980] [info] Circuit brief summary:
+[2024-12-13 23:44:58.015779] [0x00001484e28dc980] [info]   movable blocks: 2094
+[2024-12-13 23:44:58.015789] [0x00001484e28dc980] [info]   fixed blocks:   0
+[2024-12-13 23:44:58.015793] [0x00001484e28dc980] [info]   blocks:         2094
+[2024-12-13 23:44:58.015797] [0x00001484e28dc980] [info]   iopins:         31
+[2024-12-13 23:44:58.015803] [0x00001484e28dc980] [info]   nets:           2114
+[2024-12-13 23:44:58.015807] [0x00001484e28dc980] [info]   grid size x/y:  0.54/0.9um
+[2024-12-13 23:44:58.015813] [0x00001484e28dc980] [info]   total movable blk area: 125920
+[2024-12-13 23:44:58.015820] [0x00001484e28dc980] [info]   total white space     : 274896
+[2024-12-13 23:44:58.015825] [0x00001484e28dc980] [info]   total block area      : 125920
+[2024-12-13 23:44:58.015829] [0x00001484e28dc980] [info]   total space: 274896
+[2024-12-13 23:44:58.015835] [0x00001484e28dc980] [info]     left:   10
+[2024-12-13 23:44:58.015839] [0x00001484e28dc980] [info]     right:  674
+[2024-12-13 23:44:58.015843] [0x00001484e28dc980] [info]     bottom: 18
+[2024-12-13 23:44:58.015847] [0x00001484e28dc980] [info]     top:    432
+[2024-12-13 23:44:58.015851] [0x00001484e28dc980] [info]   average movable width/height: 7.30659/7.90353um
+[2024-12-13 23:44:58.015857] [0x00001484e28dc980] [info]   white space utility: 0.458064
+[2024-12-13 23:44:58.015861] [0x00001484e28dc980] [info]   current weighted HPWL: 13258.2um
+[2024-12-13 23:44:58.015974] [0x00001484e28dc980] [info] ------------------------------------------------------------
+[2024-12-13 23:44:58.015979] [0x00001484e28dc980] [info] Start global placement
+[2024-12-13 23:44:58.015984] [0x00001484e28dc980] [info]   target density: 0.5
+[2024-12-13 23:44:58.016000] [0x00001484e28dc980] [info]   Block location initialization:
+    HPWL before, 13258.2
+[2024-12-13 23:44:58.016138] [0x00001484e28dc980] [info]     HPWL after, 593010
+[2024-12-13 23:44:58.042764] [0x00001484e28dc980] [info]   iter-0  : 9.0198e+03  1.9382e+05
+[2024-12-13 23:44:58.055090] [0x00001484e28dc980] [info]   iter-1  : 9.0795e+03  1.5680e+05
+[2024-12-13 23:44:58.068999] [0x00001484e28dc980] [info]   iter-2  : 9.3575e+03  1.1093e+05
+[2024-12-13 23:44:58.098063] [0x00001484e28dc980] [info]   iter-3  : 1.0150e+04  9.7531e+04
+[2024-12-13 23:44:58.129965] [0x00001484e28dc980] [info]   iter-4  : 1.1317e+04  9.1433e+04
+[2024-12-13 23:44:58.175453] [0x00001484e28dc980] [info]   iter-5  : 1.3885e+04  7.0173e+04
+[2024-12-13 23:44:58.216065] [0x00001484e28dc980] [info]   iter-6  : 1.6970e+04  6.1173e+04
+[2024-12-13 23:44:58.243868] [0x00001484e28dc980] [info]   iter-7  : 1.8986e+04  6.1248e+04
+[2024-12-13 23:44:58.261952] [0x00001484e28dc980] [info]   iter-8  : 2.0156e+04  5.3605e+04
+[2024-12-13 23:44:58.282063] [0x00001484e28dc980] [info]   iter-9  : 2.1479e+04  4.9263e+04
+[2024-12-13 23:44:58.298432] [0x00001484e28dc980] [info]   iter-10 : 2.2859e+04  4.5646e+04
+[2024-12-13 23:44:58.314555] [0x00001484e28dc980] [info]   iter-11 : 2.3700e+04  4.3805e+04
+[2024-12-13 23:44:58.327275] [0x00001484e28dc980] [info]   iter-12 : 2.4556e+04  4.2916e+04
+[2024-12-13 23:44:58.344324] [0x00001484e28dc980] [info]   iter-13 : 2.6097e+04  4.1267e+04
+[2024-12-13 23:44:58.353297] [0x00001484e28dc980] [info]   iter-14 : 2.6487e+04  4.0559e+04
+[2024-12-13 23:44:58.362704] [0x00001484e28dc980] [info]   iter-15 : 2.6632e+04  3.9807e+04
+[2024-12-13 23:44:58.375967] [0x00001484e28dc980] [info]   iter-16 : 2.7913e+04  3.9180e+04
+[2024-12-13 23:44:58.389443] [0x00001484e28dc980] [info]   iter-17 : 2.8598e+04  3.8028e+04
+[2024-12-13 23:44:58.399178] [0x00001484e28dc980] [info]   iter-18 : 2.8787e+04  3.7594e+04
+[2024-12-13 23:44:58.409862] [0x00001484e28dc980] [info]   iter-19 : 2.9398e+04  3.6482e+04
+[2024-12-13 23:44:58.418623] [0x00001484e28dc980] [info]   iter-20 : 2.9475e+04  3.6319e+04
+[2024-12-13 23:44:58.431144] [0x00001484e28dc980] [info]   iter-21 : 2.9753e+04  3.5542e+04
+[2024-12-13 23:44:58.440333] [0x00001484e28dc980] [info]   iter-22 : 2.9671e+04  3.5483e+04
+[2024-12-13 23:44:58.453008] [0x00001484e28dc980] [info]   iter-23 : 2.9801e+04  3.5890e+04
+[2024-12-13 23:44:58.462081] [0x00001484e28dc980] [info]   iter-24 : 3.0332e+04  3.5101e+04
+[2024-12-13 23:44:58.471912] [0x00001484e28dc980] [info]   iter-25 : 3.0373e+04  3.4166e+04
+[2024-12-13 23:44:58.480675] [0x00001484e28dc980] [info]   iter-26 : 3.0196e+04  3.4346e+04
+[2024-12-13 23:44:58.492071] [0x00001484e28dc980] [info]   iter-27 : 3.0441e+04  3.4661e+04
+[2024-12-13 23:44:58.500974] [0x00001484e28dc980] [info]   iter-28 : 3.0697e+04  3.4710e+04
+[2024-12-13 23:44:58.509767] [0x00001484e28dc980] [info]   iter-29 : 3.1001e+04  3.3954e+04
+[2024-12-13 23:44:58.521968] [0x00001484e28dc980] [info]   iter-30 : 3.0655e+04  3.4319e+04
+[2024-12-13 23:44:58.530839] [0x00001484e28dc980] [info]   iter-31 : 3.0917e+04  3.4401e+04
+[2024-12-13 23:44:58.539842] [0x00001484e28dc980] [info]   iter-32 : 3.1018e+04  3.3822e+04
+[2024-12-13 23:44:58.548666] [0x00001484e28dc980] [info]   iter-33 : 3.0804e+04  3.3869e+04
+[2024-12-13 23:44:58.560903] [0x00001484e28dc980] [info]   iter-34 : 3.0933e+04  3.3804e+04
+[2024-12-13 23:44:58.560936] [0x00001484e28dc980] [info]   current weighted HPWL: 33804um
+[2024-12-13 23:44:58.561065] [0x00001484e28dc980] [info] [0;36mGlobal placement completed[0m
+[2024-12-13 23:44:58.561072] [0x00001484e28dc980] [info] (wall time: 0.545097s, cpu time: 0.473393)
+[2024-12-13 23:44:58.561117] [0x00001484e28dc980] [info] (peak memory: 19MB,  current memory: 19MB)
+[2024-12-13 23:44:58.561193] [0x00001484e28dc980] [info] ------------------------------------------------------------
+[2024-12-13 23:44:58.561198] [0x00001484e28dc980] [info] Start standard cluster well legalization
+[2024-12-13 23:44:58.561212] [0x00001484e28dc980] [info]   Well max plug distance: 360um, 666 
+[2024-12-13 23:44:58.561220] [0x00001484e28dc980] [info]   GridValueX: 0.54 um
+[2024-12-13 23:44:58.561225] [0x00001484e28dc980] [info]   Well spacing: 0.63um, 2
+[2024-12-13 23:44:58.561229] [0x00001484e28dc980] [info]   Well tap cell width: 3
+[2024-12-13 23:44:58.561297] [0x00001484e28dc980] [info] Max movable cell width: 15
+[2024-12-13 23:44:58.561302] [0x00001484e28dc980] [info] Using default gridded row width: 2*max_unplug_length_
+[2024-12-13 23:44:58.561307] [0x00001484e28dc980] [info]   Total number of columns: 1
+[2024-12-13 23:44:58.561311] [0x00001484e28dc980] [info]   Gridded row width: 356.4um, 660
+[2024-12-13 23:44:58.561346] [0x00001484e28dc980] [info] Maximum possible number of gridded rows in a column: 82
+[2024-12-13 23:44:58.561514] [0x00001484e28dc980] [info] Form block clustering
+[2024-12-13 23:44:58.562544] [0x00001484e28dc980] [info]   current weighted HPWL: 40817.8um
+[2024-12-13 23:44:58.562678] [0x00001484e28dc980] [info] Flip cluster orientation
+[2024-12-13 23:44:58.562687] [0x00001484e28dc980] [info]   current weighted HPWL: 44547.4um
+[2024-12-13 23:44:58.562814] [0x00001484e28dc980] [info] Perform local reordering
+[2024-12-13 23:44:58.562818] [0x00001484e28dc980] [info] reorder iteration: 0
+[2024-12-13 23:44:58.571612] [0x00001484e28dc980] [info]   current weighted HPWL: 46087.5um
+[2024-12-13 23:44:58.571754] [0x00001484e28dc980] [info] reorder iteration: 1
+[2024-12-13 23:44:58.584279] [0x00001484e28dc980] [info]   current weighted HPWL: 46220.9um
+[2024-12-13 23:44:58.584448] [0x00001484e28dc980] [info] reorder iteration: 2
+[2024-12-13 23:44:58.593625] [0x00001484e28dc980] [info]   current weighted HPWL: 46408.8um
+[2024-12-13 23:44:58.593772] [0x00001484e28dc980] [info] reorder iteration: 3
+[2024-12-13 23:44:58.603677] [0x00001484e28dc980] [info]   current weighted HPWL: 46560um
+[2024-12-13 23:44:58.603824] [0x00001484e28dc980] [info] reorder iteration: 4
+[2024-12-13 23:44:58.612722] [0x00001484e28dc980] [info]   current weighted HPWL: 46738.7um
+[2024-12-13 23:44:58.612869] [0x00001484e28dc980] [info] reorder iteration: 5
+[2024-12-13 23:44:58.621407] [0x00001484e28dc980] [info]   current weighted HPWL: 46887.8um
+[2024-12-13 23:44:58.621537] [0x00001484e28dc980] [info] Insert well tap cells
+[2024-12-13 23:44:58.621639] [0x00001484e28dc980] [info] Insertion complete: 70 well tap cell created
+[2024-12-13 23:44:58.621644] [0x00001484e28dc980] [info] Skip creating end cap cells
+[2024-12-13 23:44:58.621648] [0x00001484e28dc980] [info]   current weighted HPWL: 46838.1um
+[2024-12-13 23:44:58.621776] [0x00001484e28dc980] [info] [0;36mStandard Cluster Well Legalization completed[0m
+[2024-12-13 23:44:58.621784] [0x00001484e28dc980] [info] (wall time: 0.060590s, cpu time: 0.054136)
+[2024-12-13 23:44:58.621807] [0x00001484e28dc980] [info] (peak memory: 19MB,  current memory: 19MB)
+[2024-12-13 23:44:58.621816] [0x00001484e28dc980] [info] Writing PP and NP rect file: dali_outppnp.rect
+[2024-12-13 23:44:58.626441] [0x00001484e28dc980] [info] Writing N-well rect file: dali_outwell.rect
+[2024-12-13 23:44:58.634180] [0x00001484e28dc980] [info] Writing cluster rect file: dali_out_router.cluster
+[2024-12-13 23:44:58.636704] [0x00001484e28dc980] [info] ------------------------------------------------------------
+[2024-12-13 23:44:58.636719] [0x00001484e28dc980] [info] Start I/O Placement
+[2024-12-13 23:44:58.636754] [0x00001484e28dc980] [info] [0;36mI/O Placement complete![0m
+[2024-12-13 23:44:58.636789] [0x00001484e28dc980] [warning] IoPlace flag not specified, use --auto-place by default
+[2024-12-13 23:44:58.636796] [0x00001484e28dc980] [fatal] Unknown flag: met1
+[2024-12-13 23:44:58.636801] [0x00001484e28dc980] [info] [0;36mUsage: place-io -c/--config
+  -h/--help
+      print out function usage
+  -m/--metal <left/right/bottom/top> <metal layer>
+      use this command to specify which metal layers to use for IOPINs on each placement boundary
+      example: -m left m1, for IOPINs on the left boundary, using layer m1 to create physical geometry
+      'place-io <metal layer>' is a shorthand for 'place-io -c -m left m1 right m1 bottom m1 top m1'
+[0m
+[2024-12-13 23:44:58.636811] [0x00001484e28dc980] [fatal] Cannot successfully configure the IoPlacer
+[2024-12-13 23:44:58.637273] [0x00001484e28dc980] [info] Export Pplus/Nplus fillings to PhyDB
+[2024-12-13 23:44:58.637295] [0x00001484e28dc980] [info] Export N wells to PhyDB

@@ -1,4 +1,4 @@
-conf:set_string "lefdef.rect_inpath" "mag/mag"
+conf:set_string "lefdef.rect_inpath" "mag"
 conf:set_string "lefdef.rect_outdir" "final_rect"
 
 # set initial rect output directory

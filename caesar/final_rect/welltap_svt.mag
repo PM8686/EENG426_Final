@@ -1,0 +1,66 @@
+magic
+tech TSMC180
+timestamp 1734151221
+<< error_p >>
+rect 6 23 10 27
+rect 6 22 11 23
+rect 6 13 10 17
+<< ppdiff >>
+rect 6 16 11 18
+rect 6 14 7 16
+rect 9 14 11 16
+rect 6 13 11 14
+<< nndiff >>
+rect 6 26 11 27
+rect 6 24 7 26
+rect 9 24 11 26
+rect 6 22 11 24
+<< polycontact >>
+rect 7 24 9 26
+rect 7 14 9 16
+<< m1 >>
+rect 5 27 10 28
+rect 5 24 6 27
+rect 9 24 10 27
+rect 5 23 10 24
+rect 5 16 10 17
+rect 5 13 6 16
+rect 9 13 10 16
+rect 5 12 10 13
+<< m2c >>
+rect 6 26 9 27
+rect 6 24 7 26
+rect 7 24 9 26
+rect 6 14 7 16
+rect 7 14 9 16
+rect 6 13 9 14
+<< m2 >>
+rect 5 27 10 33
+rect 5 24 6 27
+rect 9 24 10 27
+rect 5 23 10 24
+rect 5 16 10 17
+rect 5 13 6 16
+rect 9 13 10 16
+rect 5 7 10 13
+<< labels >>
+rlabel space 0 0 18 40 6 prboundary
+rlabel ppdiff 10 15 10 15 3 GND
+rlabel ppdiff 7 17 7 17 3 GND
+rlabel nndiff 7 23 7 23 3 Vdd
+rlabel m1 6 13 6 13 3 GND
+rlabel m2 10 25 10 25 3 Vdd
+rlabel m2 10 14 10 14 3 GND
+rlabel m2c 8 15 8 15 3 GND
+rlabel m2c 8 25 8 25 3 Vdd
+rlabel m2c 7 14 7 14 3 GND
+rlabel m2c 7 15 7 15 3 GND
+rlabel m2c 7 25 7 25 3 Vdd
+rlabel m2c 7 27 7 27 3 Vdd
+rlabel m2 6 8 6 8 3 GND
+rlabel m2 6 14 6 14 3 GND
+rlabel m2 6 17 6 17 3 GND
+rlabel m2 6 24 6 24 3 Vdd
+rlabel m2 6 25 6 25 3 Vdd
+rlabel m2 6 28 6 28 3 Vdd
+<< end >>
