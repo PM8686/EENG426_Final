@@ -1,0 +1,90 @@
+bbox 0 0 30 70
+rect Y ndiffusion 19 19 20 21
+rect Y pdiffusion 19 39 20 41
+rect Y ndiffusion 17 19 19 21
+rect Y pdiffusion 17 39 19 41
+rect A polysilicon 20 51 21 53
+rect A polysilicon 17 52 18 53
+rect A polysilicon 17 53 21 54
+rect Y ndiffusion 14 17 20 19 right
+rect Y ndiffusion 14 19 17 21 right
+rect Y ndiffusion 14 21 20 22 right
+rect GND ndiffusion 9 18 12 20 left
+rect Y pdiffusion 14 38 20 39 right
+rect Y pdiffusion 14 39 17 41 right
+rect Y pdiffusion 14 41 20 46 right
+rect Vdd pdiffusion 9 43 12 45 left
+rect A polysilicon 18 51 20 53
+rect A polysilicon 12 14 14 17
+rect A ntransistor 12 17 14 22
+rect GND ndiffusion 7 18 9 20
+rect A polysilicon 12 22 14 38
+rect A ptransistor 12 38 14 46
+rect Vdd pdiffusion 7 43 9 45
+rect A polysilicon 12 46 14 50
+rect A polysilicon 12 50 21 51
+rect A polysilicon 12 51 18 52
+rect GND ndiffusion 6 17 12 18 left
+rect GND ndiffusion 6 18 7 20
+rect GND ndiffusion 6 20 12 22 left
+rect Vdd pdiffusion 6 38 12 43 left
+rect Vdd pdiffusion 6 43 7 45
+rect Vdd pdiffusion 6 45 12 46 left
+rect A polycontact 18 51 20 53
+rect Y ndcontact 17 19 19 21
+rect Y pdcontact 17 39 19 41
+rect GND ndcontact 7 18 9 20
+rect Vdd pdcontact 7 43 9 45
+outrect Y m1 19 19 20 21
+outrect Y m1 19 39 20 41
+outrect Y m1 17 19 19 21
+outrect Y m1 17 22 20 26
+outrect Y m1 17 26 27 29
+outrect Y m1 17 29 20 38
+outrect Y m1 17 39 19 41
+inrect A m1 20 51 21 53
+outrect Y m1 16 18 20 19
+outrect Y m1 16 19 17 21
+outrect Y m1 16 21 20 22
+outrect Y m1 16 38 20 39
+outrect Y m1 16 39 17 41
+outrect Y m1 16 41 20 42
+rect Vdd m1 10 43 11 46
+inrect A m1 18 51 20 53
+inrect A m1 18 54 21 60
+rect Vdd m1 9 43 10 45
+inrect A m1 17 50 21 51
+inrect A m1 17 51 18 53
+inrect A m1 17 53 21 54
+rect GND m1 9 17 10 20
+rect GND m1 7 18 9 20
+rect Vdd m1 7 43 9 45
+rect Vdd m1 7 45 10 46
+rect GND m1 6 17 9 18
+rect GND m1 6 18 7 20
+rect Vdd m1 6 42 11 43
+rect Vdd m1 6 43 7 46
+rect Vdd m1 6 46 11 47
+rect GND m1 5 16 10 17
+rect GND m1 5 17 6 20
+rect GND m1 5 20 10 21
+rect Vdd v1 9 43 10 45
+rect GND v1 7 18 9 20
+rect Vdd v1 7 43 9 45
+rect Vdd v1 7 45 10 46
+rect GND v1 6 17 9 18
+rect GND v1 6 18 7 20
+rect Vdd m2 10 43 11 46
+rect Vdd m2 9 43 10 45
+rect GND m2 9 17 10 20
+rect GND m2 7 18 9 20
+rect Vdd m2 7 43 9 45
+rect Vdd m2 7 45 10 46
+rect GND m2 6 17 9 18
+rect GND m2 6 18 7 20
+rect Vdd m2 6 42 11 43
+rect Vdd m2 6 43 7 46
+rect Vdd m2 6 46 11 60
+rect GND m2 5 10 10 17
+rect GND m2 5 17 6 20
+rect GND m2 5 20 10 21
