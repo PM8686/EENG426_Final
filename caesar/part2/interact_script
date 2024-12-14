@@ -43,7 +43,7 @@ dali:init 3
   # place the design with the specified density
 dali:place-design density  
   # place I/Os on metal1
-dali:place-io "met1"
+dali:place-io "m1"
   # export placement information to the layout db
 dali:export-phydb
   # end placer
