@@ -1,0 +1,269 @@
+magic
+tech TSMC180
+timestamp 1734143760
+<< ndiffusion >>
+rect 6 20 12 22
+rect 6 18 7 20
+rect 9 18 12 20
+rect 6 17 12 18
+rect 14 21 20 22
+rect 14 19 17 21
+rect 19 19 20 21
+rect 14 17 20 19
+<< ndcontact >>
+rect 7 18 9 20
+rect 17 19 19 21
+<< ntransistor >>
+rect 12 17 14 22
+<< pdiffusion >>
+rect 6 45 12 46
+rect 6 43 7 45
+rect 9 43 12 45
+rect 6 38 12 43
+rect 14 41 20 46
+rect 14 39 17 41
+rect 19 39 20 41
+rect 14 38 20 39
+<< pdcontact >>
+rect 7 43 9 45
+rect 17 39 19 41
+<< ptransistor >>
+rect 12 38 14 46
+<< polysilicon >>
+rect 17 53 21 54
+rect 17 52 18 53
+rect 12 51 18 52
+rect 20 51 21 53
+rect 12 50 21 51
+rect 12 46 14 50
+rect 12 22 14 38
+rect 12 14 14 17
+<< polycontact >>
+rect 18 51 20 53
+<< m1 >>
+rect 18 54 21 60
+rect 17 53 21 54
+rect 17 51 18 53
+rect 20 51 21 53
+rect 17 50 21 51
+rect 6 46 11 47
+rect 6 43 7 46
+rect 10 43 11 46
+rect 6 42 11 43
+rect 16 41 20 42
+rect 16 39 17 41
+rect 19 39 20 41
+rect 16 38 20 39
+rect 17 29 20 38
+rect 17 26 27 29
+rect 17 22 20 26
+rect 16 21 20 22
+rect 5 20 10 21
+rect 5 17 6 20
+rect 9 17 10 20
+rect 16 19 17 21
+rect 19 19 20 21
+rect 16 18 20 19
+rect 5 16 10 17
+<< m2c >>
+rect 7 45 10 46
+rect 7 43 9 45
+rect 9 43 10 45
+rect 6 18 7 20
+rect 7 18 9 20
+rect 6 17 9 18
+<< m2 >>
+rect 6 46 11 60
+rect 6 43 7 46
+rect 10 43 11 46
+rect 6 42 11 43
+rect 5 20 10 21
+rect 5 17 6 20
+rect 9 17 10 20
+rect 5 10 10 17
+<< labels >>
+rlabel m1 s 20 51 21 53 6 A
+port 1 nsew signal input
+rlabel m1 s 18 51 20 53 6 A
+port 1 nsew signal input
+rlabel m1 s 18 54 21 60 6 A
+port 1 nsew signal input
+rlabel m1 s 17 50 21 51 6 A
+port 1 nsew signal input
+rlabel m1 s 17 51 18 53 6 A
+port 1 nsew signal input
+rlabel m1 s 17 53 21 54 6 A
+port 1 nsew signal input
+rlabel m1 s 19 19 20 21 6 Y
+port 2 nsew signal output
+rlabel m1 s 19 39 20 41 6 Y
+port 2 nsew signal output
+rlabel m1 s 17 19 19 21 6 Y
+port 2 nsew signal output
+rlabel m1 s 17 22 20 26 6 Y
+port 2 nsew signal output
+rlabel m1 s 17 26 27 29 6 Y
+port 2 nsew signal output
+rlabel m1 s 17 29 20 38 6 Y
+port 2 nsew signal output
+rlabel m1 s 17 39 19 41 6 Y
+port 2 nsew signal output
+rlabel m1 s 16 18 20 19 6 Y
+port 2 nsew signal output
+rlabel m1 s 16 19 17 21 6 Y
+port 2 nsew signal output
+rlabel m1 s 16 21 20 22 6 Y
+port 2 nsew signal output
+rlabel m1 s 16 38 20 39 6 Y
+port 2 nsew signal output
+rlabel m1 s 16 39 17 41 6 Y
+port 2 nsew signal output
+rlabel m1 s 16 41 20 42 6 Y
+port 2 nsew signal output
+rlabel m2 s 10 43 11 46 6 Vdd
+port 3 nsew power input
+rlabel m2 s 9 43 10 45 6 Vdd
+port 3 nsew power input
+rlabel m2 s 7 43 9 45 6 Vdd
+port 3 nsew power input
+rlabel m2 s 7 45 10 46 6 Vdd
+port 3 nsew power input
+rlabel m2 s 6 42 11 43 6 Vdd
+port 3 nsew power input
+rlabel m2 s 6 43 7 46 6 Vdd
+port 3 nsew power input
+rlabel m2 s 6 46 11 60 6 Vdd
+port 3 nsew power input
+rlabel m2c s 9 43 10 45 6 Vdd
+port 3 nsew power input
+rlabel m2c s 7 43 9 45 6 Vdd
+port 3 nsew power input
+rlabel m2c s 7 45 10 46 6 Vdd
+port 3 nsew power input
+rlabel m1 s 10 43 11 46 6 Vdd
+port 3 nsew power input
+rlabel m1 s 9 43 10 45 6 Vdd
+port 3 nsew power input
+rlabel m1 s 7 43 9 45 6 Vdd
+port 3 nsew power input
+rlabel m1 s 7 45 10 46 6 Vdd
+port 3 nsew power input
+rlabel m1 s 6 42 11 43 6 Vdd
+port 3 nsew power input
+rlabel m1 s 6 43 7 46 6 Vdd
+port 3 nsew power input
+rlabel m1 s 6 46 11 47 6 Vdd
+port 3 nsew power input
+rlabel m2 s 9 17 10 20 6 GND
+port 4 nsew ground input
+rlabel m2 s 7 18 9 20 6 GND
+port 4 nsew ground input
+rlabel m2 s 6 17 9 18 6 GND
+port 4 nsew ground input
+rlabel m2 s 6 18 7 20 6 GND
+port 4 nsew ground input
+rlabel m2 s 5 10 10 17 6 GND
+port 4 nsew ground input
+rlabel m2 s 5 17 6 20 6 GND
+port 4 nsew ground input
+rlabel m2 s 5 20 10 21 6 GND
+port 4 nsew ground input
+rlabel m2c s 7 18 9 20 6 GND
+port 4 nsew ground input
+rlabel m2c s 6 17 9 18 6 GND
+port 4 nsew ground input
+rlabel m2c s 6 18 7 20 6 GND
+port 4 nsew ground input
+rlabel m1 s 9 17 10 20 6 GND
+port 4 nsew ground input
+rlabel m1 s 7 18 9 20 6 GND
+port 4 nsew ground input
+rlabel m1 s 6 17 9 18 6 GND
+port 4 nsew ground input
+rlabel m1 s 6 18 7 20 6 GND
+port 4 nsew ground input
+rlabel m1 s 5 16 10 17 6 GND
+port 4 nsew ground input
+rlabel m1 s 5 17 6 20 6 GND
+port 4 nsew ground input
+rlabel m1 s 5 20 10 21 6 GND
+port 4 nsew ground input
+rlabel space 0 0 30 70 1 prboundary
+rlabel polysilicon 18 53 18 53 3 A
+rlabel ndiffusion 15 18 15 18 3 Y
+rlabel ndiffusion 15 20 15 20 3 Y
+rlabel ndiffusion 15 22 15 22 3 Y
+rlabel ndiffusion 10 19 10 19 3 GND
+rlabel pdiffusion 15 39 15 39 3 Y
+rlabel pdiffusion 15 40 15 40 3 Y
+rlabel pdiffusion 15 42 15 42 3 Y
+rlabel polysilicon 13 15 13 15 3 A
+rlabel ntransistor 13 18 13 18 3 A
+rlabel polysilicon 13 23 13 23 3 A
+rlabel ptransistor 13 39 13 39 3 A
+rlabel polysilicon 13 47 13 47 3 A
+rlabel polysilicon 13 51 13 51 3 A
+rlabel polysilicon 13 52 13 52 3 A
+rlabel ndiffusion 7 21 7 21 3 GND
+rlabel pdiffusion 7 39 7 39 3 Vdd
+rlabel pdiffusion 7 46 7 46 3 Vdd
+rlabel m1 20 20 20 20 3 Y
+port 2 e default output
+rlabel m1 20 40 20 40 3 Y
+port 2 e default output
+rlabel ndcontact 18 20 18 20 3 Y
+port 2 e default output
+rlabel m1 18 23 18 23 3 Y
+port 2 e default output
+rlabel m1 18 27 18 27 3 Y
+port 2 e default output
+rlabel m1 18 30 18 30 3 Y
+port 2 e default output
+rlabel pdcontact 18 40 18 40 3 Y
+port 2 e
+rlabel m1 21 52 21 52 3 A
+port 1 e default input
+rlabel m1 17 19 17 19 3 Y
+port 2 e
+rlabel m1 17 20 17 20 3 Y
+port 2 e
+rlabel m1 17 22 17 22 3 Y
+port 2 e
+rlabel m1 17 39 17 39 3 Y
+port 2 e
+rlabel m1 17 40 17 40 3 Y
+port 2 e
+rlabel m1 17 42 17 42 3 Y
+port 2 e
+rlabel polycontact 19 52 19 52 3 A
+port 1 e default input
+rlabel m1 19 55 19 55 3 A
+port 1 e
+rlabel m1 18 51 18 51 3 A
+port 1 e
+rlabel m1 18 52 18 52 3 A
+port 1 e
+rlabel m1 18 54 18 54 3 A
+port 1 e
+rlabel m1 6 17 6 17 3 GND
+rlabel m2 11 44 11 44 3 Vdd
+rlabel m2 10 44 10 44 3 Vdd
+rlabel m2 10 18 10 18 3 GND
+rlabel m2c 8 19 8 19 3 GND
+rlabel m2c 8 44 8 44 3 Vdd
+rlabel m2 8 46 8 46 3 Vdd
+rlabel m2c 7 18 7 18 3 GND
+rlabel m2c 7 19 7 19 3 GND
+rlabel m2 7 43 7 43 3 Vdd
+rlabel m2 7 44 7 44 3 Vdd
+rlabel m2 7 47 7 47 3 Vdd
+rlabel m2 6 11 6 11 3 GND
+rlabel m2 6 18 6 18 3 GND
+rlabel m2 6 21 6 21 3 GND
+<< properties >>
+string FIXED_BBOX 0 0 30 70
+string LEFclass CORE
+string LEFsite CoreSite
+string LEFsymmetry X Y
+string LEFview TRUE
+<< end >>

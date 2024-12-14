@@ -1,0 +1,913 @@
+magic
+tech TSMC180
+timestamp 1734143852
+<< ndiffusion >>
+rect 6 25 12 32
+rect 6 23 7 25
+rect 9 23 12 25
+rect 6 22 12 23
+rect 14 22 20 32
+rect 22 31 28 32
+rect 22 29 24 31
+rect 26 29 28 31
+rect 22 22 28 29
+rect 32 31 38 32
+rect 32 29 34 31
+rect 36 29 38 31
+rect 32 22 38 29
+rect 40 25 46 32
+rect 40 23 42 25
+rect 44 23 46 25
+rect 40 22 46 23
+rect 48 25 54 32
+rect 48 23 51 25
+rect 53 23 54 25
+rect 48 22 54 23
+rect 58 31 64 32
+rect 58 29 60 31
+rect 62 29 64 31
+rect 58 22 64 29
+rect 66 25 72 32
+rect 66 23 67 25
+rect 69 23 72 25
+rect 66 22 72 23
+<< ndcontact >>
+rect 7 23 9 25
+rect 24 29 26 31
+rect 34 29 36 31
+rect 42 23 44 25
+rect 51 23 53 25
+rect 60 29 62 31
+rect 67 23 69 25
+<< ntransistor >>
+rect 12 22 14 32
+rect 20 22 22 32
+rect 38 22 40 32
+rect 46 22 48 32
+rect 64 22 66 32
+<< pdiffusion >>
+rect 6 67 12 68
+rect 6 65 7 67
+rect 9 65 12 67
+rect 6 48 12 65
+rect 14 63 18 68
+rect 14 60 20 63
+rect 14 58 15 60
+rect 17 58 20 60
+rect 14 48 20 58
+rect 22 51 28 63
+rect 58 67 64 68
+rect 58 65 59 67
+rect 61 65 64 67
+rect 22 49 24 51
+rect 26 49 28 51
+rect 22 48 28 49
+rect 32 57 38 58
+rect 32 55 33 57
+rect 35 55 38 57
+rect 32 48 38 55
+rect 40 48 46 58
+rect 48 57 54 58
+rect 48 55 50 57
+rect 52 55 54 57
+rect 48 48 54 55
+rect 58 48 64 65
+rect 66 57 72 68
+rect 66 55 67 57
+rect 69 55 72 57
+rect 66 48 72 55
+<< pdcontact >>
+rect 7 65 9 67
+rect 15 58 17 60
+rect 59 65 61 67
+rect 24 49 26 51
+rect 33 55 35 57
+rect 50 55 52 57
+rect 67 55 69 57
+<< ptransistor >>
+rect 12 48 14 68
+rect 20 48 22 63
+rect 38 48 40 58
+rect 46 48 48 58
+rect 64 48 66 68
+<< polysilicon >>
+rect 6 79 14 80
+rect 6 77 7 79
+rect 9 77 14 79
+rect 6 76 14 77
+rect 12 68 14 76
+rect 20 79 27 80
+rect 20 77 24 79
+rect 26 77 27 79
+rect 20 76 27 77
+rect 42 79 48 80
+rect 42 77 43 79
+rect 45 77 48 79
+rect 42 76 48 77
+rect 20 63 22 76
+rect 38 58 40 61
+rect 46 58 48 76
+rect 64 68 66 71
+rect 12 32 14 48
+rect 20 32 22 48
+rect 38 32 40 48
+rect 46 32 48 48
+rect 64 46 66 48
+rect 60 45 66 46
+rect 60 43 61 45
+rect 63 43 66 45
+rect 60 42 66 43
+rect 64 32 66 42
+rect 12 19 14 22
+rect 20 19 22 22
+rect 38 19 40 22
+rect 46 19 48 22
+rect 64 19 66 22
+rect 20 17 40 19
+<< polycontact >>
+rect 7 77 9 79
+rect 24 77 26 79
+rect 43 77 45 79
+rect 61 43 63 45
+<< m1 >>
+rect 6 79 10 91
+rect 6 77 7 79
+rect 9 77 10 79
+rect 6 76 10 77
+rect 14 84 19 85
+rect 14 81 15 84
+rect 18 81 19 84
+rect 14 80 19 81
+rect 6 67 11 68
+rect 6 64 7 67
+rect 10 64 11 67
+rect 6 63 11 64
+rect 14 60 18 80
+rect 23 79 27 91
+rect 23 77 24 79
+rect 26 77 27 79
+rect 23 76 27 77
+rect 42 79 46 91
+rect 42 77 43 79
+rect 45 77 46 79
+rect 42 76 46 77
+rect 49 84 54 85
+rect 49 81 50 84
+rect 53 81 54 84
+rect 49 80 54 81
+rect 58 84 63 85
+rect 58 81 59 84
+rect 62 81 63 84
+rect 58 80 63 81
+rect 14 58 15 60
+rect 17 58 18 60
+rect 14 57 18 58
+rect 32 57 37 58
+rect 32 54 33 57
+rect 36 54 37 57
+rect 49 57 53 80
+rect 60 77 63 80
+rect 58 67 63 68
+rect 58 64 59 67
+rect 62 64 63 67
+rect 58 63 63 64
+rect 49 55 50 57
+rect 52 55 53 57
+rect 49 54 53 55
+rect 66 57 71 58
+rect 66 54 67 57
+rect 70 54 71 57
+rect 32 53 37 54
+rect 66 53 71 54
+rect 23 51 27 52
+rect 23 49 24 51
+rect 26 49 27 51
+rect 23 47 27 49
+rect 23 46 28 47
+rect 23 43 24 46
+rect 27 43 28 46
+rect 23 42 28 43
+rect 32 46 37 47
+rect 32 43 33 46
+rect 36 43 37 46
+rect 32 42 37 43
+rect 59 46 64 47
+rect 59 43 60 46
+rect 63 43 64 46
+rect 59 42 64 43
+rect 68 45 71 53
+rect 68 42 81 45
+rect 23 36 28 37
+rect 23 33 24 36
+rect 27 33 28 36
+rect 23 32 28 33
+rect 23 31 27 32
+rect 23 29 24 31
+rect 26 29 27 31
+rect 23 28 27 29
+rect 33 31 37 42
+rect 68 37 71 42
+rect 58 36 63 37
+rect 58 33 59 36
+rect 62 33 63 36
+rect 58 32 63 33
+rect 66 36 71 37
+rect 66 33 67 36
+rect 70 33 71 36
+rect 66 32 71 33
+rect 33 29 34 31
+rect 36 29 37 31
+rect 33 28 37 29
+rect 59 31 63 32
+rect 59 29 60 31
+rect 62 29 63 31
+rect 59 28 63 29
+rect 49 26 54 27
+rect 6 25 10 26
+rect 6 23 7 25
+rect 9 23 10 25
+rect 6 17 10 23
+rect 41 25 45 26
+rect 41 23 42 25
+rect 44 23 45 25
+rect 41 17 45 23
+rect 49 23 50 26
+rect 53 23 54 26
+rect 49 22 54 23
+rect 66 26 71 27
+rect 66 23 67 26
+rect 70 23 71 26
+rect 66 22 71 23
+rect 6 16 11 17
+rect 6 13 7 16
+rect 10 13 11 16
+rect 6 12 11 13
+rect 40 16 45 17
+rect 40 13 41 16
+rect 44 13 45 16
+rect 40 12 45 13
+<< m2c >>
+rect 15 81 18 84
+rect 7 65 9 67
+rect 9 65 10 67
+rect 7 64 10 65
+rect 50 81 53 84
+rect 59 81 62 84
+rect 33 55 35 57
+rect 35 55 36 57
+rect 33 54 36 55
+rect 59 65 61 67
+rect 61 65 62 67
+rect 59 64 62 65
+rect 67 55 69 57
+rect 69 55 70 57
+rect 67 54 70 55
+rect 24 43 27 46
+rect 33 43 36 46
+rect 60 45 63 46
+rect 60 43 61 45
+rect 61 43 63 45
+rect 24 33 27 36
+rect 59 33 62 36
+rect 67 33 70 36
+rect 50 25 53 26
+rect 50 23 51 25
+rect 51 23 53 25
+rect 67 25 70 26
+rect 67 23 69 25
+rect 69 23 70 25
+rect 7 13 10 16
+rect 41 13 44 16
+<< m2 >>
+rect 14 84 63 85
+rect 14 81 15 84
+rect 18 81 50 84
+rect 53 81 59 84
+rect 62 81 63 84
+rect 14 80 63 81
+rect 6 67 63 68
+rect 6 64 7 67
+rect 10 64 59 67
+rect 62 64 63 67
+rect 6 63 63 64
+rect 32 57 71 58
+rect 32 54 33 57
+rect 36 54 67 57
+rect 70 54 71 57
+rect 32 53 71 54
+rect 23 46 64 47
+rect 23 43 24 46
+rect 27 43 33 46
+rect 36 43 60 46
+rect 63 43 64 46
+rect 23 42 64 43
+rect 23 36 71 37
+rect 23 33 24 36
+rect 27 33 59 36
+rect 62 33 67 36
+rect 70 33 71 36
+rect 23 32 71 33
+rect 49 26 71 27
+rect 49 23 50 26
+rect 53 23 67 26
+rect 70 23 71 26
+rect 49 22 71 23
+rect 6 16 45 17
+rect 6 13 7 16
+rect 10 13 41 16
+rect 44 13 45 16
+rect 6 12 45 13
+<< labels >>
+rlabel m1 s 26 77 27 79 6 CLK
+port 1 nsew signal input
+rlabel m1 s 24 77 26 79 6 CLK
+port 1 nsew signal input
+rlabel m1 s 23 76 27 77 6 CLK
+port 1 nsew signal input
+rlabel m1 s 23 77 24 79 6 CLK
+port 1 nsew signal input
+rlabel m1 s 23 79 27 91 6 CLK
+port 1 nsew signal input
+rlabel m1 s 9 77 10 79 6 D
+port 2 nsew signal input
+rlabel m1 s 7 77 9 79 6 D
+port 2 nsew signal input
+rlabel m1 s 6 76 10 77 6 D
+port 2 nsew signal input
+rlabel m1 s 6 77 7 79 6 D
+port 2 nsew signal input
+rlabel m1 s 6 79 10 91 6 D
+port 2 nsew signal input
+rlabel m1 s 45 77 46 79 6 q
+port 3 nsew signal input
+rlabel m1 s 43 77 45 79 6 q
+port 3 nsew signal input
+rlabel m1 s 42 76 46 77 6 q
+port 3 nsew signal input
+rlabel m1 s 42 77 43 79 6 q
+port 3 nsew signal input
+rlabel m1 s 42 79 46 91 6 q
+port 3 nsew signal input
+rlabel m2 s 70 54 71 57 6 __q
+port 4 nsew signal output
+rlabel m2 s 69 55 70 57 6 __q
+port 4 nsew signal output
+rlabel m2 s 70 33 71 36 6 __q
+port 4 nsew signal output
+rlabel m2 s 67 54 70 55 6 __q
+port 4 nsew signal output
+rlabel m2 s 67 55 69 57 6 __q
+port 4 nsew signal output
+rlabel m2 s 67 33 70 36 6 __q
+port 4 nsew signal output
+rlabel m2 s 36 54 67 57 6 __q
+port 4 nsew signal output
+rlabel m2 s 35 55 36 57 6 __q
+port 4 nsew signal output
+rlabel m2 s 62 33 67 36 6 __q
+port 4 nsew signal output
+rlabel m2 s 33 54 36 55 6 __q
+port 4 nsew signal output
+rlabel m2 s 33 55 35 57 6 __q
+port 4 nsew signal output
+rlabel m2 s 59 33 62 36 6 __q
+port 4 nsew signal output
+rlabel m2 s 32 53 71 54 6 __q
+port 4 nsew signal output
+rlabel m2 s 32 54 33 57 6 __q
+port 4 nsew signal output
+rlabel m2 s 32 57 71 58 6 __q
+port 4 nsew signal output
+rlabel m2 s 27 33 59 36 6 __q
+port 4 nsew signal output
+rlabel m2 s 24 33 27 36 6 __q
+port 4 nsew signal output
+rlabel m2 s 23 32 71 33 6 __q
+port 4 nsew signal output
+rlabel m2 s 23 33 24 36 6 __q
+port 4 nsew signal output
+rlabel m2 s 23 36 71 37 6 __q
+port 4 nsew signal output
+rlabel m2c s 67 33 70 36 6 __q
+port 4 nsew signal output
+rlabel m2c s 69 55 70 57 6 __q
+port 4 nsew signal output
+rlabel m2c s 59 33 62 36 6 __q
+port 4 nsew signal output
+rlabel m2c s 67 55 69 57 6 __q
+port 4 nsew signal output
+rlabel m2c s 67 54 70 55 6 __q
+port 4 nsew signal output
+rlabel m2c s 35 55 36 57 6 __q
+port 4 nsew signal output
+rlabel m2c s 33 54 36 55 6 __q
+port 4 nsew signal output
+rlabel m2c s 33 55 35 57 6 __q
+port 4 nsew signal output
+rlabel m2c s 24 33 27 36 6 __q
+port 4 nsew signal output
+rlabel m1 s 70 33 71 36 6 __q
+port 4 nsew signal output
+rlabel m1 s 67 33 70 36 6 __q
+port 4 nsew signal output
+rlabel m1 s 70 54 71 57 6 __q
+port 4 nsew signal output
+rlabel m1 s 69 55 70 57 6 __q
+port 4 nsew signal output
+rlabel m1 s 66 33 67 36 6 __q
+port 4 nsew signal output
+rlabel m1 s 68 37 71 42 6 __q
+port 4 nsew signal output
+rlabel m1 s 68 42 81 45 6 __q
+port 4 nsew signal output
+rlabel m1 s 68 45 71 53 6 __q
+port 4 nsew signal output
+rlabel m1 s 67 54 70 55 6 __q
+port 4 nsew signal output
+rlabel m1 s 67 55 69 57 6 __q
+port 4 nsew signal output
+rlabel m1 s 62 29 63 31 6 __q
+port 4 nsew signal output
+rlabel m1 s 66 53 71 54 6 __q
+port 4 nsew signal output
+rlabel m1 s 66 54 67 57 6 __q
+port 4 nsew signal output
+rlabel m1 s 66 57 71 58 6 __q
+port 4 nsew signal output
+rlabel m1 s 60 29 62 31 6 __q
+port 4 nsew signal output
+rlabel m1 s 66 32 71 33 6 __q
+port 4 nsew signal output
+rlabel m1 s 62 33 63 36 6 __q
+port 4 nsew signal output
+rlabel m1 s 66 36 71 37 6 __q
+port 4 nsew signal output
+rlabel m1 s 59 29 60 31 6 __q
+port 4 nsew signal output
+rlabel m1 s 59 31 63 32 6 __q
+port 4 nsew signal output
+rlabel m1 s 59 33 62 36 6 __q
+port 4 nsew signal output
+rlabel m1 s 58 32 63 33 6 __q
+port 4 nsew signal output
+rlabel m1 s 58 33 59 36 6 __q
+port 4 nsew signal output
+rlabel m1 s 58 36 63 37 6 __q
+port 4 nsew signal output
+rlabel m1 s 59 28 63 29 6 __q
+port 4 nsew signal output
+rlabel m1 s 36 54 37 57 6 __q
+port 4 nsew signal output
+rlabel m1 s 35 55 36 57 6 __q
+port 4 nsew signal output
+rlabel m1 s 33 54 36 55 6 __q
+port 4 nsew signal output
+rlabel m1 s 33 55 35 57 6 __q
+port 4 nsew signal output
+rlabel m1 s 26 29 27 31 6 __q
+port 4 nsew signal output
+rlabel m1 s 27 33 28 36 6 __q
+port 4 nsew signal output
+rlabel m1 s 32 53 37 54 6 __q
+port 4 nsew signal output
+rlabel m1 s 32 54 33 57 6 __q
+port 4 nsew signal output
+rlabel m1 s 32 57 37 58 6 __q
+port 4 nsew signal output
+rlabel m1 s 24 29 26 31 6 __q
+port 4 nsew signal output
+rlabel m1 s 24 33 27 36 6 __q
+port 4 nsew signal output
+rlabel m1 s 23 28 27 29 6 __q
+port 4 nsew signal output
+rlabel m1 s 23 29 24 31 6 __q
+port 4 nsew signal output
+rlabel m1 s 23 31 27 32 6 __q
+port 4 nsew signal output
+rlabel m1 s 23 32 28 33 6 __q
+port 4 nsew signal output
+rlabel m1 s 23 33 24 36 6 __q
+port 4 nsew signal output
+rlabel m1 s 23 36 28 37 6 __q
+port 4 nsew signal output
+rlabel m2 s 62 81 63 84 6 Vdd
+port 5 nsew power input
+rlabel m2 s 59 81 62 84 6 Vdd
+port 5 nsew power input
+rlabel m2 s 53 81 59 84 6 Vdd
+port 5 nsew power input
+rlabel m2 s 50 81 53 84 6 Vdd
+port 5 nsew power input
+rlabel m2 s 18 81 50 84 6 Vdd
+port 5 nsew power input
+rlabel m2 s 15 81 18 84 6 Vdd
+port 5 nsew power input
+rlabel m2 s 14 80 63 81 6 Vdd
+port 5 nsew power input
+rlabel m2 s 14 81 15 84 6 Vdd
+port 5 nsew power input
+rlabel m2 s 14 84 63 85 6 Vdd
+port 5 nsew power input
+rlabel m2c s 59 81 62 84 6 Vdd
+port 5 nsew power input
+rlabel m2c s 50 81 53 84 6 Vdd
+port 5 nsew power input
+rlabel m2c s 15 81 18 84 6 Vdd
+port 5 nsew power input
+rlabel m1 s 60 77 63 80 6 Vdd
+port 5 nsew power input
+rlabel m1 s 52 55 53 57 6 Vdd
+port 5 nsew power input
+rlabel m1 s 50 55 52 57 6 Vdd
+port 5 nsew power input
+rlabel m1 s 62 81 63 84 6 Vdd
+port 5 nsew power input
+rlabel m1 s 49 54 53 55 6 Vdd
+port 5 nsew power input
+rlabel m1 s 49 55 50 57 6 Vdd
+port 5 nsew power input
+rlabel m1 s 49 57 53 80 6 Vdd
+port 5 nsew power input
+rlabel m1 s 59 81 62 84 6 Vdd
+port 5 nsew power input
+rlabel m1 s 58 81 59 84 6 Vdd
+port 5 nsew power input
+rlabel m1 s 58 80 63 81 6 Vdd
+port 5 nsew power input
+rlabel m1 s 53 81 54 84 6 Vdd
+port 5 nsew power input
+rlabel m1 s 58 84 63 85 6 Vdd
+port 5 nsew power input
+rlabel m1 s 50 81 53 84 6 Vdd
+port 5 nsew power input
+rlabel m1 s 49 80 54 81 6 Vdd
+port 5 nsew power input
+rlabel m1 s 49 81 50 84 6 Vdd
+port 5 nsew power input
+rlabel m1 s 49 84 54 85 6 Vdd
+port 5 nsew power input
+rlabel m1 s 17 58 18 60 6 Vdd
+port 5 nsew power input
+rlabel m1 s 15 58 17 60 6 Vdd
+port 5 nsew power input
+rlabel m1 s 14 57 18 58 6 Vdd
+port 5 nsew power input
+rlabel m1 s 14 58 15 60 6 Vdd
+port 5 nsew power input
+rlabel m1 s 14 60 18 80 6 Vdd
+port 5 nsew power input
+rlabel m1 s 18 81 19 84 6 Vdd
+port 5 nsew power input
+rlabel m1 s 15 81 18 84 6 Vdd
+port 5 nsew power input
+rlabel m1 s 14 80 19 81 6 Vdd
+port 5 nsew power input
+rlabel m1 s 14 81 15 84 6 Vdd
+port 5 nsew power input
+rlabel m1 s 14 84 19 85 6 Vdd
+port 5 nsew power input
+rlabel m2 s 44 13 45 16 6 GND
+port 6 nsew ground input
+rlabel m2 s 41 13 44 16 6 GND
+port 6 nsew ground input
+rlabel m2 s 10 13 41 16 6 GND
+port 6 nsew ground input
+rlabel m2 s 7 13 10 16 6 GND
+port 6 nsew ground input
+rlabel m2 s 6 12 45 13 6 GND
+port 6 nsew ground input
+rlabel m2 s 6 13 7 16 6 GND
+port 6 nsew ground input
+rlabel m2 s 6 16 45 17 6 GND
+port 6 nsew ground input
+rlabel m2c s 41 13 44 16 6 GND
+port 6 nsew ground input
+rlabel m2c s 7 13 10 16 6 GND
+port 6 nsew ground input
+rlabel m1 s 44 23 45 25 6 GND
+port 6 nsew ground input
+rlabel m1 s 42 23 44 25 6 GND
+port 6 nsew ground input
+rlabel m1 s 41 23 42 25 6 GND
+port 6 nsew ground input
+rlabel m1 s 41 25 45 26 6 GND
+port 6 nsew ground input
+rlabel m1 s 44 13 45 16 6 GND
+port 6 nsew ground input
+rlabel m1 s 41 13 44 16 6 GND
+port 6 nsew ground input
+rlabel m1 s 40 13 41 16 6 GND
+port 6 nsew ground input
+rlabel m1 s 40 12 45 13 6 GND
+port 6 nsew ground input
+rlabel m1 s 10 13 11 16 6 GND
+port 6 nsew ground input
+rlabel m1 s 40 16 45 17 6 GND
+port 6 nsew ground input
+rlabel m1 s 41 17 45 23 6 GND
+port 6 nsew ground input
+rlabel m1 s 9 23 10 25 6 GND
+port 6 nsew ground input
+rlabel m1 s 7 13 10 16 6 GND
+port 6 nsew ground input
+rlabel m1 s 7 23 9 25 6 GND
+port 6 nsew ground input
+rlabel m1 s 6 12 11 13 6 GND
+port 6 nsew ground input
+rlabel m1 s 6 13 7 16 6 GND
+port 6 nsew ground input
+rlabel m1 s 6 16 11 17 6 GND
+port 6 nsew ground input
+rlabel m1 s 6 17 10 23 6 GND
+port 6 nsew ground input
+rlabel m1 s 6 23 7 25 6 GND
+port 6 nsew ground input
+rlabel m1 s 6 25 10 26 6 GND
+port 6 nsew ground input
+rlabel space 0 0 84 100 1 prboundary
+rlabel ndiffusion 67 26 67 26 3 #10
+rlabel polysilicon 65 33 65 33 3 _clk
+rlabel polysilicon 65 47 65 47 3 _clk
+rlabel pdiffusion 67 49 67 49 3 _q
+rlabel pdiffusion 67 56 67 56 3 _q
+rlabel ntransistor 65 23 65 23 3 _clk
+rlabel polysilicon 61 43 61 43 3 _clk
+rlabel ptransistor 65 49 65 49 3 _clk
+rlabel polysilicon 65 69 65 69 3 _clk
+rlabel ndiffusion 59 23 59 23 3 _q
+rlabel ndiffusion 59 30 59 30 3 _q
+rlabel ndiffusion 59 32 59 32 3 _q
+rlabel pdiffusion 59 49 59 49 3 #7
+rlabel pdiffusion 59 66 59 66 3 #7
+rlabel ndiffusion 49 23 49 23 3 #10
+rlabel ndiffusion 49 24 49 24 3 #10
+rlabel ndiffusion 49 26 49 26 3 #10
+rlabel pdiffusion 49 49 49 49 3 Vdd
+rlabel pdiffusion 49 56 49 56 3 Vdd
+rlabel pdiffusion 49 58 49 58 3 Vdd
+rlabel polysilicon 47 59 47 59 3 q
+rlabel polysilicon 65 20 65 20 3 _clk
+rlabel ntransistor 47 23 47 23 3 q
+rlabel polysilicon 47 33 47 33 3 q
+rlabel ptransistor 47 49 47 49 3 q
+rlabel ndiffusion 41 23 41 23 3 GND
+rlabel ndiffusion 41 24 41 24 3 GND
+rlabel ndiffusion 41 26 41 26 3 GND
+rlabel ndiffusion 33 30 33 30 3 _clk
+rlabel polysilicon 47 20 47 20 3 q
+rlabel ntransistor 39 23 39 23 3 CLK
+rlabel polysilicon 39 33 39 33 3 CLK
+rlabel ptransistor 39 49 39 49 3 CLK
+rlabel polysilicon 39 59 39 59 3 CLK
+rlabel ndiffusion 33 23 33 23 3 _clk
+rlabel ndiffusion 33 32 33 32 3 _clk
+rlabel pdiffusion 33 49 33 49 3 _q
+rlabel pdiffusion 33 56 33 56 3 _q
+rlabel polysilicon 39 20 39 20 3 CLK
+rlabel ndiffusion 23 23 23 23 3 _q
+rlabel ndiffusion 23 30 23 30 3 _q
+rlabel ndiffusion 23 32 23 32 3 _q
+rlabel pdiffusion 23 49 23 49 3 _clk
+rlabel pdiffusion 23 50 23 50 3 _clk
+rlabel pdiffusion 23 52 23 52 3 _clk
+rlabel polysilicon 21 64 21 64 3 CLK
+rlabel polysilicon 21 77 21 77 3 CLK
+rlabel polysilicon 21 78 21 78 3 CLK
+rlabel polysilicon 21 80 21 80 3 CLK
+rlabel polysilicon 21 20 21 20 3 CLK
+rlabel ntransistor 21 23 21 23 3 CLK
+rlabel polysilicon 21 33 21 33 3 CLK
+rlabel ptransistor 21 49 21 49 3 CLK
+rlabel polysilicon 21 18 21 18 3 CLK
+rlabel pdiffusion 15 49 15 49 3 Vdd
+rlabel pdiffusion 15 64 15 64 3 Vdd
+rlabel polysilicon 13 20 13 20 3 D
+rlabel ntransistor 13 23 13 23 3 D
+rlabel polysilicon 13 33 13 33 3 D
+rlabel ptransistor 13 49 13 49 3 D
+rlabel polysilicon 13 69 13 69 3 D
+rlabel ndiffusion 7 23 7 23 3 GND
+rlabel pdiffusion 7 49 7 49 3 #7
+rlabel pdiffusion 7 66 7 66 3 #7
+rlabel m1 67 34 67 34 3 _q
+port 7 e
+rlabel m1 69 38 69 38 3 _q
+port 7 e
+rlabel m1 69 43 69 43 3 _q
+port 7 e
+rlabel m1 69 46 69 46 3 _q
+port 7 e
+rlabel m1 61 78 61 78 3 Vdd
+rlabel m1 63 30 63 30 3 _q
+port 7 e
+rlabel m1 67 54 67 54 3 _q
+port 7 e
+rlabel m1 67 55 67 55 3 _q
+port 7 e
+rlabel m1 67 58 67 58 3 _q
+port 7 e
+rlabel ndcontact 61 30 61 30 3 _q
+port 7 e
+rlabel m1 67 33 67 33 3 _q
+port 7 e
+rlabel m1 67 37 67 37 3 _q
+port 7 e
+rlabel m1 59 64 59 64 3 #7
+rlabel m1 59 65 59 65 3 #7
+rlabel m1 59 68 59 68 3 #7
+rlabel m1 60 30 60 30 3 _q
+port 7 e
+rlabel m1 60 32 60 32 3 _q
+port 7 e
+rlabel m1 60 43 60 43 3 _clk
+rlabel m1 60 44 60 44 3 _clk
+rlabel m1 60 47 60 47 3 _clk
+rlabel m1 59 33 59 33 3 _q
+port 7 e
+rlabel m1 59 34 59 34 3 _q
+port 7 e
+rlabel m1 59 37 59 37 3 _q
+port 7 e
+rlabel m1 53 56 53 56 3 Vdd
+rlabel m1 67 24 67 24 3 #10
+rlabel m1 67 27 67 27 3 #10
+rlabel pdcontact 51 56 51 56 3 Vdd
+rlabel m1 50 55 50 55 3 Vdd
+rlabel m1 50 56 50 56 3 Vdd
+rlabel m1 50 58 50 58 3 Vdd
+rlabel m1 59 82 59 82 3 Vdd
+rlabel m1 59 81 59 81 3 Vdd
+rlabel m1 59 85 59 85 3 Vdd
+rlabel m1 37 30 37 30 3 _clk
+rlabel m1 60 29 60 29 3 _q
+port 7 e
+rlabel ndcontact 35 30 35 30 3 _clk
+rlabel m1 46 78 46 78 3 q
+port 3 e default input
+rlabel m1 50 81 50 81 3 Vdd
+rlabel m1 50 82 50 82 3 Vdd
+rlabel m1 50 85 50 85 3 Vdd
+rlabel m1 34 30 34 30 3 _clk
+rlabel m1 34 32 34 32 3 _clk
+rlabel polycontact 44 78 44 78 3 q
+port 3 e default input
+rlabel m1 45 24 45 24 3 GND
+rlabel m1 33 44 33 44 3 _clk
+rlabel m1 43 77 43 77 3 q
+port 3 e default input
+rlabel m1 43 78 43 78 3 q
+port 3 e default input
+rlabel m1 43 80 43 80 3 q
+port 3 e
+rlabel m1 27 78 27 78 3 CLK
+port 1 e default input
+rlabel ndcontact 43 24 43 24 3 GND
+rlabel polycontact 25 78 25 78 3 CLK
+port 1 e default input
+rlabel m1 42 24 42 24 3 GND
+rlabel m1 42 26 42 26 3 GND
+rlabel m1 34 29 34 29 3 _clk
+rlabel m1 27 30 27 30 3 _q
+port 7 e
+rlabel m1 33 43 33 43 3 _clk
+rlabel m1 33 47 33 47 3 _clk
+rlabel m1 27 50 27 50 3 _clk
+rlabel m1 24 77 24 77 3 CLK
+port 1 e default input
+rlabel m1 24 78 24 78 3 CLK
+port 1 e default input
+rlabel m1 24 80 24 80 3 CLK
+port 1 e
+rlabel ndcontact 25 30 25 30 3 _q
+port 7 e
+rlabel pdcontact 25 50 25 50 3 _clk
+rlabel m1 67 23 67 23 3 #10
+rlabel m1 24 29 24 29 3 _q
+port 7 e
+rlabel m1 24 30 24 30 3 _q
+port 7 e
+rlabel m1 24 32 24 32 3 _q
+port 7 e
+rlabel m1 24 48 24 48 3 _clk
+rlabel m1 24 50 24 50 3 _clk
+rlabel m1 24 52 24 52 3 _clk
+rlabel m1 18 59 18 59 3 Vdd
+rlabel pdcontact 16 59 16 59 3 Vdd
+rlabel m1 41 14 41 14 3 GND
+rlabel m1 15 58 15 58 3 Vdd
+rlabel m1 15 59 15 59 3 Vdd
+rlabel m1 15 61 15 61 3 Vdd
+rlabel m1 41 13 41 13 3 GND
+rlabel m1 41 17 41 17 3 GND
+rlabel m1 42 18 42 18 3 GND
+rlabel m1 10 24 10 24 3 GND
+rlabel m1 10 78 10 78 3 D
+port 2 e default input
+rlabel ndcontact 8 24 8 24 3 GND
+rlabel polycontact 8 78 8 78 3 D
+port 2 e default input
+rlabel m1 7 18 7 18 3 GND
+rlabel m1 7 24 7 24 3 GND
+rlabel m1 7 26 7 26 3 GND
+rlabel m1 7 77 7 77 3 D
+port 2 e default input
+rlabel m1 7 78 7 78 3 D
+port 2 e default input
+rlabel m1 7 80 7 80 3 D
+port 2 e
+rlabel m2 64 44 64 44 3 _clk
+rlabel m2 71 55 71 55 3 _q
+port 7 e
+rlabel m2 70 56 70 56 3 _q
+port 7 e
+rlabel m2 71 34 71 34 3 _q
+port 7 e
+rlabel m2c 62 44 62 44 3 _clk
+rlabel m2c 68 55 68 55 3 _q
+port 7 e
+rlabel m2c 68 56 68 56 3 _q
+port 7 e
+rlabel m2 63 82 63 82 3 Vdd
+rlabel m2c 68 34 68 34 3 _q
+port 7 e
+rlabel m2c 61 44 61 44 3 _clk
+rlabel m2 61 46 61 46 3 _clk
+rlabel m2 37 55 37 55 3 _q
+port 7 e
+rlabel m2 36 56 36 56 3 _q
+port 7 e
+rlabel m2c 60 82 60 82 3 Vdd
+rlabel m2 71 24 71 24 3 #10
+rlabel m2 63 34 63 34 3 _q
+port 7 e
+rlabel m2 37 44 37 44 3 _clk
+rlabel m2c 34 55 34 55 3 _q
+port 7 e
+rlabel m2c 34 56 34 56 3 _q
+port 7 e
+rlabel m2 54 82 54 82 3 Vdd
+rlabel m2 70 24 70 24 3 #10
+rlabel m2c 60 34 60 34 3 _q
+port 7 e
+rlabel m2c 34 44 34 44 3 _clk
+rlabel m2 33 54 33 54 3 _q
+port 7 e
+rlabel m2 33 55 33 55 3 _q
+port 7 e
+rlabel m2 33 58 33 58 3 _q
+port 7 e
+rlabel m2c 51 82 51 82 3 Vdd
+rlabel m2c 68 24 68 24 3 #10
+rlabel m2 68 26 68 26 3 #10
+rlabel m2 28 34 28 34 3 _q
+port 7 e
+rlabel m2 28 44 28 44 3 _clk
+rlabel m2 19 82 19 82 3 Vdd
+rlabel m2 54 24 54 24 3 #10
+rlabel m2c 25 34 25 34 3 _q
+port 7 e
+rlabel m2c 25 44 25 44 3 _clk
+rlabel m2c 16 82 16 82 3 Vdd
+rlabel m2 45 14 45 14 3 GND
+rlabel m2c 52 24 52 24 3 #10
+rlabel m2 24 33 24 33 3 _q
+port 7 e
+rlabel m2 24 34 24 34 3 _q
+port 7 e
+rlabel m2 24 37 24 37 3 _q
+port 7 e
+rlabel m2 24 43 24 43 3 _clk
+rlabel m2 24 44 24 44 3 _clk
+rlabel m2 24 47 24 47 3 _clk
+rlabel m2 63 65 63 65 3 #7
+rlabel m2 62 66 62 66 3 #7
+rlabel m2 15 81 15 81 3 Vdd
+rlabel m2 15 82 15 82 3 Vdd
+rlabel m2 15 85 15 85 3 Vdd
+rlabel m2c 42 14 42 14 3 GND
+rlabel m2c 51 24 51 24 3 #10
+rlabel m2 51 26 51 26 3 #10
+rlabel m2c 60 65 60 65 3 #7
+rlabel m2c 60 66 60 66 3 #7
+rlabel m2 11 14 11 14 3 GND
+rlabel m2 50 23 50 23 3 #10
+rlabel m2 50 24 50 24 3 #10
+rlabel m2 50 27 50 27 3 #10
+rlabel m2 11 65 11 65 3 #7
+rlabel m2 10 66 10 66 3 #7
+rlabel m2c 8 14 8 14 3 GND
+rlabel m2c 8 65 8 65 3 #7
+rlabel m2c 8 66 8 66 3 #7
+rlabel m2 7 13 7 13 3 GND
+rlabel m2 7 14 7 14 3 GND
+rlabel m2 7 17 7 17 3 GND
+rlabel m2 7 64 7 64 3 #7
+rlabel m2 7 65 7 65 3 #7
+rlabel m2 7 68 7 68 3 #7
+<< properties >>
+string FIXED_BBOX 0 0 84 100
+string LEFclass CORE
+string LEFsite CoreSite
+string LEFsymmetry X Y
+string LEFview TRUE
+<< end >>

@@ -1,0 +1,34 @@
+magic
+tech TSMC180
+timestamp 1734143631
+<< m1 >>
+rect 6 107 9 110
+rect 18 107 21 110
+rect 30 107 33 110
+rect 42 107 45 110
+rect 54 107 57 110
+rect 66 107 69 110
+rect 6 18 65 101
+rect 6 10 9 13
+<< labels >>
+rlabel m1 s 6 107 9 110 6 in_50_6
+port 1 nsew signal input
+rlabel m1 s 18 107 21 110 6 in_51_6
+port 2 nsew signal input
+rlabel m1 s 30 107 33 110 6 in_52_6
+port 3 nsew signal input
+rlabel m1 s 42 107 45 110 6 in_53_6
+port 4 nsew signal input
+rlabel m1 s 6 10 9 13 6 out
+port 5 nsew signal output
+rlabel m1 s 54 107 57 110 6 Vdd
+port 6 nsew power input
+rlabel m1 s 66 107 69 110 6 GND
+port 7 nsew ground input
+<< properties >>
+string FIXED_BBOX 0 0 72 120
+string LEFclass CORE
+string LEFsite CoreSite
+string LEFsymmetry X Y
+string LEFview TRUE
+<< end >>
