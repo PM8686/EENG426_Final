@@ -1,0 +1,62 @@
+bbox 0 0 90 80
+rect _clk ndiffusion 22 12 28 22 right
+rect _clk pdiffusion 22 38 28 53 right
+rect # polysilicon 20 9 22 12
+rect # ntransistor 20 12 22 22
+rect CLK polysilicon 20 22 22 25
+rect CLK polysilicon 20 35 22 38
+rect # ptransistor 20 38 22 53
+rect # polysilicon 20 53 22 56
+rect GND ndiffusion 14 12 20 22 center
+rect Vdd pdiffusion 14 38 20 53 center
+rect # polysilicon 12 9 14 12
+rect # ntransistor 12 12 14 22
+rect _q polysilicon 12 22 14 25
+rect _q polysilicon 12 35 14 38
+rect # ptransistor 12 38 14 53
+rect # polysilicon 12 53 14 56
+rect Q ndiffusion 6 12 12 22 left
+rect Q pdiffusion 6 38 12 53 left
+rect #7 pdiffusion 50 38 56 58 right
+rect #10 ndiffusion 50 12 56 22 right
+rect # ptransistor 48 38 50 58
+rect # polysilicon 48 58 50 61
+rect # polysilicon 48 9 50 12
+rect # ntransistor 48 12 50 22
+rect _clk polysilicon 48 22 50 25
+rect _clk polysilicon 48 35 50 38
+rect # pdiffusion 44 38 48 58
+rect _q ndiffusion 40 12 48 22 center
+rect _q pdiffusion 40 38 44 48 right
+rect # polysilicon 38 9 40 12
+rect # ntransistor 38 12 40 22
+rect CLK polysilicon 38 22 40 25
+rect CLK polysilicon 38 35 40 38
+rect # ptransistor 38 38 40 48
+rect # polysilicon 38 48 40 51
+rect #5 ndiffusion 32 12 38 22 left
+rect #8 pdiffusion 32 38 38 48 left
+rect #7 pdiffusion 78 38 84 58 right
+rect #5 ndiffusion 78 12 84 22 right
+rect # ptransistor 76 38 78 58
+rect # polysilicon 76 58 78 61
+rect # polysilicon 76 9 78 12
+rect # ntransistor 76 12 78 22
+rect D polysilicon 76 22 78 25
+rect D polysilicon 76 35 78 38
+rect # pdiffusion 72 38 76 58
+rect GND ndiffusion 68 12 76 22 center
+rect Vdd pdiffusion 68 38 72 48 right
+rect # polysilicon 66 9 68 12
+rect # ntransistor 66 12 68 22
+rect Q polysilicon 66 22 68 25
+rect Q polysilicon 66 35 68 38
+rect # ptransistor 66 38 68 48
+rect # polysilicon 66 48 68 51
+rect #10 ndiffusion 60 12 66 22 left
+rect #8 pdiffusion 60 38 66 48 left
+inrect GND m1 78 67 81 70
+inrect Vdd m1 54 67 57 70
+inrect D m1 30 67 33 70
+outrect Q m1 6 10 9 13
+inrect CLK m1 6 67 9 70
